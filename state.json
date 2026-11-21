@@ -1,704 +1,604 @@
 {
   "initialized": true,
-  "detailCursor": 40,
+  "detailCursor": 50,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
       "productName": "feliceファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0611RYRK",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0609GYRS": {
       "productId": "FC0609GYRS",
       "productName": "sleeping rose ＋ tambourine キルト有りファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0609GYRS",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0608YWST": {
       "productId": "FC0608YWST",
       "productName": "sleeping rose ＋ tambourine キルトなしファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0608YWST",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0607RBPW": {
       "productId": "FC0607RBPW",
       "productName": "Pepper + run run runファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0607RBPW",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0605NYYB": {
       "productId": "FC0605NYYB",
       "productName": "tambourineファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0605NYYB",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0606ENEY": {
       "productId": "FC0606ENEY",
       "productName": "following dayファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0606ENEY",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0604BRWT": {
       "productId": "FC0604BRWT",
       "productName": "celebrateファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0604BRWT",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0603BCTI": {
       "productId": "FC0603BCTI",
       "productName": "jungle reliefファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0603BCTI",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0602YKMF": {
       "productId": "FC0602YKMF",
       "productName": "tambourineファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0602YKMF",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0601SGBY": {
       "productId": "FC0601SGBY",
       "productName": "swingファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0601SGBY",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0596WLDN": {
       "productId": "FC0596WLDN",
       "productName": "tambourineファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0596WLDN",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0598ELDT": {
       "productId": "FC0598ELDT",
       "productName": "tambourineファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0598ELDT",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0586YHF": {
       "productId": "FC0586YHF",
       "productName": "tambourineファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0586YHF",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0595BPGL": {
       "productId": "FC0595BPGL",
       "productName": "DROPPDRÄLL + chouchoファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0595BPGL",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0600YKPD": {
       "productId": "FC0600YKPD",
       "productName": "tambourineファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0600YKPD",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0599EUMD": {
       "productId": "FC0599EUMD",
       "productName": "rosyファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0599EUMD",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0594PGB": {
       "productId": "FC0594PGB",
       "productName": "twinsファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0594PGB",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0591YGMG": {
       "productId": "FC0591YGMG",
       "productName": "jungle reliefファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0591YGMG",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0584": {
       "productId": "FC0584",
       "productName": "anone-anoneファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0584",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0597LGB": {
       "productId": "FC0597LGB",
       "productName": "loloファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0597LGB",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0585TBMN": {
       "productId": "FC0585TBMN",
       "productName": "thoroughbredファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0585TBMN",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0590WMNC": {
       "productId": "FC0590WMNC",
       "productName": "feather danceファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0590WMNC",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0579EMBN": {
       "productId": "FC0579EMBN",
       "productName": "symphonyファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0579EMBN",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0589": {
       "productId": "FC0589",
       "productName": "sora check ファブリック 柄 large",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0589",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0582TWGM": {
       "productId": "FC0582TWGM",
       "productName": "tambourineファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0582TWGM",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0588BBNW": {
       "productId": "FC0588BBNW",
       "productName": "rosyファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0588BBNW",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0580": {
       "productId": "FC0580",
       "productName": "one dayファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0580",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0593YGB": {
       "productId": "FC0593YGB",
       "productName": "lintuファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0593YGB",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0592TMYB": {
       "productId": "FC0592TMYB",
       "productName": "tambourineファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0592TMYB",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0587GLNW": {
       "productId": "FC0587GLNW",
       "productName": "following dayファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0587GLNW",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0578BBDN": {
       "productId": "FC0578BBDN",
       "productName": "tambourineファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0578BBDN",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0574BBLC": {
       "productId": "FC0574BBLC",
       "productName": "tambourineファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0574BBLC",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0573WPBC": {
       "productId": "FC0573WPBC",
       "productName": "smile flowerファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0573WPBC",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0572": {
       "productId": "FC0572",
       "productName": "carnivalファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0572",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0571GBBX": {
       "productId": "FC0571GBBX",
       "productName": "tambourineファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0571GBBX",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0569NBGW": {
       "productId": "FC0569NBGW",
       "productName": "forest tileファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0569NBGW",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0577BWMN": {
       "productId": "FC0577BWMN",
       "productName": "mermaidファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0577BWMN",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0570PBPB": {
       "productId": "FC0570PBPB",
       "productName": "pomppiaファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0570PBPB",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0568": {
       "productId": "FC0568",
       "productName": "hello swallowファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0568",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0566FWAM": {
       "productId": "FC0566FWAM",
       "productName": "forest wave + anemoneファブリック ボーラーなし",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0566FWAM",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0567FWAM": {
       "productId": "FC0567FWAM",
       "productName": "forest wave + anemoneファブリック ボーラーあり",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0567FWAM",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0565": {
       "productId": "FC0565",
       "productName": "tambourineファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0565",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0564": {
       "productId": "FC0564",
       "productName": "anone-anoneファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0564",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0557TLLB": {
       "productId": "FC0557TLLB",
       "productName": "tambourineファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0557TLLB",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0563": {
       "productId": "FC0563",
       "productName": "memoriaファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0563",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0495": {
       "productId": "FC0495",
       "productName": "run run runファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0495",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0561CMBD": {
       "productId": "FC0561CMBD",
       "productName": "carnivalファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0561CMBD",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0553GGPA": {
       "productId": "FC0553GGPA",
       "productName": "anemoneファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0553GGPA",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0560WMNB": {
       "productId": "FC0560WMNB",
       "productName": "tambourineファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0560WMNB",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0559": {
       "productId": "FC0559",
       "productName": "perhonen puzzleファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0559",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0558": {
       "productId": "FC0558",
       "productName": "sora check ファブリック 柄 small",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0558",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0556": {
       "productId": "FC0556",
       "productName": "forest wingファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0556",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0555": {
       "productId": "FC0555",
       "productName": "aliveファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0555",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0549": {
       "productId": "FC0549",
       "productName": "flowerscopeファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0549",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0548": {
       "productId": "FC0548",
       "productName": "hütteファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0548",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0331": {
       "productId": "FC0331",
       "productName": "chouchoファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0331",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0545VTK": {
       "productId": "FC0545VTK",
       "productName": "lookファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0545VTK",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0544": {
       "productId": "FC0544",
       "productName": "ribbon frameファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0544",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0541": {
       "productId": "FC0541",
       "productName": "yamanamiファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0541",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0537": {
       "productId": "FC0537",
       "productName": "sky flowerファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0537",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0538": {
       "productId": "FC0538",
       "productName": "garden patchworkファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0538",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0533": {
       "productId": "FC0533",
       "productName": "after rainファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0533",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0534ANMN": {
       "productId": "FC0534ANMN",
       "productName": "anemoneファブリック ボーラーあり",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0534ANMN",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0528DMGW": {
       "productId": "FC0528DMGW",
       "productName": "life puzzleファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0528DMGW",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0525": {
       "productId": "FC0525",
       "productName": "faint shadowファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0525",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0524": {
       "productId": "FC0524",
       "productName": "paradisファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0524",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0510": {
       "productId": "FC0510",
       "productName": "pepper + light berryファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0510",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0521": {
       "productId": "FC0521",
       "productName": "sea laceファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0521",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0520": {
       "productId": "FC0520",
       "productName": "soffioneファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0520",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0518": {
       "productId": "FC0518",
       "productName": "odysseyファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0518",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0515": {
       "productId": "FC0515",
       "productName": "flower danceファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0515",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0513": {
       "productId": "FC0513",
       "productName": "one dayファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0513",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0516": {
       "productId": "FC0516",
       "productName": "chouchoファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0516",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0500": {
       "productId": "FC0500",
       "productName": "surplusファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0500",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0498": {
       "productId": "FC0498",
       "productName": "slow danceファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0498",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0470": {
       "productId": "FC0470",
       "productName": "run run runファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0470",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0479": {
       "productId": "FC0479",
       "productName": "light berryファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0479",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0481": {
       "productId": "FC0481",
       "productName": "rain chukkaファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0481",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0442": {
       "productId": "FC0442",
       "productName": "aaltoファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0442",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0436": {
       "productId": "FC0436",
       "productName": "pacificファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0436",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0416": {
       "productId": "FC0416",
       "productName": "lake birdファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0416",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0485": {
       "productId": "FC0485",
       "productName": "life puzzleファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0485",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0472": {
       "productId": "FC0472",
       "productName": "tanpopoファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0472",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0464": {
       "productId": "FC0464",
       "productName": "chouchoファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0464",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0458": {
       "productId": "FC0458",
       "productName": "home circleファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0458",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0456": {
       "productId": "FC0456",
       "productName": "bonheurファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0456",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0477": {
       "productId": "FC0477",
       "productName": "aliveファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0477",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0461": {
       "productId": "FC0461",
       "productName": "giraffeファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0461",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0493": {
       "productId": "FC0493",
       "productName": "singing merrilyファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0493",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0463": {
       "productId": "FC0463",
       "productName": "choucho ＋ nopparaファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0463",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0417": {
       "productId": "FC0417",
       "productName": "sometimes luckyファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0417",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0435": {
       "productId": "FC0435",
       "productName": "tourファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0435",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0427": {
       "productId": "FC0427",
       "productName": "ohayoファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0427",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0446": {
       "productId": "FC0446",
       "productName": "margueriteファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0446",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0447": {
       "productId": "FC0447",
       "productName": "merciファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0447",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0459": {
       "productId": "FC0459",
       "productName": "Fujisansファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0459",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0421": {
       "productId": "FC0421",
       "productName": "garden patchworkファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0421",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0438": {
       "productId": "FC0438",
       "productName": "donguriファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0438",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0453": {
       "productId": "FC0453",
       "productName": "flower nestファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0453",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0425": {
       "productId": "FC0425",
       "productName": "land theaterファブリック",
-      "url": "https://www.mina-perhonen.jp/online_store/FC0425",
       "isSoldOut": true,
       "advanceAnnouncement": ""
     }
