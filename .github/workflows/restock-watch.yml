@@ -1,0 +1,69 @@
+name: Restock Watch
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '*/15 * * * *'
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: restock-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Playwright
+        run: |
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      - name: Run restock watch
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          MINA_URL: ${{ secrets.MINA_URL }}
+        run: node restock-watch.js
+
+      - name: Save restock watch data
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ -f restock-watch-state.json ]; then
+            git add restock-watch-state.json
+          fi
+
+          if [ -f restock-watch-before.json ]; then
+            git add restock-watch-before.json
+          fi
+
+          if [ -f restock-watch-after.json ]; then
+            git add restock-watch-after.json
+          fi
+
+          if [ -f restock-watch-diff.json ]; then
+            git add restock-watch-diff.json
+          fi
+
+          if git diff --cached --quiet; then
+            echo "保存する変更はありません"
+          else
+            git commit -m "Update restock watch data"
+            git pull --rebase
+            git push
+          fi
