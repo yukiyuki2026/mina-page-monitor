@@ -48,11 +48,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          cp state.json /tmp/state.json
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          cp /tmp/state.json state.json
+
           git add state.json
 
           if git diff --cached --quiet; then
             echo "state.json に変更はありません"
           else
             git commit -m "Update page monitor state"
-            git push
+            git push origin main
           fi
