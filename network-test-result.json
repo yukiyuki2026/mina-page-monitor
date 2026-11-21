@@ -1,76 +1,803 @@
 {
-  "checkedAt": "2026/11/21 23:12:19",
+  "checkedAt": "2026/11/21 23:18:50",
+  "purpose": "SOLD OUT時の/api/products JSON全文取得",
   "targetCount": 3,
   "products": [
     {
       "productId": "FC0611RYRK",
       "productName": "feliceファブリック",
       "listState": "SOLD OUT",
-      "checkedAt": "2026/11/21 23:11:56",
+      "checkedAt": "2026/11/21 23:18:26",
       "colors": [
         {
-          "text": "green 117",
-          "disabled": true,
-          "buttonText": "117"
+          "color": "green",
+          "width": "117",
+          "disabled": true
         },
         {
-          "text": "brown 117",
-          "disabled": true,
-          "buttonText": "117"
+          "color": "brown",
+          "width": "117",
+          "disabled": true
         },
         {
-          "text": "gray 117",
-          "disabled": true,
-          "buttonText": "117"
+          "color": "gray",
+          "width": "117",
+          "disabled": true
         },
         {
-          "text": "black 117",
-          "disabled": true,
-          "buttonText": "117"
+          "color": "black",
+          "width": "117",
+          "disabled": true
         }
       ],
-      "htmlFindings": [
+      "zeroValues": [
         {
-          "type": "keyword",
-          "keyword": "variant",
-          "snippet": "r_size __label _translate_\"><dt>カラー</dt><dd>生地巾(cm)</dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_green_af787a08b1.jpg?w=100\"><figcaption class=\"en_serif\"><!----> green</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">117</butt"
-        },
-        {
-          "type": "keyword",
-          "keyword": "variant",
-          "snippet": "ss=\"btn_line fs_btn en_ss\" disabled=\"\">117</button></dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_brown_2b13989b93.jpg?w=100\"><figcaption class=\"en_serif\"><!----> brown</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">117</butt"
-        },
-        {
-          "type": "keyword",
-          "keyword": "variant",
-          "snippet": "ss=\"btn_line fs_btn en_ss\" disabled=\"\">117</button></dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_gray_e74a1209b2.jpg?w=100\"><figcaption class=\"en_serif\"><!----> gray</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">117</button"
-        },
-        {
-          "type": "keyword",
-          "keyword": "variant",
-          "snippet": "ss=\"btn_line fs_btn en_ss\" disabled=\"\">117</button></dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_black_f11b41c540.jpg?w=100\"><figcaption class=\"en_serif\"><!----> black</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">117</butt"
+          "path": "meta.pagination.start",
+          "value": 0
         }
       ],
-      "networkResponses": [
+      "apiProductsResponses": [
         {
           "method": "GET",
           "path": "/api/products?populate[thumbnail]=true&populate[skus]=true&populate[photo]=true&populate[colorVariations]=true&populate[relatedProducts]=true&populate[textiles][populate][thumbnail]=true&populate[textiles][populate][images]=true&populate[designers][populate][photo]=true&populate[assortContent][populate][colorVariations]=true&filters[fieldId]=FC0611RYRK&pagination[limit]=1&pagination[start]=0",
           "status": 200,
-          "contentType": "application/json; charset=utf-8",
-          "findings": [
-            {
-              "type": "keyword",
-              "keyword": "sku",
-              "snippet": ":38.075Z\",\"updatedAt\":\"2026-11-19T13:06:44.594Z\",\"documentId\":\"r9ome88y45wk867j2jfl0rn1\",\"publishedAt\":\"2026-11-19T07:35:38.075Z\",\"focalPoint\":null},\"skus\":[{\"id\":1550058,\"value\":\"FC0611RYRK\"}],\"photo\":[{\"id\":53019,\"name\":\"FC0611_1-2.jpg\",\"alternativeText\":null,\"caption\":null,\"width\":3557,\"height\":2371,\"formats\":{\"large\":{\"ext\":\".jpg\",\"url\":\"https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0611_1_2_9aec8baab5.jpg\",\"hash\":\"large_FC_0611"
+          "json": {
+            "data": [
+              {
+                "id": 1373237,
+                "fieldId": "FC0611RYRK",
+                "name": "ファブリック",
+                "textile": "felice",
+                "line": null,
+                "isPickUp": false,
+                "category": "fabric",
+                "subCategory": null,
+                "caption1": "画像の上下が生地端(耳)です。",
+                "caption2": "green：ベース green × 刺繍糸の色 light beige",
+                "caption3": "左から black：ベース black × 刺繍糸の色 light olive / gray：ベース gray × 刺繍糸の色 white",
+                "caption4": "brown：ベース brown × 刺繍糸の色 dark navy",
+                "caption5": null,
+                "caption6": null,
+                "caption7": null,
+                "caption8": null,
+                "caption9": null,
+                "caption10": null,
+                "caption11": null,
+                "caption12": null,
+                "caption13": null,
+                "caption14": null,
+                "caption15": null,
+                "description": "鳥や蝶、花のモチーフを幾何学的な要素と組み合わせた図案“felice（フェリーチェ）”。四角と円が重なり合い、華やかなモチーフがレリーフのように連なります。高密度に織り上げた、程よいハリのあるリネンファブリック。季節を問わずお使いいただける素材で、カーテンやクッションなど、インテリアアイテムの制作にもおすすめです。",
+                "caption": "photograph: Haruto Inomata",
+                "supplement": "- 光を通す薄地の生地です。\n- 天然繊維のため、生地にネップ（節糸）やムラ糸がございますが、素材の風合いとしてお楽しみください。\n\n- 表示価格は10cmあたりの価格です。\n- インテリアファブリックは、100cm以上50cm単位でお求めいただけます。\n- おひとり様につき、各色300cmまでとさせていただきます。\n\n<font color=\"#FF0000\">- 誠に恐れ入りますが、ご注文日より4週間以内での発送とさせていただきます。</font>\n- ご注文受付日（ご入金確認日）ごとにご用意が整い次第、発送を進めさせて頂いておりますが、発送状況により、お届け日に差が生じますこと何卒ご容赦くださいますようお願い申し上げます。\n\n- カット売りの為、1枚の繋がった生地でご希望メーター数のご用意が出来ない場合がございます。その際はご連絡をさせて頂きます。",
+                "sizeChart": "サイズ | 生地巾 | 有効巾\n--- | --- | ---\nF | 117 | 114",
+                "material": "リネン 100%、刺繡部分: 上糸 コットン100％、下糸 ポリエステル100％",
+                "originCountry": "jp",
+                "handling": "- 刺繍を施したファブリックのため、縮みが発生する可能性があります。収縮を安定させるため、ご使用の前に水通しされることをお勧めいたします。\n- 濃色は多少色移り、色落ちすることがあります。摩擦を受けますと淡色（特に白）物に色移りする場合がありますのでお気を付けください。",
+                "current": "current",
+                "sortOrder": 28,
+                "importVersion": null,
+                "soldout": true,
+                "underNegotiation": false,
+                "artsAndVintage": null,
+                "oldId": null,
+                "createdAt": "2026-11-16T01:57:13.746Z",
+                "updatedAt": "2026-11-21T04:45:28.126Z",
+                "publishedAt": "2026-11-21T04:45:28.222Z",
+                "documentId": "bumbznwxufyd9tjc4jzzxz70",
+                "lead": null,
+                "season": null,
+                "forSearch": "FC0611RYRK",
+                "thumbnail": {
+                  "id": 53028,
+                  "name": "FC0611_0.jpg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 3002,
+                  "height": 3002,
+                  "formats": {
+                    "large": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0611_0_d3535b1e47.jpg",
+                      "hash": "large_FC_0611_0_d3535b1e47",
+                      "mime": "image/jpeg",
+                      "name": "large_FC0611_0.jpg",
+                      "path": null,
+                      "size": 1367.66,
+                      "width": 2000,
+                      "height": 2000,
+                      "sizeInBytes": 1367662
+                    },
+                    "small": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/small_FC_0611_0_d3535b1e47.jpg",
+                      "hash": "small_FC_0611_0_d3535b1e47",
+                      "mime": "image/jpeg",
+                      "name": "small_FC0611_0.jpg",
+                      "path": null,
+                      "size": 155.03,
+                      "width": 600,
+                      "height": 600,
+                      "sizeInBytes": 155029
+                    },
+                    "medium": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/medium_FC_0611_0_d3535b1e47.jpg",
+                      "hash": "medium_FC_0611_0_d3535b1e47",
+                      "mime": "image/jpeg",
+                      "name": "medium_FC0611_0.jpg",
+                      "path": null,
+                      "size": 397.56,
+                      "width": 1000,
+                      "height": 1000,
+                      "sizeInBytes": 397556
+                    },
+                    "xsmall": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xsmall_FC_0611_0_d3535b1e47.jpg",
+                      "hash": "xsmall_FC_0611_0_d3535b1e47",
+                      "mime": "image/jpeg",
+                      "name": "xsmall_FC0611_0.jpg",
+                      "path": null,
+                      "size": 74.79,
+                      "width": 400,
+                      "height": 400,
+                      "sizeInBytes": 74791
+                    },
+                    "thumbnail": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0611_0_d3535b1e47.jpg",
+                      "hash": "thumbnail_FC_0611_0_d3535b1e47",
+                      "mime": "image/jpeg",
+                      "name": "thumbnail_FC0611_0.jpg",
+                      "path": null,
+                      "size": 11.06,
+                      "width": 156,
+                      "height": 156,
+                      "sizeInBytes": 11060
+                    }
+                  },
+                  "hash": "FC_0611_0_d3535b1e47",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "size": 11044.16,
+                  "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_0_d3535b1e47.jpg",
+                  "previewUrl": null,
+                  "provider": "strapi-provider-upload-strapi-cloud",
+                  "provider_metadata": null,
+                  "createdAt": "2026-11-19T07:35:38.075Z",
+                  "updatedAt": "2026-11-19T13:06:44.594Z",
+                  "documentId": "r9ome88y45wk867j2jfl0rn1",
+                  "publishedAt": "2026-11-19T07:35:38.075Z",
+                  "focalPoint": null
+                },
+                "skus": [
+                  {
+                    "id": 1550058,
+                    "value": "FC0611RYRK"
+                  }
+                ],
+                "photo": [
+                  {
+                    "id": 53019,
+                    "name": "FC0611_1-2.jpg",
+                    "alternativeText": null,
+                    "caption": null,
+                    "width": 3557,
+                    "height": 2371,
+                    "formats": {
+                      "large": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0611_1_2_9aec8baab5.jpg",
+                        "hash": "large_FC_0611_1_2_9aec8baab5",
+                        "mime": "image/jpeg",
+                        "name": "large_FC0611_1-2.jpg",
+                        "path": null,
+                        "size": 958.02,
+                        "width": 2000,
+                        "height": 1333,
+                        "sizeInBytes": 958020
+                      },
+                      "small": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/small_FC_0611_1_2_9aec8baab5.jpg",
+                        "hash": "small_FC_0611_1_2_9aec8baab5",
+                        "mime": "image/jpeg",
+                        "name": "small_FC0611_1-2.jpg",
+                        "path": null,
+                        "size": 93.85,
+                        "width": 600,
+                        "height": 400,
+                        "sizeInBytes": 93853
+                      },
+                      "medium": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/medium_FC_0611_1_2_9aec8baab5.jpg",
+                        "hash": "medium_FC_0611_1_2_9aec8baab5",
+                        "mime": "image/jpeg",
+                        "name": "medium_FC0611_1-2.jpg",
+                        "path": null,
+                        "size": 277.7,
+                        "width": 1000,
+                        "height": 666,
+                        "sizeInBytes": 277702
+                      },
+                      "xsmall": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xsmall_FC_0611_1_2_9aec8baab5.jpg",
+                        "hash": "xsmall_FC_0611_1_2_9aec8baab5",
+                        "mime": "image/jpeg",
+                        "name": "xsmall_FC0611_1-2.jpg",
+                        "path": null,
+                        "size": 38.79,
+                        "width": 400,
+                        "height": 266,
+                        "sizeInBytes": 38787
+                      },
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0611_1_2_9aec8baab5.jpg",
+                        "hash": "thumbnail_FC_0611_1_2_9aec8baab5",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0611_1-2.jpg",
+                        "path": null,
+                        "size": 11.8,
+                        "width": 234,
+                        "height": 156,
+                        "sizeInBytes": 11803
+                      }
+                    },
+                    "hash": "FC_0611_1_2_9aec8baab5",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 9934.61,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_1_2_9aec8baab5.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-11-18T09:57:21.198Z",
+                    "updatedAt": "2026-11-18T09:57:21.198Z",
+                    "documentId": "g4udwwk3v33p8pfpj39n213y",
+                    "publishedAt": "2026-11-18T09:57:21.198Z",
+                    "focalPoint": null
+                  },
+                  {
+                    "id": 53020,
+                    "name": "FC0611_2-2.jpg",
+                    "alternativeText": null,
+                    "caption": null,
+                    "width": 4500,
+                    "height": 3002,
+                    "formats": {
+                      "large": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0611_2_2_24f3e724a6.jpg",
+                        "hash": "large_FC_0611_2_2_24f3e724a6",
+                        "mime": "image/jpeg",
+                        "name": "large_FC0611_2-2.jpg",
+                        "path": null,
+                        "size": 452.09,
+                        "width": 2000,
+                        "height": 1334,
+                        "sizeInBytes": 452085
+                      },
+                      "small": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/small_FC_0611_2_2_24f3e724a6.jpg",
+                        "hash": "small_FC_0611_2_2_24f3e724a6",
+                        "mime": "image/jpeg",
+                        "name": "small_FC0611_2-2.jpg",
+                        "path": null,
+                        "size": 75.52,
+                        "width": 600,
+                        "height": 400,
+                        "sizeInBytes": 75515
+                      },
+                      "medium": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/medium_FC_0611_2_2_24f3e724a6.jpg",
+                        "hash": "medium_FC_0611_2_2_24f3e724a6",
+                        "mime": "image/jpeg",
+                        "name": "medium_FC0611_2-2.jpg",
+                        "path": null,
+                        "size": 165.16,
+                        "width": 1000,
+                        "height": 667,
+                        "sizeInBytes": 165159
+                      },
+                      "xlarge": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xlarge_FC_0611_2_2_24f3e724a6.jpg",
+                        "hash": "xlarge_FC_0611_2_2_24f3e724a6",
+                        "mime": "image/jpeg",
+                        "name": "xlarge_FC0611_2-2.jpg",
+                        "path": null,
+                        "size": 1272.45,
+                        "width": 4000,
+                        "height": 2668,
+                        "sizeInBytes": 1272447
+                      },
+                      "xsmall": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xsmall_FC_0611_2_2_24f3e724a6.jpg",
+                        "hash": "xsmall_FC_0611_2_2_24f3e724a6",
+                        "mime": "image/jpeg",
+                        "name": "xsmall_FC0611_2-2.jpg",
+                        "path": null,
+                        "size": 39.21,
+                        "width": 400,
+                        "height": 267,
+                        "sizeInBytes": 39212
+                      },
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0611_2_2_24f3e724a6.jpg",
+                        "hash": "thumbnail_FC_0611_2_2_24f3e724a6",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0611_2-2.jpg",
+                        "path": null,
+                        "size": 15.71,
+                        "width": 234,
+                        "height": 156,
+                        "sizeInBytes": 15708
+                      }
+                    },
+                    "hash": "FC_0611_2_2_24f3e724a6",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 10309.35,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_2_2_24f3e724a6.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-11-18T09:57:30.308Z",
+                    "updatedAt": "2026-11-18T09:57:30.308Z",
+                    "documentId": "tsg4htwew0f5ve4amv1mzx6v",
+                    "publishedAt": "2026-11-18T09:57:30.309Z",
+                    "focalPoint": null
+                  },
+                  {
+                    "id": 53027,
+                    "name": "FC0611_3-3.jpg",
+                    "alternativeText": null,
+                    "caption": null,
+                    "width": 3002,
+                    "height": 4500,
+                    "formats": {
+                      "large": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0611_3_3_feed46a612.jpg",
+                        "hash": "large_FC_0611_3_3_feed46a612",
+                        "mime": "image/jpeg",
+                        "name": "large_FC0611_3-3.jpg",
+                        "path": null,
+                        "size": 974.05,
+                        "width": 1334,
+                        "height": 2000,
+                        "sizeInBytes": 974054
+                      },
+                      "small": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/small_FC_0611_3_3_feed46a612.jpg",
+                        "hash": "small_FC_0611_3_3_feed46a612",
+                        "mime": "image/jpeg",
+                        "name": "small_FC0611_3-3.jpg",
+                        "path": null,
+                        "size": 110.46,
+                        "width": 400,
+                        "height": 600,
+                        "sizeInBytes": 110459
+                      },
+                      "medium": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/medium_FC_0611_3_3_feed46a612.jpg",
+                        "hash": "medium_FC_0611_3_3_feed46a612",
+                        "mime": "image/jpeg",
+                        "name": "medium_FC0611_3-3.jpg",
+                        "path": null,
+                        "size": 285.03,
+                        "width": 667,
+                        "height": 1000,
+                        "sizeInBytes": 285027
+                      },
+                      "xlarge": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xlarge_FC_0611_3_3_feed46a612.jpg",
+                        "hash": "xlarge_FC_0611_3_3_feed46a612",
+                        "mime": "image/jpeg",
+                        "name": "xlarge_FC0611_3-3.jpg",
+                        "path": null,
+                        "size": 3128.19,
+                        "width": 2668,
+                        "height": 4000,
+                        "sizeInBytes": 3128188
+                      },
+                      "xsmall": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xsmall_FC_0611_3_3_feed46a612.jpg",
+                        "hash": "xsmall_FC_0611_3_3_feed46a612",
+                        "mime": "image/jpeg",
+                        "name": "xsmall_FC0611_3-3.jpg",
+                        "path": null,
+                        "size": 48.95,
+                        "width": 267,
+                        "height": 400,
+                        "sizeInBytes": 48948
+                      },
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0611_3_3_feed46a612.jpg",
+                        "hash": "thumbnail_FC_0611_3_3_feed46a612",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0611_3-3.jpg",
+                        "path": null,
+                        "size": 6.8,
+                        "width": 104,
+                        "height": 156,
+                        "sizeInBytes": 6798
+                      }
+                    },
+                    "hash": "FC_0611_3_3_feed46a612",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 15832.38,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_3_3_feed46a612.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-11-19T07:34:27.300Z",
+                    "updatedAt": "2026-11-19T07:34:27.300Z",
+                    "documentId": "kn9cr437yj9h7qldhkaejw0v",
+                    "publishedAt": "2026-11-19T07:34:27.301Z",
+                    "focalPoint": null
+                  },
+                  {
+                    "id": 53022,
+                    "name": "FC0611_4-2.jpg",
+                    "alternativeText": null,
+                    "caption": null,
+                    "width": 3002,
+                    "height": 4500,
+                    "formats": {
+                      "large": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0611_4_2_2da5d56747.jpg",
+                        "hash": "large_FC_0611_4_2_2da5d56747",
+                        "mime": "image/jpeg",
+                        "name": "large_FC0611_4-2.jpg",
+                        "path": null,
+                        "size": 549.1,
+                        "width": 1334,
+                        "height": 2000,
+                        "sizeInBytes": 549098
+                      },
+                      "small": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/small_FC_0611_4_2_2da5d56747.jpg",
+                        "hash": "small_FC_0611_4_2_2da5d56747",
+                        "mime": "image/jpeg",
+                        "name": "small_FC0611_4-2.jpg",
+                        "path": null,
+                        "size": 77.27,
+                        "width": 400,
+                        "height": 600,
+                        "sizeInBytes": 77269
+                      },
+                      "medium": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/medium_FC_0611_4_2_2da5d56747.jpg",
+                        "hash": "medium_FC_0611_4_2_2da5d56747",
+                        "mime": "image/jpeg",
+                        "name": "medium_FC0611_4-2.jpg",
+                        "path": null,
+                        "size": 178.32,
+                        "width": 667,
+                        "height": 1000,
+                        "sizeInBytes": 178324
+                      },
+                      "xlarge": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xlarge_FC_0611_4_2_2da5d56747.jpg",
+                        "hash": "xlarge_FC_0611_4_2_2da5d56747",
+                        "mime": "image/jpeg",
+                        "name": "xlarge_FC0611_4-2.jpg",
+                        "path": null,
+                        "size": 1587.71,
+                        "width": 2668,
+                        "height": 4000,
+                        "sizeInBytes": 1587709
+                      },
+                      "xsmall": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xsmall_FC_0611_4_2_2da5d56747.jpg",
+                        "hash": "xsmall_FC_0611_4_2_2da5d56747",
+                        "mime": "image/jpeg",
+                        "name": "xsmall_FC0611_4-2.jpg",
+                        "path": null,
+                        "size": 38.85,
+                        "width": 267,
+                        "height": 400,
+                        "sizeInBytes": 38851
+                      },
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0611_4_2_2da5d56747.jpg",
+                        "hash": "thumbnail_FC_0611_4_2_2da5d56747",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0611_4-2.jpg",
+                        "path": null,
+                        "size": 6.86,
+                        "width": 104,
+                        "height": 156,
+                        "sizeInBytes": 6861
+                      }
+                    },
+                    "hash": "FC_0611_4_2_2da5d56747",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 10316.39,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_4_2_2da5d56747.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-11-18T09:58:36.412Z",
+                    "updatedAt": "2026-11-18T09:58:36.412Z",
+                    "documentId": "ik9o8ryae7xkfx1y3qx4qvov",
+                    "publishedAt": "2026-11-18T09:58:36.412Z",
+                    "focalPoint": null
+                  },
+                  {
+                    "id": 53023,
+                    "name": "FC0611_5-2.jpg",
+                    "alternativeText": null,
+                    "caption": null,
+                    "width": 3002,
+                    "height": 4500,
+                    "formats": {
+                      "large": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0611_5_2_c5bb002493.jpg",
+                        "hash": "large_FC_0611_5_2_c5bb002493",
+                        "mime": "image/jpeg",
+                        "name": "large_FC0611_5-2.jpg",
+                        "path": null,
+                        "size": 375.03,
+                        "width": 1334,
+                        "height": 2000,
+                        "sizeInBytes": 375029
+                      },
+                      "small": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/small_FC_0611_5_2_c5bb002493.jpg",
+                        "hash": "small_FC_0611_5_2_c5bb002493",
+                        "mime": "image/jpeg",
+                        "name": "small_FC0611_5-2.jpg",
+                        "path": null,
+                        "size": 57.24,
+                        "width": 400,
+                        "height": 600,
+                        "sizeInBytes": 57237
+                      },
+                      "medium": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/medium_FC_0611_5_2_c5bb002493.jpg",
+                        "hash": "medium_FC_0611_5_2_c5bb002493",
+                        "mime": "image/jpeg",
+                        "name": "medium_FC0611_5-2.jpg",
+                        "path": null,
+                        "size": 130.81,
+                        "width": 667,
+                        "height": 1000,
+                        "sizeInBytes": 130814
+                      },
+                      "xlarge": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xlarge_FC_0611_5_2_c5bb002493.jpg",
+                        "hash": "xlarge_FC_0611_5_2_c5bb002493",
+                        "mime": "image/jpeg",
+                        "name": "xlarge_FC0611_5-2.jpg",
+                        "path": null,
+                        "size": 1064.63,
+                        "width": 2668,
+                        "height": 4000,
+                        "sizeInBytes": 1064633
+                      },
+                      "xsmall": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xsmall_FC_0611_5_2_c5bb002493.jpg",
+                        "hash": "xsmall_FC_0611_5_2_c5bb002493",
+                        "mime": "image/jpeg",
+                        "name": "xsmall_FC0611_5-2.jpg",
+                        "path": null,
+                        "size": 30.16,
+                        "width": 267,
+                        "height": 400,
+                        "sizeInBytes": 30155
+                      },
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0611_5_2_c5bb002493.jpg",
+                        "hash": "thumbnail_FC_0611_5_2_c5bb002493",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0611_5-2.jpg",
+                        "path": null,
+                        "size": 6.7,
+                        "width": 104,
+                        "height": 156,
+                        "sizeInBytes": 6699
+                      }
+                    },
+                    "hash": "FC_0611_5_2_c5bb002493",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 8686.19,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_5_2_c5bb002493.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-11-18T09:58:45.253Z",
+                    "updatedAt": "2026-11-18T09:58:45.253Z",
+                    "documentId": "r2woc70hq5g7nrr8cucw7sui",
+                    "publishedAt": "2026-11-18T09:58:45.253Z",
+                    "focalPoint": null
+                  }
+                ],
+                "colorVariations": [
+                  {
+                    "id": 52933,
+                    "name": "FC0611_black.jpg",
+                    "alternativeText": null,
+                    "caption": "FC0611_black",
+                    "width": 303,
+                    "height": 300,
+                    "formats": {
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0611_black_f11b41c540.jpg",
+                        "hash": "thumbnail_FC_0611_black_f11b41c540",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0611_black.jpg",
+                        "path": null,
+                        "size": 12.25,
+                        "width": 158,
+                        "height": 156,
+                        "sizeInBytes": 12248
+                      }
+                    },
+                    "hash": "FC_0611_black_f11b41c540",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 126.06,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_black_f11b41c540.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-11-16T02:00:09.202Z",
+                    "updatedAt": "2026-11-16T02:00:25.766Z",
+                    "documentId": "wkpuhnc4nquyr66r5monoshj",
+                    "publishedAt": "2026-11-16T02:00:09.202Z",
+                    "focalPoint": null
+                  },
+                  {
+                    "id": 52934,
+                    "name": "FC0611_brown.jpg",
+                    "alternativeText": null,
+                    "caption": "FC0611_brown",
+                    "width": 300,
+                    "height": 305,
+                    "formats": {
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0611_brown_2b13989b93.jpg",
+                        "hash": "thumbnail_FC_0611_brown_2b13989b93",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0611_brown.jpg",
+                        "path": null,
+                        "size": 10.44,
+                        "width": 153,
+                        "height": 156,
+                        "sizeInBytes": 10438
+                      }
+                    },
+                    "hash": "FC_0611_brown_2b13989b93",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 135.74,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_brown_2b13989b93.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-11-16T02:00:10.458Z",
+                    "updatedAt": "2026-11-16T02:00:33.926Z",
+                    "documentId": "vkwx39avmft2nz701tosi9gc",
+                    "publishedAt": "2026-11-16T02:00:10.458Z",
+                    "focalPoint": null
+                  },
+                  {
+                    "id": 52935,
+                    "name": "FC0611_gray.jpg",
+                    "alternativeText": null,
+                    "caption": "FC0611_gray",
+                    "width": 300,
+                    "height": 300,
+                    "formats": {
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0611_gray_e74a1209b2.jpg",
+                        "hash": "thumbnail_FC_0611_gray_e74a1209b2",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0611_gray.jpg",
+                        "path": null,
+                        "size": 9.69,
+                        "width": 156,
+                        "height": 156,
+                        "sizeInBytes": 9690
+                      }
+                    },
+                    "hash": "FC_0611_gray_e74a1209b2",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 117.79,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_gray_e74a1209b2.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-11-16T02:00:11.234Z",
+                    "updatedAt": "2026-11-16T02:00:40.950Z",
+                    "documentId": "zdh41hxlbrs4ana2sdhv6ff6",
+                    "publishedAt": "2026-11-16T02:00:11.234Z",
+                    "focalPoint": null
+                  },
+                  {
+                    "id": 52936,
+                    "name": "FC0611_green.jpg",
+                    "alternativeText": null,
+                    "caption": "FC0611_green",
+                    "width": 300,
+                    "height": 300,
+                    "formats": {
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0611_green_af787a08b1.jpg",
+                        "hash": "thumbnail_FC_0611_green_af787a08b1",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0611_green.jpg",
+                        "path": null,
+                        "size": 11.1,
+                        "width": 156,
+                        "height": 156,
+                        "sizeInBytes": 11101
+                      }
+                    },
+                    "hash": "FC_0611_green_af787a08b1",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 167.25,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_green_af787a08b1.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-11-16T02:00:12.039Z",
+                    "updatedAt": "2026-11-16T02:00:48.868Z",
+                    "documentId": "r02bn3vtu5d2lv5dm4e50cbf",
+                    "publishedAt": "2026-11-16T02:00:12.039Z",
+                    "focalPoint": null
+                  }
+                ],
+                "relatedProducts": [],
+                "textiles": [],
+                "designers": [],
+                "assortContent": []
+              }
+            ],
+            "meta": {
+              "pagination": {
+                "start": 0,
+                "limit": 1,
+                "total": 1
+              }
             }
-          ]
-        },
-        {
-          "method": "GET",
-          "path": "/api/entry-relations?populate[life][populate][mainImage]=true&populate[journal][populate][images]=true&populate[journal][populate][journalImages][populate][photo]=true&populate[textile][populate][thumbnail]=true&populate[product][populate][thumbnail]=true&limit=10&filters[product][documentId]=bumbznwxufyd9tjc4jzzxz70&sort[0]=updatedAt%3Adesc",
-          "status": 200,
-          "contentType": "application/json; charset=utf-8",
-          "findings": []
+          }
         }
       ]
     },
@@ -78,58 +805,556 @@
       "productId": "FC0609GYRS",
       "productName": "sleeping rose ＋ tambourine キルト有りファブリック",
       "listState": "SOLD OUT",
-      "checkedAt": "2026/11/21 23:12:07",
+      "checkedAt": "2026/11/21 23:18:37",
       "colors": [
         {
-          "text": "yellow 110.5",
-          "disabled": true,
-          "buttonText": "110.5"
+          "color": "yellow",
+          "width": "110.5",
+          "disabled": true
         },
         {
-          "text": "gray 110.5",
-          "disabled": true,
-          "buttonText": "110.5"
+          "color": "gray",
+          "width": "110.5",
+          "disabled": true
         }
       ],
-      "htmlFindings": [
+      "zeroValues": [
         {
-          "type": "keyword",
-          "keyword": "variant",
-          "snippet": "r_size __label _translate_\"><dt>カラー</dt><dd>生地巾(cm)</dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_yellow_599d5a5476.jpg?w=100\"><figcaption class=\"en_serif\"><!----> yellow</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">110.5</"
+          "path": "meta.pagination.start",
+          "value": 0
         },
         {
-          "type": "keyword",
-          "keyword": "variant",
-          "snippet": "=\"btn_line fs_btn en_ss\" disabled=\"\">110.5</button></dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_gray_d7726743eb.jpg?w=100\"><figcaption class=\"en_serif\"><!----> gray</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">110.5</butt"
+          "path": "meta.pagination.pageCount",
+          "value": 0
+        },
+        {
+          "path": "meta.pagination.total",
+          "value": 0
         }
       ],
-      "networkResponses": [
+      "apiProductsResponses": [
         {
           "method": "GET",
           "path": "/api/products?populate[thumbnail]=true&populate[skus]=true&populate[photo]=true&populate[colorVariations]=true&populate[relatedProducts]=true&populate[textiles][populate][thumbnail]=true&populate[textiles][populate][images]=true&populate[designers][populate][photo]=true&populate[assortContent][populate][colorVariations]=true&filters[fieldId]=FC0609GYRS&pagination[limit]=1&pagination[start]=0",
           "status": 200,
-          "contentType": "application/json; charset=utf-8",
-          "findings": [
-            {
-              "type": "keyword",
-              "keyword": "sku",
-              "snippet": ":07.130Z\",\"updatedAt\":\"2026-10-29T07:29:07.130Z\",\"documentId\":\"nqzor07e8g6vtkn0uknsk3uo\",\"publishedAt\":\"2026-10-29T07:29:07.131Z\",\"focalPoint\":null},\"skus\":[{\"id\":1549325,\"value\":\"FC0609GYRS\"}],\"photo\":[{\"id\":52469,\"name\":\"FC0608_1-1.jpg\",\"alternativeText\":null,\"caption\":null,\"width\":2804,\"height\":1870,\"formats\":{\"large\":{\"ext\":\".jpg\",\"url\":\"https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0608_1_1_3cc7f8c3e8.jpg\",\"hash\":\"large_FC_0608"
+          "json": {
+            "data": [
+              {
+                "id": 1372605,
+                "fieldId": "FC0609GYRS",
+                "name": "ファブリック",
+                "textile": "sleeping rose ＋ tambourine キルト有り",
+                "line": null,
+                "isPickUp": false,
+                "category": "fabric",
+                "subCategory": null,
+                "caption1": "画像の上下が生地端(耳)です。",
+                "caption2": "gray：ベースの色 gray × 刺繍糸の色 dark gray、裏生地 gray",
+                "caption3": "yellow：ベースの色 yellow × 刺繍糸の色 khaki、裏生地 light beige",
+                "caption4": null,
+                "caption5": null,
+                "caption6": null,
+                "caption7": null,
+                "caption8": null,
+                "caption9": null,
+                "caption10": null,
+                "caption11": null,
+                "caption12": null,
+                "caption13": null,
+                "caption14": null,
+                "caption15": null,
+                "description": "英国のテキスタイルブランド、リバティ・ファブリックスとの取り組みから生まれた「sleeping rose（スリーピングローズ）」に、ミナ ペルホネンの図案“tambourine（タンバリン）”を組み合わせたファブリック。一粒ずつ表情が異なる粒で描かれた図案を、ほのかな光沢を持つしなやかなコットン地に刺繍で表現しています。中綿を入れたキルティング生地は、バッグや小物づくりにはもちろん、ソファカバーなどのインテリアアイテムにもおすすめです。",
+                "caption": "photograph: Haruto Inomata",
+                "supplement": "- 中綿入りのキルティング生地です。それぞれ裏面のカラーが異なります。\nyellow：裏面 light beige / gray：裏面 gray\n\n- キルティング加工による特性により、<a href=\"/online_store/FC0608YWST/\">キルトなし</a>の生地と伸縮率が異なります。\n\n- 表示価格は10cmあたりの価格です。\n- インテリアファブリックは、100cm以上50cm単位でお求めいただけます。\n- おひとり様につき、各色300cmまでとさせていただきます。\n\n<font color=\"#FF0000\">- 誠に恐れ入りますが、ご注文日より4週間以内での発送とさせていただきます。</font>\n- ご注文受付日（ご入金確認日）ごとにご用意が整い次第、発送を進めさせて頂いておりますが、発送状況により、お届け日に差が生じますこと何卒ご容赦くださいますようお願い申し上げます。\n\n- カット売りの為、1枚の繋がった生地でご希望メーター数のご用意が出来ない場合がございます。その際はご連絡をさせて頂きます。\n",
+                "sizeChart": "サイズ | 生地巾 | 有効巾\n--- | --- | ---\nF | 110.5 | 108.5",
+                "material": "コットン100%、刺繡部分：表糸 コットン100％、裏糸 ポリエステル100％、裏地：コットン100％、中綿：ポリエステル100％",
+                "originCountry": "jp",
+                "handling": "- 刺繍を施したファブリックのため、縮みが発生する可能性があります。収縮を安定させるため、ご使用の前に水通しされることをお勧めいたします。\n- 濃色は多少色移り、色落ちすることがあります。摩擦を受けますと淡色（特に白）物に色移りする場合がありますのでお気を付けください。",
+                "current": "current",
+                "sortOrder": 87,
+                "importVersion": null,
+                "soldout": true,
+                "underNegotiation": false,
+                "artsAndVintage": null,
+                "oldId": null,
+                "createdAt": "2026-10-23T02:55:17.849Z",
+                "updatedAt": "2026-11-20T12:46:40.821Z",
+                "publishedAt": "2026-11-20T12:46:40.931Z",
+                "documentId": "qm407p9my427db5nb3ydtjuo",
+                "lead": null,
+                "season": null,
+                "forSearch": "FC0609GYRS",
+                "thumbnail": {
+                  "id": 52476,
+                  "name": "FC0609_0.jpg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 2994,
+                  "height": 2994,
+                  "formats": {
+                    "large": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0609_0_040ef28b27.jpg",
+                      "hash": "large_FC_0609_0_040ef28b27",
+                      "mime": "image/jpeg",
+                      "name": "large_FC0609_0.jpg",
+                      "path": null,
+                      "size": 699.14,
+                      "width": 2000,
+                      "height": 2000,
+                      "sizeInBytes": 699143
+                    },
+                    "small": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/small_FC_0609_0_040ef28b27.jpg",
+                      "hash": "small_FC_0609_0_040ef28b27",
+                      "mime": "image/jpeg",
+                      "name": "small_FC0609_0.jpg",
+                      "path": null,
+                      "size": 98.53,
+                      "width": 600,
+                      "height": 600,
+                      "sizeInBytes": 98529
+                    },
+                    "medium": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/medium_FC_0609_0_040ef28b27.jpg",
+                      "hash": "medium_FC_0609_0_040ef28b27",
+                      "mime": "image/jpeg",
+                      "name": "medium_FC0609_0.jpg",
+                      "path": null,
+                      "size": 231.23,
+                      "width": 1000,
+                      "height": 1000,
+                      "sizeInBytes": 231232
+                    },
+                    "xsmall": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xsmall_FC_0609_0_040ef28b27.jpg",
+                      "hash": "xsmall_FC_0609_0_040ef28b27",
+                      "mime": "image/jpeg",
+                      "name": "xsmall_FC0609_0.jpg",
+                      "path": null,
+                      "size": 47.33,
+                      "width": 400,
+                      "height": 400,
+                      "sizeInBytes": 47330
+                    },
+                    "thumbnail": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0609_0_040ef28b27.jpg",
+                      "hash": "thumbnail_FC_0609_0_040ef28b27",
+                      "mime": "image/jpeg",
+                      "name": "thumbnail_FC0609_0.jpg",
+                      "path": null,
+                      "size": 8.9,
+                      "width": 156,
+                      "height": 156,
+                      "sizeInBytes": 8901
+                    }
+                  },
+                  "hash": "FC_0609_0_040ef28b27",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "size": 2365.07,
+                  "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0609_0_040ef28b27.jpg",
+                  "previewUrl": null,
+                  "provider": "strapi-provider-upload-strapi-cloud",
+                  "provider_metadata": null,
+                  "createdAt": "2026-10-29T07:29:07.130Z",
+                  "updatedAt": "2026-10-29T07:29:07.130Z",
+                  "documentId": "nqzor07e8g6vtkn0uknsk3uo",
+                  "publishedAt": "2026-10-29T07:29:07.131Z",
+                  "focalPoint": null
+                },
+                "skus": [
+                  {
+                    "id": 1549325,
+                    "value": "FC0609GYRS"
+                  }
+                ],
+                "photo": [
+                  {
+                    "id": 52469,
+                    "name": "FC0608_1-1.jpg",
+                    "alternativeText": null,
+                    "caption": null,
+                    "width": 2804,
+                    "height": 1870,
+                    "formats": {
+                      "large": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0608_1_1_3cc7f8c3e8.jpg",
+                        "hash": "large_FC_0608_1_1_3cc7f8c3e8",
+                        "mime": "image/jpeg",
+                        "name": "large_FC0608_1-1.jpg",
+                        "path": null,
+                        "size": 991.05,
+                        "width": 2000,
+                        "height": 1334,
+                        "sizeInBytes": 991053
+                      },
+                      "small": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/small_FC_0608_1_1_3cc7f8c3e8.jpg",
+                        "hash": "small_FC_0608_1_1_3cc7f8c3e8",
+                        "mime": "image/jpeg",
+                        "name": "small_FC0608_1-1.jpg",
+                        "path": null,
+                        "size": 98.48,
+                        "width": 600,
+                        "height": 400,
+                        "sizeInBytes": 98484
+                      },
+                      "medium": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/medium_FC_0608_1_1_3cc7f8c3e8.jpg",
+                        "hash": "medium_FC_0608_1_1_3cc7f8c3e8",
+                        "mime": "image/jpeg",
+                        "name": "medium_FC0608_1-1.jpg",
+                        "path": null,
+                        "size": 284.38,
+                        "width": 1000,
+                        "height": 667,
+                        "sizeInBytes": 284382
+                      },
+                      "xsmall": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xsmall_FC_0608_1_1_3cc7f8c3e8.jpg",
+                        "hash": "xsmall_FC_0608_1_1_3cc7f8c3e8",
+                        "mime": "image/jpeg",
+                        "name": "xsmall_FC0608_1-1.jpg",
+                        "path": null,
+                        "size": 39.12,
+                        "width": 400,
+                        "height": 266,
+                        "sizeInBytes": 39118
+                      },
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0608_1_1_3cc7f8c3e8.jpg",
+                        "hash": "thumbnail_FC_0608_1_1_3cc7f8c3e8",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0608_1-1.jpg",
+                        "path": null,
+                        "size": 12.5,
+                        "width": 234,
+                        "height": 156,
+                        "sizeInBytes": 12501
+                      }
+                    },
+                    "hash": "FC_0608_1_1_3cc7f8c3e8",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 3053.56,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_1_1_3cc7f8c3e8.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-10-29T00:20:46.084Z",
+                    "updatedAt": "2026-10-29T00:20:46.084Z",
+                    "documentId": "j06le2w3x8rej94ppfm9q29p",
+                    "publishedAt": "2026-10-29T00:20:46.085Z",
+                    "focalPoint": null
+                  },
+                  {
+                    "id": 52477,
+                    "name": "FC0609_2-2.jpg",
+                    "alternativeText": null,
+                    "caption": "キルト有り",
+                    "width": 4500,
+                    "height": 2994,
+                    "formats": {
+                      "large": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0609_2_2_b531978880.jpg",
+                        "hash": "large_FC_0609_2_2_b531978880",
+                        "mime": "image/jpeg",
+                        "name": "large_FC0609_2-2.jpg",
+                        "path": null,
+                        "size": 538.7,
+                        "width": 2000,
+                        "height": 1331,
+                        "sizeInBytes": 538699
+                      },
+                      "small": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/small_FC_0609_2_2_b531978880.jpg",
+                        "hash": "small_FC_0609_2_2_b531978880",
+                        "mime": "image/jpeg",
+                        "name": "small_FC0609_2-2.jpg",
+                        "path": null,
+                        "size": 69.44,
+                        "width": 600,
+                        "height": 399,
+                        "sizeInBytes": 69443
+                      },
+                      "medium": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/medium_FC_0609_2_2_b531978880.jpg",
+                        "hash": "medium_FC_0609_2_2_b531978880",
+                        "mime": "image/jpeg",
+                        "name": "medium_FC0609_2-2.jpg",
+                        "path": null,
+                        "size": 171.12,
+                        "width": 1000,
+                        "height": 665,
+                        "sizeInBytes": 171121
+                      },
+                      "xlarge": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xlarge_FC_0609_2_2_b531978880.jpg",
+                        "hash": "xlarge_FC_0609_2_2_b531978880",
+                        "mime": "image/jpeg",
+                        "name": "xlarge_FC0609_2-2.jpg",
+                        "path": null,
+                        "size": 1625.31,
+                        "width": 4000,
+                        "height": 2661,
+                        "sizeInBytes": 1625310
+                      },
+                      "xsmall": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xsmall_FC_0609_2_2_b531978880.jpg",
+                        "hash": "xsmall_FC_0609_2_2_b531978880",
+                        "mime": "image/jpeg",
+                        "name": "xsmall_FC0609_2-2.jpg",
+                        "path": null,
+                        "size": 32.88,
+                        "width": 400,
+                        "height": 266,
+                        "sizeInBytes": 32878
+                      },
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0609_2_2_b531978880.jpg",
+                        "hash": "thumbnail_FC_0609_2_2_b531978880",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0609_2-2.jpg",
+                        "path": null,
+                        "size": 13.03,
+                        "width": 234,
+                        "height": 156,
+                        "sizeInBytes": 13026
+                      }
+                    },
+                    "hash": "FC_0609_2_2_b531978880",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 3478.92,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0609_2_2_b531978880.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-10-29T07:29:21.190Z",
+                    "updatedAt": "2026-10-29T09:23:51.409Z",
+                    "documentId": "zwcskf192m7qbs4ci11s4tvb",
+                    "publishedAt": "2026-10-29T07:29:21.190Z",
+                    "focalPoint": null
+                  },
+                  {
+                    "id": 52478,
+                    "name": "FC0609_3-2.jpg",
+                    "alternativeText": null,
+                    "caption": null,
+                    "width": 4500,
+                    "height": 2994,
+                    "formats": {
+                      "large": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0609_3_2_9d8317be9e.jpg",
+                        "hash": "large_FC_0609_3_2_9d8317be9e",
+                        "mime": "image/jpeg",
+                        "name": "large_FC0609_3-2.jpg",
+                        "path": null,
+                        "size": 381.76,
+                        "width": 2000,
+                        "height": 1331,
+                        "sizeInBytes": 381762
+                      },
+                      "small": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/small_FC_0609_3_2_9d8317be9e.jpg",
+                        "hash": "small_FC_0609_3_2_9d8317be9e",
+                        "mime": "image/jpeg",
+                        "name": "small_FC0609_3-2.jpg",
+                        "path": null,
+                        "size": 52.72,
+                        "width": 600,
+                        "height": 399,
+                        "sizeInBytes": 52724
+                      },
+                      "medium": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/medium_FC_0609_3_2_9d8317be9e.jpg",
+                        "hash": "medium_FC_0609_3_2_9d8317be9e",
+                        "mime": "image/jpeg",
+                        "name": "medium_FC0609_3-2.jpg",
+                        "path": null,
+                        "size": 124.44,
+                        "width": 1000,
+                        "height": 665,
+                        "sizeInBytes": 124438
+                      },
+                      "xlarge": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xlarge_FC_0609_3_2_9d8317be9e.jpg",
+                        "hash": "xlarge_FC_0609_3_2_9d8317be9e",
+                        "mime": "image/jpeg",
+                        "name": "xlarge_FC0609_3-2.jpg",
+                        "path": null,
+                        "size": 1197.79,
+                        "width": 4000,
+                        "height": 2661,
+                        "sizeInBytes": 1197791
+                      },
+                      "xsmall": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xsmall_FC_0609_3_2_9d8317be9e.jpg",
+                        "hash": "xsmall_FC_0609_3_2_9d8317be9e",
+                        "mime": "image/jpeg",
+                        "name": "xsmall_FC0609_3-2.jpg",
+                        "path": null,
+                        "size": 25.97,
+                        "width": 400,
+                        "height": 266,
+                        "sizeInBytes": 25972
+                      },
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0609_3_2_9d8317be9e.jpg",
+                        "hash": "thumbnail_FC_0609_3_2_9d8317be9e",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0609_3-2.jpg",
+                        "path": null,
+                        "size": 10.43,
+                        "width": 234,
+                        "height": 156,
+                        "sizeInBytes": 10433
+                      }
+                    },
+                    "hash": "FC_0609_3_2_9d8317be9e",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 2841.26,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0609_3_2_9d8317be9e.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-10-29T07:32:11.519Z",
+                    "updatedAt": "2026-10-29T07:32:11.519Z",
+                    "documentId": "qqrxub4bqto1ogwnihzkzb0n",
+                    "publishedAt": "2026-10-29T07:32:11.519Z",
+                    "focalPoint": null
+                  }
+                ],
+                "colorVariations": [
+                  {
+                    "id": 52435,
+                    "name": "FC0608_gray.jpg",
+                    "alternativeText": null,
+                    "caption": "FC0608_gray",
+                    "width": 300,
+                    "height": 300,
+                    "formats": {
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0608_gray_d7726743eb.jpg",
+                        "hash": "thumbnail_FC_0608_gray_d7726743eb",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0608_gray.jpg",
+                        "path": null,
+                        "size": 10.52,
+                        "width": 156,
+                        "height": 156,
+                        "sizeInBytes": 10522
+                      }
+                    },
+                    "hash": "FC_0608_gray_d7726743eb",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 132.67,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_gray_d7726743eb.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-10-23T02:51:29.545Z",
+                    "updatedAt": "2026-10-23T02:51:42.790Z",
+                    "documentId": "bcw4jhkkmgskekkpbt4p38x4",
+                    "publishedAt": "2026-10-23T02:51:29.546Z",
+                    "focalPoint": null
+                  },
+                  {
+                    "id": 52436,
+                    "name": "FC0608_yellow.jpg",
+                    "alternativeText": null,
+                    "caption": "FC0608_yellow",
+                    "width": 300,
+                    "height": 298,
+                    "formats": {
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0608_yellow_599d5a5476.jpg",
+                        "hash": "thumbnail_FC_0608_yellow_599d5a5476",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0608_yellow.jpg",
+                        "path": null,
+                        "size": 8.19,
+                        "width": 157,
+                        "height": 156,
+                        "sizeInBytes": 8190
+                      }
+                    },
+                    "hash": "FC_0608_yellow_599d5a5476",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 106.46,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_yellow_599d5a5476.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-10-23T02:51:30.768Z",
+                    "updatedAt": "2026-10-23T02:51:51.950Z",
+                    "documentId": "z8t8lfi2knm2u1whqxj4plga",
+                    "publishedAt": "2026-10-23T02:51:30.768Z",
+                    "focalPoint": null
+                  }
+                ],
+                "relatedProducts": [
+                  {
+                    "id": 1999082,
+                    "fieldId": "FC0608YWST"
+                  }
+                ],
+                "textiles": [],
+                "designers": [],
+                "assortContent": []
+              }
+            ],
+            "meta": {
+              "pagination": {
+                "start": 0,
+                "limit": 1,
+                "total": 1
+              }
             }
-          ]
-        },
-        {
-          "method": "GET",
-          "path": "/api/entry-relations?populate[life][populate][mainImage]=true&populate[journal][populate][images]=true&populate[journal][populate][journalImages][populate][photo]=true&populate[textile][populate][thumbnail]=true&populate[product][populate][thumbnail]=true&limit=10&filters[product][documentId]=qm407p9my427db5nb3ydtjuo&sort[0]=updatedAt%3Adesc",
-          "status": 200,
-          "contentType": "application/json; charset=utf-8",
-          "findings": []
+          }
         },
         {
           "method": "GET",
           "path": "/api/products?sort[0]=sortOrder%3Aasc&populate[thumbnail]=true&populate[skus]=true&fields[0]=id&fields[1]=fieldId&fields[2]=name&fields[3]=textile&fields[4]=line&fields[5]=underNegotiation&filters[fieldId][$in][0]=FC0608YWST&filters[current]=current&filters[soldout]=false",
           "status": 200,
-          "contentType": "application/json; charset=utf-8",
-          "findings": []
+          "json": {
+            "data": [],
+            "meta": {
+              "pagination": {
+                "page": 1,
+                "pageSize": 100,
+                "pageCount": 0,
+                "total": 0
+              }
+            }
+          }
         }
       ]
     },
@@ -137,58 +1362,556 @@
       "productId": "FC0608YWST",
       "productName": "sleeping rose ＋ tambourine キルトなしファブリック",
       "listState": "SOLD OUT",
-      "checkedAt": "2026/11/21 23:12:18",
+      "checkedAt": "2026/11/21 23:18:49",
       "colors": [
         {
-          "text": "yellow 116",
-          "disabled": true,
-          "buttonText": "116"
+          "color": "yellow",
+          "width": "116",
+          "disabled": true
         },
         {
-          "text": "gray 116",
-          "disabled": true,
-          "buttonText": "116"
+          "color": "gray",
+          "width": "116",
+          "disabled": true
         }
       ],
-      "htmlFindings": [
+      "zeroValues": [
         {
-          "type": "keyword",
-          "keyword": "variant",
-          "snippet": "r_size __label _translate_\"><dt>カラー</dt><dd>生地巾(cm)</dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_yellow_599d5a5476.jpg?w=100\"><figcaption class=\"en_serif\"><!----> yellow</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">116</bu"
+          "path": "meta.pagination.start",
+          "value": 0
         },
         {
-          "type": "keyword",
-          "keyword": "variant",
-          "snippet": "ss=\"btn_line fs_btn en_ss\" disabled=\"\">116</button></dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_gray_d7726743eb.jpg?w=100\"><figcaption class=\"en_serif\"><!----> gray</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">116</button"
+          "path": "meta.pagination.pageCount",
+          "value": 0
+        },
+        {
+          "path": "meta.pagination.total",
+          "value": 0
         }
       ],
-      "networkResponses": [
+      "apiProductsResponses": [
         {
           "method": "GET",
           "path": "/api/products?populate[thumbnail]=true&populate[skus]=true&populate[photo]=true&populate[colorVariations]=true&populate[relatedProducts]=true&populate[textiles][populate][thumbnail]=true&populate[textiles][populate][images]=true&populate[designers][populate][photo]=true&populate[assortContent][populate][colorVariations]=true&filters[fieldId]=FC0608YWST&pagination[limit]=1&pagination[start]=0",
           "status": 200,
-          "contentType": "application/json; charset=utf-8",
-          "findings": [
-            {
-              "type": "keyword",
-              "keyword": "sku",
-              "snippet": ":59.357Z\",\"updatedAt\":\"2026-10-29T00:14:59.357Z\",\"documentId\":\"wpv5i3c3nuyfgxxo9n6qhwfg\",\"publishedAt\":\"2026-10-29T00:14:59.357Z\",\"focalPoint\":null},\"skus\":[{\"id\":1549329,\"value\":\"FC0608YWST\"}],\"photo\":[{\"id\":52469,\"name\":\"FC0608_1-1.jpg\",\"alternativeText\":null,\"caption\":null,\"width\":2804,\"height\":1870,\"formats\":{\"large\":{\"ext\":\".jpg\",\"url\":\"https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0608_1_1_3cc7f8c3e8.jpg\",\"hash\":\"large_FC_0608"
+          "json": {
+            "data": [
+              {
+                "id": 1372609,
+                "fieldId": "FC0608YWST",
+                "name": "ファブリック",
+                "textile": "sleeping rose ＋ tambourine キルトなし",
+                "line": null,
+                "isPickUp": false,
+                "category": "fabric",
+                "subCategory": null,
+                "caption1": "画像の上下が生地端(耳)です。",
+                "caption2": "gray：ベースの色 gray × 刺繍糸の色 dark gray",
+                "caption3": "yellow：ベースの色 yellow × 刺繍糸の色 khaki",
+                "caption4": null,
+                "caption5": null,
+                "caption6": null,
+                "caption7": null,
+                "caption8": null,
+                "caption9": null,
+                "caption10": null,
+                "caption11": null,
+                "caption12": null,
+                "caption13": null,
+                "caption14": null,
+                "caption15": null,
+                "description": "英国のテキスタイルブランド、リバティ・ファブリックスとの取り組みから生まれた「sleeping rose（スリーピングローズ）」に、ミナ ペルホネンの図案“tambourine（タンバリン）”を組み合わせたファブリック。一粒ずつ表情が異なる粒で描かれた図案を、ほのかな光沢を持つしなやかなコットン地に刺繍で表現しています。しなやかなコットンローン生地は、軽やかでしなやかな風合いを生かしたワンピースやブラウスなどのお洋服づくりにもおすすめです。",
+                "caption": "photograph: Haruto Inomata",
+                "supplement": "- 光が透過する薄手の生地です。\n\n- 表示価格は10cmあたりの価格です。\n- インテリアファブリックは、100cm以上50cm単位でお求めいただけます。\n- おひとり様につき、各色300cmまでとさせていただきます。\n\n<font color=\"#FF0000\">- 誠に恐れ入りますが、ご注文日より4週間以内での発送とさせていただきます。</font>\n- ご注文受付日（ご入金確認日）ごとにご用意が整い次第、発送を進めさせて頂いておりますが、発送状況により、お届け日に差が生じますこと何卒ご容赦くださいますようお願い申し上げます。\n\n- カット売りの為、1枚の繋がった生地でご希望メーター数のご用意が出来ない場合がございます。その際はご連絡をさせて頂きます。",
+                "sizeChart": "サイズ | 生地巾 | 有効巾\n--- | --- | ---\nF | 116 | 113",
+                "material": "コットン100%、刺繡部分：表糸 コットン100％、裏糸 ポリエステル100％",
+                "originCountry": "jp",
+                "handling": "- 刺繍を施したファブリックのため、縮みが発生する可能性があります。収縮を安定させるため、ご使用の前に水通しされることをお勧めいたします。\n- 濃色は多少色移り、色落ちすることがあります。摩擦を受けますと淡色（特に白）物に色移りする場合がありますのでお気を付けください。",
+                "current": "current",
+                "sortOrder": 91,
+                "importVersion": null,
+                "soldout": true,
+                "underNegotiation": false,
+                "artsAndVintage": null,
+                "oldId": null,
+                "createdAt": "2026-10-23T02:58:11.344Z",
+                "updatedAt": "2026-11-20T12:46:42.323Z",
+                "publishedAt": "2026-11-20T12:46:42.422Z",
+                "documentId": "wki564wrt58cm9c1l8cl0spg",
+                "lead": null,
+                "season": null,
+                "forSearch": "FC0608YWST",
+                "thumbnail": {
+                  "id": 52466,
+                  "name": "FC0608_00.jpg",
+                  "alternativeText": null,
+                  "caption": null,
+                  "width": 2994,
+                  "height": 2994,
+                  "formats": {
+                    "large": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0608_00_c09adc37cd.jpg",
+                      "hash": "large_FC_0608_00_c09adc37cd",
+                      "mime": "image/jpeg",
+                      "name": "large_FC0608_00.jpg",
+                      "path": null,
+                      "size": 789.69,
+                      "width": 2000,
+                      "height": 2000,
+                      "sizeInBytes": 789690
+                    },
+                    "small": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/small_FC_0608_00_c09adc37cd.jpg",
+                      "hash": "small_FC_0608_00_c09adc37cd",
+                      "mime": "image/jpeg",
+                      "name": "small_FC0608_00.jpg",
+                      "path": null,
+                      "size": 89.79,
+                      "width": 600,
+                      "height": 600,
+                      "sizeInBytes": 89792
+                    },
+                    "medium": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/medium_FC_0608_00_c09adc37cd.jpg",
+                      "hash": "medium_FC_0608_00_c09adc37cd",
+                      "mime": "image/jpeg",
+                      "name": "medium_FC0608_00.jpg",
+                      "path": null,
+                      "size": 229.46,
+                      "width": 1000,
+                      "height": 1000,
+                      "sizeInBytes": 229463
+                    },
+                    "xsmall": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xsmall_FC_0608_00_c09adc37cd.jpg",
+                      "hash": "xsmall_FC_0608_00_c09adc37cd",
+                      "mime": "image/jpeg",
+                      "name": "xsmall_FC0608_00.jpg",
+                      "path": null,
+                      "size": 42.51,
+                      "width": 400,
+                      "height": 400,
+                      "sizeInBytes": 42510
+                    },
+                    "thumbnail": {
+                      "ext": ".jpg",
+                      "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0608_00_c09adc37cd.jpg",
+                      "hash": "thumbnail_FC_0608_00_c09adc37cd",
+                      "mime": "image/jpeg",
+                      "name": "thumbnail_FC0608_00.jpg",
+                      "path": null,
+                      "size": 7.6,
+                      "width": 156,
+                      "height": 156,
+                      "sizeInBytes": 7601
+                    }
+                  },
+                  "hash": "FC_0608_00_c09adc37cd",
+                  "ext": ".jpg",
+                  "mime": "image/jpeg",
+                  "size": 2961.82,
+                  "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_00_c09adc37cd.jpg",
+                  "previewUrl": null,
+                  "provider": "strapi-provider-upload-strapi-cloud",
+                  "provider_metadata": null,
+                  "createdAt": "2026-10-29T00:14:59.357Z",
+                  "updatedAt": "2026-10-29T00:14:59.357Z",
+                  "documentId": "wpv5i3c3nuyfgxxo9n6qhwfg",
+                  "publishedAt": "2026-10-29T00:14:59.357Z",
+                  "focalPoint": null
+                },
+                "skus": [
+                  {
+                    "id": 1549329,
+                    "value": "FC0608YWST"
+                  }
+                ],
+                "photo": [
+                  {
+                    "id": 52469,
+                    "name": "FC0608_1-1.jpg",
+                    "alternativeText": null,
+                    "caption": null,
+                    "width": 2804,
+                    "height": 1870,
+                    "formats": {
+                      "large": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0608_1_1_3cc7f8c3e8.jpg",
+                        "hash": "large_FC_0608_1_1_3cc7f8c3e8",
+                        "mime": "image/jpeg",
+                        "name": "large_FC0608_1-1.jpg",
+                        "path": null,
+                        "size": 991.05,
+                        "width": 2000,
+                        "height": 1334,
+                        "sizeInBytes": 991053
+                      },
+                      "small": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/small_FC_0608_1_1_3cc7f8c3e8.jpg",
+                        "hash": "small_FC_0608_1_1_3cc7f8c3e8",
+                        "mime": "image/jpeg",
+                        "name": "small_FC0608_1-1.jpg",
+                        "path": null,
+                        "size": 98.48,
+                        "width": 600,
+                        "height": 400,
+                        "sizeInBytes": 98484
+                      },
+                      "medium": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/medium_FC_0608_1_1_3cc7f8c3e8.jpg",
+                        "hash": "medium_FC_0608_1_1_3cc7f8c3e8",
+                        "mime": "image/jpeg",
+                        "name": "medium_FC0608_1-1.jpg",
+                        "path": null,
+                        "size": 284.38,
+                        "width": 1000,
+                        "height": 667,
+                        "sizeInBytes": 284382
+                      },
+                      "xsmall": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xsmall_FC_0608_1_1_3cc7f8c3e8.jpg",
+                        "hash": "xsmall_FC_0608_1_1_3cc7f8c3e8",
+                        "mime": "image/jpeg",
+                        "name": "xsmall_FC0608_1-1.jpg",
+                        "path": null,
+                        "size": 39.12,
+                        "width": 400,
+                        "height": 266,
+                        "sizeInBytes": 39118
+                      },
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0608_1_1_3cc7f8c3e8.jpg",
+                        "hash": "thumbnail_FC_0608_1_1_3cc7f8c3e8",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0608_1-1.jpg",
+                        "path": null,
+                        "size": 12.5,
+                        "width": 234,
+                        "height": 156,
+                        "sizeInBytes": 12501
+                      }
+                    },
+                    "hash": "FC_0608_1_1_3cc7f8c3e8",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 3053.56,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_1_1_3cc7f8c3e8.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-10-29T00:20:46.084Z",
+                    "updatedAt": "2026-10-29T00:20:46.084Z",
+                    "documentId": "j06le2w3x8rej94ppfm9q29p",
+                    "publishedAt": "2026-10-29T00:20:46.085Z",
+                    "focalPoint": null
+                  },
+                  {
+                    "id": 52472,
+                    "name": "FC0608_2-1.jpg",
+                    "alternativeText": null,
+                    "caption": null,
+                    "width": 2994,
+                    "height": 4500,
+                    "formats": {
+                      "large": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0608_2_1_5b100029ac.jpg",
+                        "hash": "large_FC_0608_2_1_5b100029ac",
+                        "mime": "image/jpeg",
+                        "name": "large_FC0608_2-1.jpg",
+                        "path": null,
+                        "size": 619.62,
+                        "width": 1331,
+                        "height": 2000,
+                        "sizeInBytes": 619624
+                      },
+                      "small": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/small_FC_0608_2_1_5b100029ac.jpg",
+                        "hash": "small_FC_0608_2_1_5b100029ac",
+                        "mime": "image/jpeg",
+                        "name": "small_FC0608_2-1.jpg",
+                        "path": null,
+                        "size": 77.28,
+                        "width": 399,
+                        "height": 600,
+                        "sizeInBytes": 77284
+                      },
+                      "medium": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/medium_FC_0608_2_1_5b100029ac.jpg",
+                        "hash": "medium_FC_0608_2_1_5b100029ac",
+                        "mime": "image/jpeg",
+                        "name": "medium_FC0608_2-1.jpg",
+                        "path": null,
+                        "size": 190.42,
+                        "width": 665,
+                        "height": 1000,
+                        "sizeInBytes": 190424
+                      },
+                      "xlarge": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xlarge_FC_0608_2_1_5b100029ac.jpg",
+                        "hash": "xlarge_FC_0608_2_1_5b100029ac",
+                        "mime": "image/jpeg",
+                        "name": "xlarge_FC0608_2-1.jpg",
+                        "path": null,
+                        "size": 1805.83,
+                        "width": 2661,
+                        "height": 4000,
+                        "sizeInBytes": 1805826
+                      },
+                      "xsmall": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xsmall_FC_0608_2_1_5b100029ac.jpg",
+                        "hash": "xsmall_FC_0608_2_1_5b100029ac",
+                        "mime": "image/jpeg",
+                        "name": "xsmall_FC0608_2-1.jpg",
+                        "path": null,
+                        "size": 37.32,
+                        "width": 266,
+                        "height": 400,
+                        "sizeInBytes": 37318
+                      },
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0608_2_1_5b100029ac.jpg",
+                        "hash": "thumbnail_FC_0608_2_1_5b100029ac",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0608_2-1.jpg",
+                        "path": null,
+                        "size": 6.8,
+                        "width": 104,
+                        "height": 156,
+                        "sizeInBytes": 6796
+                      }
+                    },
+                    "hash": "FC_0608_2_1_5b100029ac",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 3919.06,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_2_1_5b100029ac.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-10-29T00:28:17.560Z",
+                    "updatedAt": "2026-10-29T00:28:17.560Z",
+                    "documentId": "nj32eq5zqsa562sarfasf8by",
+                    "publishedAt": "2026-10-29T00:28:17.560Z",
+                    "focalPoint": null
+                  },
+                  {
+                    "id": 52468,
+                    "name": "FC0608_3-1.jpg",
+                    "alternativeText": null,
+                    "caption": "キルトなし",
+                    "width": 2994,
+                    "height": 4500,
+                    "formats": {
+                      "large": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0608_3_1_99205a1d19.jpg",
+                        "hash": "large_FC_0608_3_1_99205a1d19",
+                        "mime": "image/jpeg",
+                        "name": "large_FC0608_3-1.jpg",
+                        "path": null,
+                        "size": 505.55,
+                        "width": 1331,
+                        "height": 2000,
+                        "sizeInBytes": 505549
+                      },
+                      "small": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/small_FC_0608_3_1_99205a1d19.jpg",
+                        "hash": "small_FC_0608_3_1_99205a1d19",
+                        "mime": "image/jpeg",
+                        "name": "small_FC0608_3-1.jpg",
+                        "path": null,
+                        "size": 59.52,
+                        "width": 399,
+                        "height": 600,
+                        "sizeInBytes": 59521
+                      },
+                      "medium": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/medium_FC_0608_3_1_99205a1d19.jpg",
+                        "hash": "medium_FC_0608_3_1_99205a1d19",
+                        "mime": "image/jpeg",
+                        "name": "medium_FC0608_3-1.jpg",
+                        "path": null,
+                        "size": 145.87,
+                        "width": 665,
+                        "height": 1000,
+                        "sizeInBytes": 145870
+                      },
+                      "xlarge": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xlarge_FC_0608_3_1_99205a1d19.jpg",
+                        "hash": "xlarge_FC_0608_3_1_99205a1d19",
+                        "mime": "image/jpeg",
+                        "name": "xlarge_FC0608_3-1.jpg",
+                        "path": null,
+                        "size": 1586.55,
+                        "width": 2661,
+                        "height": 4000,
+                        "sizeInBytes": 1586550
+                      },
+                      "xsmall": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/xsmall_FC_0608_3_1_99205a1d19.jpg",
+                        "hash": "xsmall_FC_0608_3_1_99205a1d19",
+                        "mime": "image/jpeg",
+                        "name": "xsmall_FC0608_3-1.jpg",
+                        "path": null,
+                        "size": 28.21,
+                        "width": 266,
+                        "height": 400,
+                        "sizeInBytes": 28214
+                      },
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0608_3_1_99205a1d19.jpg",
+                        "hash": "thumbnail_FC_0608_3_1_99205a1d19",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0608_3-1.jpg",
+                        "path": null,
+                        "size": 5.27,
+                        "width": 104,
+                        "height": 156,
+                        "sizeInBytes": 5274
+                      }
+                    },
+                    "hash": "FC_0608_3_1_99205a1d19",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 3764.5,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_3_1_99205a1d19.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-10-29T00:15:21.451Z",
+                    "updatedAt": "2026-10-29T09:24:10.007Z",
+                    "documentId": "dxthk2jiv9vewrb6xvbstx1n",
+                    "publishedAt": "2026-10-29T00:15:21.452Z",
+                    "focalPoint": null
+                  }
+                ],
+                "colorVariations": [
+                  {
+                    "id": 52436,
+                    "name": "FC0608_yellow.jpg",
+                    "alternativeText": null,
+                    "caption": "FC0608_yellow",
+                    "width": 300,
+                    "height": 298,
+                    "formats": {
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0608_yellow_599d5a5476.jpg",
+                        "hash": "thumbnail_FC_0608_yellow_599d5a5476",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0608_yellow.jpg",
+                        "path": null,
+                        "size": 8.19,
+                        "width": 157,
+                        "height": 156,
+                        "sizeInBytes": 8190
+                      }
+                    },
+                    "hash": "FC_0608_yellow_599d5a5476",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 106.46,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_yellow_599d5a5476.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-10-23T02:51:30.768Z",
+                    "updatedAt": "2026-10-23T02:51:51.950Z",
+                    "documentId": "z8t8lfi2knm2u1whqxj4plga",
+                    "publishedAt": "2026-10-23T02:51:30.768Z",
+                    "focalPoint": null
+                  },
+                  {
+                    "id": 52435,
+                    "name": "FC0608_gray.jpg",
+                    "alternativeText": null,
+                    "caption": "FC0608_gray",
+                    "width": 300,
+                    "height": 300,
+                    "formats": {
+                      "thumbnail": {
+                        "ext": ".jpg",
+                        "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/thumbnail_FC_0608_gray_d7726743eb.jpg",
+                        "hash": "thumbnail_FC_0608_gray_d7726743eb",
+                        "mime": "image/jpeg",
+                        "name": "thumbnail_FC0608_gray.jpg",
+                        "path": null,
+                        "size": 10.52,
+                        "width": 156,
+                        "height": 156,
+                        "sizeInBytes": 10522
+                      }
+                    },
+                    "hash": "FC_0608_gray_d7726743eb",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 132.67,
+                    "url": "https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_gray_d7726743eb.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-strapi-cloud",
+                    "provider_metadata": null,
+                    "createdAt": "2026-10-23T02:51:29.545Z",
+                    "updatedAt": "2026-10-23T02:51:42.790Z",
+                    "documentId": "bcw4jhkkmgskekkpbt4p38x4",
+                    "publishedAt": "2026-10-23T02:51:29.546Z",
+                    "focalPoint": null
+                  }
+                ],
+                "relatedProducts": [
+                  {
+                    "id": 1999090,
+                    "fieldId": "FC0609GYRS"
+                  }
+                ],
+                "textiles": [],
+                "designers": [],
+                "assortContent": []
+              }
+            ],
+            "meta": {
+              "pagination": {
+                "start": 0,
+                "limit": 1,
+                "total": 1
+              }
             }
-          ]
-        },
-        {
-          "method": "GET",
-          "path": "/api/entry-relations?populate[life][populate][mainImage]=true&populate[journal][populate][images]=true&populate[journal][populate][journalImages][populate][photo]=true&populate[textile][populate][thumbnail]=true&populate[product][populate][thumbnail]=true&limit=10&filters[product][documentId]=wki564wrt58cm9c1l8cl0spg&sort[0]=updatedAt%3Adesc",
-          "status": 200,
-          "contentType": "application/json; charset=utf-8",
-          "findings": []
+          }
         },
         {
           "method": "GET",
           "path": "/api/products?sort[0]=sortOrder%3Aasc&populate[thumbnail]=true&populate[skus]=true&fields[0]=id&fields[1]=fieldId&fields[2]=name&fields[3]=textile&fields[4]=line&fields[5]=underNegotiation&filters[fieldId][$in][0]=FC0609GYRS&filters[current]=current&filters[soldout]=false",
           "status": 200,
-          "contentType": "application/json; charset=utf-8",
-          "findings": []
+          "json": {
+            "data": [],
+            "meta": {
+              "pagination": {
+                "page": 1,
+                "pageSize": 100,
+                "pageCount": 0,
+                "total": 0
+              }
+            }
+          }
         }
       ]
     }
