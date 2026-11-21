@@ -46,4 +46,7 @@ jobs:
         run: |
           gh issue create \
             --title "🔔 minä perhonen 通知テスト" \
-            --body "在庫監視からの通知テストです。GitHubアプリに届けば成功です。"
+            --body "@yukiyuki2026
+
+            在庫監視からの通知テストです。
+            この通知がGitHubアプリに届けば成功です。"
