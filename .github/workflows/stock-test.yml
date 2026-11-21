@@ -3,8 +3,16 @@ name: Stock Test
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '*/15 * * * *'
+
 permissions:
-  contents: read
+  contents: write
+  issues: write
+
+concurrency:
+  group: stock-test
+  cancel-in-progress: false
 
 jobs:
   test:
@@ -26,5 +34,27 @@ jobs:
 
       - name: Run stock test
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           MINA_URL: ${{ secrets.MINA_URL }}
         run: node stock-test.js
+
+      - name: Save stock test history
+        if: always()
+        run: |
+          if [ ! -f stock-test-history.json ]; then
+            echo "履歴ファイルがありません"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add stock-test-history.json
+
+          if git diff --cached --quiet; then
+            echo "履歴に変更はありません"
+          else
+            git commit -m "Update test history"
+            git pull --rebase
+            git push
+          fi
