@@ -1,0 +1,65 @@
+name: Fashion Monitor
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '*/15 * * * *'
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: fashion-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Playwright
+        run: |
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      - name: Run Fashion monitor
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          FASHION_URL: ${{ secrets.FASHION_URL }}
+        run: node fashion-monitor.js
+
+      - name: Save Fashion monitor state
+        run: |
+          if [ ! -f fashion-state.json ]; then
+            echo "fashion-state.json がありません"
+            exit 1
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          cp fashion-state.json /tmp/fashion-state.json
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          cp /tmp/fashion-state.json fashion-state.json
+
+          git add fashion-state.json
+
+          if git diff --cached --quiet; then
+            echo "fashion-state.json に変更はありません"
+          else
+            git commit -m "Update Fashion monitor state"
+            git push origin main
+          fi
