@@ -35,6 +35,7 @@ jobs:
       - name: Run stock monitor
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          MINA_URL: ${{ secrets.MINA_URL }}
         run: node monitor.js
 
       - name: Save monitor state
