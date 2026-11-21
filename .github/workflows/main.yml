@@ -1,5 +1,9 @@
 name: Test Mina Stock Monitor
 
+permissions:
+  contents: write
+  issues: write
+
 on:
   workflow_dispatch:
 
@@ -23,8 +27,10 @@ jobs:
 
       - name: Run stock monitor
         run: node monitor.js
+
       - name: Test product detail
         run: node detail-test.js
+
       - name: Upload debug files
         if: always()
         uses: actions/upload-artifact@v4
@@ -33,3 +39,12 @@ jobs:
           path: |
             page.png
             page.html
+
+      - name: Test smartphone notification
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "🔔 minä perhonen 通知テスト" \
+            --body "在庫監視からの通知テストです。GitHubアプリに届けば成功です。" \
+            --assignee "@me"
