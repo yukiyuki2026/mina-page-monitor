@@ -2,10 +2,11 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 
 const LIST_URL = process.env.MINA_URL;
-const OUTPUT_FILE = 'network-test-result.json';
 
-// SOLD OUT商品を最大3件確認
-const MAX_PRODUCTS = 3;
+const PRODUCT_ID = 'FC0608YWST';
+
+const OUTPUT_FILE =
+  'network-full-snapshot.json';
 
 if (!LIST_URL) {
   throw new Error(
@@ -31,341 +32,24 @@ function getJapanTime() {
 
 function getSafePath(urlText) {
   try {
-    const url = new URL(urlText);
+    const url =
+      new URL(urlText);
 
     return (
       url.pathname +
       url.search
     );
+
   } catch {
-    return '';
+    return urlText;
   }
 }
 
-async function inspectProduct(
-  browser,
-  product
-) {
-  const page =
-    await browser.newPage({
-      viewport: {
-        width: 1440,
-        height: 1200
-      }
-    });
-
-  const apiResponses = [];
-
-  /*
-   * /api/products のJSON全文を取得
-   *
-   * かごへ入れる操作はしない
-   * add.jsonも呼ばない
-   */
-  page.on(
-    'response',
-    response => {
-      const requestPath =
-        getSafePath(
-          response.url()
-        );
-
-      if (
-        !requestPath.startsWith(
-          '/api/products?'
-        )
-      ) {
-        return;
-      }
-
-      const task =
-        (async () => {
-          try {
-            const contentType =
-              response.headers()[
-                'content-type'
-              ] || '';
-
-            if (
-              !contentType.includes(
-                'application/json'
-              )
-            ) {
-              return;
-            }
-
-            const json =
-              await response.json();
-
-            apiResponses.push({
-              method:
-                response
-                  .request()
-                  .method(),
-
-              path:
-                requestPath,
-
-              status:
-                response.status(),
-
-              json
-            });
-
-          } catch (error) {
-            apiResponses.push({
-              method:
-                response
-                  .request()
-                  .method(),
-
-              path:
-                requestPath,
-
-              status:
-                response.status(),
-
-              error:
-                error.message
-            });
-          }
-        })();
-
-      /*
-       * Promise rejectionを防止
-       */
-      task.catch(() => {});
-    }
-  );
-
+function safeJsonParse(text) {
   try {
-    console.log(
-      `調査開始: ${product.productId}`
-    );
-
-    await page.goto(
-      product.url,
-      {
-        waitUntil:
-          'domcontentloaded',
-
-        timeout: 60000
-      }
-    );
-
-    /*
-     * API通信完了待ち
-     */
-    await page.waitForTimeout(
-      10000
-    );
-
-    /*
-     * 画面上のカラー状態も保存
-     */
-    const pageData =
-      await page.evaluate(() => {
-        const buttons =
-          Array.from(
-            document.querySelectorAll(
-              'button.btn_line'
-            )
-          );
-
-        const colors = [];
-
-        for (
-          const button
-          of buttons
-        ) {
-          const container =
-            button.closest('li') ||
-            button
-              .parentElement
-              ?.parentElement ||
-            button.parentElement;
-
-          if (!container) {
-            continue;
-          }
-
-          const texts =
-            container.innerText
-              .split('\n')
-              .map(text =>
-                text.trim()
-              )
-              .filter(Boolean);
-
-          const width =
-            button.innerText.trim();
-
-          const color =
-            texts.find(text =>
-              text !== width &&
-              text !== 'カラー' &&
-              text !== '生地巾(cm)' &&
-              text !==
-                'かごへ入れる' &&
-              !/^\d+$/.test(text) &&
-              !/^\d+(\.\d+)?CM$/i.test(
-                text
-              )
-            ) || '';
-
-          colors.push({
-            color,
-            width,
-            disabled:
-              button.disabled
-          });
-        }
-
-        return {
-          colors
-        };
-      });
-
-    console.log(
-      `商品: ${product.productId}`
-    );
-
-    console.log(
-      `カラー数: ${pageData.colors.length}`
-    );
-
-    console.log(
-      `/api/products取得数: ${apiResponses.length}`
-    );
-
-    /*
-     * JSON内の0を簡易集計
-     */
-    const zeroValues = [];
-
-    function searchZeros(
-      value,
-      path = ''
-    ) {
-      if (
-        value === null ||
-        value === undefined
-      ) {
-        return;
-      }
-
-      if (
-        typeof value === 'number'
-      ) {
-        if (value === 0) {
-          zeroValues.push({
-            path,
-            value
-          });
-        }
-
-        return;
-      }
-
-      if (
-        Array.isArray(value)
-      ) {
-        value.forEach(
-          (item, index) =>
-            searchZeros(
-              item,
-              `${path}[${index}]`
-            )
-        );
-
-        return;
-      }
-
-      if (
-        typeof value === 'object'
-      ) {
-        for (
-          const [
-            key,
-            child
-          ]
-          of Object.entries(value)
-        ) {
-          const childPath =
-            path
-              ? `${path}.${key}`
-              : key;
-
-          searchZeros(
-            child,
-            childPath
-          );
-        }
-      }
-    }
-
-    for (
-      const apiResponse
-      of apiResponses
-    ) {
-      if (apiResponse.json) {
-        searchZeros(
-          apiResponse.json
-        );
-      }
-    }
-
-    console.log(
-      `JSON内の数値0: ${zeroValues.length}件`
-    );
-
-    if (
-      zeroValues.length > 0
-    ) {
-      console.log(
-        '0になっているJSONパス:'
-      );
-
-      console.log(
-        JSON.stringify(
-          zeroValues.slice(
-            0,
-            100
-          ),
-          null,
-          2
-        )
-      );
-    }
-
-    return {
-      productId:
-        product.productId,
-
-      productName:
-        product.productName,
-
-      listState:
-        'SOLD OUT',
-
-      checkedAt:
-        getJapanTime(),
-
-      colors:
-        pageData.colors,
-
-      zeroValues,
-
-      /*
-       * ★ここに/api/productsの
-       * JSON全文が入る
-       */
-      apiProductsResponses:
-        apiResponses
-    };
-
-  } finally {
-    await page.close();
+    return JSON.parse(text);
+  } catch {
+    return null;
   }
 }
 
@@ -375,7 +59,7 @@ async function inspectProduct(
       headless: true
     });
 
-  const listPage =
+  const page =
     await browser.newPage({
       viewport: {
         width: 1440,
@@ -383,13 +67,124 @@ async function inspectProduct(
       }
     });
 
+  const capturedResponses = [];
+
+  /*
+   * Fetch / XHR のResponseをできるだけ広く保存
+   *
+   * カート操作は一切行わない。
+   */
+  page.on(
+    'response',
+    response => {
+      const task =
+        (async () => {
+          const request =
+            response.request();
+
+          const resourceType =
+            request.resourceType();
+
+          if (
+            resourceType !== 'xhr' &&
+            resourceType !== 'fetch'
+          ) {
+            return;
+          }
+
+          const path =
+            getSafePath(
+              response.url()
+            );
+
+          /*
+           * 念のためカート追加APIは除外
+           */
+          if (
+            path.includes(
+              'add.json'
+            )
+          ) {
+            return;
+          }
+
+          let bodyText = '';
+
+          try {
+            bodyText =
+              await response.text();
+          } catch (error) {
+            capturedResponses.push({
+              resourceType,
+              method:
+                request.method(),
+              path,
+              status:
+                response.status(),
+              readError:
+                error.message
+            });
+
+            return;
+          }
+
+          /*
+           * JSONならJSONとして保存。
+           * JSONでなければ文字列として保存。
+           */
+          const parsedJson =
+            safeJsonParse(
+              bodyText
+            );
+
+          capturedResponses.push({
+            resourceType,
+
+            method:
+              request.method(),
+
+            path,
+
+            status:
+              response.status(),
+
+            contentType:
+              response.headers()[
+                'content-type'
+              ] || '',
+
+            requestPostData:
+              request.postData() ||
+              null,
+
+            body:
+              parsedJson !== null
+                ? parsedJson
+                : bodyText
+          });
+        })();
+
+      task.catch(
+        error => {
+          console.log(
+            `通信取得エラー: ${error.message}`
+          );
+        }
+      );
+    }
+  );
+
   try {
     console.log(
       '=============================='
     );
 
     console.log(
-      '/api/products JSON全文調査'
+      '完全スナップショット取得開始'
+    );
+
+    console.log(
+      `商品ID: ${PRODUCT_ID}`
     );
 
     console.log(
@@ -400,205 +195,368 @@ async function inspectProduct(
       '=============================='
     );
 
+    const baseUrl =
+      new URL(
+        LIST_URL
+      ).origin;
+
+    const productUrl =
+      `${baseUrl}/online_store/${PRODUCT_ID}`;
+
     /*
-     * Fabric一覧
+     * 商品ページを普通に開くだけ
      */
-    await listPage.goto(
-      LIST_URL,
+    await page.goto(
+      productUrl,
       {
         waitUntil:
           'domcontentloaded',
 
-        timeout: 60000
+        timeout:
+          60000
       }
     );
 
-    await listPage.waitForTimeout(
-      15000
+    /*
+     * 動的データが読み込まれるのを待つ
+     */
+    await page.waitForTimeout(
+      12000
     );
 
     /*
-     * SOLD OUT商品を抽出
+     * レンダリング後HTML全文
      */
-    const products =
-      await listPage.evaluate(() => {
-        const cards =
+    const html =
+      await page.content();
+
+    /*
+     * DOM上のscript全文
+     */
+    const scripts =
+      await page.evaluate(
+        () =>
           Array.from(
-            document.querySelectorAll(
-              'div[id^="item-FC"]'
-            )
-          );
+            document.scripts
+          ).map(
+            (
+              script,
+              index
+            ) => ({
+              index,
 
-        const result = [];
+              src:
+                script.src ||
+                '',
 
-        for (
-          const card
-          of cards
-        ) {
-          const productId =
-            card.id
-              .replace(
-                'item-',
-                ''
-              )
-              .trim();
+              type:
+                script.type ||
+                '',
 
-          if (
-            !productId.startsWith(
-              'FC'
-            )
-          ) {
-            continue;
-          }
-
-          const link =
-            card.querySelector(
-              `a[href*="/online_store/${productId}"]`
-            );
-
-          if (!link) {
-            continue;
-          }
-
-          const soldOutElement =
-            card.querySelector(
-              '[class*="soldout"]'
-            );
-
-          if (
-            !soldOutElement
-          ) {
-            continue;
-          }
-
-          const style =
-            window.getComputedStyle(
-              soldOutElement
-            );
-
-          const rect =
-            soldOutElement
-              .getBoundingClientRect();
-
-          const isSoldOut =
-            style.display !==
-              'none' &&
-            style.visibility !==
-              'hidden' &&
-            Number(
-              style.opacity
-            ) !== 0 &&
-            rect.width > 0 &&
-            rect.height > 0;
-
-          if (!isSoldOut) {
-            continue;
-          }
-
-          const image =
-            card.querySelector(
-              'img'
-            );
-
-          result.push({
-            productId,
-
-            productName:
-              image
-                ?.getAttribute(
-                  'alt'
-                )
-                ?.trim() ||
-              productId,
-
-            url:
-              link.href
-          });
-        }
-
-        return result;
-      });
-
-    console.log(
-      `現在のSOLD OUT: ${products.length}商品`
-    );
-
-    const targets =
-      products.slice(
-        0,
-        MAX_PRODUCTS
-      );
-
-    console.log(
-      `今回調査: ${targets.length}商品`
-    );
-
-    const results = [];
-
-    for (
-      const product
-      of targets
-    ) {
-      const result =
-        await inspectProduct(
-          browser,
-          product
-        );
-
-      results.push(
-        result
-      );
-
-      console.log(
-        '------------------------------'
-      );
-
-      console.log(
-        `${result.productId}`
-      );
-
-      console.log(
-        `API: ${result.apiProductsResponses.length}件`
-      );
-
-      console.log(
-        `数値0: ${result.zeroValues.length}件`
-      );
-
-      console.log(
-        '------------------------------'
-      );
-
-      await new Promise(
-        resolve =>
-          setTimeout(
-            resolve,
-            1000
+              text:
+                script.src
+                  ? ''
+                  : (
+                      script.textContent ||
+                      ''
+                    )
+            })
           )
       );
-    }
 
-    const output = {
+    /*
+     * Local Storage
+     */
+    const localStorageData =
+      await page.evaluate(
+        () => {
+          const result = {};
+
+          for (
+            let index = 0;
+            index <
+            localStorage.length;
+            index++
+          ) {
+            const key =
+              localStorage.key(
+                index
+              );
+
+            result[key] =
+              localStorage.getItem(
+                key
+              );
+          }
+
+          return result;
+        }
+      );
+
+    /*
+     * Session Storage
+     */
+    const sessionStorageData =
+      await page.evaluate(
+        () => {
+          const result = {};
+
+          for (
+            let index = 0;
+            index <
+            sessionStorage.length;
+            index++
+          ) {
+            const key =
+              sessionStorage.key(
+                index
+              );
+
+            result[key] =
+              sessionStorage.getItem(
+                key
+              );
+          }
+
+          return result;
+        }
+      );
+
+    /*
+     * カラー・生地巾・disabled状態
+     */
+    const variantData =
+      await page.evaluate(
+        () => {
+          const result = [];
+
+          const buttons =
+            Array.from(
+              document.querySelectorAll(
+                'button.btn_line'
+              )
+            );
+
+          for (
+            const button
+            of buttons
+          ) {
+            const container =
+              button.closest(
+                'li'
+              ) ||
+              button
+                .parentElement
+                ?.parentElement ||
+              button.parentElement;
+
+            if (!container) {
+              continue;
+            }
+
+            result.push({
+              containerText:
+                container.innerText
+                  .replace(
+                    /\s+/g,
+                    ' '
+                  )
+                  .trim(),
+
+              buttonText:
+                button.innerText
+                  .trim(),
+
+              disabled:
+                button.disabled,
+
+              className:
+                button.className,
+
+              buttonAttributes:
+                Object.fromEntries(
+                  Array.from(
+                    button.attributes
+                  ).map(
+                    attribute => [
+                      attribute.name,
+                      attribute.value
+                    ]
+                  )
+                ),
+
+              containerAttributes:
+                Object.fromEntries(
+                  Array.from(
+                    container.attributes
+                  ).map(
+                    attribute => [
+                      attribute.name,
+                      attribute.value
+                    ]
+                  )
+                )
+            });
+          }
+
+          return result;
+        }
+      );
+
+    /*
+     * data-*属性のある要素
+     */
+    const dataAttributes =
+      await page.evaluate(
+        () => {
+          const items = [];
+
+          const elements =
+            Array.from(
+              document.querySelectorAll(
+                '*'
+              )
+            );
+
+          for (
+            const element
+            of elements
+          ) {
+            const attributes =
+              Array.from(
+                element.attributes ||
+                []
+              );
+
+            const dataAttrs =
+              attributes.filter(
+                attr =>
+                  attr.name.startsWith(
+                    'data-'
+                  )
+              );
+
+            if (
+              dataAttrs.length === 0
+            ) {
+              continue;
+            }
+
+            items.push({
+              tag:
+                element.tagName,
+
+              text:
+                (
+                  element.innerText ||
+                  ''
+                )
+                  .replace(
+                    /\s+/g,
+                    ' '
+                  )
+                  .trim()
+                  .slice(
+                    0,
+                    500
+                  ),
+
+              attributes:
+                Object.fromEntries(
+                  dataAttrs.map(
+                    attr => [
+                      attr.name,
+                      attr.value
+                    ]
+                  )
+                )
+            });
+          }
+
+          return items;
+        }
+      );
+
+    /*
+     * Windowに存在するキーの一覧。
+     *
+     * Windowオブジェクトそのものを
+     * JSON化すると循環参照で失敗するため、
+     * キー一覧を取得する。
+     */
+    const windowKeys =
+      await page.evaluate(
+        () =>
+          Object.keys(
+            window
+          ).sort()
+      );
+
+    /*
+     * 商品IDを含むscriptを別途抽出
+     */
+    const productRelatedScripts =
+      scripts.filter(
+        script =>
+          script.text.includes(
+            PRODUCT_ID
+          )
+      );
+
+    /*
+     * Fetch/XHRの完了待ち
+     */
+    await page.waitForTimeout(
+      2000
+    );
+
+    /*
+     * 一つの完全スナップショットとして保存
+     */
+    const snapshot = {
       checkedAt:
         getJapanTime(),
 
-      purpose:
-        'SOLD OUT時の/api/products JSON全文取得',
+      productId:
+        PRODUCT_ID,
 
-      targetCount:
-        results.length,
+      expectedState:
+        'SOLD OUT',
 
-      products:
-        results
+      cartActionPerformed:
+        false,
+
+      variantData,
+
+      localStorage:
+        localStorageData,
+
+      sessionStorage:
+        sessionStorageData,
+
+      dataAttributes,
+
+      windowKeys,
+
+      scripts,
+
+      productRelatedScripts,
+
+      html,
+
+      networkResponses:
+        capturedResponses
     };
 
     fs.writeFileSync(
       OUTPUT_FILE,
+
       JSON.stringify(
-        output,
+        snapshot,
         null,
         2
       ),
+
       'utf8'
     );
 
@@ -607,11 +565,51 @@ async function inspectProduct(
     );
 
     console.log(
-      `${OUTPUT_FILE}を保存しました`
+      '完全スナップショット取得成功'
     );
 
     console.log(
-      '/api/products JSON全文取得完了'
+      `商品ID: ${PRODUCT_ID}`
+    );
+
+    console.log(
+      `variantData: ${variantData.length}件`
+    );
+
+    console.log(
+      `Fetch/XHR: ${capturedResponses.length}件`
+    );
+
+    console.log(
+      `script: ${scripts.length}件`
+    );
+
+    console.log(
+      `商品ID関連script: ${productRelatedScripts.length}件`
+    );
+
+    console.log(
+      `data-*要素: ${dataAttributes.length}件`
+    );
+
+    console.log(
+      `Local Storage: ${Object.keys(localStorageData).length}件`
+    );
+
+    console.log(
+      `Session Storage: ${Object.keys(sessionStorageData).length}件`
+    );
+
+    console.log(
+      `HTML文字数: ${html.length}`
+    );
+
+    console.log(
+      'カート操作: なし'
+    );
+
+    console.log(
+      `保存先: ${OUTPUT_FILE}`
     );
 
     console.log(
