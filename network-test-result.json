@@ -1,0 +1,196 @@
+{
+  "checkedAt": "2026/11/21 23:12:19",
+  "targetCount": 3,
+  "products": [
+    {
+      "productId": "FC0611RYRK",
+      "productName": "feliceファブリック",
+      "listState": "SOLD OUT",
+      "checkedAt": "2026/11/21 23:11:56",
+      "colors": [
+        {
+          "text": "green 117",
+          "disabled": true,
+          "buttonText": "117"
+        },
+        {
+          "text": "brown 117",
+          "disabled": true,
+          "buttonText": "117"
+        },
+        {
+          "text": "gray 117",
+          "disabled": true,
+          "buttonText": "117"
+        },
+        {
+          "text": "black 117",
+          "disabled": true,
+          "buttonText": "117"
+        }
+      ],
+      "htmlFindings": [
+        {
+          "type": "keyword",
+          "keyword": "variant",
+          "snippet": "r_size __label _translate_\"><dt>カラー</dt><dd>生地巾(cm)</dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_green_af787a08b1.jpg?w=100\"><figcaption class=\"en_serif\"><!----> green</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">117</butt"
+        },
+        {
+          "type": "keyword",
+          "keyword": "variant",
+          "snippet": "ss=\"btn_line fs_btn en_ss\" disabled=\"\">117</button></dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_brown_2b13989b93.jpg?w=100\"><figcaption class=\"en_serif\"><!----> brown</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">117</butt"
+        },
+        {
+          "type": "keyword",
+          "keyword": "variant",
+          "snippet": "ss=\"btn_line fs_btn en_ss\" disabled=\"\">117</button></dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_gray_e74a1209b2.jpg?w=100\"><figcaption class=\"en_serif\"><!----> gray</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">117</button"
+        },
+        {
+          "type": "keyword",
+          "keyword": "variant",
+          "snippet": "ss=\"btn_line fs_btn en_ss\" disabled=\"\">117</button></dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0611_black_f11b41c540.jpg?w=100\"><figcaption class=\"en_serif\"><!----> black</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">117</butt"
+        }
+      ],
+      "networkResponses": [
+        {
+          "method": "GET",
+          "path": "/api/products?populate[thumbnail]=true&populate[skus]=true&populate[photo]=true&populate[colorVariations]=true&populate[relatedProducts]=true&populate[textiles][populate][thumbnail]=true&populate[textiles][populate][images]=true&populate[designers][populate][photo]=true&populate[assortContent][populate][colorVariations]=true&filters[fieldId]=FC0611RYRK&pagination[limit]=1&pagination[start]=0",
+          "status": 200,
+          "contentType": "application/json; charset=utf-8",
+          "findings": [
+            {
+              "type": "keyword",
+              "keyword": "sku",
+              "snippet": ":38.075Z\",\"updatedAt\":\"2026-11-19T13:06:44.594Z\",\"documentId\":\"r9ome88y45wk867j2jfl0rn1\",\"publishedAt\":\"2026-11-19T07:35:38.075Z\",\"focalPoint\":null},\"skus\":[{\"id\":1550058,\"value\":\"FC0611RYRK\"}],\"photo\":[{\"id\":53019,\"name\":\"FC0611_1-2.jpg\",\"alternativeText\":null,\"caption\":null,\"width\":3557,\"height\":2371,\"formats\":{\"large\":{\"ext\":\".jpg\",\"url\":\"https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0611_1_2_9aec8baab5.jpg\",\"hash\":\"large_FC_0611"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/entry-relations?populate[life][populate][mainImage]=true&populate[journal][populate][images]=true&populate[journal][populate][journalImages][populate][photo]=true&populate[textile][populate][thumbnail]=true&populate[product][populate][thumbnail]=true&limit=10&filters[product][documentId]=bumbznwxufyd9tjc4jzzxz70&sort[0]=updatedAt%3Adesc",
+          "status": 200,
+          "contentType": "application/json; charset=utf-8",
+          "findings": []
+        }
+      ]
+    },
+    {
+      "productId": "FC0609GYRS",
+      "productName": "sleeping rose ＋ tambourine キルト有りファブリック",
+      "listState": "SOLD OUT",
+      "checkedAt": "2026/11/21 23:12:07",
+      "colors": [
+        {
+          "text": "yellow 110.5",
+          "disabled": true,
+          "buttonText": "110.5"
+        },
+        {
+          "text": "gray 110.5",
+          "disabled": true,
+          "buttonText": "110.5"
+        }
+      ],
+      "htmlFindings": [
+        {
+          "type": "keyword",
+          "keyword": "variant",
+          "snippet": "r_size __label _translate_\"><dt>カラー</dt><dd>生地巾(cm)</dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_yellow_599d5a5476.jpg?w=100\"><figcaption class=\"en_serif\"><!----> yellow</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">110.5</"
+        },
+        {
+          "type": "keyword",
+          "keyword": "variant",
+          "snippet": "=\"btn_line fs_btn en_ss\" disabled=\"\">110.5</button></dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_gray_d7726743eb.jpg?w=100\"><figcaption class=\"en_serif\"><!----> gray</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">110.5</butt"
+        }
+      ],
+      "networkResponses": [
+        {
+          "method": "GET",
+          "path": "/api/products?populate[thumbnail]=true&populate[skus]=true&populate[photo]=true&populate[colorVariations]=true&populate[relatedProducts]=true&populate[textiles][populate][thumbnail]=true&populate[textiles][populate][images]=true&populate[designers][populate][photo]=true&populate[assortContent][populate][colorVariations]=true&filters[fieldId]=FC0609GYRS&pagination[limit]=1&pagination[start]=0",
+          "status": 200,
+          "contentType": "application/json; charset=utf-8",
+          "findings": [
+            {
+              "type": "keyword",
+              "keyword": "sku",
+              "snippet": ":07.130Z\",\"updatedAt\":\"2026-10-29T07:29:07.130Z\",\"documentId\":\"nqzor07e8g6vtkn0uknsk3uo\",\"publishedAt\":\"2026-10-29T07:29:07.131Z\",\"focalPoint\":null},\"skus\":[{\"id\":1549325,\"value\":\"FC0609GYRS\"}],\"photo\":[{\"id\":52469,\"name\":\"FC0608_1-1.jpg\",\"alternativeText\":null,\"caption\":null,\"width\":2804,\"height\":1870,\"formats\":{\"large\":{\"ext\":\".jpg\",\"url\":\"https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0608_1_1_3cc7f8c3e8.jpg\",\"hash\":\"large_FC_0608"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/entry-relations?populate[life][populate][mainImage]=true&populate[journal][populate][images]=true&populate[journal][populate][journalImages][populate][photo]=true&populate[textile][populate][thumbnail]=true&populate[product][populate][thumbnail]=true&limit=10&filters[product][documentId]=qm407p9my427db5nb3ydtjuo&sort[0]=updatedAt%3Adesc",
+          "status": 200,
+          "contentType": "application/json; charset=utf-8",
+          "findings": []
+        },
+        {
+          "method": "GET",
+          "path": "/api/products?sort[0]=sortOrder%3Aasc&populate[thumbnail]=true&populate[skus]=true&fields[0]=id&fields[1]=fieldId&fields[2]=name&fields[3]=textile&fields[4]=line&fields[5]=underNegotiation&filters[fieldId][$in][0]=FC0608YWST&filters[current]=current&filters[soldout]=false",
+          "status": 200,
+          "contentType": "application/json; charset=utf-8",
+          "findings": []
+        }
+      ]
+    },
+    {
+      "productId": "FC0608YWST",
+      "productName": "sleeping rose ＋ tambourine キルトなしファブリック",
+      "listState": "SOLD OUT",
+      "checkedAt": "2026/11/21 23:12:18",
+      "colors": [
+        {
+          "text": "yellow 116",
+          "disabled": true,
+          "buttonText": "116"
+        },
+        {
+          "text": "gray 116",
+          "disabled": true,
+          "buttonText": "116"
+        }
+      ],
+      "htmlFindings": [
+        {
+          "type": "keyword",
+          "keyword": "variant",
+          "snippet": "r_size __label _translate_\"><dt>カラー</dt><dd>生地巾(cm)</dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_yellow_599d5a5476.jpg?w=100\"><figcaption class=\"en_serif\"><!----> yellow</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">116</bu"
+        },
+        {
+          "type": "keyword",
+          "keyword": "variant",
+          "snippet": "ss=\"btn_line fs_btn en_ss\" disabled=\"\">116</button></dd></dl></li><li data-watch-target=\"variants\"><dl class=\"dl_color_size\"><dt><figure class=\"fig_color_size\"><img alt=\"\" width=\"100\" height=\"100\" class=\"radius\" lazy=\"loaded\" src=\"https://growing-cow-8e66bbd222.media.strapiapp.com/FC_0608_gray_d7726743eb.jpg?w=100\"><figcaption class=\"en_serif\"><!----> gray</figcaption></figure></dt><dd><button class=\"btn_line fs_btn en_ss\" disabled=\"\">116</button"
+        }
+      ],
+      "networkResponses": [
+        {
+          "method": "GET",
+          "path": "/api/products?populate[thumbnail]=true&populate[skus]=true&populate[photo]=true&populate[colorVariations]=true&populate[relatedProducts]=true&populate[textiles][populate][thumbnail]=true&populate[textiles][populate][images]=true&populate[designers][populate][photo]=true&populate[assortContent][populate][colorVariations]=true&filters[fieldId]=FC0608YWST&pagination[limit]=1&pagination[start]=0",
+          "status": 200,
+          "contentType": "application/json; charset=utf-8",
+          "findings": [
+            {
+              "type": "keyword",
+              "keyword": "sku",
+              "snippet": ":59.357Z\",\"updatedAt\":\"2026-10-29T00:14:59.357Z\",\"documentId\":\"wpv5i3c3nuyfgxxo9n6qhwfg\",\"publishedAt\":\"2026-10-29T00:14:59.357Z\",\"focalPoint\":null},\"skus\":[{\"id\":1549329,\"value\":\"FC0608YWST\"}],\"photo\":[{\"id\":52469,\"name\":\"FC0608_1-1.jpg\",\"alternativeText\":null,\"caption\":null,\"width\":2804,\"height\":1870,\"formats\":{\"large\":{\"ext\":\".jpg\",\"url\":\"https://growing-cow-8e66bbd222.media.strapiapp.com/large_FC_0608_1_1_3cc7f8c3e8.jpg\",\"hash\":\"large_FC_0608"
+            }
+          ]
+        },
+        {
+          "method": "GET",
+          "path": "/api/entry-relations?populate[life][populate][mainImage]=true&populate[journal][populate][images]=true&populate[journal][populate][journalImages][populate][photo]=true&populate[textile][populate][thumbnail]=true&populate[product][populate][thumbnail]=true&limit=10&filters[product][documentId]=wki564wrt58cm9c1l8cl0spg&sort[0]=updatedAt%3Adesc",
+          "status": 200,
+          "contentType": "application/json; charset=utf-8",
+          "findings": []
+        },
+        {
+          "method": "GET",
+          "path": "/api/products?sort[0]=sortOrder%3Aasc&populate[thumbnail]=true&populate[skus]=true&fields[0]=id&fields[1]=fieldId&fields[2]=name&fields[3]=textile&fields[4]=line&fields[5]=underNegotiation&filters[fieldId][$in][0]=FC0609GYRS&filters[current]=current&filters[soldout]=false",
+          "status": 200,
+          "contentType": "application/json; charset=utf-8",
+          "findings": []
+        }
+      ]
+    }
+  ]
+}
