@@ -1,62 +1,178 @@
 const { chromium } = require('playwright');
+const fs = require('fs');
+
+const HISTORY_FILE = 'stock-test-history.json';
 
 const PRODUCT_ID = 'FC0463';
 const TARGET_COLOR = 'brown';
 const TARGET_WIDTH = '149';
 
-// 数量欄では
 // value="500" = 5000cm
 const TEST_QUANTITY_VALUE = '500';
 const TEST_QUANTITY_CM = 5000;
 
-(async () => {
-  const browser = await chromium.launch({
-    headless: true
-  });
+const GITHUB_USERNAME =
+  process.env.GITHUB_ACTOR;
 
-  const page = await browser.newPage({
-    viewport: {
-      width: 1440,
-      height: 1200
+function getJapanTime() {
+  return new Intl.DateTimeFormat(
+    'ja-JP',
+    {
+      timeZone: 'Asia/Tokyo',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hourCycle: 'h23'
     }
-  });
+  ).format(new Date());
+}
+
+function createEmptyHistory() {
+  return {
+    initialized: false,
+    previousStatus: '',
+    previousStockCm: null,
+    observations: []
+  };
+}
+
+function loadHistory() {
+  if (!fs.existsSync(HISTORY_FILE)) {
+    return createEmptyHistory();
+  }
 
   try {
-    console.log('==============================');
-    console.log('在庫残量取得テスト開始');
-    console.log(`商品ID: ${PRODUCT_ID}`);
-    console.log(`カラー: ${TARGET_COLOR}`);
-    console.log(`生地巾: ${TARGET_WIDTH}cm`);
-    console.log('==============================');
+    const history = JSON.parse(
+      fs.readFileSync(
+        HISTORY_FILE,
+        'utf8'
+      )
+    );
 
-    /*
-     * 監視先URLはGitHub Secretから取得
-     */
-    const listUrl = process.env.MINA_URL;
+    return {
+      initialized:
+        Boolean(history.initialized),
+      previousStatus:
+        history.previousStatus || '',
+      previousStockCm:
+        history.previousStockCm ?? null,
+      observations:
+        Array.isArray(history.observations)
+          ? history.observations
+          : []
+    };
+  } catch (error) {
+    console.log(
+      `履歴を読み込めませんでした: ${error.message}`
+    );
 
-    if (!listUrl) {
-      throw new Error(
-        'MINA_URLが設定されていません'
-      );
+    return createEmptyHistory();
+  }
+}
+
+function saveHistory(history) {
+  fs.writeFileSync(
+    HISTORY_FILE,
+    JSON.stringify(
+      history,
+      null,
+      2
+    ),
+    'utf8'
+  );
+
+  console.log(
+    `${HISTORY_FILE}を保存しました`
+  );
+}
+
+async function createGitHubIssue(
+  title,
+  body
+) {
+  const token =
+    process.env.GITHUB_TOKEN;
+
+  const repository =
+    process.env.GITHUB_REPOSITORY;
+
+  if (!token || !repository) {
+    console.log(
+      'GitHub通知用の環境変数がありません'
+    );
+
+    return false;
+  }
+
+  const response = await fetch(
+    `https://api.github.com/repos/${repository}/issues`,
+    {
+      method: 'POST',
+      headers: {
+        Accept:
+          'application/vnd.github+json',
+        Authorization:
+          `Bearer ${token}`,
+        'X-GitHub-Api-Version':
+          '2022-11-28',
+        'Content-Type':
+          'application/json',
+        'User-Agent':
+          'page-test'
+      },
+      body: JSON.stringify({
+        title,
+        body
+      })
     }
+  );
 
-    const baseUrl =
-      new URL(listUrl).origin;
+  if (!response.ok) {
+    console.log(
+      `通知作成エラー: ` +
+      `${response.status} ` +
+      `${await response.text()}`
+    );
 
-    const productUrl =
-      `${baseUrl}/online_store/${PRODUCT_ID}`;
+    return false;
+  }
 
-    console.log('商品ページを開きます');
+  console.log(
+    'GitHub通知を作成しました'
+  );
 
-    await page.goto(productUrl, {
-      waitUntil: 'domcontentloaded',
-      timeout: 60000
+  return true;
+}
+
+async function measureStock(
+  browser,
+  productUrl
+) {
+  const page =
+    await browser.newPage({
+      viewport: {
+        width: 1440,
+        height: 1200
+      }
     });
+
+  try {
+    await page.goto(
+      productUrl,
+      {
+        waitUntil:
+          'domcontentloaded',
+        timeout: 60000
+      }
+    );
 
     await page.waitForTimeout(8000);
 
     /*
-     * brown の行を探す
+     * brownの行を取得
      */
     const colorRow = page
       .locator('li')
@@ -65,18 +181,16 @@ const TEST_QUANTITY_CM = 5000;
       })
       .first();
 
-    if (await colorRow.count() === 0) {
+    if (
+      await colorRow.count() === 0
+    ) {
       throw new Error(
-        `${TARGET_COLOR} のカラー行が見つかりません`
+        `${TARGET_COLOR}の行が見つかりません`
       );
     }
 
-    console.log(
-      `${TARGET_COLOR} を見つけました`
-    );
-
     /*
-     * brown の149cmボタンを探す
+     * 149cmボタンを取得
      */
     const widthButton =
       colorRow.locator(
@@ -90,98 +204,72 @@ const TEST_QUANTITY_CM = 5000;
       await widthButton.count() === 0
     ) {
       throw new Error(
-        `${TARGET_COLOR} の ${TARGET_WIDTH}cm が見つかりません`
+        `${TARGET_WIDTH}cmボタンが見つかりません`
       );
-    }
-
-    if (
-      await widthButton.isDisabled()
-    ) {
-      console.log(
-        `${TARGET_COLOR} は現在購入不可です`
-      );
-
-      console.log(
-        'SOLD OUTの可能性があります'
-      );
-
-      return;
     }
 
     /*
-     * brown / 149cm を選択
+     * disabledならSOLD OUT
      */
-    await widthButton.click();
+    if (
+      await widthButton.isDisabled()
+    ) {
+      return {
+        status: 'soldout',
+        stockCm: 0,
+        stockMeter: 0,
+        notice:
+          'カラー選択ボタンがdisabledです'
+      };
+    }
 
-    console.log(
-      `${TARGET_COLOR} / ${TARGET_WIDTH}cm を選択しました`
-    );
+    await widthButton.click();
 
     await page.waitForTimeout(1000);
 
     /*
-     * 数量欄を取得
+     * 5000cmの選択肢を持つ数量欄を探す
      */
-    const quantitySelect =
-      page.locator('select.select').first();
+    const selects =
+      page.locator('select.select');
 
-    if (
-      await quantitySelect.count() === 0
+    let quantitySelect = null;
+
+    for (
+      let index = 0;
+      index < await selects.count();
+      index++
     ) {
+      const candidate =
+        selects.nth(index);
+
+      const option =
+        candidate.locator(
+          `option[value="${TEST_QUANTITY_VALUE}"]`
+        );
+
+      if (
+        await option.count() > 0
+      ) {
+        quantitySelect =
+          candidate;
+
+        break;
+      }
+    }
+
+    if (!quantitySelect) {
       throw new Error(
-        '数量選択欄が見つかりません'
+        '5000cmを持つ数量欄が見つかりません'
       );
     }
 
-    /*
-     * 5000cmの選択肢が本当に存在するか確認
-     *
-     * HTML:
-     * <option value="500">5000cm</option>
-     */
-    const option5000 =
-      quantitySelect.locator(
-        'option[value="500"]'
-      );
-
-    if (
-      await option5000.count() === 0
-    ) {
-      throw new Error(
-        '5000cmの選択肢が見つかりません'
-      );
-    }
-
-    /*
-     * 5000cm を選択
-     */
     await quantitySelect.selectOption(
       TEST_QUANTITY_VALUE
     );
 
-    console.log(
-      `テスト数量 ${TEST_QUANTITY_CM}cm を選択しました`
-    );
-
     await page.waitForTimeout(500);
 
-    /*
-     * add.json のレスポンス待機を先に開始
-     */
-    const responsePromise =
-      page.waitForResponse(
-        response =>
-          response.url().includes(
-            'add.json'
-          ),
-        {
-          timeout: 30000
-        }
-      );
-
-    /*
-     * かごへ入れるボタン
-     */
     const addButton =
       page.locator(
         '#add_to_cart_button'
@@ -195,15 +283,20 @@ const TEST_QUANTITY_CM = 5000;
       );
     }
 
-    console.log(
-      '在庫チェックを実行します'
-    );
-
     /*
-     * 在庫不足になれば
-     * カート追加は失敗し、
-     * add.jsonのnoticeに在庫数が返る
+     * add.jsonの応答待機
      */
+    const responsePromise =
+      page.waitForResponse(
+        response =>
+          response.url().includes(
+            'add.json'
+          ),
+        {
+          timeout: 30000
+        }
+      );
+
     await addButton.click();
 
     const response =
@@ -213,14 +306,6 @@ const TEST_QUANTITY_CM = 5000;
       await response.json();
 
     console.log(
-      '------------------------------'
-    );
-
-    console.log(
-      'add.json 応答'
-    );
-
-    console.log(
       JSON.stringify(
         result,
         null,
@@ -228,119 +313,315 @@ const TEST_QUANTITY_CM = 5000;
       )
     );
 
-    console.log(
-      '------------------------------'
-    );
-
     /*
-     * 想定外にカート追加成功した場合
+     * 成功した場合は実際にカートへ
+     * 入った可能性があるため停止
      */
     if (
       result.status === 'success'
     ) {
-      console.log(
-        '⚠️ カート追加が成功しました'
-      );
-
-      console.log(
-        '残量取得テストを中止します'
-      );
-
-      process.exitCode = 1;
-
-      return;
+      return {
+        status:
+          'unexpected-success',
+        stockCm: null,
+        stockMeter: null,
+        notice:
+          result.notice || ''
+      };
     }
 
-    /*
-     * notice例:
-     *
-     * choucho ＋ noppara ファブリック の
-     * 在庫数は1100cmです。
-     * かごへ追加することができませんでした。
-     */
     const notice =
       result.notice || '';
 
-    console.log(
-      `notice: ${notice}`
-    );
-
-    /*
-     * 在庫数を抽出
-     */
     const match =
       notice.match(
         /在庫数は\s*([0-9,]+)\s*cm/i
       );
 
     if (!match) {
-      console.log(
-        '在庫残量を取得できませんでした'
+      return {
+        status: 'unknown',
+        stockCm: null,
+        stockMeter: null,
+        notice
+      };
+    }
+
+    const stockCm =
+      Number(
+        match[1].replace(
+          /,/g,
+          ''
+        )
       );
 
-      console.log(
-        'add.jsonのnoticeを確認してください'
+    return {
+      status: 'available',
+      stockCm,
+      stockMeter:
+        stockCm / 100,
+      notice
+    };
+
+  } finally {
+    await page.close();
+  }
+}
+
+(async () => {
+  const listUrl =
+    process.env.MINA_URL;
+
+  if (!listUrl) {
+    throw new Error(
+      'MINA_URLが設定されていません'
+    );
+  }
+
+  const baseUrl =
+    new URL(listUrl).origin;
+
+  const productUrl =
+    `${baseUrl}/online_store/${PRODUCT_ID}`;
+
+  const browser =
+    await chromium.launch({
+      headless: true
+    });
+
+  const history =
+    loadHistory();
+
+  try {
+    const checkedAt =
+      getJapanTime();
+
+    console.log(
+      '=============================='
+    );
+
+    console.log(
+      '15分間隔の在庫観測'
+    );
+
+    console.log(
+      `確認時刻: ${checkedAt}`
+    );
+
+    console.log(
+      '=============================='
+    );
+
+    const result =
+      await measureStock(
+        browser,
+        productUrl
       );
+
+    const previousStatus =
+      history.previousStatus;
+
+    const previousStockCm =
+      history.previousStockCm;
+
+    history.observations.push({
+      checkedAt,
+      status: result.status,
+      stockCm: result.stockCm,
+      stockMeter:
+        result.stockMeter,
+      notice: result.notice
+    });
+
+    /*
+     * 想定外にカートへ追加できた場合
+     */
+    if (
+      result.status ===
+      'unexpected-success'
+    ) {
+      console.error(
+        'カート追加が成功した可能性があります'
+      );
+
+      console.error(
+        '安全のため観測を停止してください'
+      );
+
+      await createGitHubIssue(
+        '⚠️ 在庫テストを停止してください',
+`@${GITHUB_USERNAME}
+
+## カート追加が成功した可能性があります
+
+安全のため、このテストWorkflowを停止してください。
+
+- 商品ID：${PRODUCT_ID}
+- カラー：${TARGET_COLOR}
+- 生地巾：${TARGET_WIDTH}cm
+- 確認時刻：${checkedAt}`
+      );
+
+      history.previousStatus =
+        result.status;
+
+      saveHistory(history);
 
       process.exitCode = 1;
 
       return;
     }
 
-    const stockCm =
-      Number(
-        match[1]
-          .replace(/,/g, '')
+    /*
+     * 残量を取得できなかった場合
+     */
+    if (
+      result.status === 'unknown'
+    ) {
+      console.log(
+        '残量を取得できませんでした'
       );
 
-    const stockMeter =
-      stockCm / 100;
+      console.log(
+        result.notice
+      );
 
-    console.log(
-      '=============================='
-    );
+      saveHistory(history);
 
-    console.log(
-      '✅ 在庫残量取得成功'
-    );
-
-    console.log(
-      `商品ID: ${PRODUCT_ID}`
-    );
-
-    console.log(
-      `カラー: ${TARGET_COLOR}`
-    );
-
-    console.log(
-      `生地巾: ${TARGET_WIDTH}cm`
-    );
-
-    console.log(
-      `残量: ${stockCm}cm`
-    );
-
-    console.log(
-      `残量: ${stockMeter.toFixed(1)}m`
-    );
-
-    console.log(
-      '=============================='
-    );
+      return;
+    }
 
     /*
-     * 今回はここで終了。
-     *
-     * ・定期監視なし
-     * ・通知なし
-     * ・履歴保存なし
-     *
-     * まず残量が取得できるかだけ確認する。
+     * 初回は基準値として保存
+     * 通知は行わない
      */
+    if (!history.initialized) {
+      history.initialized = true;
+      history.previousStatus =
+        result.status;
+      history.previousStockCm =
+        result.stockCm;
+
+      saveHistory(history);
+
+      console.log(
+        '初回値として保存しました'
+      );
+
+      console.log(
+        `残量: ${result.stockCm}cm`
+      );
+
+      console.log(
+        `残量: ${result.stockMeter.toFixed(1)}m`
+      );
+
+      return;
+    }
+
+    /*
+     * SOLD OUTへの変化
+     */
+    if (
+      result.status === 'soldout' &&
+      previousStatus !== 'soldout'
+    ) {
+      console.log(
+        'SOLD OUTへの変化を検知しました'
+      );
+
+      await createGitHubIssue(
+        '🔴 在庫観測：SOLD OUT',
+`@${GITHUB_USERNAME}
+
+## 対象カラーがSOLD OUTになりました
+
+- 商品ID：${PRODUCT_ID}
+- カラー：${TARGET_COLOR}
+- 生地巾：${TARGET_WIDTH}cm
+- 前回残量：${
+  previousStockCm === null
+    ? '不明'
+    : `${(
+        previousStockCm / 100
+      ).toFixed(1)}m`
+}
+- 確認時刻：${checkedAt}`
+      );
+    }
+
+    /*
+     * 残量が変化した場合
+     */
+    if (
+      result.status === 'available' &&
+      previousStockCm !== null &&
+      result.stockCm !==
+        previousStockCm
+    ) {
+      const differenceCm =
+        result.stockCm -
+        previousStockCm;
+
+      console.log(
+        `残量変化: ` +
+        `${previousStockCm}cm` +
+        ` → ` +
+        `${result.stockCm}cm`
+      );
+
+      await createGitHubIssue(
+        '📉 在庫残量が変化しました',
+`@${GITHUB_USERNAME}
+
+## 在庫残量が変化しました
+
+- 商品ID：${PRODUCT_ID}
+- カラー：${TARGET_COLOR}
+- 生地巾：${TARGET_WIDTH}cm
+- 前回：${(
+  previousStockCm / 100
+).toFixed(1)}m
+- 現在：${(
+  result.stockCm / 100
+).toFixed(1)}m
+- 変化：${(
+  differenceCm / 100
+).toFixed(1)}m
+- 確認時刻：${checkedAt}`
+      );
+    }
+
+    /*
+     * 最新値を保存
+     */
+    history.previousStatus =
+      result.status;
+
+    history.previousStockCm =
+      result.stockCm;
+
+    saveHistory(history);
+
+    console.log(
+      `現在の状態: ${result.status}`
+    );
+
+    if (
+      result.stockCm !== null
+    ) {
+      console.log(
+        `現在残量: ${result.stockCm}cm`
+      );
+
+      console.log(
+        `現在残量: ${result.stockMeter.toFixed(1)}m`
+      );
+    }
 
   } catch (error) {
     console.error(
-      `テスト失敗: ${error.message}`
+      `観測エラー: ${error.stack}`
     );
 
     process.exitCode = 1;
