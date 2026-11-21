@@ -1,0 +1,606 @@
+{
+  "initialized": true,
+  "detailCursor": 0,
+  "products": {
+    "HN0080": {
+      "productId": "HN0080",
+      "productName": "HAMAGURI SCARF",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "HN0076": {
+      "productId": "HN0076",
+      "productName": "STRIPE LARGE SHAWL",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "HN0078": {
+      "productId": "HN0078",
+      "productName": "OPEN LONG MITTENS",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "HN0081": {
+      "productId": "HN0081",
+      "productName": "FLUFFY TRIANGLESCARF",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "HN0082": {
+      "productId": "HN0082",
+      "productName": "STRIPE SQUARE SCARF",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "PI0315": {
+      "productId": "PI0315",
+      "productName": "maisema bag",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "PI0311_B": {
+      "productId": "PI0311_B",
+      "productName": "piece, bag",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA6863S": {
+      "productId": "AEA6863S",
+      "productName": "rosyスタンドカラーコート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA3307": {
+      "productId": "AEA3307",
+      "productName": "tambourineドレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7917": {
+      "productId": "AEA7917",
+      "productName": "tossuサンダル",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA6864S": {
+      "productId": "AEA6864S",
+      "productName": "tambourineコート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9542": {
+      "productId": "AEA9542",
+      "productName": "tambourineuzura bag",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA4693": {
+      "productId": "AEA4693",
+      "productName": "tambourineパンツ",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA9501": {
+      "productId": "AEA9501",
+      "productName": "knollretki",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA2469S": {
+      "productId": "AEA2469S",
+      "productName": "rosyベスト",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA7885": {
+      "productId": "AEA7885",
+      "productName": "ilocone pouch",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA6865": {
+      "productId": "AEA6865",
+      "productName": "tambourineコート",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA5460": {
+      "productId": "AEA5460",
+      "productName": "star gardenタックスカート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA2460": {
+      "productId": "AEA2460",
+      "productName": "tambourineブルゾン",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9538": {
+      "productId": "AEA9538",
+      "productName": "tambourineエッグバッグ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7875": {
+      "productId": "AEA7875",
+      "productName": "kidequartz pouch",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9544": {
+      "productId": "AEA9544",
+      "productName": "ilouzura bag",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA3252": {
+      "productId": "AEA3252",
+      "productName": "paraabeliドレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9523": {
+      "productId": "AEA9523",
+      "productName": "tambourinepocket bag",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA1472": {
+      "productId": "AEA1472",
+      "productName": "floretブラウス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA3256": {
+      "productId": "AEA3256",
+      "productName": "anemoneドレス",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA6852": {
+      "productId": "AEA6852",
+      "productName": "tambourineコート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9517": {
+      "productId": "AEA9517",
+      "productName": "ilomuffin bag",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9532": {
+      "productId": "AEA9532",
+      "productName": "tambourineショルダーバッグ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA5481S": {
+      "productId": "AEA5481S",
+      "productName": "rosyスカート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA3301S": {
+      "productId": "AEA3301S",
+      "productName": "tambourineドレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9500": {
+      "productId": "AEA9500",
+      "productName": "please, thank youバッグ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA2468S": {
+      "productId": "AEA2468S",
+      "productName": "rosyジャケット",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA3265": {
+      "productId": "AEA3265",
+      "productName": "tambourineドレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA3254": {
+      "productId": "AEA3254",
+      "productName": "floretドレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA8090": {
+      "productId": "AEA8090",
+      "productName": "coteauニットボレロ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA4672": {
+      "productId": "AEA4672",
+      "productName": "multaテーパードパンツ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA8124": {
+      "productId": "AEA8124",
+      "productName": "wind landニットプルオーバー",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA6838": {
+      "productId": "AEA6838",
+      "productName": "iloコート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA3255": {
+      "productId": "AEA3255",
+      "productName": "flower marblesノースリーブドレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA6843": {
+      "productId": "AEA6843",
+      "productName": "virtaコート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA8089": {
+      "productId": "AEA8089",
+      "productName": "coteauニットベスト",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA1468": {
+      "productId": "AEA1468",
+      "productName": "floretブラウス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7890": {
+      "productId": "AEA7890",
+      "productName": "supouch",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7903": {
+      "productId": "AEA7903",
+      "productName": "kääriäストール",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9512": {
+      "productId": "AEA9512",
+      "productName": "loopバッグ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA4671": {
+      "productId": "AEA4671",
+      "productName": "flower marblesストレートパンツ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA8117": {
+      "productId": "AEA8117",
+      "productName": "trollポロ襟付きプルオーバー",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA5458": {
+      "productId": "AEA5458",
+      "productName": "starryスカート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7897": {
+      "productId": "AEA7897",
+      "productName": "iloコサージュ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA5461": {
+      "productId": "AEA5461",
+      "productName": "deep waveスカート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA8098": {
+      "productId": "AEA8098",
+      "productName": "trollニットプルオーバー",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA1475": {
+      "productId": "AEA1475",
+      "productName": "tambourineブラウス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA8118": {
+      "productId": "AEA8118",
+      "productName": "trollポロ襟付きドレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7916": {
+      "productId": "AEA7916",
+      "productName": "tambourineaurinko",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7904": {
+      "productId": "AEA7904",
+      "productName": "balleブローチ",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA9539": {
+      "productId": "AEA9539",
+      "productName": "kideuzura bag",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9541": {
+      "productId": "AEA9541",
+      "productName": "starryuzura bag",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA8123": {
+      "productId": "AEA8123",
+      "productName": "trollカットソードレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9545": {
+      "productId": "AEA9545",
+      "productName": "starrytoast bag",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA4681_63S": {
+      "productId": "AEA4681_63S",
+      "productName": "harborクロップドパンツ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA2452": {
+      "productId": "AEA2452",
+      "productName": "iloブルゾン",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7877": {
+      "productId": "AEA7877",
+      "productName": "shoulder strap",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA7882": {
+      "productId": "AEA7882",
+      "productName": "ilocrystal pouch",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA3247": {
+      "productId": "AEA3247",
+      "productName": "flower marblesドレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7876": {
+      "productId": "AEA7876",
+      "productName": "tambourinequartz pouch",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA4676": {
+      "productId": "AEA4676",
+      "productName": "virtaテーパードパンツ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7902": {
+      "productId": "AEA7902",
+      "productName": "kääriäストール",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA4682_64S": {
+      "productId": "AEA4682_64S",
+      "productName": "harborテーパードパンツ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9515": {
+      "productId": "AEA9515",
+      "productName": "kidemuffin bag",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA1467": {
+      "productId": "AEA1467",
+      "productName": "starryブラウス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA6839": {
+      "productId": "AEA6839",
+      "productName": "anemoneショートコート",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA9494": {
+      "productId": "AEA9494",
+      "productName": "tori bag",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA5455": {
+      "productId": "AEA5455",
+      "productName": "floretスカート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA2457": {
+      "productId": "AEA2457",
+      "productName": "tambourineベスト",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA3246": {
+      "productId": "AEA3246",
+      "productName": "iloパフスリーブドレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA4677": {
+      "productId": "AEA4677",
+      "productName": "virtaクロップドパンツ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9524": {
+      "productId": "AEA9524",
+      "productName": "kideショルダーバッグ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA4679S": {
+      "productId": "AEA4679S",
+      "productName": "glanzパンツ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "EV2112": {
+      "productId": "EV2112",
+      "productName": "flower bedソックス",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "ADA6826S": {
+      "productId": "ADA6826S",
+      "productName": "multicheckコート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ACA8005": {
+      "productId": "ACA8005",
+      "productName": "very berry\tカットソードレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ACA1383": {
+      "productId": "ACA1383",
+      "productName": "forest ringブラウス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "EV2114": {
+      "productId": "EV2114",
+      "productName": "forest paradeソックス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AES3232S": {
+      "productId": "AES3232S",
+      "productName": "confettiタックギャザードレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "EV2113": {
+      "productId": "EV2113",
+      "productName": "good news!ソックス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AES3233S": {
+      "productId": "AES3233S",
+      "productName": "confettiスタンドカラードレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "DR3236": {
+      "productId": "DR3236",
+      "productName": "forest paradeタックドレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9521": {
+      "productId": "AEA9521",
+      "productName": "kidepocket bag",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA1482S": {
+      "productId": "AEA1482S",
+      "productName": "glass flowerブラウス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA4680S": {
+      "productId": "AEA4680S",
+      "productName": "glanzコンビネゾン",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA1484S": {
+      "productId": "AEA1484S",
+      "productName": "chouchoプルオーバーブラウス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA3272S": {
+      "productId": "AEA3272S",
+      "productName": "glass flowerドレス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA1483S": {
+      "productId": "AEA1483S",
+      "productName": "chouchoブラウス",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA4674": {
+      "productId": "AEA4674",
+      "productName": "crystal sugarパンツ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA8097": {
+      "productId": "AEA8097",
+      "productName": "faintニットプルオーバー",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA6846": {
+      "productId": "AEA6846",
+      "productName": "knollコート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA8100": {
+      "productId": "AEA8100",
+      "productName": "please,thank youジョガーパンツ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA6835": {
+      "productId": "AEA6835",
+      "productName": "aubeコート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9528": {
+      "productId": "AEA9528",
+      "productName": "starryショルダーバッグ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    }
+  }
+}
