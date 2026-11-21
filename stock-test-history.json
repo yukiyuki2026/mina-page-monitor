@@ -60,6 +60,35 @@
           }
         ]
       }
+    },
+    {
+      "checkedAt": "2026/11/22 01:18:47",
+      "status": "available",
+      "stockCm": 1100,
+      "stockMeter": 11,
+      "notice": "choucho ＋ noppara ファブリック の在庫数は1100cmです。かごへ追加することができませんでした。",
+      "investigation": {
+        "direct1100Found": false,
+        "directCandidates": [],
+        "keywordCandidates": [
+          {
+            "stage": "pre-cart",
+            "urlPath": "/api/products?populate[thumbnail]=true&populate[skus]=true&populate[photo]=true&populate[colorVariations]=true&populate[relatedProducts]=true&populate[textiles][populate][thumbnail]=true&populate[textiles][populate][images]=true&populate[designers][populate][photo]=true&populate[assortContent][populate][colorVariations]=true&filters[fieldId]=FC0463&pagination[limit]=1&pagination[start]=0",
+            "status": 200,
+            "contentType": "application/json; charset=utf-8",
+            "matchedWords": [
+              "sku"
+            ],
+            "snippets": [
+              {
+                "word": "sku",
+                "text": "documentId\":\"tt09hy1rtnuhw7oi15m1isjs\",\"publishedAt\":\"2025-08-21T14:05:58.408Z\",\"focalPoint\":null},\"skus\":[{\"id\":1550315,\"value\":\"FC0463\"}],\"photo\":[{\"id\":8461,\"name\":\"5_Lg3_Cjro_Ev_RA_Tls4_Jf_Zst_M_1"
+              }
+            ],
+            "readError": false
+          }
+        ]
+      }
     }
   ]
 }
