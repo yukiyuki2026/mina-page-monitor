@@ -20,46 +20,54 @@ const { chromium } = require('playwright');
   await page.waitForTimeout(15000);
 
   const products = await page.evaluate(() => {
-    const links = Array.from(
-      document.querySelectorAll('a[href*="/online_store/FC"]')
+
+    // 商品カードそのものを取得
+    const cards = Array.from(
+      document.querySelectorAll('div[id^="item-FC"]')
     );
 
     const productMap = new Map();
 
-    for (const link of links) {
+    for (const card of cards) {
+
+      // id="item-FC0611RYRK" → FC0611RYRK
+      const productId = card.id.replace('item-', '');
+
+      if (!productId.startsWith('FC')) {
+        continue;
+      }
+
+      // 商品詳細ページへのリンク
+      const link = card.querySelector(
+        `a[href*="/online_store/${productId}"]`
+      );
+
+      if (!link) {
+        continue;
+      }
+
       const href = link.href;
 
-      // FCから始まる商品ページだけを対象にする
-      const match = href.match(/\/online_store\/(FC[0-9A-Z]+)\/?$/);
+      // 商品画像
+      const img = card.querySelector('img');
 
-      if (!match) {
-        continue;
-      }
+      // ★ 商品名は画像のaltから取得
+      const productName =
+        img?.getAttribute('alt')?.trim() || productId;
 
-      const productId = match[1];
-
-      if (productMap.has(productId)) {
-        continue;
-      }
-
-      // 商品カード全体を探す
-      const card =
-        link.closest('li') ||
-        link.closest('article') ||
-        link.parentElement;
-
-      if (!card) {
-        continue;
-      }
-
+      // SOLD OUT表示
       const soldOutElement =
         card.querySelector('[class*="soldout"]');
 
       let isSoldOut = false;
 
       if (soldOutElement) {
-        const style = window.getComputedStyle(soldOutElement);
-        const rect = soldOutElement.getBoundingClientRect();
+
+        const style =
+          window.getComputedStyle(soldOutElement);
+
+        const rect =
+          soldOutElement.getBoundingClientRect();
 
         isSoldOut =
           style.display !== 'none' &&
@@ -68,16 +76,6 @@ const { chromium } = require('playwright');
           rect.width > 0 &&
           rect.height > 0;
       }
-
-      const textLines = card.innerText
-        .split('\n')
-        .map(text => text.trim())
-        .filter(text => text !== '')
-        .filter(text => text.toLowerCase() !== 'sold out')
-        .filter(text => text !== 'ファブリック');
-
-      const productName =
-        textLines[0] || productId;
 
       productMap.set(productId, {
         productId,
@@ -95,10 +93,12 @@ const { chromium } = require('playwright');
   console.log('------------------------------');
 
   for (const product of products) {
+
     console.log(
       `${product.productName} | ` +
       `${product.productId} | ` +
-      `${product.isSoldOut ? 'SOLD OUT' : '購入可能'}`
+      `${product.isSoldOut ? 'SOLD OUT' : '購入可能'} | ` +
+      `${product.url}`
     );
   }
 
