@@ -29,23 +29,23 @@ jobs:
           MINA_URL: ${{ secrets.MINA_URL }}
         run: node network-test.js
 
-      - name: Save network test result
+      - name: Save full network snapshot
         if: always()
         run: |
-          if [ ! -f network-test-result.json ]; then
-            echo "調査結果ファイルがありません"
+          if [ ! -f network-full-snapshot.json ]; then
+            echo "完全スナップショットファイルがありません"
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add network-test-result.json
+          git add network-full-snapshot.json
 
           if git diff --cached --quiet; then
-            echo "調査結果に変更はありません"
+            echo "完全スナップショットに変更はありません"
           else
-            git commit -m "Update network test result"
+            git commit -m "Update full network snapshot"
             git pull --rebase
             git push
           fi
