@@ -1,0 +1,606 @@
+{
+  "initialized": true,
+  "detailCursor": 0,
+  "products": {
+    "MG0065": {
+      "productId": "MG0065",
+      "productName": "LANTERN BOTTLEthermo mug",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "EV1975A": {
+      "productId": "EV1975A",
+      "productName": "AURORA湯たんぽ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "HN0064_A": {
+      "productId": "HN0064_A",
+      "productName": "darning kit",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "MG0067_71": {
+      "productId": "MG0067_71",
+      "productName": "MINI TANKthermo mug",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "MG0052_54": {
+      "productId": "MG0052_54",
+      "productName": "thermo mugALLDAY",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "TR0141L": {
+      "productId": "TR0141L",
+      "productName": "トレイ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "MG0011": {
+      "productId": "MG0011",
+      "productName": "thermo mugUmbrella Bottle",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "TR1041_43": {
+      "productId": "TR1041_43",
+      "productName": "トレイ Round type",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "MG0047_50": {
+      "productId": "MG0047_50",
+      "productName": "thermo mugUmbrella Bottle",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "TR1033_39": {
+      "productId": "TR1033_39",
+      "productName": "トレイ Thin type",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "TR0133ML": {
+      "productId": "TR0133ML",
+      "productName": "トレイ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "PI0854_09": {
+      "productId": "PI0854_09",
+      "productName": "planetオーナメント",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA7914": {
+      "productId": "AEA7914",
+      "productName": "tambourinegnocchi cushion",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA7937": {
+      "productId": "AEA7937",
+      "productName": "faintブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "SC0154": {
+      "productId": "SC0154",
+      "productName": "surplusbolo 時計",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "EV2170": {
+      "productId": "EV2170",
+      "productName": "OSAJIcoffret",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7014WBS": {
+      "productId": "AEA7014WBS",
+      "productName": "chouchodog用カフェマット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7017WS": {
+      "productId": "AEA7017WS",
+      "productName": "chouchoami cushion",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7006W": {
+      "productId": "AEA7006W",
+      "productName": "dog collier",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA6004WB": {
+      "productId": "AEA6004WB",
+      "productName": "tambourinedog wear",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7912": {
+      "productId": "AEA7912",
+      "productName": "ilognocchi cushion",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA6003WB": {
+      "productId": "AEA6003WB",
+      "productName": "chouchoレインコート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7002WB": {
+      "productId": "AEA7002WB",
+      "productName": "chouchoレインフード",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA6002WB": {
+      "productId": "AEA6002WB",
+      "productName": "chouchoノースリーブレインコート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7003WB": {
+      "productId": "AEA7003WB",
+      "productName": "chouchoレインフード 耳出し穴あり",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7907": {
+      "productId": "AEA7907",
+      "productName": "tambourineハンカチ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7872_39": {
+      "productId": "AEA7872_39",
+      "productName": "tambourine borderブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7867": {
+      "productId": "AEA7867",
+      "productName": "metsäブランケット",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA7029": {
+      "productId": "AEA7029",
+      "productName": "adelieルームスリッパ",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA7869_69A": {
+      "productId": "AEA7869_69A",
+      "productName": "anemoneブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7864_98": {
+      "productId": "AEA7864_98",
+      "productName": "tambourineブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ACA7595": {
+      "productId": "ACA7595",
+      "productName": "metsäブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ACA7502": {
+      "productId": "ACA7502",
+      "productName": "symphonyブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ACA7596_DAEA": {
+      "productId": "ACA7596_DAEA",
+      "productName": "run run runブランケット",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AAA7803A": {
+      "productId": "AAA7803A",
+      "productName": "Tamaブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ABA7165A": {
+      "productId": "ABA7165A",
+      "productName": "foglandブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ABA7167A": {
+      "productId": "ABA7167A",
+      "productName": "carnivalブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7908": {
+      "productId": "AEA7908",
+      "productName": "kidegnocchi cushion",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "MP0034": {
+      "productId": "MP0034",
+      "productName": "tambourinesewing machine",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "MP0035": {
+      "productId": "MP0035",
+      "productName": "SWING BIN",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA8006WB": {
+      "productId": "AEA8006WB",
+      "productName": "wing treedog wear",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7001WB": {
+      "productId": "AEA7001WB",
+      "productName": "wing treedog用カフェマット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA8004WB": {
+      "productId": "AEA8004WB",
+      "productName": "chouchodog wear",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "TL1007_08": {
+      "productId": "TL1007_08",
+      "productName": "soda waterタオル",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "TL1009_10": {
+      "productId": "TL1009_10",
+      "productName": "hana haneタオル",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7905": {
+      "productId": "AEA7905",
+      "productName": "wing treeマルチクロス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "MG0026": {
+      "productId": "MG0026",
+      "productName": "following daythermo mug",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7910": {
+      "productId": "AEA7910",
+      "productName": "loingnocchi cushion",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AES7798": {
+      "productId": "AES7798",
+      "productName": "light mistマルチクロス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ZR0040": {
+      "productId": "ZR0040",
+      "productName": "sewing needle set",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "TW0156A": {
+      "productId": "TW0156A",
+      "productName": "go!プレート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "KMN0029": {
+      "productId": "KMN0029",
+      "productName": "cafcaComuro Nonoka",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "TW0158A": {
+      "productId": "TW0158A",
+      "productName": "swing camelliaプレート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AES8002WS": {
+      "productId": "AES8002WS",
+      "productName": "chouchodog wear",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "BK0111": {
+      "productId": "BK0111",
+      "productName": "NOTO no KOElittle book",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AES6001WS": {
+      "productId": "AES6001WS",
+      "productName": "tambourinedog wear",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "EV1596A": {
+      "productId": "EV1596A",
+      "productName": "KESÄKUKKAマルチクロス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "TW0150A": {
+      "productId": "TW0150A",
+      "productName": "run run runプレート",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AES8001WS": {
+      "productId": "AES8001WS",
+      "productName": "symphonydog wear",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AES8003WS": {
+      "productId": "AES8003WS",
+      "productName": "chouchodog wear",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ADA7690": {
+      "productId": "ADA7690",
+      "productName": "enkeliブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ADA7734": {
+      "productId": "ADA7734",
+      "productName": "siksakブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ACA7500": {
+      "productId": "ACA7500",
+      "productName": "sea laceブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ADA7687": {
+      "productId": "ADA7687",
+      "productName": "one cat and rabbitsブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ADA7686": {
+      "productId": "ADA7686",
+      "productName": "life puzzleブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ABA7432": {
+      "productId": "ABA7432",
+      "productName": "Riverブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ACS7367": {
+      "productId": "ACS7367",
+      "productName": "tambourineマルチクロス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ACS7373": {
+      "productId": "ACS7373",
+      "productName": "flower crownハンカチ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AAS7749": {
+      "productId": "AAS7749",
+      "productName": "light berryハンカチ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AES7806": {
+      "productId": "AES7806",
+      "productName": "sitoagnocchi cushion",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "EV1599A": {
+      "productId": "EV1599A",
+      "productName": "KESÄKUKKAマルチクロス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "PAS0002": {
+      "productId": "PAS0002",
+      "productName": "STUGRUTAキッチンタオル",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "EV1647": {
+      "productId": "EV1647",
+      "productName": "人生包丁",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "TW7050": {
+      "productId": "TW7050",
+      "productName": "nollaマグカップ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "MG0035_58": {
+      "productId": "MG0035_58",
+      "productName": "thermo mugUmbrella Bottle",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "MG0034_59": {
+      "productId": "MG0034_59",
+      "productName": "thermo mugUmbrella Bottle",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "PAS0001": {
+      "productId": "PAS0001",
+      "productName": "TORPRUTAナプキン",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "SP0310_12": {
+      "productId": "SP0310_12",
+      "productName": "ポストカードセット「日曜に想う」挿画",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "BK0108": {
+      "productId": "BK0108",
+      "productName": "つぐ minä perhonen展覧会カタログ",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "ADA7737": {
+      "productId": "ADA7737",
+      "productName": "chessブランケット",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AES7804": {
+      "productId": "AES7804",
+      "productName": "wind flaggnocchi cushion",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "SP0075": {
+      "productId": "SP0075",
+      "productName": "imagineポスター",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "EV2030_31": {
+      "productId": "EV2030_31",
+      "productName": "キャンドル",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "MG0038_60": {
+      "productId": "MG0038_60",
+      "productName": "thermo mugUmbrella Bottle",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ADA7744": {
+      "productId": "ADA7744",
+      "productName": "kimallusマルチクロス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "TE0719_A": {
+      "productId": "TE0719_A",
+      "productName": "手拭",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "TE0719_B": {
+      "productId": "TE0719_B",
+      "productName": "手拭",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "TE0017_A": {
+      "productId": "TE0017_A",
+      "productName": "jellybeans手拭",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "RG0019": {
+      "productId": "RG0019",
+      "productName": "zephyrラグ",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "ADA7747": {
+      "productId": "ADA7747",
+      "productName": "sea skygnocchi cushion",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "RG0021": {
+      "productId": "RG0021",
+      "productName": "courageラグ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "TI0039": {
+      "productId": "TI0039",
+      "productName": "tambourine143mm タイル",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ADA7743": {
+      "productId": "ADA7743",
+      "productName": "kiviマルチクロス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ACS7371": {
+      "productId": "ACS7371",
+      "productName": "twin flowerマルチクロス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "SC0153": {
+      "productId": "SC0153",
+      "productName": "light berrybolo 時計",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "SC0152": {
+      "productId": "SC0152",
+      "productName": "choucho × light berrybolo 時計",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "TL7756A_7A": {
+      "productId": "TL7756A_7A",
+      "productName": "run run runタオル",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "EV1597": {
+      "productId": "EV1597",
+      "productName": "METSÄLAMPIマルチクロス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "ADS7640": {
+      "productId": "ADS7640",
+      "productName": "rocherマルチクロス",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "MG0045_46": {
+      "productId": "MG0045_46",
+      "productName": "thermo mugUmbrella Bottle",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    }
+  }
+}
