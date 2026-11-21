@@ -1,6 +1,18 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
+const LIST_URL =
+  process.env.MINA_URL;
 
+const STATE_FILE = 'state.json';
+
+const GITHUB_USERNAME =
+  process.env.GITHUB_ACTOR;
+
+if (!LIST_URL) {
+  throw new Error(
+    'MINA_URLが設定されていません。GitHub Actions Secretを確認してください。'
+  );
+}
 const LIST_URL =
   'https://www.mina-perhonen.jp/online_store/fabric/';
 
