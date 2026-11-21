@@ -23,6 +23,8 @@ jobs:
 
       - name: Run stock monitor
         run: node monitor.js
+      - name: Test product detail
+        run: node detail-test.js
       - name: Upload debug files
         if: always()
         uses: actions/upload-artifact@v4
