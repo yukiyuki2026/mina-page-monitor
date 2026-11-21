@@ -9,7 +9,7 @@ const { chromium } = require('playwright');
 
   // 現在、再入荷に関する文章があるテスト商品
   const url =
-    'https://www.mina-perhonen.jp/online_store/FC0603BCTI';
+  'https://www.mina-perhonen.jp/online_store/FC0598ELDT';
 
   console.log(`商品ページを開きます: ${url}`);
 
