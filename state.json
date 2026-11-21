@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 70,
+  "detailCursor": 80,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -539,7 +539,7 @@
     "FC0463": {
       "productId": "FC0463",
       "productName": "choucho ＋ nopparaファブリック",
-      "isSoldOut": true,
+      "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0417": {
