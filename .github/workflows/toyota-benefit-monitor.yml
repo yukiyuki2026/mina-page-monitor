@@ -1,0 +1,64 @@
+name: Toyota Benefit Monitor
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    # 日本時間 8:05 / 18:05 ごろ
+    # GitHub Actions の cron は UTC
+    - cron: '5 23,9 * * *'
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: toyota-benefit-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Toyota Benefit Monitor
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          TOYOTA_NEWS_RSS_URL: ${{ secrets.TOYOTA_NEWS_RSS_URL }}
+          TOYOTA_PRESS_RSS_URL: ${{ secrets.TOYOTA_PRESS_RSS_URL }}
+          TOYOTA_SUPPORT_URL: ${{ secrets.TOYOTA_SUPPORT_URL }}
+        run: node toyota-benefit-monitor.js
+
+      - name: Save Toyota Benefit Monitor state
+        run: |
+          if [ ! -f toyota-benefit-state.json ]; then
+            echo "toyota-benefit-state.json がありません"
+            exit 1
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          cp toyota-benefit-state.json /tmp/toyota-benefit-state.json
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          cp /tmp/toyota-benefit-state.json toyota-benefit-state.json
+
+          git add toyota-benefit-state.json
+
+          if git diff --cached --quiet; then
+            echo "toyota-benefit-state.json に変更はありません"
+          else
+            git commit -m "Update Toyota Benefit Monitor state"
+            git push origin main
+          fi
