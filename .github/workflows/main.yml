@@ -1,4 +1,4 @@
-name: Page Monitor
+name: Fabric Monitor
 
 permissions:
   contents: write
