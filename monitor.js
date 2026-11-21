@@ -1,5 +1,4 @@
 const { chromium } = require('playwright');
-const fs = require('fs');
 
 (async () => {
   const browser = await chromium.launch({ headless: true });
@@ -12,56 +11,107 @@ const fs = require('fs');
 
   console.log('minä perhonen Fabric を開きます');
 
-  // products や在庫関係の通信をログに出す
-  page.on('response', response => {
-    const u = response.url();
-
-    if (
-      u.includes('products') ||
-      u.includes('stock') ||
-      u.includes('inventory')
-    ) {
-      console.log(
-        '通信:',
-        response.status(),
-        u
-      );
-    }
-  });
-
   await page.goto(url, {
     waitUntil: 'domcontentloaded',
     timeout: 60000
   });
 
-  console.log('ページ読み込み完了。15秒待ちます');
-
+  console.log('商品一覧の読み込みを15秒待ちます');
   await page.waitForTimeout(15000);
 
-  // JavaScript実行後のHTMLを保存
-  const html = await page.content();
-  fs.writeFileSync('page.html', html);
+  const products = await page.evaluate(() => {
+    const links = Array.from(
+      document.querySelectorAll('a[href*="/online_store/FC"]')
+    );
 
-  // 実際にGitHub側で見えている画面を保存
-  await page.screenshot({
-    path: 'page.png',
-    fullPage: true
+    const productMap = new Map();
+
+    for (const link of links) {
+      const href = link.href;
+
+      // FCから始まる商品ページだけを対象にする
+      const match = href.match(/\/online_store\/(FC[0-9A-Z]+)\/?$/);
+
+      if (!match) {
+        continue;
+      }
+
+      const productId = match[1];
+
+      if (productMap.has(productId)) {
+        continue;
+      }
+
+      // 商品カード全体を探す
+      const card =
+        link.closest('li') ||
+        link.closest('article') ||
+        link.parentElement;
+
+      if (!card) {
+        continue;
+      }
+
+      const soldOutElement =
+        card.querySelector('[class*="soldout"]');
+
+      let isSoldOut = false;
+
+      if (soldOutElement) {
+        const style = window.getComputedStyle(soldOutElement);
+        const rect = soldOutElement.getBoundingClientRect();
+
+        isSoldOut =
+          style.display !== 'none' &&
+          style.visibility !== 'hidden' &&
+          Number(style.opacity) !== 0 &&
+          rect.width > 0 &&
+          rect.height > 0;
+      }
+
+      const textLines = card.innerText
+        .split('\n')
+        .map(text => text.trim())
+        .filter(text => text !== '')
+        .filter(text => text.toLowerCase() !== 'sold out')
+        .filter(text => text !== 'ファブリック');
+
+      const productName =
+        textLines[0] || productId;
+
+      productMap.set(productId, {
+        productId,
+        productName,
+        url: href,
+        isSoldOut
+      });
+    }
+
+    return Array.from(productMap.values());
   });
 
-  const soldOutTextCount =
-    await page.getByText('SOLD OUT', { exact: true }).count();
-
-  const soldOutClassCount =
-    await page.locator('[class*="soldout"]').count();
-
   console.log('------------------------------');
-  console.log(`SOLD OUT文字の件数: ${soldOutTextCount}`);
-  console.log(`soldoutクラスの件数: ${soldOutClassCount}`);
-  console.log(`ページタイトル: ${await page.title()}`);
-  console.log(`現在URL: ${page.url()}`);
+  console.log(`取得した商品数: ${products.length}`);
   console.log('------------------------------');
 
-  console.log('page.html と page.png を保存しました');
+  for (const product of products) {
+    console.log(
+      `${product.productName} | ` +
+      `${product.productId} | ` +
+      `${product.isSoldOut ? 'SOLD OUT' : '購入可能'}`
+    );
+  }
+
+  const soldOutProducts =
+    products.filter(product => product.isSoldOut);
+
+  const availableProducts =
+    products.filter(product => !product.isSoldOut);
+
+  console.log('------------------------------');
+  console.log(`SOLD OUT商品数: ${soldOutProducts.length}`);
+  console.log(`購入可能商品数: ${availableProducts.length}`);
+  console.log('------------------------------');
 
   await browser.close();
 })();
