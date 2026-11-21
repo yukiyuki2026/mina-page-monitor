@@ -4,18 +4,8 @@ const fs = require('fs');
 const LIST_URL = process.env.MINA_URL;
 const OUTPUT_FILE = 'network-test-result.json';
 
-// 今回はSOLD OUT商品を最大3件だけ調べる
+// SOLD OUT商品を最大3件確認
 const MAX_PRODUCTS = 3;
-
-const SEARCH_WORDS = [
-  'stock',
-  'inventory',
-  'quantity',
-  'available',
-  'availability',
-  'sku',
-  'variant'
-];
 
 if (!LIST_URL) {
   throw new Error(
@@ -39,7 +29,7 @@ function getJapanTime() {
   ).format(new Date());
 }
 
-function safePath(urlText) {
+function getSafePath(urlText) {
   try {
     const url = new URL(urlText);
 
@@ -50,126 +40,6 @@ function safePath(urlText) {
   } catch {
     return '';
   }
-}
-
-function createSnippet(
-  text,
-  index
-) {
-  const normalized =
-    text.replace(/\s+/g, ' ');
-
-  return normalized.slice(
-    Math.max(0, index - 150),
-    Math.min(
-      normalized.length,
-      index + 300
-    )
-  );
-}
-
-function findInterestingValues(text) {
-  const lower =
-    text.toLowerCase();
-
-  const findings = [];
-
-  /*
-   * stock / inventory / quantityなどを探す
-   */
-  for (const word of SEARCH_WORDS) {
-    let startIndex = 0;
-
-    while (true) {
-      const index =
-        lower.indexOf(
-          word.toLowerCase(),
-          startIndex
-        );
-
-      if (index < 0) {
-        break;
-      }
-
-      findings.push({
-        type: 'keyword',
-        keyword: word,
-        snippet:
-          createSnippet(
-            text,
-            index
-          )
-      });
-
-      startIndex =
-        index + word.length;
-
-      /*
-       * 同じ単語が大量にある場合の
-       * ログ肥大化防止
-       */
-      if (
-        findings.filter(
-          item =>
-            item.keyword === word
-        ).length >= 5
-      ) {
-        break;
-      }
-    }
-  }
-
-  /*
-   * よくある在庫JSON表現を重点的に探す
-   *
-   * 例:
-   * "stock": 0
-   * "quantity": 0
-   * "inventory": 0
-   */
-  const patterns = [
-    /["']?stock["']?\s*[:=]\s*(-?\d+)/gi,
-    /["']?inventory["']?\s*[:=]\s*(-?\d+)/gi,
-    /["']?quantity["']?\s*[:=]\s*(-?\d+)/gi,
-    /["']?availableQuantity["']?\s*[:=]\s*(-?\d+)/gi,
-    /["']?availability["']?\s*[:=]\s*["']?([^"',}\s]+)/gi,
-    /["']?available["']?\s*[:=]\s*(true|false|\d+)/gi
-  ];
-
-  for (const pattern of patterns) {
-    let match;
-
-    while (
-      (
-        match =
-          pattern.exec(text)
-      ) !== null
-    ) {
-      findings.push({
-        type: 'value',
-        expression:
-          match[0],
-        value:
-          match[1],
-        snippet:
-          createSnippet(
-            text,
-            match.index
-          )
-      });
-
-      if (
-        findings.filter(
-          item =>
-            item.type === 'value'
-        ).length >= 30
-      ) {
-        break;
-      }
-    }
-  }
-
-  return findings;
 }
 
 async function inspectProduct(
@@ -184,103 +54,87 @@ async function inspectProduct(
       }
     });
 
-  const responsePromises = [];
+  const apiResponses = [];
 
   /*
-   * カート操作は一切していません。
-   * ページを普通に開いた時の
-   * Fetch/XHRだけ観察します。
+   * /api/products のJSON全文を取得
+   *
+   * かごへ入れる操作はしない
+   * add.jsonも呼ばない
    */
   page.on(
     'response',
     response => {
-      const promise =
+      const requestPath =
+        getSafePath(
+          response.url()
+        );
+
+      if (
+        !requestPath.startsWith(
+          '/api/products?'
+        )
+      ) {
+        return;
+      }
+
+      const task =
         (async () => {
-          const type =
-            response
-              .request()
-              .resourceType();
-
-          if (
-            type !== 'xhr' &&
-            type !== 'fetch'
-          ) {
-            return null;
-          }
-
-          const path =
-            safePath(
-              response.url()
-            );
-
-          /*
-           * カート系通信は除外
-           */
-          if (
-            path.includes(
-              'add.json'
-            )
-          ) {
-            return null;
-          }
-
-          let text = '';
-
           try {
-            text =
-              await response.text();
-          } catch {
-            return null;
-          }
-
-          /*
-           * 最大1MBだけ調査
-           */
-          const safeText =
-            text.slice(
-              0,
-              1000000
-            );
-
-          const findings =
-            findInterestingValues(
-              safeText
-            );
-
-          const interestingPath =
-            /product|sku|stock|inventory|quantity|available|variant/i
-              .test(path);
-
-          if (
-            findings.length === 0 &&
-            !interestingPath
-          ) {
-            return null;
-          }
-
-          return {
-            method:
-              response
-                .request()
-                .method(),
-
-            path,
-
-            status:
-              response.status(),
-
-            contentType:
+            const contentType =
               response.headers()[
                 'content-type'
-              ] || '',
+              ] || '';
 
-            findings
-          };
+            if (
+              !contentType.includes(
+                'application/json'
+              )
+            ) {
+              return;
+            }
+
+            const json =
+              await response.json();
+
+            apiResponses.push({
+              method:
+                response
+                  .request()
+                  .method(),
+
+              path:
+                requestPath,
+
+              status:
+                response.status(),
+
+              json
+            });
+
+          } catch (error) {
+            apiResponses.push({
+              method:
+                response
+                  .request()
+                  .method(),
+
+              path:
+                requestPath,
+
+              status:
+                response.status(),
+
+              error:
+                error.message
+            });
+          }
         })();
 
-      responsePromises.push(
-        promise
-      );
+      /*
+       * Promise rejectionを防止
+       */
+      task.catch(() => {});
     }
   );
 
@@ -294,16 +148,20 @@ async function inspectProduct(
       {
         waitUntil:
           'domcontentloaded',
+
         timeout: 60000
       }
     );
 
+    /*
+     * API通信完了待ち
+     */
     await page.waitForTimeout(
-      8000
+      10000
     );
 
     /*
-     * 詳細ページ上のカラー状態も取得
+     * 画面上のカラー状態も保存
      */
     const pageData =
       await page.evaluate(() => {
@@ -331,64 +189,154 @@ async function inspectProduct(
             continue;
           }
 
+          const texts =
+            container.innerText
+              .split('\n')
+              .map(text =>
+                text.trim()
+              )
+              .filter(Boolean);
+
+          const width =
+            button.innerText.trim();
+
+          const color =
+            texts.find(text =>
+              text !== width &&
+              text !== 'カラー' &&
+              text !== '生地巾(cm)' &&
+              text !==
+                'かごへ入れる' &&
+              !/^\d+$/.test(text) &&
+              !/^\d+(\.\d+)?CM$/i.test(
+                text
+              )
+            ) || '';
+
           colors.push({
-            text:
-              container.innerText
-                .replace(
-                  /\s+/g,
-                  ' '
-                )
-                .trim(),
-
+            color,
+            width,
             disabled:
-              button.disabled,
-
-            buttonText:
-              button.innerText
-                .trim()
+              button.disabled
           });
         }
 
-        /*
-         * HTML内にstock等が
-         * 埋め込まれていないかも調査
-         */
-        const html =
-          document.documentElement
-            .innerHTML;
-
         return {
-          colors,
-
-          htmlFindings:
-            []
+          colors
         };
       });
 
-    /*
-     * ページHTMLもNode側で調査
-     */
-    const html =
-      await page.content();
-
-    pageData.htmlFindings =
-      findInterestingValues(
-        html.slice(
-          0,
-          2000000
-        )
-      );
-
-    await page.waitForTimeout(
-      1000
+    console.log(
+      `商品: ${product.productId}`
     );
 
-    const responses =
-      (
-        await Promise.all(
-          responsePromises
+    console.log(
+      `カラー数: ${pageData.colors.length}`
+    );
+
+    console.log(
+      `/api/products取得数: ${apiResponses.length}`
+    );
+
+    /*
+     * JSON内の0を簡易集計
+     */
+    const zeroValues = [];
+
+    function searchZeros(
+      value,
+      path = ''
+    ) {
+      if (
+        value === null ||
+        value === undefined
+      ) {
+        return;
+      }
+
+      if (
+        typeof value === 'number'
+      ) {
+        if (value === 0) {
+          zeroValues.push({
+            path,
+            value
+          });
+        }
+
+        return;
+      }
+
+      if (
+        Array.isArray(value)
+      ) {
+        value.forEach(
+          (item, index) =>
+            searchZeros(
+              item,
+              `${path}[${index}]`
+            )
+        );
+
+        return;
+      }
+
+      if (
+        typeof value === 'object'
+      ) {
+        for (
+          const [
+            key,
+            child
+          ]
+          of Object.entries(value)
+        ) {
+          const childPath =
+            path
+              ? `${path}.${key}`
+              : key;
+
+          searchZeros(
+            child,
+            childPath
+          );
+        }
+      }
+    }
+
+    for (
+      const apiResponse
+      of apiResponses
+    ) {
+      if (apiResponse.json) {
+        searchZeros(
+          apiResponse.json
+        );
+      }
+    }
+
+    console.log(
+      `JSON内の数値0: ${zeroValues.length}件`
+    );
+
+    if (
+      zeroValues.length > 0
+    ) {
+      console.log(
+        '0になっているJSONパス:'
+      );
+
+      console.log(
+        JSON.stringify(
+          zeroValues.slice(
+            0,
+            100
+          ),
+          null,
+          2
         )
-      ).filter(Boolean);
+      );
+    }
 
     return {
       productId:
@@ -406,11 +354,14 @@ async function inspectProduct(
       colors:
         pageData.colors,
 
-      htmlFindings:
-        pageData.htmlFindings,
+      zeroValues,
 
-      networkResponses:
-        responses
+      /*
+       * ★ここに/api/productsの
+       * JSON全文が入る
+       */
+      apiProductsResponses:
+        apiResponses
     };
 
   } finally {
@@ -438,7 +389,7 @@ async function inspectProduct(
     );
 
     console.log(
-      'SOLD OUT商品の在庫0候補調査'
+      '/api/products JSON全文調査'
     );
 
     console.log(
@@ -449,11 +400,15 @@ async function inspectProduct(
       '=============================='
     );
 
+    /*
+     * Fabric一覧
+     */
     await listPage.goto(
       LIST_URL,
       {
         waitUntil:
           'domcontentloaded',
+
         timeout: 60000
       }
     );
@@ -463,7 +418,7 @@ async function inspectProduct(
     );
 
     /*
-     * 一覧からSOLD OUT商品だけ抽出
+     * SOLD OUT商品を抽出
      */
     const products =
       await listPage.evaluate(() => {
@@ -488,6 +443,14 @@ async function inspectProduct(
               )
               .trim();
 
+          if (
+            !productId.startsWith(
+              'FC'
+            )
+          ) {
+            continue;
+          }
+
           const link =
             card.querySelector(
               `a[href*="/online_store/${productId}"]`
@@ -502,7 +465,9 @@ async function inspectProduct(
               '[class*="soldout"]'
             );
 
-          if (!soldOutElement) {
+          if (
+            !soldOutElement
+          ) {
             continue;
           }
 
@@ -516,8 +481,10 @@ async function inspectProduct(
               .getBoundingClientRect();
 
           const isSoldOut =
-            style.display !== 'none' &&
-            style.visibility !== 'hidden' &&
+            style.display !==
+              'none' &&
+            style.visibility !==
+              'hidden' &&
             Number(
               style.opacity
             ) !== 0 &&
@@ -556,9 +523,6 @@ async function inspectProduct(
       `現在のSOLD OUT: ${products.length}商品`
     );
 
-    /*
-     * 今回は最大3件だけ調査
-     */
     const targets =
       products.slice(
         0,
@@ -566,7 +530,7 @@ async function inspectProduct(
       );
 
     console.log(
-      `今回調査する商品: ${targets.length}件`
+      `今回調査: ${targets.length}商品`
     );
 
     const results = [];
@@ -585,84 +549,25 @@ async function inspectProduct(
         result
       );
 
-      /*
-       * ログにも候補を表示
-       */
       console.log(
         '------------------------------'
       );
 
       console.log(
-        `商品: ${result.productId}`
+        `${result.productId}`
       );
 
       console.log(
-        `HTML候補: ${result.htmlFindings.length}件`
+        `API: ${result.apiProductsResponses.length}件`
       );
 
       console.log(
-        `通信候補: ${result.networkResponses.length}件`
+        `数値0: ${result.zeroValues.length}件`
       );
-
-      const zeroCandidates = [];
-
-      for (
-        const finding
-        of result.htmlFindings
-      ) {
-        if (
-          finding.type ===
-            'value' &&
-          String(
-            finding.value
-          ) === '0'
-        ) {
-          zeroCandidates.push({
-            source: 'HTML',
-            ...finding
-          });
-        }
-      }
-
-      for (
-        const response
-        of result.networkResponses
-      ) {
-        for (
-          const finding
-          of response.findings || []
-        ) {
-          if (
-            finding.type ===
-              'value' &&
-            String(
-              finding.value
-            ) === '0'
-          ) {
-            zeroCandidates.push({
-              source:
-                response.path,
-              ...finding
-            });
-          }
-        }
-      }
 
       console.log(
-        `★ 在庫0候補: ${zeroCandidates.length}件`
+        '------------------------------'
       );
-
-      if (
-        zeroCandidates.length > 0
-      ) {
-        console.log(
-          JSON.stringify(
-            zeroCandidates,
-            null,
-            2
-          )
-        );
-      }
 
       await new Promise(
         resolve =>
@@ -673,13 +578,12 @@ async function inspectProduct(
       );
     }
 
-    /*
-     * URL全体は保存せず、
-     * 商品ID・候補情報だけ保存
-     */
     const output = {
       checkedAt:
         getJapanTime(),
+
+      purpose:
+        'SOLD OUT時の/api/products JSON全文取得',
 
       targetCount:
         results.length,
@@ -703,11 +607,11 @@ async function inspectProduct(
     );
 
     console.log(
-      `${OUTPUT_FILE}を作成しました`
+      `${OUTPUT_FILE}を保存しました`
     );
 
     console.log(
-      '調査終了'
+      '/api/products JSON全文取得完了'
     );
 
     console.log(
