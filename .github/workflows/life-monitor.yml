@@ -1,0 +1,65 @@
+name: Life Monitor
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '*/15 * * * *'
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: life-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Playwright
+        run: |
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      - name: Run Life monitor
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LIFE_URL: ${{ secrets.LIFE_URL }}
+        run: node life-monitor.js
+
+      - name: Save Life monitor state
+        run: |
+          if [ ! -f life-state.json ]; then
+            echo "life-state.json がありません"
+            exit 1
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          cp life-state.json /tmp/life-state.json
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          cp /tmp/life-state.json life-state.json
+
+          git add life-state.json
+
+          if git diff --cached --quiet; then
+            echo "life-state.json に変更はありません"
+          else
+            git commit -m "Update Life monitor state"
+            git push origin main
+          fi
