@@ -1,4 +1,4 @@
-name: Mina Stock Monitor
+name: Page Monitor
 
 permissions:
   contents: write
@@ -11,7 +11,7 @@ on:
     - cron: '*/15 * * * *'
 
 concurrency:
-  group: mina-stock-monitor
+  group: page-monitor
   cancel-in-progress: false
 
 jobs:
@@ -32,7 +32,7 @@ jobs:
           npm install playwright
           npx playwright install --with-deps chromium
 
-      - name: Run stock monitor
+      - name: Run page monitor
         env:
           GITHUB_TOKEN: ${{ github.token }}
           MINA_URL: ${{ secrets.MINA_URL }}
@@ -53,6 +53,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "state.json に変更はありません"
           else
-            git commit -m "Update stock monitor state"
+            git commit -m "Update page monitor state"
             git push
           fi
