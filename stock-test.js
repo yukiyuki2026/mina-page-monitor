@@ -3,7 +3,11 @@ const { chromium } = require('playwright');
 const PRODUCT_ID = 'FC0463';
 const TARGET_COLOR = 'brown';
 const TARGET_WIDTH = '149';
-const TEST_QUANTITY = '5000';
+
+// 数量欄では
+// value="500" = 5000cm
+const TEST_QUANTITY_VALUE = '500';
+const TEST_QUANTITY_CM = 5000;
 
 (async () => {
   const browser = await chromium.launch({
@@ -26,8 +30,7 @@ const TEST_QUANTITY = '5000';
     console.log('==============================');
 
     /*
-     * 通常監視で使っているSecretから
-     * 一覧URLを取得
+     * 監視先URLはGitHub Secretから取得
      */
     const listUrl = process.env.MINA_URL;
 
@@ -73,27 +76,41 @@ const TEST_QUANTITY = '5000';
     );
 
     /*
-     * brown の149cmボタンを押す
+     * brown の149cmボタンを探す
      */
-    const widthButton = colorRow.locator(
-      'button.btn_line',
-      {
-        hasText: TARGET_WIDTH
-      }
-    );
+    const widthButton =
+      colorRow.locator(
+        'button.btn_line',
+        {
+          hasText: TARGET_WIDTH
+        }
+      );
 
-    if (await widthButton.count() === 0) {
+    if (
+      await widthButton.count() === 0
+    ) {
       throw new Error(
         `${TARGET_COLOR} の ${TARGET_WIDTH}cm が見つかりません`
       );
     }
 
-    if (await widthButton.isDisabled()) {
-      throw new Error(
+    if (
+      await widthButton.isDisabled()
+    ) {
+      console.log(
         `${TARGET_COLOR} は現在購入不可です`
       );
+
+      console.log(
+        'SOLD OUTの可能性があります'
+      );
+
+      return;
     }
 
+    /*
+     * brown / 149cm を選択
+     */
     await widthButton.click();
 
     console.log(
@@ -103,87 +120,53 @@ const TEST_QUANTITY = '5000';
     await page.waitForTimeout(1000);
 
     /*
-     * 数量セレクトを探す
+     * 数量欄を取得
      */
     const quantitySelect =
-      page.locator('select').filter({
-        has: page.locator(
-          `option[value="${TEST_QUANTITY}"]`
-        )
-      }).first();
+      page.locator('select.select').first();
 
     if (
       await quantitySelect.count() === 0
     ) {
-      /*
-       * optionのvalueが5000ではないサイト仕様に備えて
-       * 表示文字から探す
-       */
-      const selects =
-        page.locator('select');
-
-      let foundSelect = null;
-
-      for (
-        let i = 0;
-        i < await selects.count();
-        i++
-      ) {
-        const select =
-          selects.nth(i);
-
-        const texts =
-          await select
-            .locator('option')
-            .allTextContents();
-
-        if (
-          texts.some(text =>
-            text
-              .toUpperCase()
-              .includes('5000CM')
-          )
-        ) {
-          foundSelect = select;
-          break;
-        }
-      }
-
-      if (!foundSelect) {
-        throw new Error(
-          '5000CMを選択できる数量欄が見つかりません'
-        );
-      }
-
-      await foundSelect.selectOption({
-        label: '5000CM'
-      });
-
-    } else {
-
-      try {
-        await quantitySelect.selectOption(
-          TEST_QUANTITY
-        );
-      } catch {
-        await quantitySelect.selectOption({
-          label: '5000CM'
-        });
-      }
+      throw new Error(
+        '数量選択欄が見つかりません'
+      );
     }
 
+    /*
+     * 5000cmの選択肢が本当に存在するか確認
+     *
+     * HTML:
+     * <option value="500">5000cm</option>
+     */
+    const option5000 =
+      quantitySelect.locator(
+        'option[value="500"]'
+      );
+
+    if (
+      await option5000.count() === 0
+    ) {
+      throw new Error(
+        '5000cmの選択肢が見つかりません'
+      );
+    }
+
+    /*
+     * 5000cm を選択
+     */
+    await quantitySelect.selectOption(
+      TEST_QUANTITY_VALUE
+    );
+
     console.log(
-      'テスト数量 5000cm を選択しました'
+      `テスト数量 ${TEST_QUANTITY_CM}cm を選択しました`
     );
 
     await page.waitForTimeout(500);
 
     /*
-     * add.json のレスポンスを待つ
-     *
-     * 重要：
-     * 在庫不足ならカート追加は失敗し、
-     * noticeに実在庫が返る想定。
+     * add.json のレスポンス待機を先に開始
      */
     const responsePromise =
       page.waitForResponse(
@@ -197,7 +180,7 @@ const TEST_QUANTITY = '5000';
       );
 
     /*
-     * 「かごへ入れる」を押す
+     * かごへ入れるボタン
      */
     const addButton =
       page.locator(
@@ -216,6 +199,11 @@ const TEST_QUANTITY = '5000';
       '在庫チェックを実行します'
     );
 
+    /*
+     * 在庫不足になれば
+     * カート追加は失敗し、
+     * add.jsonのnoticeに在庫数が返る
+     */
     await addButton.click();
 
     const response =
@@ -224,8 +212,14 @@ const TEST_QUANTITY = '5000';
     const result =
       await response.json();
 
-    console.log('------------------------------');
-    console.log('add.json 応答');
+    console.log(
+      '------------------------------'
+    );
+
+    console.log(
+      'add.json 応答'
+    );
+
     console.log(
       JSON.stringify(
         result,
@@ -233,71 +227,118 @@ const TEST_QUANTITY = '5000';
         2
       )
     );
-    console.log('------------------------------');
+
+    console.log(
+      '------------------------------'
+    );
 
     /*
-     * noticeから
-     * 「在庫数は1100cmです」
-     * の1100を取得
+     * 想定外にカート追加成功した場合
+     */
+    if (
+      result.status === 'success'
+    ) {
+      console.log(
+        '⚠️ カート追加が成功しました'
+      );
+
+      console.log(
+        '残量取得テストを中止します'
+      );
+
+      process.exitCode = 1;
+
+      return;
+    }
+
+    /*
+     * notice例:
+     *
+     * choucho ＋ noppara ファブリック の
+     * 在庫数は1100cmです。
+     * かごへ追加することができませんでした。
      */
     const notice =
       result.notice || '';
 
+    console.log(
+      `notice: ${notice}`
+    );
+
+    /*
+     * 在庫数を抽出
+     */
     const match =
       notice.match(
-        /在庫数は\s*([0-9,]+)\s*cm/
+        /在庫数は\s*([0-9,]+)\s*cm/i
       );
 
     if (!match) {
-
       console.log(
         '在庫残量を取得できませんでした'
       );
 
       console.log(
-        `notice: ${notice}`
+        'add.jsonのnoticeを確認してください'
       );
 
-      /*
-       * 万一カート追加が成功した場合は
-       * テスト失敗として明確にする
-       */
-      if (
-        result.status === 'success'
-      ) {
-        console.log(
-          '注意：カート追加が成功した可能性があります'
-        );
-      }
+      process.exitCode = 1;
 
       return;
     }
 
     const stockCm =
       Number(
-        match[1].replace(/,/g, '')
+        match[1]
+          .replace(/,/g, '')
       );
 
     const stockMeter =
       stockCm / 100;
 
-    console.log('==============================');
-    console.log('在庫残量取得成功');
+    console.log(
+      '=============================='
+    );
+
+    console.log(
+      '✅ 在庫残量取得成功'
+    );
+
+    console.log(
+      `商品ID: ${PRODUCT_ID}`
+    );
+
+    console.log(
+      `カラー: ${TARGET_COLOR}`
+    );
+
+    console.log(
+      `生地巾: ${TARGET_WIDTH}cm`
+    );
+
     console.log(
       `残量: ${stockCm}cm`
     );
+
     console.log(
       `残量: ${stockMeter.toFixed(1)}m`
     );
-    console.log('==============================');
+
+    console.log(
+      '=============================='
+    );
 
     /*
-     * 今回は取得テストだけ。
-     * 通知・履歴保存はまだ行わない。
+     * 今回はここで終了。
+     *
+     * ・定期監視なし
+     * ・通知なし
+     * ・履歴保存なし
+     *
+     * まず残量が取得できるかだけ確認する。
      */
 
   } catch (error) {
-
     console.error(
       `テスト失敗: ${error.message}`
     );
@@ -305,8 +346,6 @@ const TEST_QUANTITY = '5000';
     process.exitCode = 1;
 
   } finally {
-
     await browser.close();
-
   }
 })();
