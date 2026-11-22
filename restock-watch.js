@@ -4,7 +4,7 @@ const fs = require('fs');
 const LIST_URL = process.env.MINA_URL;
 const GITHUB_USERNAME = process.env.GITHUB_ACTOR;
 
-const PRODUCT_ID = 'FC0595BPGL';
+const PRODUCT_ID = 'FC0600YKPD';
 
 const STATE_FILE =
   'restock-watch-state.json';
