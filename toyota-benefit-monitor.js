@@ -22,15 +22,9 @@ const GITHUB_USERNAME =
 const STATE_FILE =
   'toyota-benefit-state.json';
 
-const REQUEST_TIMEOUT_MS =
-  30000;
+const REQUEST_TIMEOUT_MS = 30000;
+const WAIT_BETWEEN_REQUESTS_MS = 500;
 
-const WAIT_BETWEEN_REQUESTS_MS =
-  500;
-
-/*
- * 通知対象のキーワード
- */
 const BENEFIT_KEYWORDS = [
   '商品券',
   'プレミアム',
@@ -39,45 +33,36 @@ const BENEFIT_KEYWORDS = [
   'ポイント付与',
   'キャッシュレス',
   '還元キャンペーン',
-
   '給付金',
   '給付',
   '支援金',
   '支援事業',
   '生活支援',
-
   '補助金',
   '補助',
   '助成金',
   '助成',
   '購入費',
-
   '免除',
   '減免',
   '無料',
   '無償',
   '割引',
-
   '二次販売',
   '追加販売',
   '追加募集',
   '再募集',
   '先着順',
-
   '物価高騰',
   '家計支援',
   '家計サポート',
   '省エネ',
   '住宅支援',
-
   '申請受付',
   '申込受付',
   '受付開始'
 ];
 
-/*
- * 特に優先度を上げるキーワード
- */
 const HIGH_PRIORITY_KEYWORDS = [
   '商品券',
   'プレミアム',
@@ -95,13 +80,6 @@ const HIGH_PRIORITY_KEYWORDS = [
   '受付開始'
 ];
 
-/*
- * タイトルに補助金などと書いてあっても、
- * 主に事業者・団体向けの可能性が高い語句
- *
- * 完全除外はせず、個人向けキーワードがなければ
- * 通知対象から外します。
- */
 const BUSINESS_KEYWORDS = [
   '事業者',
   '事業所',
@@ -117,9 +95,6 @@ const BUSINESS_KEYWORDS = [
   '店舗向け'
 ];
 
-/*
- * 個人・世帯向けの可能性を示す語句
- */
 const RESIDENT_KEYWORDS = [
   '市民',
   '市内在住',
@@ -143,9 +118,6 @@ const RESIDENT_KEYWORDS = [
   '1人'
 ];
 
-/*
- * 要点抽出で優先する語句
- */
 const SUMMARY_KEYWORDS = [
   '対象',
   '申請',
@@ -157,7 +129,6 @@ const SUMMARY_KEYWORDS = [
   '販売',
   '先着',
   '抽選',
-
   '円',
   '万円',
   'ポイント',
@@ -165,7 +136,6 @@ const SUMMARY_KEYWORDS = [
   '無料',
   '免除',
   '減免',
-
   '市内在住',
   '豊田市在住',
   '市民',
@@ -218,7 +188,10 @@ function createHash(value) {
 
 function decodeHtmlEntities(value) {
   return String(value || '')
-    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+    .replace(
+      /<!\[CDATA\[([\s\S]*?)\]\]>/g,
+      '$1'
+    )
     .replace(/&amp;/gi, '&')
     .replace(/&lt;/gi, '<')
     .replace(/&gt;/gi, '>')
@@ -226,13 +199,19 @@ function decodeHtmlEntities(value) {
     .replace(/&#39;/gi, "'")
     .replace(/&#x27;/gi, "'")
     .replace(/&#x2F;/gi, '/')
-    .replace(/&#(\d+);/g, (_, number) =>
-      String.fromCharCode(Number(number))
+    .replace(
+      /&#(\d+);/g,
+      (_, number) =>
+        String.fromCharCode(
+          Number(number)
+        )
     )
-    .replace(/&#x([0-9a-f]+);/gi, (_, number) =>
-      String.fromCharCode(
-        parseInt(number, 16)
-      )
+    .replace(
+      /&#x([0-9a-f]+);/gi,
+      (_, number) =>
+        String.fromCharCode(
+          parseInt(number, 16)
+        )
     );
 }
 
@@ -381,7 +360,6 @@ async function fetchText(url) {
     }
 
     return await response.text();
-
   } finally {
     clearTimeout(timeout);
   }
@@ -391,16 +369,21 @@ function getXmlTag(
   value,
   tagName
 ) {
+  const escapedTagName =
+    tagName.replace(
+      /[.*+?^${}()|[\]\\]/g,
+      '\\$&'
+    );
+
   const match =
-    String(value || '')
-      .match(
-        new RegExp(
-          `<${tagName}(?:\\s[^>]*)?>` +
-          `([\\s\\S]*?)` +
-          `<\\/${tagName}>`,
-          'i'
-        )
-      );
+    String(value || '').match(
+      new RegExp(
+        `<${escapedTagName}(?:\\s[^>]*)?>` +
+        `([\\s\\S]*?)` +
+        `<\\/${escapedTagName}>`,
+        'i'
+      )
+    );
 
   return match
     ? decodeHtmlEntities(
@@ -409,14 +392,16 @@ function getXmlTag(
     : '';
 }
 
-function parseRss(xml, sourceName) {
+function parseRss(
+  xml,
+  sourceName
+) {
   const items = [];
 
   const itemMatches =
-    String(xml || '')
-      .match(
-        /<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi
-      ) || [];
+    String(xml || '').match(
+      /<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi
+    ) || [];
 
   for (
     const itemXml
@@ -489,8 +474,7 @@ function parseRss(xml, sourceName) {
         link,
 
       description:
-        content ||
-        description,
+        content || description,
 
       publishedAt,
 
@@ -500,14 +484,13 @@ function parseRss(xml, sourceName) {
   }
 
   /*
-   * Atom形式だった場合にも対応
+   * Atom形式にも対応
    */
   if (items.length === 0) {
     const entryMatches =
-      String(xml || '')
-        .match(
-          /<entry(?:\s[^>]*)?>[\s\S]*?<\/entry>/gi
-        ) || [];
+      String(xml || '').match(
+        /<entry(?:\s[^>]*)?>[\s\S]*?<\/entry>/gi
+      ) || [];
 
     for (
       const entryXml
@@ -523,7 +506,7 @@ function parseRss(xml, sourceName) {
 
       const linkMatch =
         entryXml.match(
-          /<link[^>]+href=["']([^"']+)["'][^>]*>/i
+          /<link[^"']+["'][^>]*>/i
         );
 
       const link =
@@ -586,8 +569,7 @@ function parseRss(xml, sourceName) {
           link,
 
         description:
-          content ||
-          summary,
+          content || summary,
 
         publishedAt,
 
@@ -608,7 +590,7 @@ function extractLinks(
   const links = [];
 
   const anchorPattern =
-    /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
+    /<a\b[^"']+["'][^>]*>([\s\S]*?)<\/a>/gi;
 
   let match;
 
@@ -653,9 +635,6 @@ function extractLinks(
       continue;
     }
 
-    /*
-     * 豊田市公式サイト内だけを対象
-     */
     try {
       const parsedUrl =
         new URL(absoluteUrl);
@@ -691,7 +670,10 @@ function extractLinks(
     });
   }
 
-  returnywords(text) {
+  return links;
+}
+
+function getMatchedKeywords(text) {
   const lowerText =
     String(text || '')
       .toLowerCase();
@@ -709,13 +691,12 @@ function getPriorityKeywords(text) {
     String(text || '')
       .toLowerCase();
 
-  return HIGH_PRIORITY_KEYWORDS
-    .filter(
-      keyword =>
-        lowerText.includes(
-          keyword.toLowerCase()
-        )
-    );
+  return HIGH_PRIORITY_KEYWORDS.filter(
+    keyword =>
+      lowerText.includes(
+        keyword.toLowerCase()
+      )
+  );
 }
 
 function isLikelyResidentBenefit(
@@ -750,18 +731,10 @@ function isLikelyResidentBenefit(
         )
     );
 
-  /*
-   * 商品券、給付金、ポイント還元などは
-   * 個人向け語句がなくても通知候補
-   */
   if (hasHighPriority) {
     return true;
   }
 
-  /*
-   * 明らかな事業者向けで、
-   * 個人・世帯向け語句がなければ除外
-   */
   if (
     hasBusinessKeyword &&
     !hasResidentKeyword
@@ -836,13 +809,10 @@ function extractSummaryLines(text) {
     return important;
   }
 
-  return sentences
-    .slice(0, 3);
+  return sentences.slice(0, 3);
 }
 
-function determinePriority(
-  text
-) {
+function determinePriority(text) {
   const lowerText =
     String(text || '')
       .toLowerCase();
@@ -926,15 +896,12 @@ function determinePriority(
   };
 }
 
-async function getDetailText(
-  url
-) {
+async function getDetailText(url) {
   try {
     const html =
       await fetchText(url);
 
     return normalizeText(html);
-
   } catch (error) {
     console.log(
       `詳細取得エラー: ${url} ${error.message}`
@@ -1105,10 +1072,13 @@ function mergeEntries(entries) {
         normalizedUrl,
         {
           ...entry,
+
           id:
             normalizedUrl,
+
           url:
             normalizedUrl,
+
           sources:
             [entry.source]
         }
@@ -1172,9 +1142,6 @@ function mergeEntries(entries) {
       '=============================='
     );
 
-    /*
-     * 3つの監視先を取得
-     */
     const [
       newsRss,
       pressRss,
@@ -1224,9 +1191,6 @@ function mergeEntries(entries) {
       `生活支援ページ: ${supportEntries.length}リンク`
     );
 
-    /*
-     * URLで重複統合
-     */
     const allEntries =
       mergeEntries([
         ...newsEntries,
@@ -1239,12 +1203,8 @@ function mergeEntries(entries) {
     );
 
     const currentEntries = {};
-
     const notificationCandidates = [];
 
-    /*
-     * まずタイトル・RSS概要で候補を絞る
-     */
     for (
       const entry
       of allEntries
@@ -1264,11 +1224,6 @@ function mergeEntries(entries) {
 
       let detailText = '';
 
-      /*
-       * 支援まとめページのリンク、
-       * またはタイトルだけでは判断しにくい情報は
-       * 詳細ページも確認
-       */
       const shouldFetchDetail =
         entry.sourceType ===
           'support-page' ||
@@ -1346,9 +1301,6 @@ function mergeEntries(entries) {
           entry.id
         ];
 
-      /*
-       * 初回は基準保存だけ
-       */
       if (!state.initialized) {
         continue;
       }
@@ -1387,13 +1339,12 @@ function mergeEntries(entries) {
       }
     }
 
-    /*
-     * 初回基準保存
-     */
     if (!state.initialized) {
       state.initialized = true;
+
       state.checkedAt =
         getJapanTime();
+
       state.entries =
         currentEntries;
 
@@ -1414,9 +1365,6 @@ function mergeEntries(entries) {
       `通知候補: ${notificationCandidates.length}件`
     );
 
-    /*
-     * 同一URLは統合済みなので1回だけ通知
-     */
     for (
       const candidate
       of notificationCandidates
@@ -1435,8 +1383,7 @@ function mergeEntries(entries) {
           `${priority.icon} ` +
           `豊田市お得情報：` +
           `${candidate.entry.title}`
-        )
-          .slice(0, 240);
+        ).slice(0, 240);
 
       const body =
         createIssueBody(
@@ -1453,13 +1400,6 @@ function mergeEntries(entries) {
       await sleep(500);
     }
 
-    /*
-     * 最新状態を保存
-     *
-     * RSSから消えた情報についても、
-     * 過去の通知済み記録を失わないよう
-     * 既存stateと統合する。
-     */
     state.entries = {
       ...state.entries,
       ...currentEntries
