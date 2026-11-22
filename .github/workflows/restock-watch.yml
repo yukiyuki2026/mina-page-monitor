@@ -11,7 +11,7 @@ permissions:
   issues: write
 
 concurrency:
-  group: restock-watch
+  group: repository-state-writer
   cancel-in-progress: false
 
 jobs:
@@ -44,9 +44,44 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          mkdir -p /tmp/restock-watch
+
           if [ -f restock-watch-state.json ]; then
-            git add restock-watch-state.json
+            cp restock-watch-state.json /tmp/restock-watch/restock-watch-state.json
           fi
+
+          if [ -f restock-watch-before.json ]; then
+            cp restock-watch-before.json /tmp/restock-watch/restock-watch-before.json
+          fi
+
+          if [ -f restock-watch-after.json ]; then
+            cp restock-watch-after.json /tmp/restock-watch/restock-watch-after.json
+          fi
+
+          if [ -f restock-watch-diff.json ]; then
+            cp restock-watch-diff.json /tmp/restock-watch/restock-watch-diff.json
+          fi
+
+          git fetch origin main
+          git reset --hard origin/main
+
+          if [ -f /tmp/restock-watch/restock-watch-state.json ]; then
+            cp /tmp/restock-watch/restock-watch-state.json restock-watch-state.json
+          fi
+
+          if [ -f /tmp/restock-watch/restock-watch-before.json ]; then
+            cp /tmp/restock-watch/restock-watch-before.json restock-watch-before.json
+          fi
+
+          if [ -f /tmp/restock-watch/restock-watch-after.json ]; then
+            cp /tmp/restock-watch/restock-watch-after.json restock-watch-after.json
+          fi
+
+          if [ -f /tmp/restock-watch/restock-watch-diff.json ]; then
+            cp /tmp/restock-watch/restock-watch-diff.json restock-watch-diff.json
+          fi
+
+          git add restock-watch-state.json
 
           if [ -f restock-watch-before.json ]; then
             git add restock-watch-before.json
@@ -64,6 +99,5 @@ jobs:
             echo "保存する変更はありません"
           else
             git commit -m "Update restock watch data"
-            git pull --rebase
-            git push
+            git push origin main
           fi
