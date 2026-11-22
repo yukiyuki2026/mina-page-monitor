@@ -1,9 +1,9 @@
 {
-  "initialized": true,
-  "previousStatus": "soldout",
-  "beforeSnapshotSaved": true,
+  "initialized": false,
+  "previousStatus": "",
+  "beforeSnapshotSaved": false,
   "afterSnapshotSaved": false,
-  "firstCheckedAt": "2026/11/21 23:53:22",
-  "lastCheckedAt": "2026/11/22 20:36:58",
+  "firstCheckedAt": "",
+  "lastCheckedAt": "",
   "restockedAt": ""
 }
