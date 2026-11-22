@@ -1210,7 +1210,7 @@ async function captureSnapshot(
         '🧪 再販検知・完全データ取得',
 `@${GITHUB_USERNAME}
 
-## FC0595BPGLの再販を検知しました
+## ${PRODUCT_ID}の再販を検知しました
 
 ### 購入可能カラー
 
