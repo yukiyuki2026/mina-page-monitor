@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 70,
+  "detailCursor": 80,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -191,7 +191,7 @@
     "FC0574BBLC": {
       "productId": "FC0574BBLC",
       "productName": "tambourineファブリック",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "FC0573WPBC": {
