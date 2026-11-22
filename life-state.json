@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 10,
+  "detailCursor": 20,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -581,7 +581,7 @@
     "TL7756A_7A": {
       "productId": "TL7756A_7A",
       "productName": "run run runタオル",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "EV1597": {
