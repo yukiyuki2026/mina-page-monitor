@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 30,
+  "detailCursor": 40,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -395,7 +395,7 @@
     "ABA7432": {
       "productId": "ABA7432",
       "productName": "Riverブランケット",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "ACS7367": {
