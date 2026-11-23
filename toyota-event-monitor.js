@@ -63,19 +63,94 @@ function stripHtml(value) {
 
 const normalize = value => stripHtml(value).replace(/\s+/g, ' ').trim();
 
-async function fetchText(url) {
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
-  try {
-    const response = await fetch(url, {
-      headers: { 'User-Agent': 'Toyota-Event-Monitor/1.0', Accept: 'text/html,application/xml,text/xml,*/*' },
-      signal: controller.signal
-    });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    return await response.text();
-  } finally {
-    clearTimeout(timer);
+async function fetchText(
+  url,
+  maxRetries = 3
+) {
+  let lastError = null;
+
+  for (
+    let attempt = 1;
+    attempt <= maxRetries;
+    attempt++
+  ) {
+    const controller =
+      new AbortController();
+
+    const timer =
+      setTimeout(
+        () =>
+          controller.abort(),
+        REQUEST_TIMEOUT_MS
+      );
+
+    try {
+      console.log(
+        `取得開始 ${attempt}/${maxRetries}: ${url}`
+      );
+
+      const response =
+        await fetch(
+          url,
+          {
+            headers: {
+              'User-Agent':
+                'Mozilla/5.0 Toyota-Event-Monitor/1.1',
+
+              Accept:
+                'text/html,application/xhtml+xml,application/xml,text/xml;q=0.9,*/*;q=0.8'
+            },
+
+            signal:
+              controller.signal
+          }
+        );
+
+      if (!response.ok) {
+        throw new Error(
+          `HTTP ${response.status} ${response.statusText}`
+        );
+      }
+
+      const text =
+        await response.text();
+
+      console.log(
+        `取得成功: ${url}`
+      );
+
+      return text;
+
+    } catch (error) {
+      lastError = error;
+
+      console.log(
+        `取得失敗 ${attempt}/${maxRetries}: ${url}`
+      );
+
+      console.log(
+        `理由: ${error.message}`
+      );
+
+      if (
+        attempt <
+        maxRetries
+      ) {
+        console.log(
+          '2秒後に再試行します'
+        );
+
+        await sleep(2000);
+      }
+
+    } finally {
+      clearTimeout(timer);
+    }
   }
+
+  throw new Error(
+    `URL取得に3回失敗しました: ${url} / ${lastError?.message || 'unknown error'}`
+  );
 }
 
 function getTag(xml, tag) {
