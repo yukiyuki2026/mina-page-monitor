@@ -4,107 +4,420 @@ const crypto = require('crypto');
 const NEWS_RSS_URL = process.env.TOYOTA_NEWS_RSS_URL;
 const PRESS_RSS_URL = process.env.TOYOTA_PRESS_RSS_URL;
 const SUPPORT_URL = process.env.TOYOTA_SUPPORT_URL;
+
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY;
 const GITHUB_USERNAME = process.env.GITHUB_ACTOR;
 
 const STATE_FILE = 'toyota-benefit-state.json';
+
 const REQUEST_TIMEOUT_MS = 30000;
 const WAIT_BETWEEN_REQUESTS_MS = 500;
 
 /*
- * この値を変更した最初の1回だけ、
- * 現在の情報を通知せずに基準として保存します。
+ * 判定ルールを変更した最初の1回だけ、
+ * 現在の情報を通知せずに基準として保存する。
  */
 const BASELINE_VERSION =
-  '2026-11-23-personal-support-v1';
+  '2026-11-23-guide-filter-v3';
 
+/*
+ * 具体的なお得・支援情報
+ */
 const BENEFIT_KEYWORDS = [
-  '商品券','プレミアム','paypay','ポイント還元','ポイント付与','キャッシュレス','還元キャンペーン',
-  '二次販売','追加販売','給付金','給付','支援金','支援事業','生活支援','補助金','補助','助成金','助成',
-  '奨励金','交付金','購入費','負担軽減','支給','融資','融資制度','貸付','貸付金','資金貸付','無利子貸付',
-  '低利融資','教育ローン','修学資金','就学資金','入学資金','母子父子寡婦福祉資金','生活福祉資金',
-  '教育支援資金','免除','減免','無料','無償','割引','追加募集','再募集','先着順','申請受付','申込受付',
-  '受付開始','物価高騰','家計支援','家計サポート','生活困窮','低所得世帯','非課税世帯','省エネ','住宅支援',
-  '家賃補助','住宅手当','ひとり親','ひとり親家庭','ひとり親世帯','母子家庭','母子世帯','母子父子家庭',
-  '児童扶養手当','子育て世帯','子育て家庭','子育て支援','保護者','児童','生徒','小学生','小学校','中学生',
-  '中学校','義務教育','就学援助','就学支援','学用品','学用品費','新入学学用品費','教育費','通学費','給食費',
-  '修学旅行費','校外活動費','入学準備金','高校生','高校','高等学校','高等学校等就学支援金','高校生等奨学給付金',
-  '授業料支援','授業料無償化','高校授業料','高校入学','高等学校入学','大学生','大学','短期大学','短大',
-  '専門学校','専門学生','高等専門学校','高専','進学','大学進学','入学金','授業料','受験料','受験費用','奨学金',
-  '給付型奨学金','貸与型奨学金','修学支援','高等教育の修学支援新制度','学費','学生生活','医療費','医療費助成',
-  '子ども医療費','母子家庭等医療費','受給者証'
+  '商品券',
+  'プレミアム',
+  'paypay',
+  'ポイント還元',
+  'ポイント付与',
+  'キャッシュレス',
+  '還元キャンペーン',
+  '二次販売',
+  '追加販売',
+
+  '給付金',
+  '給付',
+  '支援金',
+  '補助金',
+  '助成金',
+  '手当',
+  '奨励金',
+  '交付金',
+  '購入費',
+  '負担軽減',
+
+  '融資',
+  '貸付',
+  '無利子貸付',
+  '教育ローン',
+  '修学資金',
+  '就学資金',
+  '入学資金',
+  '母子父子寡婦福祉資金',
+  '生活福祉資金',
+  '教育支援資金',
+
+  '免除',
+  '減免',
+  '無料',
+  '無償',
+  '割引',
+
+  '追加募集',
+  '再募集',
+  '申請受付',
+  '申込受付',
+  '受付開始',
+
+  '物価高騰',
+  '家計支援',
+  '生活困窮',
+  '低所得世帯',
+  '非課税世帯',
+  '家賃補助',
+  '住宅手当',
+
+  'ひとり親',
+  '母子家庭',
+  '児童扶養手当',
+
+  '就学援助',
+  '就学支援金',
+  '学用品費',
+  '教育費',
+  '通学費',
+  '給食費',
+  '修学旅行費',
+  '入学準備金',
+
+  '高校生等奨学給付金',
+  '授業料支援',
+  '授業料無償化',
+
+  '入学金',
+  '授業料',
+  '受験料',
+  '奨学金',
+  '給付型奨学金',
+  '貸与型奨学金',
+  '高等教育の修学支援新制度',
+
+  '医療費助成',
+  '子ども医療費',
+  '母子家庭等医療費'
 ];
 
+/*
+ * 見逃したくない情報
+ */
 const HIGH_PRIORITY_KEYWORDS = [
-  '商品券','プレミアム','paypay','給付金','支援金','ポイント還元','二次販売','追加販売','追加募集','再募集',
-  '先着順','申請受付','申込受付','受付開始','申請期限','募集期限'
+  '商品券',
+  'プレミアム',
+  'paypay',
+  '給付金',
+  '支援金',
+  'ポイント還元',
+  '追加販売',
+  '追加募集',
+  '再募集',
+  '申請受付',
+  '申込受付',
+  '受付開始',
+  '申請期限',
+  '募集期限'
 ];
 
-const PERSONAL_PRIORITY_KEYWORDS = [
-  'ひとり親','ひとり親家庭','ひとり親世帯','母子家庭','母子世帯','母子父子家庭','母子父子寡婦福祉資金',
-  '児童扶養手当','児童扶養手当受給者','母子家庭等医療費','子育て世帯','子育て家庭','子育て支援','児童','生徒',
-  '保護者','小学生','小学校','中学生','中学校','義務教育','就学援助','就学支援','学用品','学用品費',
-  '新入学学用品費','教育費','通学費','給食費','修学旅行費','校外活動費','入学準備金','高校生','高校',
-  '高等学校','高等学校等就学支援金','高校生等奨学給付金','高校授業料','授業料支援','授業料無償化','高校入学',
-  '高等学校入学','大学生','大学','短期大学','短大','専門学校','専門学生','高等専門学校','高専','進学','大学進学',
-  '入学金','授業料','受験料','受験費用','学費','奨学金','給付型奨学金','貸与型奨学金','修学支援',
-  '高等教育の修学支援新制度','教育ローン','教育支援資金','修学資金','就学資金','入学資金','無利子貸付',
-  '資金貸付','医療費','子ども医療費','医療費助成','医療費受給者証','受給者証','生活支援','家計支援',
-  '物価高騰','低所得世帯','非課税世帯','生活困窮','家賃補助','住宅手当'
+/*
+ * ゆきさんに関係しやすい対象者
+ *
+ * この言葉だけでは関連度を上げない。
+ * 下の「具体的支援」と組み合わさった場合だけ
+ * 関連度を上げる。
+ */
+const PERSONAL_SUBJECT_KEYWORDS = [
+  'ひとり親',
+  'ひとり親家庭',
+  'ひとり親世帯',
+  '母子家庭',
+  '母子世帯',
+  '母子父子家庭',
+  '児童扶養手当',
+  '母子家庭等医療費',
+
+  '中学生',
+  '中学校',
+
+  '高校生',
+  '高校',
+  '高等学校',
+
+  '大学生',
+  '大学',
+  '短期大学',
+  '短大',
+
+  '専門学校',
+  '専門学生',
+
+  '高専',
+  '進学'
 ];
 
-const VERY_HIGH_PERSONAL_KEYWORDS = [
-  'ひとり親','ひとり親家庭','ひとり親世帯','母子家庭','母子世帯','母子父子家庭','児童扶養手当',
-  '母子家庭等医療費','母子父子寡婦福祉資金','就学援助','新入学学用品費','中学生','中学校','高校生',
-  '高等学校等就学支援金','高校生等奨学給付金','大学生','給付型奨学金','高等教育の修学支援新制度',
-  '教育ローン','教育支援資金','修学資金'
+/*
+ * 関連度判定に使う「具体的な利益・支援」
+ */
+const PERSONAL_BENEFIT_KEYWORDS = [
+  '給付金',
+  '支援金',
+  '補助金',
+  '助成金',
+  '手当',
+
+  '就学援助',
+  '就学支援金',
+
+  '奨学給付金',
+  '奨学金',
+  '給付型奨学金',
+  '貸与型奨学金',
+
+  '授業料',
+  '入学金',
+  '受験料',
+  '学費',
+  '学用品費',
+  '給食費',
+
+  '医療費助成',
+
+  '減免',
+  '免除',
+
+  '貸付',
+  '融資',
+  '教育ローン',
+  '修学資金',
+  '入学資金',
+
+  '商品券',
+  'ポイント還元'
 ];
 
+/*
+ * 明らかな事業者向け
+ */
 const BUSINESS_KEYWORDS = [
-  '事業者','事業所','法人','企業','中小企業','農業者','商工会','施設運営者','事業主','店舗向け','立地','工場',
-  '設備投資','産業用地','創業者','雇用主','運転資金','設備資金','創業融資','事業資金','経営安定','売上減少'
+  '事業者',
+  '事業所',
+  '法人',
+  '企業',
+  '中小企業',
+  '農業者',
+  '商工会',
+  '施設運営者',
+  '事業主',
+  '店舗向け',
+  '立地',
+  '工場',
+  '設備投資',
+  '産業用地',
+  '創業者',
+  '雇用主',
+  '運転資金',
+  '設備資金',
+  '創業融資',
+  '事業資金',
+  '経営安定',
+  '売上減少'
 ];
 
+/*
+ * 市民・家庭向け
+ */
 const RESIDENT_KEYWORDS = [
-  '市民','市内在住','豊田市在住','住民','世帯','家庭','個人','本人','保護者','子育て','高齢者','障がい','学生',
-  '児童','生徒','乳幼児','住宅','購入者','利用者','お一人様','1人','ひとり親','母子家庭','小学生','中学生',
-  '高校生','大学生','専門学生'
+  '市民',
+  '市内在住',
+  '豊田市在住',
+  '住民',
+  '世帯',
+  '家庭',
+  '個人',
+  '本人',
+  '保護者',
+  '子育て',
+  '学生',
+  '児童',
+  '生徒',
+  '住宅',
+  '利用者',
+
+  'ひとり親',
+  '母子家庭',
+
+  '中学生',
+  '高校生',
+  '大学生',
+  '専門学生'
 ];
 
-if (!NEWS_RSS_URL || !PRESS_RSS_URL || !SUPPORT_URL) {
+/*
+ * 単なる案内・一覧ページ
+ */
+const GUIDE_PAGE_KEYWORDS = [
+  '一覧',
+  'まとめ',
+  '総合案内',
+  'ご案内',
+  '案内ページ',
+  '制度一覧',
+  '支援一覧',
+  '関連情報',
+  '関連ページ',
+  '各種制度',
+  '各種支援',
+
+  '子育て支援について',
+  '子育てに関する情報',
+  '子育て支援のご案内',
+  '子育て支援情報',
+  '子育て支援ページ',
+  '子育て情報',
+
+  'ひとり親家庭の方へ',
+
+  '教育に関する情報',
+  '福祉に関する情報',
+
+  '詳しくはこちら',
+  '情報はこちら',
+
+  'メニューページ',
+  'トップページ'
+];
+
+/*
+ * これがタイトル・概要にある場合は、
+ * 単なる案内ページではなく具体的制度として扱う。
+ */
+const CONCRETE_BENEFIT_KEYWORDS = [
+  '給付金',
+  '補助金',
+  '助成金',
+  '支援金',
+  '手当',
+  '児童扶養手当',
+
+  '商品券',
+  'プレミアム',
+  'ポイント還元',
+
+  '追加販売',
+  '二次販売',
+  '追加募集',
+  '再募集',
+
+  '申請受付',
+  '申込受付',
+  '受付開始',
+  '申請期限',
+  '募集期限',
+
+  '就学援助',
+  '就学支援金',
+  '奨学金',
+  '奨学給付金',
+
+  '授業料',
+  '入学金',
+  '学用品費',
+  '給食費',
+
+  '医療費助成',
+
+  '減免',
+  '免除',
+  '無料',
+  '割引',
+
+  '貸付',
+  '融資',
+  '教育ローン',
+  '修学資金',
+  '入学資金'
+];
+
+/*
+ * 支援とは関係ない一般ニュース
+ */
+const EXCLUDED_NEWS_KEYWORDS = [
+  '市長を訪問',
+  '市長表敬',
+  '表敬訪問',
+
+  '大会で優秀',
+  '大会で活躍',
+  '大会結果',
+
+  '受賞',
+  '表彰',
+
+  '学ぶ会を開催',
+  '出前授業',
+
+  'マイナンバーカード'
+];
+
+if (
+  !NEWS_RSS_URL ||
+  !PRESS_RSS_URL ||
+  !SUPPORT_URL
+) {
   throw new Error(
-    '豊田市監視用のSecretが不足しています。TOYOTA_NEWS_RSS_URL、TOYOTA_PRESS_RSS_URL、TOYOTA_SUPPORT_URLを確認してください。'
+    '豊田市監視用のSecretが不足しています。' +
+    'TOYOTA_NEWS_RSS_URL、' +
+    'TOYOTA_PRESS_RSS_URL、' +
+    'TOYOTA_SUPPORT_URLを確認してください。'
   );
 }
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise(
+    resolve =>
+      setTimeout(resolve, ms)
+  );
 }
 
 function getJapanTime() {
-  return new Intl.DateTimeFormat('ja-JP', {
-    timeZone: 'Asia/Tokyo',
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    hourCycle: 'h23'
-  }).format(new Date());
+  return new Intl.DateTimeFormat(
+    'ja-JP',
+    {
+      timeZone: 'Asia/Tokyo',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hourCycle: 'h23'
+    }
+  ).format(new Date());
 }
 
 function createHash(value) {
   return crypto
     .createHash('sha256')
-    .update(String(value || ''))
+    .update(
+      String(value || '')
+    )
     .digest('hex');
 }
 
 function decodeHtmlEntities(value) {
   return String(value || '')
-    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+    .replace(
+      /<!\[CDATA\[([\s\S]*?)\]\]>/g,
+      '$1'
+    )
     .replace(/&amp;/gi, '&')
     .replace(/&lt;/gi, '<')
     .replace(/&gt;/gi, '>')
@@ -112,25 +425,45 @@ function decodeHtmlEntities(value) {
     .replace(/&apos;/gi, "'")
     .replace(/&#x27;/gi, "'")
     .replace(/&#x2F;/gi, '/')
-    .replace(/&#(\d+);/g, (_, n) =>
-      String.fromCharCode(Number(n))
+    .replace(
+      /&#(\d+);/g,
+      (_, number) =>
+        String.fromCharCode(
+          Number(number)
+        )
     )
-    .replace(/&#x([0-9a-f]+);/gi, (_, n) =>
-      String.fromCharCode(parseInt(n, 16))
+    .replace(
+      /&#x([0-9a-f]+);/gi,
+      (_, number) =>
+        String.fromCharCode(
+          parseInt(number, 16)
+        )
     );
 }
 
 function stripHtml(value) {
   return decodeHtmlEntities(
     String(value || '')
-      .replace(/<script[\s\S]*?<\/script>/gi, ' ')
-      .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-      .replace(/<(br|hr)\s*\/?>/gi, '\n')
+      .replace(
+        /<script[\s\S]*?<\/script>/gi,
+        ' '
+      )
+      .replace(
+        /<style[\s\S]*?<\/style>/gi,
+        ' '
+      )
+      .replace(
+        /<(br|hr)\s*\/?>/gi,
+        '\n'
+      )
       .replace(
         /<\/(p|li|div|section|article|h1|h2|h3|h4|tr)>/gi,
         '\n'
       )
-      .replace(/<[^>]+>/g, ' ')
+      .replace(
+        /<[^>]+>/g,
+        ' '
+      )
   )
     .replace(/\r/g, '')
     .replace(/[ \t]+/g, ' ')
@@ -147,7 +480,8 @@ function normalizeText(value) {
 
 function normalizeUrl(urlText) {
   try {
-    const url = new URL(urlText);
+    const url =
+      new URL(urlText);
 
     url.hash = '';
 
@@ -157,13 +491,19 @@ function normalizeUrl(urlText) {
       'utm_campaign',
       'utm_term',
       'utm_content'
-    ].forEach(parameter =>
-      url.searchParams.delete(parameter)
+    ].forEach(
+      parameter =>
+        url.searchParams.delete(
+          parameter
+        )
     );
 
     return url.href;
+
   } catch {
-    return String(urlText || '').trim();
+    return String(
+      urlText || ''
+    ).trim();
   }
 }
 
@@ -177,17 +517,22 @@ function createEmptyState() {
 }
 
 function loadState() {
-  if (!fs.existsSync(STATE_FILE)) {
+  if (
+    !fs.existsSync(
+      STATE_FILE
+    )
+  ) {
     return createEmptyState();
   }
 
   try {
-    const loaded = JSON.parse(
-      fs.readFileSync(
-        STATE_FILE,
-        'utf8'
-      )
-    );
+    const loaded =
+      JSON.parse(
+        fs.readFileSync(
+          STATE_FILE,
+          'utf8'
+        )
+      );
 
     return {
       initialized:
@@ -217,7 +562,11 @@ function loadState() {
 function saveState(state) {
   fs.writeFileSync(
     STATE_FILE,
-    JSON.stringify(state, null, 2),
+    JSON.stringify(
+      state,
+      null,
+      2
+    ),
     'utf8'
   );
 
@@ -225,30 +574,34 @@ function saveState(state) {
     `${STATE_FILE}を保存しました`
   );
 }
-
 async function fetchText(url) {
-  const controller = new AbortController();
+  const controller =
+    new AbortController();
 
-  const timeout = setTimeout(
-    () => controller.abort(),
-    REQUEST_TIMEOUT_MS
-  );
+  const timeout =
+    setTimeout(
+      () =>
+        controller.abort(),
+      REQUEST_TIMEOUT_MS
+    );
 
   try {
-    const response = await fetch(
-      url,
-      {
-        headers: {
-          Accept:
-            'text/html,application/xhtml+xml,application/xml,text/xml;q=0.9,*/*;q=0.8',
+    const response =
+      await fetch(
+        url,
+        {
+          headers: {
+            Accept:
+              'text/html,application/xhtml+xml,application/xml,text/xml;q=0.9,*/*;q=0.8',
 
-          'User-Agent':
-            'Toyota-Benefit-Monitor/4.1'
-        },
+            'User-Agent':
+              'Toyota-Benefit-Monitor/5.0'
+          },
 
-        signal: controller.signal
-      }
-    );
+          signal:
+            controller.signal
+        }
+      );
 
     if (!response.ok) {
       throw new Error(
@@ -257,6 +610,7 @@ async function fetchText(url) {
     }
 
     return await response.text();
+
   } finally {
     clearTimeout(timeout);
   }
@@ -298,7 +652,10 @@ function parseRss(
       /<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi
     ) || [];
 
-  for (const itemXml of itemMatches) {
+  for (
+    const itemXml
+    of itemMatches
+  ) {
     const title =
       normalizeText(
         getXmlTag(
@@ -347,7 +704,10 @@ function parseRss(
         )
       );
 
-    if (!title || !link) {
+    if (
+      !title ||
+      !link
+    ) {
       continue;
     }
 
@@ -379,13 +739,18 @@ function parseRss(
   /*
    * Atom形式にも対応
    */
-  if (items.length === 0) {
+  if (
+    items.length === 0
+  ) {
     const entryMatches =
       String(xml || '').match(
         /<entry(?:\s[^>]*)?>[\s\S]*?<\/entry>/gi
       ) || [];
 
-    for (const entryXml of entryMatches) {
+    for (
+      const entryXml
+      of entryMatches
+    ) {
       const title =
         normalizeText(
           getXmlTag(
@@ -440,7 +805,10 @@ function parseRss(
           )
         );
 
-      if (!title || !link) {
+      if (
+        !title ||
+        !link
+      ) {
         continue;
       }
 
@@ -514,7 +882,7 @@ function extractLinks(
       continue;
     }
 
-    let absoluteUrl = '';
+    let absoluteUrl;
 
     try {
       absoluteUrl =
@@ -524,35 +892,66 @@ function extractLinks(
             baseUrl
           ).href
         );
+
     } catch {
       continue;
     }
 
     try {
-      if (
+      const parsedUrl =
         new URL(
           absoluteUrl
-        ).hostname !==
+        );
+
+      if (
+        parsedUrl.hostname !==
         'www.city.toyota.aichi.jp'
       ) {
         continue;
       }
+
     } catch {
       continue;
     }
 
     links.push({
-      id: absoluteUrl,
-      source: sourceName,
+      id:
+        absoluteUrl,
+
+      source:
+        sourceName,
+
       title,
-      url: absoluteUrl,
+
+      url:
+        absoluteUrl,
+
       description: '',
+
       publishedAt: '',
-      sourceType: 'support-page'
+
+      sourceType:
+        'support-page'
     });
   }
 
   return links;
+}
+
+function containsAny(
+  text,
+  keywords
+) {
+  const lower =
+    String(text || '')
+      .toLowerCase();
+
+  return keywords.some(
+    keyword =>
+      lower.includes(
+        keyword.toLowerCase()
+      )
+  );
 }
 
 function matchingKeywords(
@@ -571,95 +970,223 @@ function matchingKeywords(
   );
 }
 
-function getMatchedKeywords(text) {
-  return matchingKeywords(
-    text,
-    BENEFIT_KEYWORDS
-  );
-}
-
-function getPriorityKeywords(text) {
-  return matchingKeywords(
-    text,
-    HIGH_PRIORITY_KEYWORDS
-  );
-}
-
-function getPersonalKeywords(text) {
-  return matchingKeywords(
-    text,
-    PERSONAL_PRIORITY_KEYWORDS
-  );
-}
-
-function getVeryHighPersonalKeywords(text) {
-  return matchingKeywords(
-    text,
-    VERY_HIGH_PERSONAL_KEYWORDS
-  );
-}
-
-function determinePersonalRelevance(
-  text
+/*
+ * 単なる案内・一覧ページを除外
+ */
+function isGuideOnlyEntry(
+  entry
 ) {
-  const personalMatches =
-    getPersonalKeywords(
-      text
+  const title =
+    String(
+      entry.title || ''
+    )
+      .replace(/\s+/g, ' ')
+      .trim();
+
+  const description =
+    String(
+      entry.description || ''
+    )
+      .replace(/\s+/g, ' ')
+      .trim();
+
+  const initialText =
+    [
+      title,
+      description
+    ]
+      .filter(Boolean)
+      .join(' ');
+
+  const hasGuideKeyword =
+    containsAny(
+      initialText,
+      GUIDE_PAGE_KEYWORDS
     );
 
-  const veryHighMatches =
-    getVeryHighPersonalKeywords(
-      text
+  const hasConcreteBenefit =
+    containsAny(
+      initialText,
+      CONCRETE_BENEFIT_KEYWORDS
     );
 
-  const lower =
-    String(text || '')
-      .toLowerCase();
+  const genericTitles = [
+    '子育て支援',
+    '子育て情報',
+    '子育て',
+    'ひとり親支援',
+    '生活支援',
+    '教育支援',
+    '各種支援',
+    '支援制度',
+    '福祉情報',
+    '関連情報'
+  ];
+
+  const isGenericTitle =
+    genericTitles.some(
+      name =>
+        title === name ||
+        title ===
+          `${name}について` ||
+        title ===
+          `${name}のご案内`
+    );
+
+  return (
+    (
+      hasGuideKeyword ||
+      isGenericTitle
+    ) &&
+    !hasConcreteBenefit
+  );
+}
+
+/*
+ * 表彰・市長訪問・大会結果など
+ * 支援ではない一般ニュースを除外
+ */
+function isExcludedNewsEntry(
+  entry
+) {
+  const initialText =
+    [
+      entry.title,
+      entry.description
+    ]
+      .filter(Boolean)
+      .join(' ');
+
+  return containsAny(
+    initialText,
+    EXCLUDED_NEWS_KEYWORDS
+  );
+}
+
+/*
+ * タイトル・概要に具体的なメリットが
+ * 書かれているかを最初に判定する。
+ *
+ * 詳細ページ内の共通メニューにある
+ * 「中学生」「支援」などでは判定しない。
+ */
+function hasConcreteBenefitInInitialText(
+  entry
+) {
+  const initialText =
+    [
+      entry.title,
+      entry.description
+    ]
+      .filter(Boolean)
+      .join(' ');
+
+  return containsAny(
+    initialText,
+    CONCRETE_BENEFIT_KEYWORDS
+  );
+}
+
+/*
+ * ゆきさんへの関連度
+ *
+ * 「中学生」などの属性だけでは
+ * 関連度を上げない。
+ *
+ * 属性 + 具体的支援の組み合わせで判定する。
+ */
+function determinePersonalRelevance(
+  initialText
+) {
+  const hasSubject =
+    containsAny(
+      initialText,
+      PERSONAL_SUBJECT_KEYWORDS
+    );
+
+  const hasBenefit =
+    containsAny(
+      initialText,
+      PERSONAL_BENEFIT_KEYWORDS
+    );
+
+  const hasStrongPersonal =
+    containsAny(
+      initialText,
+      [
+        'ひとり親',
+        '母子家庭',
+        '児童扶養手当',
+        '母子家庭等医療費',
+        '母子父子寡婦福祉資金'
+      ]
+    );
 
   const hasBusiness =
-    BUSINESS_KEYWORDS.some(
-      keyword =>
-        lower.includes(
-          keyword.toLowerCase()
-        )
+    containsAny(
+      initialText,
+      BUSINESS_KEYWORDS
     );
 
   const hasResident =
-    RESIDENT_KEYWORDS.some(
-      keyword =>
-        lower.includes(
-          keyword.toLowerCase()
-        )
+    containsAny(
+      initialText,
+      RESIDENT_KEYWORDS
     );
 
+  /*
+   * ひとり親等 + 具体的な支援
+   */
   if (
-    veryHighMatches.length > 0
+    hasStrongPersonal &&
+    hasBenefit
   ) {
     return {
-      level: 'very-high',
-      icon: '⭐',
+      level:
+        'very-high',
+
+      icon:
+        '⭐',
+
       label:
         'あなたへの関連度：かなり高い'
     };
   }
 
+  /*
+   * 中学・高校・大学など +
+   * 具体的な支援
+   */
   if (
-    personalMatches.length >= 2
+    hasSubject &&
+    hasBenefit
   ) {
     return {
-      level: 'high',
-      icon: '⭐',
+      level:
+        'high',
+
+      icon:
+        '⭐',
+
       label:
         'あなたへの関連度：高い'
     };
   }
 
+  /*
+   * 一般市民向けの具体的支援
+   */
   if (
-    personalMatches.length === 1
+    hasBenefit &&
+    hasResident
   ) {
     return {
-      level: 'medium',
-      icon: '👀',
+      level:
+        'medium',
+
+      icon:
+        '👀',
+
       label:
         'あなたにも関係する可能性あり'
     };
@@ -670,78 +1197,74 @@ function determinePersonalRelevance(
     !hasResident
   ) {
     return {
-      level: 'low',
-      icon: '🏢',
+      level:
+        'low',
+
+      icon:
+        '🏢',
+
       label:
         '主に事業者向け'
     };
   }
 
   return {
-    level: 'normal',
-    icon: '🔎',
+    level:
+      'normal',
+
+    icon:
+      '🔎',
+
     label:
       '対象条件を確認'
   };
 }
 
-function isLikelyResidentBenefit(
-  text,
-  matchedKeywords
+function getAudienceInfo(
+  initialText
 ) {
-  const lower =
-    String(text || '')
-      .toLowerCase();
-
   const hasBusiness =
-    BUSINESS_KEYWORDS.some(
-      keyword =>
-        lower.includes(
-          keyword.toLowerCase()
-        )
+    containsAny(
+      initialText,
+      BUSINESS_KEYWORDS
     );
 
   const hasResident =
-    RESIDENT_KEYWORDS.some(
-      keyword =>
-        lower.includes(
-          keyword.toLowerCase()
-        )
+    containsAny(
+      initialText,
+      RESIDENT_KEYWORDS
     );
-
-  const hasHigh =
-    HIGH_PRIORITY_KEYWORDS.some(
-      keyword =>
-        lower.includes(
-          keyword.toLowerCase()
-        )
-    );
-
-  const hasPersonal =
-    PERSONAL_PRIORITY_KEYWORDS.some(
-      keyword =>
-        lower.includes(
-          keyword.toLowerCase()
-        )
-    );
-
-  if (
-    hasPersonal ||
-    hasHigh
-  ) {
-    return true;
-  }
 
   if (
     hasBusiness &&
     !hasResident
   ) {
-    return false;
+    return {
+      icon:
+        '🏢',
+
+      label:
+        '主に事業者向け'
+    };
   }
 
-  return (
-    matchedKeywords.length > 0
-  );
+  if (hasResident) {
+    return {
+      icon:
+        '👤',
+
+      label:
+        '市民・家庭向けの可能性あり'
+    };
+  }
+
+  return {
+    icon:
+      '🔎',
+
+    label:
+      '対象者を要確認'
+  };
 }
 
 function splitSentences(text) {
@@ -778,53 +1301,6 @@ function shortenText(
         0,
         maxLength
       )}…`;
-}
-
-function getAudienceInfo(text) {
-  const lower =
-    String(text || '')
-      .toLowerCase();
-
-  const hasBusiness =
-    BUSINESS_KEYWORDS.some(
-      keyword =>
-        lower.includes(
-          keyword.toLowerCase()
-        )
-    );
-
-  const hasResident =
-    RESIDENT_KEYWORDS.some(
-      keyword =>
-        lower.includes(
-          keyword.toLowerCase()
-        )
-    );
-
-  if (
-    hasBusiness &&
-    !hasResident
-  ) {
-    return {
-      icon: '🏢',
-      label:
-        '主に事業者向け'
-    };
-  }
-
-  if (hasResident) {
-    return {
-      icon: '👤',
-      label:
-        '市民・家庭向けの可能性あり'
-    };
-  }
-
-  return {
-    icon: '🔎',
-    label:
-      '対象者を要確認'
-  };
 }
 
 function findUsefulSentence(
@@ -865,7 +1341,9 @@ function findUsefulSentence(
 
 function extractShortSummary(text) {
   const sentences =
-    splitSentences(text)
+    splitSentences(
+      text
+    )
       .filter(
         sentence =>
           sentence.length <= 300
@@ -874,31 +1352,24 @@ function extractShortSummary(text) {
   const used =
     new Set();
 
-const target =
+  const target =
     findUsefulSentence(
       sentences,
       [
         /ひとり親/,
         /母子家庭/,
         /児童扶養手当/,
-        /小学生/,
         /中学生/,
         /高校生/,
         /大学生/,
         /専門学生/,
-        /学生/,
         /就学援助/,
-        /子育て世帯/,
         /保護者/,
         /対象者/,
         /対象となる/,
-        /対象は/,
         /市内在住/,
         /豊田市在住/,
-        /市民/,
-        /世帯/,
-        /申請できる/,
-        /利用できる/
+        /世帯/
       ],
       used
     );
@@ -911,20 +1382,15 @@ const target =
         /\d+(?:\.\d+)?万円/,
         /\d+(?:\.\d+)?%/,
         /\d+(?:\.\d+)?％/,
-        /\d{1,3}(?:,\d{3})*ポイント/,
-        /補助率/,
         /補助額/,
         /給付額/,
         /助成額/,
-        /支給額/,
         /貸付額/,
         /融資額/,
         /限度額/,
         /上限額/,
         /利率/,
         /無利子/,
-        /返済/,
-        /償還/,
         /授業料/,
         /入学金/,
         /受験料/,
@@ -936,10 +1402,7 @@ const target =
         /免除/,
         /減免/
       ],
-      used
-    );
-
-  const deadline =
+  e =
     findUsefulSentence(
       sentences,
       [
@@ -950,8 +1413,6 @@ const target =
         /申込期間/,
         /募集期間/,
         /受付開始/,
-        /申請開始/,
-        /申込開始/,
         /\d{1,2}月\d{1,2}日まで/,
         /令和\d+年\d{1,2}月\d{1,2}日/
       ],
@@ -961,25 +1422,34 @@ const target =
   return {
     target:
       target
-        ? shortenText(target)
+        ? shortenText(
+            target
+          )
         : '',
 
     amount:
       amount
-        ? shortenText(amount)
+        ? shortenText(
+            amount
+          )
         : '',
 
     deadline:
       deadline
-        ? shortenText(deadline)
+        ? shortenText(
+            deadline
+          )
         : ''
   };
 }
 
-function determineSupportType(text) {
+function determineSupportType(
+  initialText
+) {
   const lower =
-    String(text || '')
-      .toLowerCase();
+    String(
+      initialText || ''
+    ).toLowerCase();
 
   if (
     [
@@ -991,11 +1461,15 @@ function determineSupportType(text) {
       '入学資金'
     ].some(
       keyword =>
-        lower.includes(keyword)
+        lower.includes(
+          keyword
+        )
     )
   ) {
     return {
-      icon: '💳',
+      icon:
+        '💳',
+
       label:
         '貸付・融資の可能性あり',
 
@@ -1012,11 +1486,15 @@ function determineSupportType(text) {
       '修学支援'
     ].some(
       keyword =>
-        lower.includes(keyword)
+        lower.includes(
+          keyword
+        )
     )
   ) {
     return {
-      icon: '🎓',
+      icon:
+        '🎓',
+
       label:
         '教育・進学支援',
 
@@ -1031,14 +1509,18 @@ function determineSupportType(text) {
       '助成金',
       '給付金',
       '支援金',
-      '支給'
+      '手当'
     ].some(
       keyword =>
-        lower.includes(keyword)
+        lower.includes(
+          keyword
+        )
     )
   ) {
     return {
-      icon: '💰',
+      icon:
+        '💰',
+
       label:
         '給付・補助・助成',
 
@@ -1056,11 +1538,15 @@ function determineSupportType(text) {
       '割引'
     ].some(
       keyword =>
-        lower.includes(keyword)
+        lower.includes(
+          keyword
+        )
     )
   ) {
     return {
-      icon: '🧾',
+      icon:
+        '🧾',
+
       label:
         '無料・減免・割引',
 
@@ -1070,7 +1556,9 @@ function determineSupportType(text) {
   }
 
   return {
-    icon: '📌',
+    icon:
+      '📌',
+
     label:
       '支援情報',
 
@@ -1079,44 +1567,41 @@ function determineSupportType(text) {
   };
 }
 
-function determinePriority(text) {
-  const lower =
-    String(text || '')
-      .toLowerCase();
-
+function determinePriority(
+  initialText
+) {
   const relevance =
     determinePersonalRelevance(
-      text
+      initialText
     );
 
   const hasApplication =
-    [
-      '申請',
-      '申込',
-      '申し込み',
-      '受付',
-      '募集'
-    ].some(
-      keyword =>
-        lower.includes(keyword)
+    containsAny(
+      initialText,
+      [
+        '申請',
+        '申込',
+        '受付',
+        '募集'
+      ]
     );
 
   const hasDeadline =
-    [
-      '締切',
-      '期限',
-      'まで',
-      '受付期間',
-      '申込期間',
-      '募集期間'
-    ].some(
-      keyword =>
-        lower.includes(keyword)
+    containsAny(
+      initialText,
+      [
+        '締切',
+        '期限',
+        '受付期間',
+        '申込期間',
+        '募集期間'
+      ]
     );
 
   const highPriority =
-    getPriorityKeywords(
-      text
+    matchingKeywords(
+      initialText,
+      HIGH_PRIORITY_KEYWORDS
     );
 
   if (
@@ -1124,21 +1609,26 @@ function determinePriority(text) {
       'very-high'
   ) {
     return {
-      icon: '⭐',
+      icon:
+        '⭐',
+
       label:
         'あなた向け・優先確認'
     };
   }
 
   if (
-    relevance.level === 'high' &&
+    relevance.level ===
+      'high' &&
     (
       hasApplication ||
       hasDeadline
     )
   ) {
     return {
-      icon: '⭐',
+      icon:
+        '⭐',
+
       label:
         'あなた向け・優先確認'
     };
@@ -1152,46 +1642,41 @@ function determinePriority(text) {
     highPriority.length >= 2
   ) {
     return {
-      icon: '🔴',
+      icon:
+        '🔴',
+
       label:
         '見逃し注意'
     };
   }
 
   if (
-    relevance.level === 'high'
+    relevance.level ===
+      'high'
   ) {
     return {
-      icon: '🟣',
+      icon:
+        '🟣',
+
       label:
         '関連度が高い情報'
     };
   }
 
-  if (
-    highPriority.length > 0 ||
-    hasApplication ||
-    relevance.level === 'medium'
-  ) {
-    return {
-      icon: '🟠',
-      label:
-        '要確認'
-    };
-  }
-
   return {
-    icon: '🟡',
+    icon:
+      '🟠',
+
     label:
-      'お得・支援情報候補'
+      '要確認'
   };
 }
-
 async function getDetailText(url) {
   try {
     return normalizeText(
       await fetchText(url)
     );
+
   } catch (error) {
     console.log(
       `詳細取得エラー: ${url} ${error.message}`
@@ -1239,10 +1724,11 @@ async function createGitHubIssue(
             'toyota-benefit-monitor'
         },
 
-        body: JSON.stringify({
-          title,
-          body
-        })
+        body:
+          JSON.stringify({
+            title,
+            body
+          })
       }
     );
 
@@ -1267,35 +1753,44 @@ function createIssueBody(
   entry,
   detailText
 ) {
-  const combinedText =
+  /*
+   * 関連度と優先度は
+   * タイトル＋RSS概要だけで判定する。
+   *
+   * 詳細ページ全文は関連度判定に使わない。
+   */
+  const initialText =
     [
       entry.title,
-      entry.description,
-      detailText
+      entry.description
     ]
       .filter(Boolean)
       .join(' ');
 
   const priority =
     determinePriority(
-      combinedText
+      initialText
     );
 
   const relevance =
     determinePersonalRelevance(
-      combinedText
+      initialText
     );
 
   const audience =
     getAudienceInfo(
-      combinedText
+      initialText
     );
 
   const supportType =
     determineSupportType(
-      combinedText
+      initialText
     );
 
+  /*
+   * 詳細ページは、
+   * 対象・金額・期限を短く表示するためだけに使用する。
+   */
   const summary =
     extractShortSummary(
       detailText ||
@@ -1324,7 +1819,7 @@ function createIssueBody(
   }
 
   const usefulText =
-    lines.length
+    lines.length > 0
       ? lines
           .slice(0, 3)
           .join('\n\n')
@@ -1536,6 +2031,12 @@ function mergeEntries(entries) {
       const entry
       of allEntries
     ) {
+      /*
+       * 最初の判定はタイトル＋RSS概要だけ。
+       *
+       * 詳細ページの共通メニューや
+       * 関連リンクによる誤判定を防ぐ。
+       */
       const initialText =
         [
           entry.title,
@@ -1544,88 +2045,153 @@ function mergeEntries(entries) {
           .filter(Boolean)
           .join(' ');
 
-      let matchedKeywords =
-        getMatchedKeywords(
-          initialText
+      const guideOnly =
+        isGuideOnlyEntry(
+          entry
         );
 
-      const initialPersonalKeywords =
-        getPersonalKeywords(
-          initialText
+      const excludedNews =
+        isExcludedNewsEntry(
+          entry
         );
 
-      let detailText = '';
-
-      const shouldFetchDetail =
-        entry.sourceType ===
-          'support-page' ||
-        matchedKeywords.length > 0 ||
-        initialPersonalKeywords.length > 0;
-
-      if (shouldFetchDetail) {
-        detailText =
-          await getDetailText(
-            entry.url
-          );
-
-        await sleep(
-          WAIT_BETWEEN_REQUESTS_MS
+      const concreteBenefit =
+        hasConcreteBenefitInInitialText(
+          entry
         );
 
-        matchedKeywords =
-          getMatchedKeywords(
+      /*
+       * 以下は詳細ページを見る前に除外
+       *
+       * 1. 案内・一覧・まとめページ
+       * 2. 市長訪問、表彰、大会結果など
+       * 3. タイトル・概要に具体的な利益がない情報
+       */
+      if (
+        guideOnly ||
+        excludedNews ||
+        !concreteBenefit
+      ) {
+        const reason =
+          guideOnly
+            ? '案内・一覧ページ'
+            : excludedNews
+              ? '一般ニュース'
+              : '具体的な支援なし';
+
+        const excludedHash =
+          createHash(
             [
-              initialText,
-              detailText
-            ].join(' ')
+              entry.title,
+              entry.description,
+              reason
+            ].join('\n')
           );
+
+        currentEntries[
+          entry.id
+        ] = {
+          title:
+            entry.title,
+
+          url:
+            entry.url,
+
+          source:
+            entry.source,
+
+          publishedAt:
+            entry.publishedAt,
+
+          isBenefit:
+            false,
+
+          personalRelevance:
+            'excluded',
+
+          supportType:
+            reason,
+
+          matchedKeywords: [],
+
+          contentHash:
+            excludedHash,
+
+          lastSeenAt:
+            getJapanTime()
+        };
+
+        console.log(
+          `${reason}のため除外: ${entry.title}`
+        );
+
+        continue;
       }
 
-      const combinedText =
-        [
-          initialText,
-          detailText
-        ]
-          .filter(Boolean)
-          .join(' ');
+      /*
+       * ここまで通ったものだけ
+       * 詳細ページを取得する。
+       */
+      const detailText =
+        await getDetailText(
+          entry.url
+        );
 
-      const isBenefit =
-        isLikelyResidentBenefit(
-          combinedText,
-          matchedKeywords
+      await sleep(
+        WAIT_BETWEEN_REQUESTS_MS
+      );
+
+      /*
+       * 更新判定用キーワードも
+       * タイトル＋概要から取得する。
+       */
+      const matchedKeywords =
+        matchingKeywords(
+          initialText,
+          BENEFIT_KEYWORDS
         );
 
       const personalRelevance =
         determinePersonalRelevance(
-          combinedText
+          initialText
         );
 
       const supportType =
         determineSupportType(
-          combinedText
+          initialText
         );
 
+      /*
+       * 詳細本文から対象・金額・期限だけ抽出。
+       */
       const stableSummary =
-  extractShortSummary(
-    detailText ||
-    entry.description ||
-    entry.title
-  );
+        extractShortSummary(
+          detailText ||
+          entry.description ||
+          entry.title
+        );
 
-　　　const contentHash =
-  createHash(
-    [
-      entry.title,
-      entry.description,
-      matchedKeywords
-        .slice()
-        .sort()
-        .join('|'),
-      stableSummary.target,
-      stableSummary.amount,
-      stableSummary.deadline
-    ].join('\n')
-  );
+      /*
+       * ページ全文ではなく、
+       * 比較的安定した情報だけで更新判定する。
+       */
+      const contentHash =
+        createHash(
+          [
+            entry.title,
+            entry.description,
+
+            matchedKeywords
+              .slice()
+              .sort()
+              .join('|'),
+
+            stableSummary.target,
+            stableSummary.amount,
+            stableSummary.deadline
+          ].join('\n')
+        );
+
       currentEntries[
         entry.id
       ] = {
@@ -1641,7 +2207,8 @@ function mergeEntries(entries) {
         publishedAt:
           entry.publishedAt,
 
-        isBenefit,
+        isBenefit:
+          true,
 
         personalRelevance:
           personalRelevance.level,
@@ -1679,69 +2246,66 @@ function mergeEntries(entries) {
       const becameBenefit =
         previous &&
         previous.isBenefit ===
-          false &&
-        isBenefit ===
-          true;
+          false;
 
       if (
-        isBenefit &&
-        (
-          isNew ||
-          isUpdated ||
-          becameBenefit
-        )
+        isNew ||
+        isUpdated ||
+        becameBenefit
       ) {
         notificationCandidates.push({
           entry,
           detailText,
-          personalRelevance,
-
-          reason:
-            isNew
-              ? '新規掲載'
-              : '内容更新'
+          personalRelevance
         });
       }
     }
 
-   const needsRebaseline =
-  !state.initialized ||
-  state.baselineVersion !==
-    BASELINE_VERSION;
+    /*
+     * 判定方式を変更した最初の1回だけ
+     * 現在情報を通知なしで基準として保存。
+     */
+    const needsRebaseline =
+      !state.initialized ||
+      state.baselineVersion !==
+        BASELINE_VERSION;
 
-if (needsRebaseline) {
-  state.initialized = true;
+    if (needsRebaseline) {
+      state.initialized = true;
 
-  state.baselineVersion =
-    BASELINE_VERSION;
+      state.baselineVersion =
+        BASELINE_VERSION;
 
-  state.checkedAt =
-    getJapanTime();
+      state.checkedAt =
+        getJapanTime();
 
-  state.entries =
-    currentEntries;
+      state.entries =
+        currentEntries;
 
-  saveState(state);
+      saveState(state);
 
-  console.log(
-    '現在の情報を新しい基準として保存しました'
-  );
+      console.log(
+        '現在の情報を新しい基準として保存しました'
+      );
 
-  console.log(
-    `基準バージョン: ${BASELINE_VERSION}`
-  );
+      console.log(
+        `基準バージョン: ${BASELINE_VERSION}`
+      );
 
-  console.log(
-    '再基準化のため、今回は通知を送りません'
-  );
+      console.log(
+        '再基準化のため、今回は通知を送りません'
+      );
 
-  console.log(
-    '次回実行から新規・重要な更新だけ通知します'
-  );
+      console.log(
+        '次回実行から新しい支援・重要な更新だけ通知します'
+      );
 
-  return;
-}
+      return;
+    }
 
+    /*
+     * 関連度の高いものから通知
+     */
     const relevanceOrder = {
       'very-high': 0,
       high: 1,
@@ -1772,28 +2336,27 @@ if (needsRebaseline) {
       const candidate
       of notificationCandidates
     ) {
-      const combinedText =
+      const initialText =
         [
           candidate.entry.title,
-          candidate.entry.description,
-          candidate.detailText
+          candidate.entry.description
         ]
           .filter(Boolean)
           .join(' ');
 
       const priority =
         determinePriority(
-          combinedText
+          initialText
         );
 
       const relevance =
         determinePersonalRelevance(
-          combinedText
+          initialText
         );
 
       const supportType =
         determineSupportType(
-          combinedText
+          initialText
         );
 
       const title =
