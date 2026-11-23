@@ -1,489 +1,103 @@
 const fs = require('fs');
 const crypto = require('crypto');
 
-const NEWS_RSS_URL =
-  process.env.TOYOTA_NEWS_RSS_URL;
+const NEWS_RSS_URL = process.env.TOYOTA_NEWS_RSS_URL;
+const PRESS_RSS_URL = process.env.TOYOTA_PRESS_RSS_URL;
+const SUPPORT_URL = process.env.TOYOTA_SUPPORT_URL;
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY;
+const GITHUB_USERNAME = process.env.GITHUB_ACTOR;
 
-const PRESS_RSS_URL =
-  process.env.TOYOTA_PRESS_RSS_URL;
-
-const SUPPORT_URL =
-  process.env.TOYOTA_SUPPORT_URL;
-
-const GITHUB_TOKEN =
-  process.env.GITHUB_TOKEN;
-
-const GITHUB_REPOSITORY =
-  process.env.GITHUB_REPOSITORY;
-
-const GITHUB_USERNAME =
-  process.env.GITHUB_ACTOR;
-
-const STATE_FILE =
-  'toyota-benefit-state.json';
-
+const STATE_FILE = 'toyota-benefit-state.json';
 const REQUEST_TIMEOUT_MS = 30000;
 const WAIT_BETWEEN_REQUESTS_MS = 500;
 
-/*
- * 豊田市のお得・支援情報として検出する言葉
- */
 const BENEFIT_KEYWORDS = [
-  /*
-   * 商品券・還元
-   */
-  '商品券',
-  'プレミアム',
-  'paypay',
-  'ポイント還元',
-  'ポイント付与',
-  'キャッシュレス',
-  '還元キャンペーン',
-  '二次販売',
-  '追加販売',
-
-  /*
-   * 給付・補助・助成
-   */
-  '給付金',
-  '給付',
-  '支援金',
-  '支援事業',
-  '生活支援',
-  '補助金',
-  '補助',
-  '助成金',
-  '助成',
-  '奨励金',
-  '交付金',
-  '購入費',
-  '負担軽減',
-  '費用負担',
-  '支給',
-
-  /*
-   * 融資・貸付
-   */
-  '融資',
-  '融資制度',
-  '貸付',
-  '貸付金',
-  '資金貸付',
-  '無利子貸付',
-  '低利融資',
-  '教育ローン',
-  '修学資金',
-  '就学資金',
-  '入学資金',
-  '母子父子寡婦福祉資金',
-  '生活福祉資金',
-  '教育支援資金',
-
-  /*
-   * 減免・割引
-   */
-  '免除',
-  '減免',
-  '無料',
-  '無償',
-  '割引',
-
-  /*
-   * 募集・受付
-   */
-  '追加募集',
-  '再募集',
-  '先着順',
-  '申請受付',
-  '申込受付',
-  '受付開始',
-
-  /*
-   * 生活・住宅
-   */
-  '物価高騰',
-  '家計支援',
-  '家計サポート',
-  '生活困窮',
-  '低所得世帯',
-  '非課税世帯',
-  '省エネ',
-  '住宅支援',
-  '家賃補助',
-  '住宅手当',
-
-  /*
-   * ひとり親・子育て
-   */
-  'ひとり親',
-  'ひとり親家庭',
-  'ひとり親世帯',
-  '母子家庭',
-  '母子世帯',
-  '母子父子家庭',
-  '児童扶養手当',
-  '子育て世帯',
-  '子育て家庭',
-  '子育て支援',
-  '保護者',
-  '児童',
-  '生徒',
-
-  /*
-   * 小中学校
-   */
-  '小学生',
-  '小学校',
-  '中学生',
-  '中学校',
-  '義務教育',
-  '就学援助',
-  '就学支援',
-  '学用品',
-  '学用品費',
-  '新入学学用品費',
-  '教育費',
-  '通学費',
-  '給食費',
-  '修学旅行費',
-  '校外活動費',
-  '入学準備金',
-
-  /*
-   * 高校
-   */
-  '高校生',
-  '高校',
-  '高等学校',
-  '高等学校等就学支援金',
-  '高校生等奨学給付金',
-  '授業料支援',
-  '授業料無償化',
-  '高校授業料',
-  '高校入学',
-  '高等学校入学',
-
-  /*
-   * 大学・専門学校
-   */
-  '大学生',
-  '大学',
-  '短期大学',
-  '短大',
-  '専門学校',
-  '専門学生',
-  '高等専門学校',
-  '高専',
-  '進学',
-  '大学進学',
-  '入学金',
-  '授業料',
-  '受験料',
-  '受験費用',
-  '奨学金',
-  '給付型奨学金',
-  '貸与型奨学金',
-  '修学支援',
-  '高等教育の修学支援新制度',
-  '学費',
-  '学生生活',
-
-  /*
-   * 医療
-   */
-  '医療費',
-  '医療費助成',
-  '子ども医療費',
-  '母子家庭等医療費',
-  '受給者証'
+  '商品券','プレミアム','paypay','ポイント還元','ポイント付与','キャッシュレス','還元キャンペーン',
+  '二次販売','追加販売','給付金','給付','支援金','支援事業','生活支援','補助金','補助','助成金','助成',
+  '奨励金','交付金','購入費','負担軽減','支給','融資','融資制度','貸付','貸付金','資金貸付','無利子貸付',
+  '低利融資','教育ローン','修学資金','就学資金','入学資金','母子父子寡婦福祉資金','生活福祉資金',
+  '教育支援資金','免除','減免','無料','無償','割引','追加募集','再募集','先着順','申請受付','申込受付',
+  '受付開始','物価高騰','家計支援','家計サポート','生活困窮','低所得世帯','非課税世帯','省エネ','住宅支援',
+  '家賃補助','住宅手当','ひとり親','ひとり親家庭','ひとり親世帯','母子家庭','母子世帯','母子父子家庭',
+  '児童扶養手当','子育て世帯','子育て家庭','子育て支援','保護者','児童','生徒','小学生','小学校','中学生',
+  '中学校','義務教育','就学援助','就学支援','学用品','学用品費','新入学学用品費','教育費','通学費','給食費',
+  '修学旅行費','校外活動費','入学準備金','高校生','高校','高等学校','高等学校等就学支援金','高校生等奨学給付金',
+  '授業料支援','授業料無償化','高校授業料','高校入学','高等学校入学','大学生','大学','短期大学','短大',
+  '専門学校','専門学生','高等専門学校','高専','進学','大学進学','入学金','授業料','受験料','受験費用','奨学金',
+  '給付型奨学金','貸与型奨学金','修学支援','高等教育の修学支援新制度','学費','学生生活','医療費','医療費助成',
+  '子ども医療費','母子家庭等医療費','受給者証'
 ];
 
-/*
- * 一般的に見逃したくない言葉
- */
 const HIGH_PRIORITY_KEYWORDS = [
-  '商品券',
-  'プレミアム',
-  'paypay',
-  '給付金',
-  '支援金',
-  'ポイント還元',
-  '二次販売',
-  '追加販売',
-  '追加募集',
-  '再募集',
-  '先着順',
-  '申請受付',
-  '申込受付',
-  '受付開始',
-  '申請期限',
-  '募集期限'
+  '商品券','プレミアム','paypay','給付金','支援金','ポイント還元','二次販売','追加販売','追加募集','再募集',
+  '先着順','申請受付','申込受付','受付開始','申請期限','募集期限'
 ];
 
-/*
- * ゆきさんに関連する可能性が高い言葉
- *
- * GitHub Issueには具体的な家族構成を表示せず、
- * 「あなたへの関連度」のみを表示します。
- */
 const PERSONAL_PRIORITY_KEYWORDS = [
-  /*
-   * ひとり親
-   */
-  'ひとり親',
-  'ひとり親家庭',
-  'ひとり親世帯',
-  '母子家庭',
-  '母子世帯',
-  '母子父子家庭',
-  '母子父子寡婦福祉資金',
-  '児童扶養手当',
-  '児童扶養手当受給者',
-  '母子家庭等医療費',
-
-  /*
-   * 子育て
-   */
-  '子育て世帯',
-  '子育て家庭',
-  '子育て支援',
-  '児童',
-  '生徒',
-  '保護者',
-
-  /*
-   * 小中学校
-   */
-  '小学生',
-  '小学校',
-  '中学生',
-  '中学校',
-  '義務教育',
-  '就学援助',
-  '就学支援',
-  '学用品',
-  '学用品費',
-  '新入学学用品費',
-  '教育費',
-  '通学費',
-  '給食費',
-  '修学旅行費',
-  '校外活動費',
-  '入学準備金',
-
-  /*
-   * 高校
-   */
-  '高校生',
-  '高校',
-  '高等学校',
-  '高等学校等就学支援金',
-  '高校生等奨学給付金',
-  '高校授業料',
-  '授業料支援',
-  '授業料無償化',
-  '高校入学',
-  '高等学校入学',
-
-  /*
-   * 大学・短大・専門学校
-   */
-  '大学生',
-  '大学',
-  '短期大学',
-  '短大',
-  '専門学校',
-  '専門学生',
-  '高等専門学校',
-  '高専',
-  '進学',
-  '大学進学',
-  '入学金',
-  '授業料',
-  '受験料',
-  '受験費用',
-  '学費',
-  '奨学金',
-  '給付型奨学金',
-  '貸与型奨学金',
-  '修学支援',
-  '高等教育の修学支援新制度',
-
-  /*
-   * 教育に関する貸付・融資
-   */
-  '教育ローン',
-  '教育支援資金',
-  '修学資金',
-  '就学資金',
-  '入学資金',
-  '無利子貸付',
-  '資金貸付',
-
-  /*
-   * 医療・生活
-   */
-  '医療費',
-  '子ども医療費',
-  '医療費助成',
-  '医療費受給者証',
-  '受給者証',
-  '生活支援',
-  '家計支援',
-  '物価高騰',
-  '低所得世帯',
-  '非課税世帯',
-  '生活困窮',
-  '家賃補助',
-  '住宅手当'
+  'ひとり親','ひとり親家庭','ひとり親世帯','母子家庭','母子世帯','母子父子家庭','母子父子寡婦福祉資金',
+  '児童扶養手当','児童扶養手当受給者','母子家庭等医療費','子育て世帯','子育て家庭','子育て支援','児童','生徒',
+  '保護者','小学生','小学校','中学生','中学校','義務教育','就学援助','就学支援','学用品','学用品費',
+  '新入学学用品費','教育費','通学費','給食費','修学旅行費','校外活動費','入学準備金','高校生','高校',
+  '高等学校','高等学校等就学支援金','高校生等奨学給付金','高校授業料','授業料支援','授業料無償化','高校入学',
+  '高等学校入学','大学生','大学','短期大学','短大','専門学校','専門学生','高等専門学校','高専','進学','大学進学',
+  '入学金','授業料','受験料','受験費用','学費','奨学金','給付型奨学金','貸与型奨学金','修学支援',
+  '高等教育の修学支援新制度','教育ローン','教育支援資金','修学資金','就学資金','入学資金','無利子貸付',
+  '資金貸付','医療費','子ども医療費','医療費助成','医療費受給者証','受給者証','生活支援','家計支援',
+  '物価高騰','低所得世帯','非課税世帯','生活困窮','家賃補助','住宅手当'
 ];
 
-/*
- * 1語でも含まれたら関連度をかなり高くする言葉
- */
 const VERY_HIGH_PERSONAL_KEYWORDS = [
-  'ひとり親',
-  'ひとり親家庭',
-  'ひとり親世帯',
-  '母子家庭',
-  '母子世帯',
-  '母子父子家庭',
-  '児童扶養手当',
-  '母子家庭等医療費',
-  '母子父子寡婦福祉資金',
-
-  '就学援助',
-  '新入学学用品費',
-
-  '中学生',
-  '中学校',
-
-  '高校生',
-  '高等学校等就学支援金',
-  '高校生等奨学給付金',
-
-  '大学生',
-  '給付型奨学金',
-  '高等教育の修学支援新制度',
-
-  '教育ローン',
-  '教育支援資金',
-  '修学資金'
+  'ひとり親','ひとり親家庭','ひとり親世帯','母子家庭','母子世帯','母子父子家庭','児童扶養手当',
+  '母子家庭等医療費','母子父子寡婦福祉資金','就学援助','新入学学用品費','中学生','中学校','高校生',
+  '高等学校等就学支援金','高校生等奨学給付金','大学生','給付型奨学金','高等教育の修学支援新制度',
+  '教育ローン','教育支援資金','修学資金'
 ];
 
-/*
- * 事業者向けと判定する言葉
- */
 const BUSINESS_KEYWORDS = [
-  '事業者',
-  '事業所',
-  '法人',
-  '企業',
-  '中小企業',
-  '農業者',
-  '商工会',
-  '施設運営者',
-  '事業主',
-  '店舗向け',
-  '立地',
-  '工場',
-  '設備投資',
-  '産業用地',
-  '創業者',
-  '雇用主',
-  '運転資金',
-  '設備資金',
-  '創業融資',
-  '事業資金',
-  '経営安定',
-  '売上減少'
+  '事業者','事業所','法人','企業','中小企業','農業者','商工会','施設運営者','事業主','店舗向け','立地','工場',
+  '設備投資','産業用地','創業者','雇用主','運転資金','設備資金','創業融資','事業資金','経営安定','売上減少'
 ];
 
-/*
- * 市民・個人向けと判定する言葉
- */
 const RESIDENT_KEYWORDS = [
-  '市民',
-  '市内在住',
-  '豊田市在住',
-  '住民',
-  '世帯',
-  '家庭',
-  '個人',
-  '本人',
-  '保護者',
-  '子育て',
-  '高齢者',
-  '障がい',
-  '学生',
-  '児童',
-  '生徒',
-  '乳幼児',
-  '住宅',
-  '購入者',
-  '利用者',
-  'お一人様',
-  '1人',
-  'ひとり親',
-  '母子家庭',
-  '小学生',
-  '中学生',
-  '高校生',
-  '大学生',
-  '専門学生'
+  '市民','市内在住','豊田市在住','住民','世帯','家庭','個人','本人','保護者','子育て','高齢者','障がい','学生',
+  '児童','生徒','乳幼児','住宅','購入者','利用者','お一人様','1人','ひとり親','母子家庭','小学生','中学生',
+  '高校生','大学生','専門学生'
 ];
 
-if (
-  !NEWS_RSS_URL ||
-  !PRESS_RSS_URL ||
-  !SUPPORT_URL
-) {
+if (!NEWS_RSS_URL || !PRESS_RSS_URL || !SUPPORT_URL) {
   throw new Error(
-    '豊田市監視用のSecretが不足しています。' +
-    'TOYOTA_NEWS_RSS_URL、' +
-    'TOYOTA_PRESS_RSS_URL、' +
-    'TOYOTA_SUPPORT_URLを確認してください。'
+    '豊田市監視用のSecretが不足しています。TOYOTA_NEWS_RSS_URL、TOYOTA_PRESS_RSS_URL、TOYOTA_SUPPORT_URLを確認してください。'
   );
 }
 
 function sleep(ms) {
-  return new Promise(
-    resolve =>
-      setTimeout(resolve, ms)
-  );
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function getJapanTime() {
-  return new Intl.DateTimeFormat(
-    'ja-JP',
-    {
-      timeZone: 'Asia/Tokyo',
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit',
-      hourCycle: 'h23'
-    }
-  ).format(new Date());
+  return new Intl.DateTimeFormat('ja-JP', {
+    timeZone: 'Asia/Tokyo',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hourCycle: 'h23'
+  }).format(new Date());
 }
 
 function createHash(value) {
   return crypto
     .createHash('sha256')
-    .update(
-      String(value || '')
-    )
+    .update(String(value || ''))
     .digest('hex');
 }
 
 function decodeHtmlEntities(value) {
   return String(value || '')
-    .replace(
-      /<!\[CDATA\[([\s\S]*?)\]\]>/g,
-      '$1'
-    )
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
     .replace(/&amp;/gi, '&')
     .replace(/&lt;/gi, '<')
     .replace(/&gt;/gi, '>')
@@ -491,45 +105,25 @@ function decodeHtmlEntities(value) {
     .replace(/&apos;/gi, "'")
     .replace(/&#x27;/gi, "'")
     .replace(/&#x2F;/gi, '/')
-    .replace(
-      /&#(\d+);/g,
-      (_, number) =>
-        String.fromCharCode(
-          Number(number)
-        )
+    .replace(/&#(\d+);/g, (_, n) =>
+      String.fromCharCode(Number(n))
     )
-    .replace(
-      /&#x([0-9a-f]+);/gi,
-      (_, number) =>
-        String.fromCharCode(
-          parseInt(number, 16)
-        )
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) =>
+      String.fromCharCode(parseInt(n, 16))
     );
 }
 
 function stripHtml(value) {
   return decodeHtmlEntities(
     String(value || '')
-      .replace(
-        /<script[\s\S]*?<\/script>/gi,
-        ' '
-      )
-      .replace(
-        /<style[\s\S]*?<\/style>/gi,
-        ' '
-      )
-      .replace(
-        /<(br|hr)\s*\/?>/gi,
-        '\n'
-      )
+      .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+      .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+      .replace(/<(br|hr)\s*\/?>/gi, '\n')
       .replace(
         /<\/(p|li|div|section|article|h1|h2|h3|h4|tr)>/gi,
         '\n'
       )
-      .replace(
-        /<[^>]+>/g,
-        ' '
-      )
+      .replace(/<[^>]+>/g, ' ')
   )
     .replace(/\r/g, '')
     .replace(/[ \t]+/g, ' ')
@@ -546,8 +140,7 @@ function normalizeText(value) {
 
 function normalizeUrl(urlText) {
   try {
-    const url =
-      new URL(urlText);
+    const url = new URL(urlText);
 
     url.hash = '';
 
@@ -557,17 +150,13 @@ function normalizeUrl(urlText) {
       'utm_campaign',
       'utm_term',
       'utm_content'
-    ].forEach(
-      parameter =>
-        url.searchParams.delete(
-          parameter
-        )
+    ].forEach(parameter =>
+      url.searchParams.delete(parameter)
     );
 
     return url.href;
   } catch {
-    return String(urlText || '')
-      .trim();
+    return String(urlText || '').trim();
   }
 }
 
@@ -580,34 +169,19 @@ function createEmptyState() {
 }
 
 function loadState() {
-  if (
-    !fs.existsSync(
-      STATE_FILE
-    )
-  ) {
+  if (!fs.existsSync(STATE_FILE)) {
     return createEmptyState();
   }
 
   try {
-    const loaded =
-      JSON.parse(
-        fs.readFileSync(
-          STATE_FILE,
-          'utf8'
-        )
-      );
+    const loaded = JSON.parse(
+      fs.readFileSync(STATE_FILE, 'utf8')
+    );
 
     return {
-      initialized:
-        Boolean(
-          loaded.initialized
-        ),
-
-      checkedAt:
-        loaded.checkedAt || '',
-
-      entries:
-        loaded.entries || {}
+      initialized: Boolean(loaded.initialized),
+      checkedAt: loaded.checkedAt || '',
+      entries: loaded.entries || {}
     };
   } catch (error) {
     console.log(
@@ -621,11 +195,7 @@ function loadState() {
 function saveState(state) {
   fs.writeFileSync(
     STATE_FILE,
-    JSON.stringify(
-      state,
-      null,
-      2
-    ),
+    JSON.stringify(state, null, 2),
     'utf8'
   );
 
@@ -635,33 +205,28 @@ function saveState(state) {
 }
 
 async function fetchText(url) {
-  const controller =
-    new AbortController();
+  const controller = new AbortController();
 
-  const timeout =
-    setTimeout(
-      () =>
-        controller.abort(),
-      REQUEST_TIMEOUT_MS
-    );
+  const timeout = setTimeout(
+    () => controller.abort(),
+    REQUEST_TIMEOUT_MS
+  );
 
   try {
-    const response =
-      await fetch(
-        url,
-        {
-          headers: {
-            Accept:
-              'text/html,application/xhtml+xml,application/xml,text/xml;q=0.9,*/*;q=0.8',
+    const response = await fetch(
+      url,
+      {
+        headers: {
+          Accept:
+            'text/html,application/xhtml+xml,application/xml,text/xml;q=0.9,*/*;q=0.8',
 
-            'User-Agent':
-              'Toyota-Benefit-Monitor/4.0'
-          },
+          'User-Agent':
+            'Toyota-Benefit-Monitor/4.1'
+        },
 
-          signal:
-            controller.signal
-        }
-      );
+        signal: controller.signal
+      }
+    );
 
     if (!response.ok) {
       throw new Error(
@@ -679,7 +244,7 @@ function getXmlTag(
   value,
   tagName
 ) {
-  const escapedTagName =
+  const escaped =
     tagName.replace(
       /[.*+?^${}()|[\]\\]/g,
       '\\$&'
@@ -688,9 +253,7 @@ function getXmlTag(
   const match =
     String(value || '').match(
       new RegExp(
-        `<${escapedTagName}(?:\\s[^>]*)?>` +
-        `([\\s\\S]*?)` +
-        `<\\/${escapedTagName}>`,
+        `<${escaped}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${escaped}>`,
         'i'
       )
     );
@@ -699,30 +262,6 @@ function getXmlTag(
     ? decodeHtmlEntities(
         match[1]
       ).trim()
-    : '';
-}
-
-function getAtomLink(entryXml) {
-  const alternateMatch =
-    String(entryXml || '').match(
-      /<link\b[^>]*rel=["']alternate["'][^>]*href=["']([^"']+)["'][^>]*\/?>/i
-    );
-
-  if (alternateMatch) {
-    return decodeHtmlEntities(
-      alternateMatch[1]
-    );
-  }
-
-  const hrefMatch =
-    String(entryXml || '').match(
-      /<link\b[^>]*href=["']([^"']+)["'][^>]*\/?>/i
-    );
-
-  return hrefMatch
-    ? decodeHtmlEntities(
-        hrefMatch[1]
-      )
     : '';
 }
 
@@ -737,10 +276,7 @@ function parseRss(
       /<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi
     ) || [];
 
-  for (
-    const itemXml
-    of itemMatches
-  ) {
+  for (const itemXml of itemMatches) {
     const title =
       normalizeText(
         getXmlTag(
@@ -789,10 +325,7 @@ function parseRss(
         )
       );
 
-    if (
-      !title ||
-      !link
-    ) {
+    if (!title || !link) {
       continue;
     }
 
@@ -824,18 +357,13 @@ function parseRss(
   /*
    * Atom形式にも対応
    */
-  if (
-    items.length === 0
-  ) {
+  if (items.length === 0) {
     const entryMatches =
       String(xml || '').match(
         /<entry(?:\s[^>]*)?>[\s\S]*?<\/entry>/gi
       ) || [];
 
-    for (
-      const entryXml
-      of entryMatches
-    ) {
+    for (const entryXml of entryMatches) {
       const title =
         normalizeText(
           getXmlTag(
@@ -844,11 +372,18 @@ function parseRss(
           )
         );
 
+      const hrefMatch =
+        entryXml.match(
+          /<link\b[^>]*href=["']([^"']+)["'][^>]*\/?>/i
+        );
+
       const link =
         normalizeUrl(
-          getAtomLink(
-            entryXml
-          )
+          hrefMatch
+            ? decodeHtmlEntities(
+                hrefMatch[1]
+              )
+            : ''
         );
 
       const id =
@@ -857,7 +392,11 @@ function parseRss(
             entryXml,
             'id'
           )
-         getXmlTag(
+        );
+
+      const summary =
+        normalizeText(
+          getXmlTag(
             entryXml,
             'summary'
           )
@@ -879,10 +418,7 @@ function parseRss(
           )
         );
 
-      if (
-        !title ||
-        !link
-      ) {
+      if (!title || !link) {
         continue;
       }
 
@@ -923,7 +459,7 @@ function extractLinks(
   const links = [];
 
   const anchorPattern =
-    /<a\b[^"']+["'][^>]*>([\s\S]*?)<\/a>/gi;
+    /<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi;
 
   let match;
 
@@ -971,13 +507,10 @@ function extractLinks(
     }
 
     try {
-      const parsedUrl =
+      if (
         new URL(
           absoluteUrl
-        );
-
-      if (
-        parsedUrl.hostname !==
+        ).hostname !==
         'www.city.toyota.aichi.jp'
       ) {
         continue;
@@ -987,80 +520,60 @@ function extractLinks(
     }
 
     links.push({
-      id:
-        absoluteUrl,
-
-      source:
-        sourceName,
-
+      id: absoluteUrl,
+      source: sourceName,
       title,
-
-      url:
-        absoluteUrl,
-
+      url: absoluteUrl,
       description: '',
-
       publishedAt: '',
-
-      sourceType:
-        'support-page'
+      sourceType: 'support-page'
     });
   }
 
   return links;
 }
 
-function getMatchedKeywords(text) {
-  const lowerText =
+function matchingKeywords(
+  text,
+  keywords
+) {
+  const lower =
     String(text || '')
       .toLowerCase();
 
-  return BENEFIT_KEYWORDS.filter(
+  return keywords.filter(
     keyword =>
-      lowerText.includes(
+      lower.includes(
         keyword.toLowerCase()
       )
+  );
+}
+
+function getMatchedKeywords(text) {
+  return matchingKeywords(
+    text,
+    BENEFIT_KEYWORDS
   );
 }
 
 function getPriorityKeywords(text) {
-  const lowerText =
-    String(text || '')
-      .toLowerCase();
-
-  return HIGH_PRIORITY_KEYWORDS.filter(
-    keyword =>
-      lowerText.includes(
-        keyword.toLowerCase()
-      )
+  return matchingKeywords(
+    text,
+    HIGH_PRIORITY_KEYWORDS
   );
 }
 
 function getPersonalKeywords(text) {
-  const lowerText =
-    String(text || '')
-      .toLowerCase();
-
-  return PERSONAL_PRIORITY_KEYWORDS.filter(
-    keyword =>
-      lowerText.includes(
-        keyword.toLowerCase()
-      )
+  return matchingKeywords(
+    text,
+    PERSONAL_PRIORITY_KEYWORDS
   );
 }
 
-function getVeryHighPersonalKeywords(
-  text
-) {
-  const lowerText =
-    String(text || '')
-      .toLowerCase();
-
-  return VERY_HIGH_PERSONAL_KEYWORDS.filter(
-    keyword =>
-      lowerText.includes(
-        keyword.toLowerCase()
-      )
+function getVeryHighPersonalKeywords(text) {
+  return matchingKeywords(
+    text,
+    VERY_HIGH_PERSONAL_KEYWORDS
   );
 }
 
@@ -1077,22 +590,22 @@ function determinePersonalRelevance(
       text
     );
 
-  const lowerText =
+  const lower =
     String(text || '')
       .toLowerCase();
 
-  const hasBusinessKeyword =
+  const hasBusiness =
     BUSINESS_KEYWORDS.some(
       keyword =>
-        lowerText.includes(
+        lower.includes(
           keyword.toLowerCase()
         )
     );
 
-  const hasResidentKeyword =
+  const hasResident =
     RESIDENT_KEYWORDS.some(
       keyword =>
-        lowerText.includes(
+        lower.includes(
           keyword.toLowerCase()
         )
     );
@@ -1104,9 +617,7 @@ function determinePersonalRelevance(
       level: 'very-high',
       icon: '⭐',
       label:
-        'あなたへの関連度：かなり高い',
-      matches:
-        personalMatches
+        'あなたへの関連度：かなり高い'
     };
   }
 
@@ -1117,9 +628,7 @@ function determinePersonalRelevance(
       level: 'high',
       icon: '⭐',
       label:
-        'あなたへの関連度：高い',
-      matches:
-        personalMatches
+        'あなたへの関連度：高い'
     };
   }
 
@@ -1130,22 +639,19 @@ function determinePersonalRelevance(
       level: 'medium',
       icon: '👀',
       label:
-        'あなたにも関係する可能性あり',
-      matches:
-        personalMatches
+        'あなたにも関係する可能性あり'
     };
   }
 
   if (
-    hasBusinessKeyword &&
-    !hasResidentKeyword
+    hasBusiness &&
+    !hasResident
   ) {
     return {
       level: 'low',
       icon: '🏢',
       label:
-        '主に事業者向け',
-      matches: []
+        '主に事業者向け'
     };
   }
 
@@ -1153,8 +659,7 @@ function determinePersonalRelevance(
     level: 'normal',
     icon: '🔎',
     label:
-      '対象条件を確認',
-    matches: []
+      '対象条件を確認'
   };
 }
 
@@ -1162,63 +667,52 @@ function isLikelyResidentBenefit(
   text,
   matchedKeywords
 ) {
-  const lowerText =
+  const lower =
     String(text || '')
       .toLowerCase();
 
-  const hasBusinessKeyword =
+  const hasBusiness =
     BUSINESS_KEYWORDS.some(
       keyword =>
-        lowerText.includes(
+        lower.includes(
           keyword.toLowerCase()
         )
     );
 
-  const hasResidentKeyword =
+  const hasResident =
     RESIDENT_KEYWORDS.some(
       keyword =>
-        lowerText.includes(
+        lower.includes(
           keyword.toLowerCase()
         )
     );
 
-  const hasHighPriority =
+  const hasHigh =
     HIGH_PRIORITY_KEYWORDS.some(
       keyword =>
-        lowerText.includes(
+        lower.includes(
           keyword.toLowerCase()
         )
     );
 
-  const hasPersonalPriority =
+  const hasPersonal =
     PERSONAL_PRIORITY_KEYWORDS.some(
       keyword =>
-        lowerText.includes(
+        lower.includes(
           keyword.toLowerCase()
         )
     );
 
-  /*
-   * 家族・教育・医療・生活に関連するものは候補にする
-   */
-  if (hasPersonalPriority) {
-    return true;
-  }
-
-  /*
-   * 商品券、給付金、追加募集などは候補にする
-   */
-  if (hasHighPriority) {
-    return true;
-  }
-
-  /*
-   * 明らかな事業者向け融資・補助で、
-   * 個人・世帯向けの表現がない場合は除外する
-   */
   if (
-    hasBusinessKeyword &&
-    !hasResidentKeyword
+    hasPersonal ||
+    hasHigh
+  ) {
+    return true;
+  }
+
+  if (
+    hasBusiness &&
+    !hasResident
   ) {
     return false;
   }
@@ -1255,110 +749,88 @@ function shortenText(
       .replace(/\s+/g, ' ')
       .trim();
 
-  if (
-    normalized.length <=
+  return normalized.length <=
     maxLength
-  ) {
-    return normalized;
-  }
-
-  return (
-    normalized.slice(
-      0,
-      maxLength
-    ) +
-    '…'
-  );
+    ? normalized
+    : `${normalized.slice(
+        0,
+        maxLength
+      )}…`;
 }
 
 function getAudienceInfo(text) {
-  const normalized =
+  const lower =
     String(text || '')
       .toLowerCase();
 
-  const businessMatches =
-    BUSINESS_KEYWORDS.filter(
+  const hasBusiness =
+    BUSINESS_KEYWORDS.some(
       keyword =>
-        normalized.includes(
+        lower.includes(
           keyword.toLowerCase()
         )
     );
 
-  const residentMatches =
-    RESIDENT_KEYWORDS.filter(
+  const hasResident =
+    RESIDENT_KEYWORDS.some(
       keyword =>
-        normalized.includes(
+        lower.includes(
           keyword.toLowerCase()
         )
     );
 
   if (
-    businessMatches.length > 0 &&
-    residentMatches.length === 0
+    hasBusiness &&
+    !hasResident
   ) {
     return {
       icon: '🏢',
-
       label:
-        '主に事業者向け',
-
-      description:
-        '企業・法人・店舗などを対象とした情報の可能性が高いです。'
+        '主に事業者向け'
     };
   }
 
-  if (
-    residentMatches.length > 0
-  ) {
+  if (hasResident) {
     return {
       icon: '👤',
-
       label:
-        '市民・家庭向けの可能性あり',
-
-      description:
-        '豊田市民、世帯、保護者、学生などが利用できる可能性があります。'
+        '市民・家庭向けの可能性あり'
     };
   }
 
   return {
     icon: '🔎',
-
     label:
-      '対象者を要確認',
-
-    description:
-      '対象者は公式ページで確認してください。'
+      '対象者を要確認'
   };
 }
 
 function findUsefulSentence(
   sentences,
   patterns,
-  usedSentences = new Set()
+  used
 ) {
   for (
     const sentence
     of sentences
   ) {
     if (
-      usedSentences.has(
+      used.has(
         sentence
       )
     ) {
       continue;
     }
 
-    const matched =
+    if (
       patterns.some(
         pattern =>
           pattern.test(
             sentence
           )
-      );
-
-    if (matched) {
-      usedSentences.add(
+      )
+    ) {
+      used.add(
         sentence
       );
 
@@ -1369,10 +841,6 @@ function findUsefulSentence(
   return '';
 }
 
-/*
- * 公式ページ本文から、
- * 対象・金額や制度内容・期限の最大3項目を取得
- */
 function extractShortSummary(text) {
   const sentences =
     splitSentences(text)
@@ -1381,14 +849,11 @@ function extractShortSummary(text) {
           sentence.length <= 300
       );
 
-  const usedSentences =
+  const used =
     new Set();
 
-  const targetSentence =
-    findUsefulSentence(
-      sentences,
-      [
-        /ひとり親/,
+  const target =
+    findUsefulSentence   /ひとり親/,
         /母子家庭/,
         /児童扶養手当/,
         /小学生/,
@@ -1410,10 +875,10 @@ function extractShortSummary(text) {
         /申請できる/,
         /利用できる/
       ],
-      usedSentences
+      used
     );
 
-  const amountSentence =
+  const amount =
     findUsefulSentence(
       sentences,
       [
@@ -1431,8 +896,6 @@ function extractShortSummary(text) {
         /融資額/,
         /限度額/,
         /上限額/,
-        /貸付限度額/,
-        /融資限度額/,
         /利率/,
         /無利子/,
         /返済/,
@@ -1448,10 +911,10 @@ function extractShortSummary(text) {
         /免除/,
         /減免/
       ],
-      usedSentences
+      used
     );
 
-  const deadlineSentence =
+  const deadline =
     findUsefulSentence(
       sentences,
       [
@@ -1467,35 +930,29 @@ function extractShortSummary(text) {
         /\d{1,2}月\d{1,2}日まで/,
         /令和\d+年\d{1,2}月\d{1,2}日/
       ],
-      usedSentences
+      used
     );
 
   return {
     target:
-      targetSentence
-        ? shortenText(
-            targetSentence
-          )
+      target
+        ? shortenText(target)
         : '',
 
     amount:
-      amountSentence
-        ? shortenText(
-            amountSentence
-          )
+      amount
+        ? shortenText(amount)
         : '',
 
     deadline:
-      deadlineSentence
-        ? shortenText(
-            deadlineSentence
-          )
+      deadline
+        ? shortenText(deadline)
         : ''
   };
 }
 
 function determineSupportType(text) {
-  const normalized =
+  const lower =
     String(text || '')
       .toLowerCase();
 
@@ -1509,15 +966,14 @@ function determineSupportType(text) {
       '入学資金'
     ].some(
       keyword =>
-        normalized.includes(
-          keyword.toLowerCase()
-        )
+        lower.includes(keyword)
     )
   ) {
     return {
       icon: '💳',
       label:
         '貸付・融資の可能性あり',
+
       note:
         '返済の有無、利率、保証人、返済開始時期を確認してください。'
     };
@@ -1531,15 +987,14 @@ function determineSupportType(text) {
       '修学支援'
     ].some(
       keyword =>
-        normalized.includes(
-          keyword.toLowerCase()
-        )
+        lower.includes(keyword)
     )
   ) {
     return {
       icon: '🎓',
       label:
         '教育・進学支援',
+
       note:
         '給付型か貸与型か、返済が必要かを確認してください。'
     };
@@ -1554,15 +1009,14 @@ function determineSupportType(text) {
       '支給'
     ].some(
       keyword =>
-        normalized.includes(
-          keyword.toLowerCase()
-        )
+        lower.includes(keyword)
     )
   ) {
     return {
       icon: '💰',
       label:
         '給付・補助・助成',
+
       note:
         '申請期限、対象条件、予算上限を確認してください。'
     };
@@ -1577,15 +1031,14 @@ function determineSupportType(text) {
       '割引'
     ].some(
       keyword =>
-        normalized.includes(
-          keyword.toLowerCase()
-        )
+        lower.includes(keyword)
     )
   ) {
     return {
       icon: '🧾',
       label:
         '無料・減免・割引',
+
       note:
         '自動適用か申請が必要かを確認してください。'
     };
@@ -1595,17 +1048,18 @@ function determineSupportType(text) {
     icon: '📌',
     label:
       '支援情報',
+
     note:
       '利用条件は公式ページで確認してください。'
   };
 }
 
 function determinePriority(text) {
-  const lowerText =
+  const lower =
     String(text || '')
       .toLowerCase();
 
-  const personalRelevance =
+  const relevance =
     determinePersonalRelevance(
       text
     );
@@ -1619,9 +1073,7 @@ function determinePriority(text) {
       '募集'
     ].some(
       keyword =>
-        lowerText.includes(
-          keyword.toLowerCase()
-        )
+        lower.includes(keyword)
     );
 
   const hasDeadline =
@@ -1634,22 +1086,19 @@ function determinePriority(text) {
       '募集期間'
     ].some(
       keyword =>
-        lowerText.includes(
-          keyword.toLowerCase()
-        )
+        lower.includes(keyword)
     );
 
   const highPriority =
     getPriorityKeywords(
-      lowerText
+      text
     );
 
   if (
-    personalRelevance.level ===
+    relevance.level ===
       'very-high'
   ) {
     return {
-      level: 'personal',
       icon: '⭐',
       label:
         'あなた向け・優先確認'
@@ -1657,15 +1106,13 @@ function determinePriority(text) {
   }
 
   if (
-    personalRelevance.level ===
-      'high' &&
+    relevance.level === 'high' &&
     (
       hasApplication ||
       hasDeadline
     )
   ) {
     return {
-      level: 'personal',
       icon: '⭐',
       label:
         'あなた向け・優先確認'
@@ -1680,7 +1127,6 @@ function determinePriority(text) {
     highPriority.length >= 2
   ) {
     return {
-      level: 'high',
       icon: '🔴',
       label:
         '見逃し注意'
@@ -1688,11 +1134,9 @@ function determinePriority(text) {
   }
 
   if (
-    personalRelevance.level ===
-      'high'
+    relevance.level === 'high'
   ) {
     return {
-      level: 'high',
       icon: '🟣',
       label:
         '関連度が高い情報'
@@ -1702,11 +1146,9 @@ function determinePriority(text) {
   if (
     highPriority.length > 0 ||
     hasApplication ||
-    personalRelevance.level ===
-      'medium'
+    relevance.level === 'medium'
   ) {
     return {
-      level: 'medium',
       icon: '🟠',
       label:
         '要確認'
@@ -1714,7 +1156,6 @@ function determinePriority(text) {
   }
 
   return {
-    level: 'normal',
     icon: '🟡',
     label:
       'お得・支援情報候補'
@@ -1723,13 +1164,8 @@ function determinePriority(text) {
 
 async function getDetailText(url) {
   try {
-    const html =
-      await fetchText(
-        url
-      );
-
     return normalizeText(
-      html
+      await fetchText(url)
     );
   } catch (error) {
     console.log(
@@ -1820,7 +1256,7 @@ function createIssueBody(
       combinedText
     );
 
-  const personalRelevance =
+  const relevance =
     determinePersonalRelevance(
       combinedText
     );
@@ -1842,29 +1278,29 @@ function createIssueBody(
       entry.title
     );
 
-  const usefulLines = [];
+  const lines = [];
 
   if (summary.target) {
-    usefulLines.push(
+    lines.push(
       `👤 **対象：** ${summary.target}`
     );
   }
 
   if (summary.amount) {
-    usefulLines.push(
+    lines.push(
       `💰 **金額・内容：** ${summary.amount}`
     );
   }
 
   if (summary.deadline) {
-    usefulLines.push(
+    lines.push(
       `📅 **期限：** ${summary.deadline}`
     );
   }
 
   const usefulText =
-    usefulLines.length > 0
-      ? usefulLines
+    lines.length
+      ? lines
           .slice(0, 3)
           .join('\n\n')
       : '詳しい対象条件、金額、期限は公式ページで確認してください。';
@@ -1881,7 +1317,7 @@ function createIssueBody(
 
 **${entry.title}**
 
-${personalRelevance.icon} **${personalRelevance.label}**
+${relevance.icon} **${relevance.label}**
 
 ${audience.icon} **${audience.label}**
 
@@ -2242,9 +1678,7 @@ function mergeEntries(entries) {
       state.entries =
         currentEntries;
 
-      saveState(
-        state
-      );
+      saveState(state);
 
       console.log(
         '初回実行のため、現在情報を基準として保存しました'
@@ -2257,9 +1691,6 @@ function mergeEntries(entries) {
       return;
     }
 
-    /*
-     * 関連度が高い通知から先に作成
-     */
     const relevanceOrder = {
       'very-high': 0,
       high: 1,
@@ -2304,7 +1735,7 @@ function mergeEntries(entries) {
           combinedText
         );
 
-      const personalRelevance =
+      const relevance =
         determinePersonalRelevance(
           combinedText
         );
@@ -2317,7 +1748,7 @@ function mergeEntries(entries) {
       const title =
         (
           `${priority.icon}` +
-          `${personalRelevance.icon}` +
+          `${relevance.icon}` +
           `${supportType.icon} ` +
           `${candidate.entry.title}`
         ).slice(
@@ -2336,9 +1767,7 @@ function mergeEntries(entries) {
         body
       );
 
-      await sleep(
-        500
-      );
+      await sleep(500);
     }
 
     state.entries = {
@@ -2349,9 +1778,7 @@ function mergeEntries(entries) {
     state.checkedAt =
       getJapanTime();
 
-    saveState(
-      state
-    );
+    saveState(state);
 
     console.log(
       '=============================='
