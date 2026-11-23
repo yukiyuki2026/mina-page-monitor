@@ -183,24 +183,28 @@ function loadState() {
 
   try {
     const loaded = JSON.parse(
-      fs.readFileSync(STATE_FILE, 'utf8')
+      fs.readFileSync(
+        STATE_FILE,
+        'utf8'
+      )
     );
 
-    rreturn {
-  initialized:
-    Boolean(
-      loaded.initialized
-    ),
+    return {
+      initialized:
+        Boolean(
+          loaded.initialized
+        ),
 
-  baselineVersion:
-    loaded.baselineVersion || '',
+      baselineVersion:
+        loaded.baselineVersion || '',
 
-  checkedAt:
-    loaded.checkedAt || '',
+      checkedAt:
+        loaded.checkedAt || '',
 
-  entries:
-    loaded.entries || {}
-};
+      entries:
+        loaded.entries || {}
+    };
+
   } catch (error) {
     console.log(
       `状態ファイルを読み込めませんでした: ${error.message}`
