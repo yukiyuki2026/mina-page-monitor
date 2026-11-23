@@ -12,6 +12,13 @@ const STATE_FILE = 'toyota-benefit-state.json';
 const REQUEST_TIMEOUT_MS = 30000;
 const WAIT_BETWEEN_REQUESTS_MS = 500;
 
+/*
+ * この値を変更した最初の1回だけ、
+ * 現在の情報を通知せずに基準として保存します。
+ */
+const BASELINE_VERSION =
+  '2026-11-23-personal-support-v1';
+
 const BENEFIT_KEYWORDS = [
   '商品券','プレミアム','paypay','ポイント還元','ポイント付与','キャッシュレス','還元キャンペーン',
   '二次販売','追加販売','給付金','給付','支援金','支援事業','生活支援','補助金','補助','助成金','助成',
@@ -163,6 +170,7 @@ function normalizeUrl(urlText) {
 function createEmptyState() {
   return {
     initialized: false,
+    baselineVersion: '',
     checkedAt: '',
     entries: {}
   };
@@ -178,11 +186,21 @@ function loadState() {
       fs.readFileSync(STATE_FILE, 'utf8')
     );
 
-    return {
-      initialized: Boolean(loaded.initialized),
-      checkedAt: loaded.checkedAt || '',
-      entries: loaded.entries || {}
-    };
+    rreturn {
+  initialized:
+    Boolean(
+      loaded.initialized
+    ),
+
+  baselineVersion:
+    loaded.baselineVersion || '',
+
+  checkedAt:
+    loaded.checkedAt || '',
+
+  entries:
+    loaded.entries || {}
+};
   } catch (error) {
     console.log(
       `状態ファイルを読み込めませんでした: ${error.message}`
@@ -1583,15 +1601,27 @@ function mergeEntries(entries) {
           combinedText
         );
 
-      const contentHash =
-        createHash(
-          [
-            entry.title,
-            entry.description,
-            detailText
-          ].join('\n')
-        );
+      const stableSummary =
+  extractShortSummary(
+    detailText ||
+    entry.description ||
+    entry.title
+  );
 
+　　　const contentHash =
+  createHash(
+    [
+      entry.title,
+      entry.description,
+      matchedKeywords
+        .slice()
+        .sort()
+        .join('|'),
+      stableSummary.target,
+      stableSummary.amount,
+      stableSummary.deadline
+    ].join('\n')
+  );
       currentEntries[
         entry.id
       ] = {
@@ -1670,29 +1700,43 @@ function mergeEntries(entries) {
       }
     }
 
-    if (
-      !state.initialized
-    ) {
-      state.initialized = true;
+   const needsRebaseline =
+  !state.initialized ||
+  state.baselineVersion !==
+    BASELINE_VERSION;
 
-      state.checkedAt =
-        getJapanTime();
+if (needsRebaseline) {
+  state.initialized = true;
 
-      state.entries =
-        currentEntries;
+  state.baselineVersion =
+    BASELINE_VERSION;
 
-      saveState(state);
+  state.checkedAt =
+    getJapanTime();
 
-      console.log(
-        '初回実行のため、現在情報を基準として保存しました'
-      );
+  state.entries =
+    currentEntries;
 
-      console.log(
-        '初回は通知を送りません'
-      );
+  saveState(state);
 
-      return;
-    }
+  console.log(
+    '現在の情報を新しい基準として保存しました'
+  );
+
+  console.log(
+    `基準バージョン: ${BASELINE_VERSION}`
+  );
+
+  console.log(
+    '再基準化のため、今回は通知を送りません'
+  );
+
+  console.log(
+    '次回実行から新規・重要な更新だけ通知します'
+  );
+
+  return;
+}
 
     const relevanceOrder = {
       'very-high': 0,
