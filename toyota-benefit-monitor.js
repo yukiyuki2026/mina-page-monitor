@@ -852,8 +852,11 @@ function extractShortSummary(text) {
   const used =
     new Set();
 
-  const target =
-    findUsefulSentence   /ひとり親/,
+const target =
+    findUsefulSentence(
+      sentences,
+      [
+        /ひとり親/,
         /母子家庭/,
         /児童扶養手当/,
         /小学生/,
