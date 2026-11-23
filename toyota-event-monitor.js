@@ -2,7 +2,9 @@ const fs = require('fs');
 const crypto = require('crypto');
 
 const EVENT_RSS_URL = process.env.TOYOTA_EVENT_RSS_URL;
-const WAKABAYASHI_URL = process.env.WAKABAYASHI_EVENT_URL || '';
+
+const WAKABAYASHI_URL =
+  process.env.WAKABAYASHI_EVENT_URL || '';
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY;
 const GITHUB_USERNAME = process.env.GITHUB_ACTOR;
