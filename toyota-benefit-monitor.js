@@ -92,7 +92,11 @@ const BUSINESS_KEYWORDS = [
   '団体',
   '施設運営者',
   '事業主',
-  '店舗向け'
+  '店舗向け',
+  '立地',
+  '工場',
+  '設備投資',
+  '産業用地'
 ];
 
 const RESIDENT_KEYWORDS = [
@@ -118,32 +122,6 @@ const RESIDENT_KEYWORDS = [
   '1人'
 ];
 
-const SUMMARY_KEYWORDS = [
-  '対象',
-  '申請',
-  '申込',
-  '受付',
-  '締切',
-  '期限',
-  '期間',
-  '販売',
-  '先着',
-  '抽選',
-  '円',
-  '万円',
-  'ポイント',
-  '還元',
-  '無料',
-  '免除',
-  '減免',
-  '市内在住',
-  '豊田市在住',
-  '市民',
-  '世帯',
-  '1人',
-  '一人'
-];
-
 if (
   !NEWS_RSS_URL ||
   !PRESS_RSS_URL ||
@@ -158,8 +136,9 @@ if (
 }
 
 function sleep(ms) {
-  return new Promise(resolve =>
-    setTimeout(resolve, ms)
+  return new Promise(
+    resolve =>
+      setTimeout(resolve, ms)
   );
 }
 
@@ -182,7 +161,9 @@ function getJapanTime() {
 function createHash(value) {
   return crypto
     .createHash('sha256')
-    .update(String(value || ''))
+    .update(
+      String(value || '')
+    )
     .digest('hex');
 }
 
@@ -196,7 +177,7 @@ function decodeHtmlEntities(value) {
     .replace(/&lt;/gi, '<')
     .replace(/&gt;/gi, '>')
     .replace(/&quot;/gi, '"')
-    .replace(/&#39;/gi, "'")
+    .replace(/&apos;/gi, "'")
     .replace(/&#x27;/gi, "'")
     .replace(/&#x2F;/gi, '/')
     .replace(
@@ -226,10 +207,18 @@ function stripHtml(value) {
         /<style[\s\S]*?<\/style>/gi,
         ' '
       )
-      .replace(/<br\s*\/?>/gi, '\n')
-      .replace(/<\/p>/gi, '\n')
-      .replace(/<\/li>/gi, '\n')
-      .replace(/<[^>]+>/g, ' ')
+      .replace(
+        /<(br|hr)\s*\/?>/gi,
+        '\n'
+      )
+      .replace(
+        /<\/(p|li|div|section|article|h1|h2|h3|h4|tr)>/gi,
+        '\n'
+      )
+      .replace(
+        /<[^>]+>/g,
+        ' '
+      )
   )
     .replace(/\r/g, '')
     .replace(/[ \t]+/g, ' ')
@@ -257,8 +246,11 @@ function normalizeUrl(urlText) {
       'utm_campaign',
       'utm_term',
       'utm_content'
-    ].forEach(parameter =>
-      url.searchParams.delete(parameter)
+    ].forEach(
+      parameter =>
+        url.searchParams.delete(
+          parameter
+        )
     );
 
     return url.href;
@@ -277,7 +269,11 @@ function createEmptyState() {
 }
 
 function loadState() {
-  if (!fs.existsSync(STATE_FILE)) {
+  if (
+    !fs.existsSync(
+      STATE_FILE
+    )
+  ) {
     return createEmptyState();
   }
 
@@ -292,7 +288,9 @@ function loadState() {
 
     return {
       initialized:
-        Boolean(loaded.initialized),
+        Boolean(
+          loaded.initialized
+        ),
 
       checkedAt:
         loaded.checkedAt || '',
@@ -331,7 +329,8 @@ async function fetchText(url) {
 
   const timeout =
     setTimeout(
-      () => controller.abort(),
+      () =>
+        controller.abort(),
       REQUEST_TIMEOUT_MS
     );
 
@@ -345,7 +344,7 @@ async function fetchText(url) {
               'text/html,application/xhtml+xml,application/xml,text/xml;q=0.9,*/*;q=0.8',
 
             'User-Agent':
-              'Toyota-Benefit-Monitor/1.0'
+              'Toyota-Benefit-Monitor/2.0'
           },
 
           signal:
@@ -455,7 +454,10 @@ function parseRss(
         )
       );
 
-    if (!title || !link) {
+    if (
+      !title ||
+      !link
+    ) {
       continue;
     }
 
@@ -474,7 +476,8 @@ function parseRss(
         link,
 
       description:
-        content || description,
+        content ||
+        description,
 
       publishedAt,
 
@@ -486,7 +489,9 @@ function parseRss(
   /*
    * Atom形式にも対応
    */
-  if (items.length === 0) {
+  if (
+    items.length === 0
+  ) {
     const entryMatches =
       String(xml || '').match(
         /<entry(?:\s[^>]*)?>[\s\S]*?<\/entry>/gi
@@ -506,7 +511,7 @@ function parseRss(
 
       const linkMatch =
         entryXml.match(
-          /<link[^"']+["'][^>]*>/i
+          /<link\b[^>]*href=["']([^"']+)["'][^>]*>/i
         );
 
       const link =
@@ -527,7 +532,7 @@ function parseRss(
         );
 
       const summary =
-        normalizeText(
+     (
           getXmlTag(
             entryXml,
             'summary'
@@ -550,7 +555,10 @@ function parseRss(
           )
         );
 
-      if (!title || !link) {
+      if (
+        !title ||
+        !link
+      ) {
         continue;
       }
 
@@ -569,7 +577,8 @@ function parseRss(
           link,
 
         description:
-          content || summary,
+          content ||
+          summary,
 
         publishedAt,
 
@@ -597,7 +606,9 @@ function extractLinks(
   while (
     (
       match =
-        anchorPattern.exec(html)
+        anchorPattern.exec(
+          html
+        )
     ) !== null
   ) {
     const href =
@@ -637,7 +648,9 @@ function extractLinks(
 
     try {
       const parsedUrl =
-        new URL(absoluteUrl);
+        new URL(
+          absoluteUrl
+        );
 
       if (
         parsedUrl.hostname !==
@@ -742,7 +755,9 @@ function isLikelyResidentBenefit(
     return false;
   }
 
-  return matchedKeywords.length > 0;
+  return (
+    matchedKeywords.length > 0
+  );
 }
 
 function splitSentences(text) {
@@ -751,10 +766,11 @@ function splitSentences(text) {
     .split(
       /(?<=[。！？!?])|\n+/
     )
-    .map(sentence =>
-      sentence
-        .replace(/\s+/g, ' ')
-        .trim()
+    .map(
+      sentence =>
+        sentence
+          .replace(/\s+/g, ' ')
+          .trim()
     )
     .filter(
       sentence =>
@@ -762,54 +778,219 @@ function splitSentences(text) {
     );
 }
 
-function extractSummaryLines(text) {
-  const sentences =
-    splitSentences(text);
+function shortenText(
+  text,
+  maxLength = 90
+) {
+  const normalized =
+    String(text || '')
+      .replace(/\s+/g, ' ')
+      .trim();
 
-  const important = [];
+  if (
+    normalized.length <=
+    maxLength
+  ) {
+    return normalized;
+  }
 
+  return (
+    normalized.slice(
+      0,
+      maxLength
+    ) +
+    '…'
+  );
+}
+
+function getAudienceInfo(text) {
+  const normalized =
+    String(text || '')
+      .toLowerCase();
+
+  const businessMatches =
+    BUSINESS_KEYWORDS.filter(
+      keyword =>
+        normalized.includes(
+          keyword.toLowerCase()
+        )
+    );
+
+  const residentMatches =
+    RESIDENT_KEYWORDS.filter(
+      keyword =>
+        normalized.includes(
+          keyword.toLowerCase()
+        )
+    );
+
+  if (
+    businessMatches.length > 0 &&
+    residentMatches.length === 0
+  ) {
+    return {
+      icon: '🏢',
+
+      label:
+        '主に事業者向け',
+
+      description:
+        '企業・法人・店舗などを対象とした情報の可能性が高いです。'
+    };
+  }
+
+  if (
+    residentMatches.length > 0
+  ) {
+    return {
+      icon: '👤',
+
+      label:
+        '市民・個人向けの可能性あり',
+
+      description:
+        '豊田市民や世帯などが利用できる可能性があります。'
+    };
+  }
+
+  return {
+    icon: '🔎',
+
+    label:
+      '対象者を要確認',
+
+    description:
+      '対象者は公式ページで確認してください。'
+  };
+}
+
+function findUsefulSentence(
+  sentences,
+  patterns,
+  usedSentences = new Set()
+) {
   for (
     const sentence
     of sentences
   ) {
+    if (
+      usedSentences.has(
+        sentence
+      )
+    ) {
+      continue;
+    }
+
     const matched =
-      SUMMARY_KEYWORDS.some(
-        keyword =>
-          sentence.includes(
-            keyword
+      patterns.some(
+        pattern =>
+          pattern.test(
+            sentence
           )
       );
 
-    const hasAmount =
-      /(?:\d{1,3}(?:,\d{3})*|\d+)(?:円|万円|ポイント|％|%)/.test(
+    if (matched) {
+      usedSentences.add(
         sentence
       );
 
-    const hasDate =
-      /(?:令和\d+年|\d{4}年)?\s*\d{1,2}月\d{1,2}日/.test(
-        sentence
+      return sentence;
+    }
+  }
+
+  return '';
+}
+
+function extractShortSummary(text) {
+  const sentences =
+    splitSentences(text)
+      .filter(
+        sentence =>
+          sentence.length <= 300
       );
 
-    if (
-      matched ||
-      hasAmount ||
-      hasDate
-    ) {
-      important.push(sentence);
-    }
+  const usedSentences =
+    new Set();
 
-    if (
-      important.length >= 6
-    ) {
-      break;
-    }
-  }
+  const targetSentence =
+    findUsefulSentence(
+      sentences,
+      [
+        /対象/,
+        /市内在住/,
+        /豊田市在住/,
+        /市民/,
+        /世帯/,
+        /事業者/,
+        /法人/,
+        /企業/,
+        /中小企業/,
+        /申請できる/,
+        /利用できる/
+      ],
+      usedSentences
+    );
 
-  if (important.length > 0) {
-    return important;
-  }
+  const amountSentence =
+    findUsefulSentence(
+      sentences,
+      [
+        /\d{1,3}(?:,\d{3})*円/,
+        /\d+(?:\.\d+)?万円/,
+        /\d+(?:\.\d+)?%/,
+        /\d+(?:\.\d+)?％/,
+        /\d{1,3}(?:,\d{3})*ポイント/,
+        /補助率/,
+        /補助額/,
+        /給付額/,
+        /助成額/,
+        /上限額/,
+        /無料/,
+        /割引/,
+        /免除/,
+        /減免/
+      ],
+      usedSentences
+    );
 
-  return sentences.slice(0, 3);
+  const deadlineSentence =
+    findUsefulSentence(
+      sentences,
+      [
+        /締切/,
+        /期限/,
+        /受付期間/,
+        /申請期間/,
+        /申込期間/,
+        /募集期間/,
+        /\d{1,2}月\d{1,2}日まで/,
+        /令和\d+年\d{1,2}月\d{1,2}日/
+      ],
+      usedSentences
+    );
+
+  return {
+    target:
+      targetSentence
+        ? shortenText(
+            targetSentence
+          )
+        : '',
+
+    amount:
+      amountSentence
+        ? shortenText(
+            amountSentence
+          )
+        : '',
+
+    deadline:
+      deadlineSentence
+        ? shortenText(
+            deadlineSentence
+          )
+        : ''
+  };
 }
 
 function determinePriority(text) {
@@ -857,14 +1038,9 @@ function determinePriority(text) {
     highPriority.length >= 2
   ) {
     return {
-      level:
-        'high',
-
-      icon:
-        '🔴',
-
-      label:
-        '最優先・見逃し注意'
+      level: 'high',
+      icon: '🔴',
+      label: '見逃し注意'
     };
   }
 
@@ -873,26 +1049,16 @@ function determinePriority(text) {
     hasApplication
   ) {
     return {
-      level:
-        'medium',
-
-      icon:
-        '🟠',
-
-      label:
-        '要確認'
+      level: 'medium',
+      icon: '🟠',
+      label: '要確認'
     };
   }
 
   return {
-    level:
-      'normal',
-
-    icon:
-      '🟡',
-
-    label:
-      'お得情報候補'
+    level: 'normal',
+    icon: '🟡',
+    label: 'お得情報候補'
   };
 }
 
@@ -901,7 +1067,9 @@ async function getDetailText(url) {
     const html =
       await fetchText(url);
 
-    return normalizeText(html);
+    return normalizeText(
+      html
+    );
   } catch (error) {
     console.log(
       `詳細取得エラー: ${url} ${error.message}`
@@ -992,58 +1160,74 @@ function createIssueBody(
       combinedText
     );
 
-  const summaryLines =
-    extractSummaryLines(
+  const audience =
+    getAudienceInfo(
+      combinedText
+    );
+
+  const summary =
+    extractShortSummary(
       detailText ||
       entry.description ||
       entry.title
     );
 
-  const summaryText =
-    summaryLines.length > 0
-      ? summaryLines
-          .map(line =>
-            `- ${line}`
-          )
-          .join('\n')
-      : '- 詳細ページで内容を確認してください';
+  const usefulLines = [];
+
+  if (summary.target) {
+    usefulLines.push(
+      `👤 **対象：** ${summary.target}`
+    );
+  }
+
+  if (summary.amount) {
+    usefulLines.push(
+      `💰 **金額・内容：** ${summary.amount}`
+    );
+  }
+
+  if (summary.deadline) {
+    usefulLines.push(
+      `📅 **期限：** ${summary.deadline}`
+    );
+  }
+
+  const usefulText =
+    usefulLines.length > 0
+      ? usefulLines
+          .slice(0, 3)
+          .join('\n\n')
+      : '詳しい対象条件や金額は、公式ページで確認してください。';
 
   const publishedText =
     entry.publishedAt
-      ? `\n- 公開・更新：${entry.publishedAt}`
+      ? `\n\n公開・更新：${entry.publishedAt}`
       : '';
-
-  const keywordText =
-    matchedKeywords.length > 0
-      ? matchedKeywords.join(' / ')
-      : 'お得情報候補';
 
   return (
 `@${GITHUB_USERNAME}
 
-## ${priority.icon} 豊田市・知らないと損かも
+## ${priority.icon} 豊田市のお得情報
 
 **${entry.title}**
 
-### 判定
+${audience.icon} **${audience.label}**
 
-- 重要度：**${priority.label}**
-- 情報源：${entry.source}${publishedText}
-- 検知キーワード：${keywordText}
+${audience.description}
 
-### 要点候補
-
-${summaryText}
-
-### 詳細・申請ページ
+### 🔗 詳細・申請ページ
 
 ${entry.url}
 
----
+### かんたん確認
+
+${usefulText}
+
+情報源：${entry.source}${publishedText}
 
 確認時刻：${getJapanTime()}（日本時間）
 
-※対象条件、申請要否、受付期間、予算上限、先着・抽選の別は、必ず公式ページで最終確認してください。`
+※対象条件や受付状況は、公式ページで最終確認してください。`
   );
 }
 
@@ -1056,7 +1240,9 @@ function mergeEntries(entries) {
     of entries
   ) {
     const normalizedUrl =
-      normalizeUrl(entry.url);
+      normalizeUrl(
+        entry.url
+      );
 
     if (!normalizedUrl) {
       continue;
@@ -1094,10 +1280,14 @@ function mergeEntries(entries) {
       ]);
 
     existing.sources =
-      Array.from(sources);
+      Array.from(
+        sources
+      );
 
     existing.source =
-      existing.sources.join(' / ');
+      existing.sources.join(
+        ' / '
+      );
 
     if (
       entry.description.length >
@@ -1301,7 +1491,9 @@ function mergeEntries(entries) {
           entry.id
         ];
 
-      if (!state.initialized) {
+      if (
+        !state.initialized
+      ) {
         continue;
       }
 
@@ -1317,7 +1509,8 @@ function mergeEntries(entries) {
         previous &&
         previous.isBenefit ===
           false &&
-        isBenefit === true;
+        isBenefit ===
+          true;
 
       if (
         isBenefit &&
@@ -1331,6 +1524,7 @@ function mergeEntries(entries) {
           entry,
           matchedKeywords,
           detailText,
+
           reason:
             isNew
               ? '新規掲載'
@@ -1339,7 +1533,9 @@ function mergeEntries(entries) {
       }
     }
 
-    if (!state.initialized) {
+    if (
+      !state.initialized
+    ) {
       state.initialized = true;
 
       state.checkedAt =
@@ -1369,21 +1565,31 @@ function mergeEntries(entries) {
       const candidate
       of notificationCandidates
     ) {
+      const combinedText =
+        [
+          candidate.entry.title,
+          candidate.entry.description,
+          candidate.detailText
+        ].join(' ');
+
       const priority =
         determinePriority(
-          [
-            candidate.entry.title,
-            candidate.entry.description,
-            candidate.detailText
-          ].join(' ')
+          combinedText
+        );
+
+      const audience =
+        getAudienceInfo(
+          combinedText
         );
 
       const title =
         (
-          `${priority.icon} ` +
-          `豊田市お得情報：` +
+          `${priority.icon}${audience.icon} ` +
           `${candidate.entry.title}`
-        ).slice(0, 240);
+        ).slice(
+          0,
+          240
+        );
 
       const body =
         createIssueBody(
