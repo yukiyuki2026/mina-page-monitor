@@ -1402,7 +1402,10 @@ function extractShortSummary(text) {
         /免除/,
         /減免/
       ],
-  e =
+      used
+    );
+
+  const deadline =
     findUsefulSentence(
       sentences,
       [
