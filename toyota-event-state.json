@@ -1,0 +1,862 @@
+{
+  "initialized": true,
+  "baselineVersion": "2026-11-23-event-v2",
+  "entries": {
+    "https://www.city.toyota.aichi.jp/event/event/1082520.html": {
+      "title": "「いかそう休耕地茅刈りワークショップ」を開催します！",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1082520.html",
+      "eventDate": "2026/1/3～2026/12/6",
+      "contentHash": "a7bd0eaeb90dbb80cff44d3176326f0c3594994717ef06975ee21465a75b43f4",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:16:46"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1082318.html": {
+      "title": "宇宙のワクワクがやってくる「宇宙、まるごと体験 in T-FACE」",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1082318.html",
+      "eventDate": "2026/1/3～2026/11/20",
+      "contentHash": "63838ddd074fd9e99815f095dedfe3b58dafe3b5e609be45fe981962f62cccde",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:16:47"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1082380.html": {
+      "title": "令和8年度キッズスポーツフェスティバルを開催します！",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1082380.html",
+      "eventDate": "2026/1/3～2026/12/5",
+      "contentHash": "967857ced8af18433d4fb83dcfbbb4136bda9662772566b7ca30f7c7859a4d1e",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:16:48"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081069.html": {
+      "title": "農家応援！補助金まるわかりフェスタ",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081069.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "bfe050ebd0fa1f3fd4a4a05c267d2ed3f4f1ae8f076957f603cd9aa00bd2d496",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:16:49"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1082262.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～ちびっこサッカー教室（小学校低学年クラス）～（2027年1月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1082262.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "dcc1a5779d34cf6fcdd698e051ac80883a41848f3daf295c2e44eb9bca4ca38e",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:16:50"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1082259.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～ちびっこサッカー教室（4～6歳クラス）～（2027年1月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1082259.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "0023ad30c45c77589ca8165b78b2a7aeb7af48eade448ce1c7a87514f84aaea6",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:16:51"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1023336.html": {
+      "title": "小原四季桜まつり",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1023336.html",
+      "eventDate": "2026/1/3～2026/11/14",
+      "contentHash": "c489417922ad0940f8325e4eea9f291474eac63ea23f59b9ced12bfe3cd8f183",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:16:52"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1082278.html": {
+      "title": "来て、見て、体験、ものづくり！ わくわくワールド",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1082278.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "da9eda6fcd04695dd7b43311a5f88abe17f2d3047a6b7a82199cea9dbca21f02",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:16:53"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081120.html": {
+      "title": "秋風にのせてときめく一日！高岡コミセン大文化祭",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081120.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "0a6683c6045e70b26f05de271acae8363cf48e4401bec617dea29b456de367ea",
+      "priority": true,
+      "lastSeenAt": "2026/11/23 14:16:54"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081401/index.html": {
+      "title": "紅葉シーズン 地域のイベント情報",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081401/index.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "96be7a0755818a3fbc0ef08084f8a8ae18f656a9dd2b557afd2c808fa27a73fa",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:16:55"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081401/1081397.html": {
+      "title": "小原四季桜まつり",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081401/1081397.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "d24dcc9334bc87a8f368637d2f9456cd563421b2b2af8fad8c2e0f06ceb1ca2e",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:16:56"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081401/1081396.html": {
+      "title": "大井平公園もみじまつり",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081401/1081396.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "1591f964b8ff8d6750f1480d54909cebcc5f2e8af0721b619163f69e4f2a76d3",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:16:57"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081401/1081395.html": {
+      "title": "香嵐渓もみじまつり",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081401/1081395.html",
+      "eventDate": "2026/1/3～2026/10/31",
+      "contentHash": "0a3be210506c6be55d92f3904bfae002b6d09523bca5b60332ed1b8117f704c5",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:16:58"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1081388.html": {
+      "title": "精神保健福祉家族教室「精神疾患に対する基本的な知識と対応」",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1081388.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "f3f9fb129f1a008a4423b616001cd7cecc461f2ac2b1d1d6a46b0588cd5c2339",
+      "priority": true,
+      "lastSeenAt": "2026/11/23 14:16:59"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1081387.html": {
+      "title": "労働講座「高齢者の労働災害防止について」（法令などの説明や職場での具体的な取組紹介）",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1081387.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "90cac5c3ea6b71a54c9597ba2250528751a2d41f44a203944eaef2429466015b",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:00"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1081385.html": {
+      "title": "就職支援セミナー「わたしの働くスタイルを考えよう！」＆パソコンセミナー「Word・Excel基礎講座」",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1081385.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "9d05e613b0a53ff1159a825fa96453a0fd59deba699dacb61b1304ef5dd9a828",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:01"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1081384.html": {
+      "title": "よくわかるワード基礎講座",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1081384.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "eab6fccee22cdb5025f4b734c12143b3f985b1b7310f78051fbb335e6899c4a6",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:01"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1081383.html": {
+      "title": "エクセル応用講座",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1081383.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "fb883878adac3a513c1c7ec0448c1cd5fe3eef85df664134b55e12efadeb2ad9",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:02"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1081380.html": {
+      "title": "スマホ初心者講座",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1081380.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "2d14b0da4aaef5be95df6a588e6249b57e1b835770c3d95b70ba0aa719bb1d7b",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:03"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1081379.html": {
+      "title": "初心者OK！パソコン入門講座",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1081379.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "b69077cef7e4d8d7056280e9df4928e2a729c537164479af300e6663c3ef8517",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:04"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1081378.html": {
+      "title": "楽しい英会話（ネイティブ講師による講座）",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1081378.html",
+      "eventDate": "2026/1/3～2026/2/11",
+      "contentHash": "a8def04ae53931758a0020f3f05cb98ac3516d78af8140946bb551c1c9bbb041",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:05"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1081375.html": {
+      "title": "イヌのしつけ方教室",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1081375.html",
+      "eventDate": "2026/1/3～2026/11/12",
+      "contentHash": "5d5d3161cbbdebfcad242007c7bd4615f064e97b558b58c8d1195d2d09086842",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:06"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1081373.html": {
+      "title": "女性しごとテラス セミナー「一歩先の働き方を考えるキャリアアップ講座」",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1081373.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "39e0b39c9d48a102e605343189e568c9bf557e6b4d3720a535ee716ff8530ff0",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:07"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1081371.html": {
+      "title": "女性のための離婚講座「知っておきたい法律の基礎知識」",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1081371.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "9b76a4f5300c998ed9eb6041ed19b97043a1e435c29eb1db2541a67c71007c89",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:08"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1081286.html": {
+      "title": "認知症サポーターステップアップ講座",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1081286.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "2c7eb10f394d779de525243fa99b7e74d8d0232aebcfd5ce97489ee4b77c500e",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:09"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081188.html": {
+      "title": "うたとピアノでメリークリスマス！0歳からのコンサート",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081188.html",
+      "eventDate": "2026/1/3～2026/11/14",
+      "contentHash": "b4076c81c2d2dc3244edf55830db0aac6b46dcf53c86502c2ada4bbc7eee51ae",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:10"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081169.html": {
+      "title": "西三河ウインドオーケストラ定期演奏会",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081169.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "7246f20370a457b3d90bcbd04c316e469b3acb598062071f9e94d2871896586b",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:11"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081142.html": {
+      "title": "かまどごはんと森のお仕事体験",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081142.html",
+      "eventDate": "2026/1/3～2026/11/25",
+      "contentHash": "7b51c56030070e71c9bca0f7a3686e1a0904831ed6e7584dc0980ae36de3fd3f",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:12"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081139.html": {
+      "title": "イルミネーションストーリーinとよた2026",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081139.html",
+      "eventDate": "2026/1/3～2026/11/20",
+      "contentHash": "59cb787dff38a2e96b9b0f857ad908dce690adc9154f6498d494b94144d3eea4",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:13"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081138.html": {
+      "title": "愛環ぶらっとウオーキング",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081138.html",
+      "eventDate": "2026/1/3～2026/3/20",
+      "contentHash": "cac579213dacb3ee5be03c65ab86d1992ec6dae513355af5cb9b607dad5e4bf1",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:14"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081137.html": {
+      "title": "じゅわじゅわ健康講座（アクアビクスと水中ウオーキング）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081137.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "59c3cfd40f61faa5d9a5ca309f3f3e9a946628338e99cbb333c6a543d776d657",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:15"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081131.html": {
+      "title": "己書体験会「年賀状を書こう」",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081131.html",
+      "eventDate": "2026/1/3～2026/11/11",
+      "contentHash": "45f6eab9b10ea62ef6acee2ce6125582bac14b6f520c81c57dbd351cb50bb464",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:16"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081116.html": {
+      "title": "ズンバ®木曜教室",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081116.html",
+      "eventDate": "2026/1/3～2026/11/19",
+      "contentHash": "336e9d29e81fbd841285d91c3ffd05e64524ae5fc9e63cf95393cd8d4034bc47",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:17"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081115.html": {
+      "title": "40代からのリンパドレナージュ教室（運動でリンパの流れを促進）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081115.html",
+      "eventDate": "2026/1/3～2026/11/19",
+      "contentHash": "23f8c5f607da94fcda8384d8a7d0830a8917a4b833c769abb11e1201e73ea0ad",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:18"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081105.html": {
+      "title": "クリスマスマーケット in HOMI 2026",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081105.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "62f4103fb540387831a084b373d9f05b3484869cd190de6cc5c31f32cfbde2ad",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:19"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081103.html": {
+      "title": "子育てママのための英会話教室",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081103.html",
+      "eventDate": "2026/1/3～2026/2/11",
+      "contentHash": "db100bad7cbbb8fffc2e42aebd8adf9d859ef2dbbc1c8e3102e8ae72713d4674",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:20"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081096.html": {
+      "title": "豊田市少年少女合唱団 第48回定期演奏会",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081096.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "b2d04842b7ee611478994fa3386eae76ba5f71ffc252d21bbbf7fb1a71d64e25",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:20"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081095.html": {
+      "title": "市民美術展（絵画、彫刻・インスタレーション、工芸、書道、写真、デザインの部の入選作品展示）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081095.html",
+      "eventDate": "2026/1/3～2026/11/21",
+      "contentHash": "9b866e564bbec74d738191b2f2b8942eb49921d969722cbb081101d53635b601",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:21"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081093.html": {
+      "title": "市役所ロビーコンサート",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081093.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "3a5d8ea603c5d6eafdb3c579ab6467bdf8d05fcf99b598614656e504bf1f9f62",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:22"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081088.html": {
+      "title": "手作りの会のみなさんによるワークショップ「あなただけの和小物作り」",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081088.html",
+      "eventDate": "2026/1/3～2026/11/8",
+      "contentHash": "d599eea4ec8ebfa311700b3689364c552c69117d5b30eeb9afa21390fccccb60",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:23"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081086.html": {
+      "title": "ベビースキンシップ＆ヨガ教室",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081086.html",
+      "eventDate": "2026/1/3～2026/11/18",
+      "contentHash": "71b3f9205d3086f28a88a862a1dcc03f1b215846a372df0929a198c25accf0b5",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:24"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081085.html": {
+      "title": "陶芸教室",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081085.html",
+      "eventDate": "2026/1/3～2026/11/7",
+      "contentHash": "774b898b7567847afe2e71ab8c5bd4576808426044deb5be5f2727a218d905ff",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:25"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081084.html": {
+      "title": "おとなのコーラス教室",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081084.html",
+      "eventDate": "2026/1/3～2026/11/10",
+      "contentHash": "dcec78770727bdb783a2a460b052b3c4989ce373697c5cdf15035017851fb3e6",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:26"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081081.html": {
+      "title": "フラワーアレンジメント教室",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081081.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "df7b4203f5af005d77f5aee809d84c300db26c9d6080158ba875abc65942f226",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:27"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081078.html": {
+      "title": "秋のYAKATAまつり2026",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081078.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "8d4ceb02679a178ed2024c33cf75b4dd25a32946af12b43a7a3c81b8474c25ca",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:28"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081075.html": {
+      "title": "花とみどりの講座 迎春を寿ぐ（お正月の寄せ植え）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081075.html",
+      "eventDate": "2026/1/3～2026/11/24",
+      "contentHash": "66cabe1bbe492e3c3983d14d580fabdd19da602b55ed98ad7719c723404b7cd0",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:29"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081074.html": {
+      "title": "花とみどりの講座 春を先取り！アイスチューリップ（種類の紹介と育て方についての講義・実習）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081074.html",
+      "eventDate": "2026/1/3～2026/11/17",
+      "contentHash": "71bcc2ae8667701b0e308638224559fc775a2a5ac5f691000cc4ce965197f8b6",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:30"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081073.html": {
+      "title": "花とみどりの講座 ほのかな香りミニシクラメンのリース（リング型バスケットの寄せ植え）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081073.html",
+      "eventDate": "2026/1/3～2026/11/10",
+      "contentHash": "b70531fcf505ebd3c95eafe3e3551dcbc5b592956b878d429d2053173f33265c",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:31"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081072.html": {
+      "title": "花とみどりの講座 華やかなハボタンの寄せ植え",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081072.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "3da9fc066374956b54882da8ef8e3fa08c6809ebfcf6b5019d11fa2d893b7776",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:32"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081068.html": {
+      "title": "紙屋鈴木家スタディーズ「はじめての香道体験～源氏香～」",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081068.html",
+      "eventDate": "2026/1/3～2026/11/20",
+      "contentHash": "b46fb53807f2a68b16ac61f6688a70fa1b7d49f30200664cf1f647ac06df84bb",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:33"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1081065.html": {
+      "title": "就活生向け！「働く軸」を引き出す価値観発見ワークショップ（カードゲームを使用した働きがいの探究など）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1081065.html",
+      "eventDate": "2026/1/3～2026/11/23",
+      "contentHash": "9e84df17927828ffa32d11440749bf26f93b1704933755793a52332c000e5e89",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:34"
+    },
+    "https://www.city.toyota.aichi.jp/event/facility/1080931.html": {
+      "title": "親子自然体験塾 冬山クリスマスツリー工房（ミニクリスマスツリー作り、天体観測など）",
+      "url": "https://www.city.toyota.aichi.jp/event/facility/1080931.html",
+      "eventDate": "2026/1/3～2026/11/21",
+      "contentHash": "0faa02a3fdb337cafb322826106e1eb3d861a584b8977c4c4a35a30f853033d6",
+      "priority": true,
+      "lastSeenAt": "2026/11/23 14:17:35"
+    },
+    "https://www.city.toyota.aichi.jp/event/facility/1080928.html": {
+      "title": "六所でキャンプ（囲炉裏・ハンティングチェア作り、昔の道具体験）",
+      "url": "https://www.city.toyota.aichi.jp/event/facility/1080928.html",
+      "eventDate": "2026/1/3～2026/11/10",
+      "contentHash": "5a5daa2b520048d36833ffbbc705970217597a01ea47ddf468fdbb801702ad9b",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:36"
+    },
+    "https://www.city.toyota.aichi.jp/event/facility/1080927.html": {
+      "title": "夜のムササビ観察会",
+      "url": "https://www.city.toyota.aichi.jp/event/facility/1080927.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "8aef2fd97ae8dd2e15dfdb75457644e546ff9b899db41d40c87faddc3f5ebcf9",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:36"
+    },
+    "https://www.city.toyota.aichi.jp/event/facility/1080913.html": {
+      "title": "ダンボールコンポスト基礎講座",
+      "url": "https://www.city.toyota.aichi.jp/event/facility/1080913.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "81e7b192a98e612d76b46a3fb8e488fdccd30158d7b950c2a6169b11d8812629",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:37"
+    },
+    "https://www.city.toyota.aichi.jp/event/facility/1080911.html": {
+      "title": "プラネタリウムコンサート クリスマスのおくりもの～サックス四重奏「本日休演」～",
+      "url": "https://www.city.toyota.aichi.jp/event/facility/1080911.html",
+      "eventDate": "2026/1/3～2026/11/7",
+      "contentHash": "0d8edf5f2d90656096fe8e698eb430ad3f1c2094405274e1c328ff140f1af762",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:38"
+    },
+    "https://www.city.toyota.aichi.jp/event/facility/1080908.html": {
+      "title": "勘八峡紅葉ウオーキング2026",
+      "url": "https://www.city.toyota.aichi.jp/event/facility/1080908.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "78e7ed844588d86c603ef613769ba052d85b5144412311553c6196705d1201e4",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:39"
+    },
+    "https://www.city.toyota.aichi.jp/event/facility/1080906.html": {
+      "title": "くらしを彩る民芸講座（手仕事と食卓）",
+      "url": "https://www.city.toyota.aichi.jp/event/facility/1080906.html",
+      "eventDate": "2026/1/3～2026/11/24",
+      "contentHash": "0d001bece0b4a5e02d367fc35011475d251188dd3d96cbc4008ad7c095fc8a96",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:40"
+    },
+    "https://www.city.toyota.aichi.jp/event/facility/1080904.html": {
+      "title": "パイプオルガン演奏体験講座（ホールオルガニスト付添）",
+      "url": "https://www.city.toyota.aichi.jp/event/facility/1080904.html",
+      "eventDate": "2026/1/3～2026/1/23",
+      "contentHash": "1601a60cc908c53331a1d0984ced0cbd658b7dd18ef37fb55b6d7508f3bef9b4",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:41"
+    },
+    "https://www.city.toyota.aichi.jp/event/facility/1080903.html": {
+      "title": "謡・仕舞体験教室（能の基本など）",
+      "url": "https://www.city.toyota.aichi.jp/event/facility/1080903.html",
+      "eventDate": "2026/1/3～2026/1/20",
+      "contentHash": "4cb49fd9e8394ca36e4601f4865278a00128d0c19c226555df59f5ec7f85d60b",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:42"
+    },
+    "https://www.city.toyota.aichi.jp/event/facility/1080900.html": {
+      "title": "パイプオルガンを楽しむための講座「もっと知りたいオルガンの聴き方」",
+      "url": "https://www.city.toyota.aichi.jp/event/facility/1080900.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "d128c609ceff476459ba6bf99367cb343b1de1f24e065a2855c1731ff2020bc4",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:43"
+    },
+    "https://www.city.toyota.aichi.jp/event/facility/1080897.html": {
+      "title": "「すまいるコーラス」ミニコンサート",
+      "url": "https://www.city.toyota.aichi.jp/event/facility/1080897.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "0d5a2d703b7ffacdeffbeb3943f41410db8801270e2489d175bdaf90c9e8bded",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:44"
+    },
+    "https://www.city.toyota.aichi.jp/event/facility/1080847.html": {
+      "title": "美術館連続講座「挙母町出身の女性作家・中根明貴子（昭子）について調べていること」",
+      "url": "https://www.city.toyota.aichi.jp/event/facility/1080847.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "ce6fbf664c38c461cf9a535a839e76449701408ae62c10cab72ea1cdbae4dd68",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:45"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1080087.html": {
+      "title": "介護・障がいサービスの仕事体験・見学会",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1080087.html",
+      "eventDate": "2026/1/3～2026/12/26",
+      "contentHash": "fa67c6020a25e8f2a5643f19ae273781fcb7164cff0ac8961793e7d6cf2a5dc3",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:46"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1078385.html": {
+      "title": "あなたの経験が、街のチカラに。新たな生きがいと出会えるボランティアマッチング体験会",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1078385.html",
+      "eventDate": "2026/1/3～2026/9/1",
+      "contentHash": "d8b447637f3b85a7c01dcb058f15392b10a5e1fb4c87ba4f32383fd75460a795",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:47"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1023552.html": {
+      "title": "四季桜ウオーク大会",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1023552.html",
+      "eventDate": "2025/11/23～2026/1/3",
+      "contentHash": "cfe6c800c6cfedaa7831bb86105c96a4006a297fde0fc7090e04b61f461e8ca5",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:48"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1080462.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～卓球教室～（2026年12月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1080462.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "93cc4ccc4d59af3ae967b44ed773a1788e040a4bed54b2609e327b95380c744f",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:49"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1080461.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～《体験・年長限定》はじめての野球教室～（2026年12月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1080461.html",
+      "eventDate": "2026/1/3～2026/12/13",
+      "contentHash": "e272cec215b5dcbb9750c2ce1543ec478e57152902f5a75c97223c36b0a0f44c",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:50"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1080460.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～ちびっこサッカー教室（小学校低学年クラス）～（2026年12月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1080460.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "234aac701b609f44b77786e55ce2c40d15add627f189f3a995c136f42c3e877a",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:51"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1080459.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～ちびっこサッカー教室（4～6歳クラス）～（2026年12月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1080459.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "4d9fded308121600a36f94dce8043feb432b03fdbc56bd79f4f8f816d8dc3ca8",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:52"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076286.html": {
+      "title": "市民とともに歩んだ50年！ 消防音楽隊50周年コンサートツアー",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076286.html",
+      "eventDate": "2026/1/3～2026/6/13",
+      "contentHash": "7385d347cab2902d4ca984a3acf75abab30c2fce43c2cceaf9be3b2b607efb3a",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:53"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1080441.html": {
+      "title": "夢ひろがる☆小学生おしごと体験パーク",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1080441.html",
+      "eventDate": "2026/1/3～2026/11/8",
+      "contentHash": "edc51ef4092a1e1d1b358b826a44d48d97794c6a52624a5a03ffb06e937aba92",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:53"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1080416.html": {
+      "title": "暮らしを守る片づけ講座～事例紹介＆ワーク～",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1080416.html",
+      "eventDate": "2026/1/3～2026/11/5",
+      "contentHash": "40fba899e00ef9ce99eb33ba5d1b3e721fb0331e520c01b78ea009b35d89e357",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:54"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1080166.html": {
+      "title": "ピア・カウンセリング公開講座",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1080166.html",
+      "eventDate": "2026/1/3～2026/10/5",
+      "contentHash": "fa1bcd1fc3a83b9f7ba92d1924b27a7bfddc0800145fc689c0e948ed4b35a562",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:55"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1080003.html": {
+      "title": "おとなのコーラス教室",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1080003.html",
+      "eventDate": "2026/1/3～2026/10/13",
+      "contentHash": "7564c2032c73cd3f1f6d1a681be00555c4d79d4154449a54a5e04b3152792280",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:56"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1079999.html": {
+      "title": "フラワーアレンジメント教室（ヨーロピアンスタイル）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1079999.html",
+      "eventDate": "2026/1/3～2026/10/8",
+      "contentHash": "2808e331f430d6cb4128d5bebc7de891b65c5cd6178ca17aa9e737f9a7f984ee",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:57"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1079969.html": {
+      "title": "暮らしの手作り講座「ミニ門松作り」",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1079969.html",
+      "eventDate": "2026/1/3～2026/10/19",
+      "contentHash": "c0335279e50b20f9400095f7de338b09c6ccafba45ee47e513eb8c1db2488a18",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:58"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1079968.html": {
+      "title": "暮らしの手作り講座「しめ縄作り」（しめ縄と紙垂を作る）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1079968.html",
+      "eventDate": "2026/1/3～2026/10/14",
+      "contentHash": "7eb5f8ebcda0863500609ef5698b95f4489b418b2701d23f7a42f02d936e2081",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:17:59"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1079957.html": {
+      "title": "花育講座「楽しいクリスマス飾り」（ミニ寄せ植え）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1079957.html",
+      "eventDate": "2026/1/3～2026/10/21",
+      "contentHash": "fe7ef40b2729f411be3b9890edad15e1c191eb1297a71001fb16f532780a7f07",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:00"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1079956.html": {
+      "title": "専門講座「バラのある暮らし」",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1079956.html",
+      "eventDate": "2026/1/3～2026/10/6",
+      "contentHash": "eeb06da1c9c85df30467e929c709abd7a9c9ba74cdbfe5ac19799f2f86d700c8",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:01"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1079955.html": {
+      "title": "花とみどりの講座 冬を彩るハンギングバスケット（クリスマスから迎春を楽しむ寄せ植え）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1079955.html",
+      "eventDate": "2026/1/3～2026/10/20",
+      "contentHash": "8b98cb197bb7b75597caaf00e83a954d2e957570e39c929eb0ddbbe4d957c87c",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:02"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1079720.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～楽しんで体の使い方を覚える運動教室～（2026年11月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1079720.html",
+      "eventDate": "2026/1/3～2026/11/22",
+      "contentHash": "40e899fc5176210ad53e494dc8dca23f73f532554c1e87ab0db149bee6d77e2c",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:03"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1079719.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール はじめての野球教室（2026年11月・12月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1079719.html",
+      "eventDate": "2026/1/3～2026/12/5",
+      "contentHash": "d53f7fcb7fcc35c245fbd285a9be15ebec8eb0f0a88ee8cf961c5715f7dc11fe",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:04"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1079718.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～ちびっこサッカー教室（小学校低学年クラス）～（2026年11月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1079718.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "1d6c5fdb8ca2a507689faaf8862e9c957e7805991f54fc6489a8a011c357def8",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:05"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1079717.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～ちびっこサッカー教室（4～6歳クラス）～（2026年11月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1079717.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "b0d30627cc106adfd1402390e19a147df5a6ed3ca032dc6720d054b38eec9c0f",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:06"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1079690.html": {
+      "title": "トヨタ記念病院市民公開講座 糖尿病と腎臓病から健康を守るために",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1079690.html",
+      "eventDate": "2026/1/3～2026/9/15",
+      "contentHash": "bf98e2495db1eb1c032b2617c1c6cdb29aeebc7fdf979ab96decd5a46ddfce02",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:07"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1078818.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～ちびっこサッカー教室（4～6歳クラス）～（2026年10月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1078818.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "00fca9882f8daece7dbadb6680009b0e317c3d65a3f1516a5ab286498a55cca8",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:08"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1078820.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール 中高齢者向け栄養相談とノルディック・ウォーキング教室（2026年10月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1078820.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "02c126cdb53d1659c17c9b1d285ee42723ad377963723a76cc3f1140e866282f",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:08"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1078819.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～ちびっこサッカー教室（小学校低学年クラス）～（2026年10月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1078819.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "b8be4497bf71fdf4f53717d231c4cff531cb18595d877afbb504739e3cd3baa4",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:09"
+    },
+    "https://www.city.toyota.aichi.jp/event/child/1023701.html": {
+      "title": "1stパパママ教室",
+      "url": "https://www.city.toyota.aichi.jp/event/child/1023701.html",
+      "eventDate": "2026/1/3～2026/2/20",
+      "contentHash": "aa57b7dc4e384149ca474a4ed86dd72dd67edf214199de4e72bb6fd508ac0df8",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:10"
+    },
+    "https://www.city.toyota.aichi.jp/event/child/1009078.html": {
+      "title": "2ndパパママ教室",
+      "url": "https://www.city.toyota.aichi.jp/event/child/1009078.html",
+      "eventDate": "2026/1/3～2026/3/5",
+      "contentHash": "03a009f801b8c2175e0a1c80a390296c07a12bc24972507895dce526216e5f0c",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:11"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1077927.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール 運動あそび教室～あそびで育てる心とからだ～（2026年9月・10月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1077927.html",
+      "eventDate": "2026/1/3～2026/9/26",
+      "contentHash": "898981401f4695d3ea368eea52ccfe75f685267db5c48ee99294172085b9b1d6",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:12"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1077926.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～ちびっこサッカー教室（小学校低学年クラス）～（2026年9月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1077926.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "844ccb509070516103c4980e6cf6328cbdd5847153333c74206a0d465c642f3d",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:13"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1077925.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～ちびっこサッカー教室（4～6歳クラス）～（2026年9月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1077925.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "189d73cc37c4444eda5ba3e3e34b05002ffec15ad4b211d8caf64622f7f4f46a",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:14"
+    },
+    "https://www.city.toyota.aichi.jp/event/child/1058163.html": {
+      "title": "パパと一緒に楽しむベビー教室",
+      "url": "https://www.city.toyota.aichi.jp/event/child/1058163.html",
+      "eventDate": "2026/1/3～2026/3/13",
+      "contentHash": "5dbfe2daa47418755d85ecf56033e1bd1e5ff075033cd37ad013f859d5939cf3",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:15"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1076514.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～かけっこ教室～（2026年7月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1076514.html",
+      "eventDate": "2026/1/3～2026/7/12",
+      "contentHash": "d288b7e735f81e12044058bad0fcfd0978916133cf1008730681eb27b0694756",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:16"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1076513.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～ちびっこサッカー教室～（2026年7月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1076513.html",
+      "eventDate": "2026/1/3～2026/12/29",
+      "contentHash": "5a31d7e1df8084afea19de725990b2060f5e79d287fa2117b338a5fb13224ee3",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:17"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076255.html": {
+      "title": "特別講座 女性ガーデナーによる「ガーデニング入門」",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076255.html",
+      "eventDate": "2026/1/3～2026/5/13",
+      "contentHash": "3e5478349b11d6e7ec92646da5ff8a887e879bbfbf4e1b11cc557b1596329c89",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:18"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1071752.html": {
+      "title": "豊田茶友会月例茶会",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1071752.html",
+      "eventDate": "2026/1/3～2026/2/8",
+      "contentHash": "de2b39a8cfd818344b9a67cc532e7752d1744862789e7da6b411f8c24718f8eb",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:19"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1077442.html": {
+      "title": "元気アップ教室（介護予防ストレッチ・レクリエーションなど）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1077442.html",
+      "eventDate": "2026/1/3～2026/7/5",
+      "contentHash": "eb944791e93f4776d00a919c21e966f82262861735b78ef514de9a07ea0d2d33",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:20"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1077168.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～【夏季短期集中】水泳教室（平泳ぎ）～（2026年8月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1077168.html",
+      "eventDate": "2026/1/3～2026/8/5",
+      "contentHash": "2ecfcb365f961f2d09dc683d87b3c23d2ebf9e4d2451d35b8d93abb31487a2cd",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:21"
+    },
+    "https://www.city.toyota.aichi.jp/event/event/1076512/1077167.html": {
+      "title": "豊田市×中京大学イーグルススポーツスクール ～【夏季短期集中】水泳教室（クロール）～（2026年8月）",
+      "url": "https://www.city.toyota.aichi.jp/event/event/1076512/1077167.html",
+      "eventDate": "2026/1/3～2026/8/5",
+      "contentHash": "9336ce0aca6138ce27f1b0993112999819145f9d982d972a5561b4b5ecafdcc6",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:22"
+    },
+    "https://www.city.toyota.aichi.jp/event/study/1076997.html": {
+      "title": "介護の仕事を知るための職場体験を実施しています！",
+      "url": "https://www.city.toyota.aichi.jp/event/study/1076997.html",
+      "eventDate": "2026/1/3～2026/6/2",
+      "contentHash": "72174cdfa0c4199378e8ba28659be0d13fc57fbad1f823f64c0ab19ec544f2e2",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:23"
+    },
+    "https://www.city.toyota.aichi.jp/event/child/1057281.html": {
+      "title": "親子食育講座-離乳食・幼児食教室-",
+      "url": "https://www.city.toyota.aichi.jp/event/child/1057281.html",
+      "eventDate": "2026/1/3～2026/5/12",
+      "contentHash": "dab978bc963021ccefd15102a1652f99a2f9cb06f6033d1f443d65ec8078910d",
+      "priority": true,
+      "lastSeenAt": "2026/11/23 14:18:23"
+    },
+    "https://www.city.toyota.aichi.jp/event/child/1023466.html": {
+      "title": "親子むし歯予防教室",
+      "url": "https://www.city.toyota.aichi.jp/event/child/1023466.html",
+      "eventDate": "2026/1/3～2026/5/18",
+      "contentHash": "36184e488233f5d7fb73f56321c03b604bd91adf2ca5f40a52d31939ee27ff89",
+      "priority": true,
+      "lastSeenAt": "2026/11/23 14:18:24"
+    },
+    "https://www.city.toyota.aichi.jp/event/child/1037601.html": {
+      "title": "ふれあい子育て教室",
+      "url": "https://www.city.toyota.aichi.jp/event/child/1037601.html",
+      "eventDate": "2026/1/3～2026/2/15",
+      "contentHash": "1ba1335106eb96ee4f1f7df071d433836dc91510be52f6c662c4d9c693dcbc22",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:25"
+    },
+    "https://www.city.toyota.aichi.jp/event/child/1030011.html": {
+      "title": "多胎パパママ教室",
+      "url": "https://www.city.toyota.aichi.jp/event/child/1030011.html",
+      "eventDate": "2026/1/3～2026/8/22",
+      "contentHash": "cda5c37dba0cdc1ef3f31d4e5e3e7c4557fd3e7b01b75c5f90a98f0e4436f404",
+      "priority": false,
+      "lastSeenAt": "2026/11/23 14:18:26"
+    }
+  }
+}
