@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 70,
+  "detailCursor": 80,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -197,7 +197,7 @@
     "ACA7502": {
       "productId": "ACA7502",
       "productName": "symphonyブランケット",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "ACA7596_DAEA": {
@@ -515,7 +515,7 @@
     "TE0719_A": {
       "productId": "TE0719_A",
       "productName": "手拭",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "TE0719_B": {
