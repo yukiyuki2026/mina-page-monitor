@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 80,
+  "detailCursor": 90,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -257,7 +257,7 @@
     "AEA7392P": {
       "productId": "AEA7392P",
       "productName": "chouchoスタイ",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "AEA7413P": {
