@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 10,
+  "detailCursor": 20,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -17,7 +17,7 @@
     "FC0608YWST": {
       "productId": "FC0608YWST",
       "productName": "sleeping rose ＋ tambourine キルトなしファブリック",
-      "isSoldOut": true,
+      "isSoldOut": false,
       "advanceAnnouncement": ""
     },
     "FC0607RBPW": {
