@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 10,
+  "detailCursor": 20,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -599,6 +599,18 @@
     "AEA9528": {
       "productId": "AEA9528",
       "productName": "starryショルダーバッグ",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA9503": {
+      "productId": "AEA9503",
+      "productName": "tambourinearki",
+      "isSoldOut": true,
+      "advanceAnnouncement": ""
+    },
+    "AEA9548": {
+      "productId": "AEA9548",
+      "productName": "star gardenpocket bag",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     }
