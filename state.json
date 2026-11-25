@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -247,72 +247,251 @@
       "productName": "tambourineファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "beige|122": {
+          "color": "beige",
+          "width": "122",
+          "available": false
+        },
+        "dark green|122": {
+          "color": "dark green",
+          "width": "122",
+          "available": false
+        },
+        "light blue|122": {
+          "color": "light blue",
+          "width": "122",
+          "available": false
+        },
+        "navy|122": {
+          "color": "navy",
+          "width": "122",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0574BBLC": {
       "productId": "FC0574BBLC",
       "productName": "tambourineファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "beige|120": {
+          "color": "beige",
+          "width": "120",
+          "available": false
+        },
+        "blue|120": {
+          "color": "blue",
+          "width": "120",
+          "available": false
+        },
+        "light gray|120": {
+          "color": "light gray",
+          "width": "120",
+          "available": false
+        },
+        "charcoal|120": {
+          "color": "charcoal",
+          "width": "120",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0573WPBC": {
       "productId": "FC0573WPBC",
       "productName": "smile flowerファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|148": {
+          "color": "white",
+          "width": "148",
+          "available": true
+        },
+        "pink beige|148": {
+          "color": "pink beige",
+          "width": "148",
+          "available": false
+        },
+        "light blue|148": {
+          "color": "light blue",
+          "width": "148",
+          "available": false
+        },
+        "charcoal|148": {
+          "color": "charcoal",
+          "width": "148",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0572": {
       "productId": "FC0572",
       "productName": "carnivalファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "light green|156": {
+          "color": "light green",
+          "width": "156",
+          "available": true
+        },
+        "light blue|156": {
+          "color": "light blue",
+          "width": "156",
+          "available": true
+        },
+        "navy|156": {
+          "color": "navy",
+          "width": "156",
+          "available": true
+        },
+        "light pink|156": {
+          "color": "light pink",
+          "width": "156",
+          "available": true
+        },
+        "dark navy|156": {
+          "color": "dark navy",
+          "width": "156",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0571GBBX": {
       "productId": "FC0571GBBX",
       "productName": "tambourineファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "bordeaux|154": {
+          "color": "bordeaux",
+          "width": "154",
+          "available": false
+        },
+        "brown|154": {
+          "color": "brown",
+          "width": "154",
+          "available": false
+        },
+        "light gray|154": {
+          "color": "light gray",
+          "width": "154",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0569NBGW": {
       "productId": "FC0569NBGW",
       "productName": "forest tileファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|150": {
+          "color": "white",
+          "width": "150",
+          "available": false
+        },
+        "light beige|150": {
+          "color": "light beige",
+          "width": "150",
+          "available": false
+        },
+        "light green|150": {
+          "color": "light green",
+          "width": "150",
+          "available": true
+        },
+        "navy|150": {
+          "color": "navy",
+          "width": "150",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0577BWMN": {
       "productId": "FC0577BWMN",
       "productName": "mermaidファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|112": {
+          "color": "white",
+          "width": "112",
+          "available": true
+        },
+        "mustard|112": {
+          "color": "mustard",
+          "width": "112",
+          "available": true
+        },
+        "blue|112": {
+          "color": "blue",
+          "width": "112",
+          "available": true
+        },
+        "navy|112": {
+          "color": "navy",
+          "width": "112",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0570PBPB": {
       "productId": "FC0570PBPB",
       "productName": "pomppiaファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "beige|156": {
+          "color": "beige",
+          "width": "156",
+          "available": false
+        },
+        "blue|156": {
+          "color": "blue",
+          "width": "156",
+          "available": false
+        },
+        "brown|156": {
+          "color": "brown",
+          "width": "156",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0568": {
       "productId": "FC0568",
       "productName": "hello swallowファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|144": {
+          "color": "white",
+          "width": "144",
+          "available": true
+        },
+        "light pink|144": {
+          "color": "light pink",
+          "width": "144",
+          "available": true
+        },
+        "light gray|144": {
+          "color": "light gray",
+          "width": "144",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0566FWAM": {
       "productId": "FC0566FWAM",
@@ -343,8 +522,24 @@
       "productName": "forest wave + anemoneファブリック ボーラーあり",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "green|114": {
+          "color": "green",
+          "width": "114",
+          "available": true
+        },
+        "khaki|114": {
+          "color": "khaki",
+          "width": "114",
+          "available": false
+        },
+        "navy|114": {
+          "color": "navy",
+          "width": "114",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0565": {
       "productId": "FC0565",
