@@ -50,7 +50,96 @@ function createEmptyState() {
   };
 }
 
+function normalizeText(text) {
+  return String(text || '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function createVariationKey(label) {
+  return normalizeText(label)
+    .toLowerCase();
+}
+
+function sanitizeVariations(variations) {
+  if (!variations) {
+    return {};
+  }
+
+  const sanitized = {};
+
+  if (Array.isArray(variations)) {
+    for (const variation of variations) {
+      if (!variation) {
+        continue;
+      }
+
+      const label =
+        normalizeText(
+          variation.label ||
+          variation.name
+        );
+
+      if (!label) {
+        continue;
+      }
+
+      const key =
+        createVariationKey(label);
+
+      sanitized[key] = {
+        label,
+        available:
+          Boolean(variation.available)
+      };
+    }
+
+    return sanitized;
+  }
+
+  if (typeof variations === 'object') {
+    for (
+      const [storedKey, variation]
+      of Object.entries(variations)
+    ) {
+      if (
+        !variation ||
+        typeof variation !== 'object'
+      ) {
+        continue;
+      }
+
+      const label =
+        normalizeText(
+          variation.label ||
+          variation.name ||
+          storedKey
+        );
+
+      if (!label) {
+        continue;
+      }
+
+      const key =
+        createVariationKey(label);
+
+      sanitized[key] = {
+        label,
+        available:
+          Boolean(variation.available)
+      };
+    }
+  }
+
+  return sanitized;
+}
+
 function sanitizeProduct(product = {}) {
+  const variations =
+    sanitizeVariations(
+      product.variations
+    );
+
   return {
     productId:
       product.productId || '',
@@ -62,7 +151,15 @@ function sanitizeProduct(product = {}) {
       Boolean(product.isSoldOut),
 
     advanceAnnouncement:
-      product.advanceAnnouncement || ''
+      product.advanceAnnouncement || '',
+
+    variations,
+
+    variationsInitialized:
+      Boolean(
+        product.variationsInitialized
+      ) ||
+      Object.keys(variations).length > 0
   };
 }
 
@@ -108,7 +205,6 @@ function loadState() {
 
       products
     };
-
   } catch (error) {
     console.log(
       `life-state.jsonを読み込めませんでした: ${error.message}`
@@ -179,7 +275,8 @@ async function createGitHubIssue(
   body
 ) {
   const token =
-    process.env.GITHUB_TOKEN;
+    process.env.GITHUB_TOKEN ||
+    process.env.GH_TOKEN;
 
   const repository =
     process.env.GITHUB_REPOSITORY;
@@ -262,9 +359,6 @@ async function getListProducts(page) {
       const productMap =
         new Map();
 
-      /*
-       * 一覧の商品カードを取得
-       */
       const cards =
         Array.from(
           document.querySelectorAll(
@@ -300,9 +394,6 @@ async function getListProducts(page) {
         const href =
           link.href || '';
 
-        /*
-         * カテゴリページへのリンクを除外
-         */
         const match =
           href.match(
             /\/online_store\/([^/?#]+)\/?$/
@@ -381,17 +472,11 @@ async function getListProducts(page) {
             style.display !== 'none' &&
             style.visibility !==
               'hidden' &&
-            Number(
-              style.opacity
-            ) !== 0 &&
+            Number(style.opacity) !== 0 &&
             rect.width > 0 &&
             rect.height > 0;
         }
 
-        /*
-         * soldoutクラスがない場合に備え、
-         * 表示文字も確認
-         */
         if (!isSoldOut) {
           isSoldOut =
             cardText.some(
@@ -446,9 +531,6 @@ function isAdvanceRestockAnnouncement(
     return false;
   }
 
-  /*
-   * 過去形・完了形は通知対象外
-   */
   const completedExpressions = [
     '再入荷いたしました',
     '再入荷しました',
@@ -470,9 +552,6 @@ function isAdvanceRestockAnnouncement(
     return false;
   }
 
-  /*
-   * 未来の再入荷・再販売予定
-   */
   const advanceExpressions = [
     '再入荷いたします',
     '再入荷を予定',
@@ -517,6 +596,286 @@ async function getProductDetail(
   );
 
   return await page.evaluate(() => {
+    function cleanText(text) {
+      return String(text || '')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function isVisible(element) {
+      if (!element) {
+        return false;
+      }
+
+      const style =
+        window.getComputedStyle(element);
+
+      const rect =
+        element.getBoundingClientRect();
+
+      return (
+        style.display !== 'none' &&
+        style.visibility !== 'hidden' &&
+        Number(style.opacity) !== 0 &&
+        rect.width > 0 &&
+        rect.height > 0
+      );
+    }
+
+    function isUnavailableControl(control) {
+      if (!control) {
+        return true;
+      }
+
+      const classText =
+        String(control.className || '')
+          .toLowerCase();
+
+      const ariaDisabled =
+        control.getAttribute(
+          'aria-disabled'
+        );
+
+      const dataDisabled =
+        control.getAttribute(
+          'data-disabled'
+        );
+
+      const text =
+        cleanText(control.innerText)
+          .toLowerCase();
+
+      return (
+        control.disabled === true ||
+        control.hasAttribute('disabled') ||
+        ariaDisabled === 'true' ||
+        dataDisabled === 'true' ||
+        classText.includes('disabled') ||
+        classText.includes('soldout') ||
+        classText.includes('sold-out') ||
+        text.includes('sold out') ||
+        text.includes('在庫切れ') ||
+        text.includes('売り切れ')
+      );
+    }
+
+    function getVariationContainer(control) {
+      const selectors = [
+        'li',
+        '[class*="variation"]',
+        '[class*="variant"]',
+        '[class*="option"]',
+        '[class*="sku"]',
+        '[class*="stock"]',
+        '[class*="item"]',
+        'tr'
+      ];
+
+      for (const selector of selectors) {
+        const container =
+          control.closest(selector);
+
+        if (
+          container &&
+          container !==
+            document.body
+        ) {
+          const text =
+            cleanText(
+              container.innerText
+            );
+
+          if (
+            text &&
+            text.length <= 300
+          ) {
+            return container;
+          }
+        }
+      }
+
+      return (
+        control.parentElement ||
+        control
+      );
+    }
+
+    function getVariationLabel(
+      control,
+      container,
+      index
+    ) {
+      const ignoredTexts = [
+        'かごへ入れる',
+        'カートに入れる',
+        '購入する',
+        'sold out',
+        '在庫切れ',
+        '売り切れ',
+        '選択してください',
+        '数量',
+        'カラー',
+        '色',
+        'サイズ',
+        'size',
+        'color'
+      ];
+
+      const candidates = [];
+
+      const controlValue =
+        cleanText(
+          control.value
+        );
+
+      const controlText =
+        cleanText(
+          control.innerText
+        );
+
+      const ariaLabel =
+        cleanText(
+          control.getAttribute(
+            'aria-label'
+          )
+        );
+
+      const title =
+        cleanText(
+          control.getAttribute(
+            'title'
+          )
+        );
+
+      const dataColor =
+        cleanText(
+          control.getAttribute(
+            'data-color'
+          )
+        );
+
+      const dataSize =
+        cleanText(
+          control.getAttribute(
+            'data-size'
+          )
+        );
+
+      const dataName =
+        cleanText(
+          control.getAttribute(
+            'data-name'
+          )
+        );
+
+      const dataLabel =
+        cleanText(
+          control.getAttribute(
+            'data-label'
+          )
+        );
+
+      const inputId =
+        control.getAttribute('id');
+
+      if (inputId) {
+        const associatedLabel =
+          document.querySelector(
+            `label[for="${CSS.escape(inputId)}"]`
+          );
+
+        if (associatedLabel) {
+          candidates.push(
+            cleanText(
+              associatedLabel.innerText
+            )
+          );
+        }
+      }
+
+      candidates.push(
+        dataColor,
+        dataSize,
+        dataName,
+        dataLabel,
+        ariaLabel,
+        title
+      );
+
+      const containerLines =
+        cleanText(
+          container.innerText
+        )
+          .split(/[\n\r]+/)
+          .map(cleanText)
+          .filter(Boolean);
+
+      for (
+        const line
+        of containerLines
+      ) {
+        candidates.push(line);
+      }
+
+      candidates.push(
+        controlValue,
+        controlText
+      );
+
+      const usableParts = [];
+
+      for (
+        const candidate
+        of candidates
+      ) {
+        const cleaned =
+          cleanText(candidate);
+
+        if (!cleaned) {
+          continue;
+        }
+
+        const lower =
+          cleaned.toLowerCase();
+
+        if (
+          ignoredTexts.some(
+            ignored =>
+              lower ===
+              ignored.toLowerCase()
+          )
+        ) {
+          continue;
+        }
+
+        if (
+          /^\d+$/.test(cleaned)
+        ) {
+          continue;
+        }
+
+        if (
+          !usableParts.includes(
+            cleaned
+          )
+        ) {
+          usableParts.push(
+            cleaned
+          );
+        }
+      }
+
+      if (
+        usableParts.length > 0
+      ) {
+        return usableParts
+          .slice(0, 3)
+          .join(' / ');
+      }
+
+      return `選択肢${index + 1}`;
+    }
+
     const heading =
       document.querySelector('h1') ||
       document.querySelector('h2');
@@ -572,9 +931,139 @@ async function getProductDetail(
       )
     ];
 
+    /*
+     * Life商品詳細ページの購入用コントロールを取得。
+     * button.btn_lineを優先し、一般的な購入ボタン、
+     * radio、optionも補助的に確認する。
+     */
+    const controls = Array.from(
+      document.querySelectorAll(
+        [
+          'button.btn_line',
+          'button[class*="cart"]',
+          'button[class*="stock"]',
+          'button[class*="variant"]',
+          'button[class*="variation"]',
+          'input[type="radio"]',
+          'select option'
+        ].join(',')
+      )
+    ).filter(control => {
+      if (
+        control.tagName === 'OPTION'
+      ) {
+        return Boolean(
+          cleanText(control.textContent)
+        );
+      }
+
+      return isVisible(control);
+    });
+
+    const variationMap =
+      new Map();
+
+    controls.forEach(
+      (control, index) => {
+        if (
+          control.tagName === 'OPTION'
+        ) {
+          const label =
+            cleanText(
+              control.textContent
+            );
+
+          if (
+            !label ||
+            control.value === ''
+          ) {
+            return;
+          }
+
+          const lower =
+            label.toLowerCase();
+
+          if (
+            lower.includes(
+              '選択してください'
+            )
+          ) {
+            return;
+          }
+
+          const key =
+            label.toLowerCase();
+
+          variationMap.set(
+            key,
+            {
+              label,
+              available:
+                !control.disabled
+            }
+          );
+
+          return;
+        }
+
+        const container =
+          getVariationContainer(
+            control
+          );
+
+        const label =
+          getVariationLabel(
+            control,
+            container,
+            index
+          );
+
+        if (!label) {
+          return;
+        }
+
+        const key =
+          label.toLowerCase();
+
+        const available =
+          !isUnavailableControl(
+            control
+          );
+
+        /*
+         * 同じラベルが複数取れた場合、
+         * 1つでも購入可能なら購入可能として扱う。
+         */
+        const existing =
+          variationMap.get(key);
+
+        if (existing) {
+          existing.available =
+            existing.available ||
+            available;
+
+          variationMap.set(
+            key,
+            existing
+          );
+        } else {
+          variationMap.set(
+            key,
+            {
+              label,
+              available
+            }
+          );
+        }
+      }
+    );
+
     return {
       productName,
-      announcements
+      announcements,
+      variations: Array.from(
+        variationMap.values()
+      )
     };
   });
 }
@@ -596,6 +1085,136 @@ function getAdvanceAnnouncement(
     : '';
 }
 
+function convertVariationsToState(
+  variations
+) {
+  const result = {};
+
+  for (
+    const variation
+    of variations || []
+  ) {
+    const label =
+      normalizeText(
+        variation.label
+      );
+
+    if (!label) {
+      continue;
+    }
+
+    const key =
+      createVariationKey(label);
+
+    result[key] = {
+      label,
+      available:
+        Boolean(
+          variation.available
+        )
+    };
+  }
+
+  return result;
+}
+
+function findRestockedVariations(
+  previousProduct,
+  currentVariations
+) {
+  if (
+    !previousProduct
+      ?.variationsInitialized
+  ) {
+    return [];
+  }
+
+  const previousVariations =
+    sanitizeVariations(
+      previousProduct.variations
+    );
+
+  const restocked = [];
+
+  for (
+    const current
+    of currentVariations || []
+  ) {
+    const key =
+      createVariationKey(
+        current.label
+      );
+
+    const previous =
+      previousVariations[key];
+
+    if (
+      previous &&
+      previous.available === false &&
+      current.available === true
+    ) {
+      restocked.push(current);
+    }
+  }
+
+  return restocked;
+}
+
+function createVariationText(
+  variations
+) {
+  if (
+    !variations ||
+    variations.length === 0
+  ) {
+    return '';
+  }
+
+  return variations
+    .map(
+      variation =>
+        `- **${variation.label}**`
+    )
+    .join('\n');
+}
+
+function updateProductFromDetail(
+  previousProduct,
+  product,
+  detail,
+  announcement
+) {
+  return {
+    ...previousProduct,
+
+    productId:
+      product.productId,
+
+    productName:
+      detail?.productName ||
+      product.productName,
+
+    isSoldOut:
+      product.isSoldOut,
+
+    advanceAnnouncement:
+      announcement !== undefined
+        ? announcement
+        : (
+            previousProduct
+              ?.advanceAnnouncement ||
+            ''
+          ),
+
+    variations:
+      convertVariationsToState(
+        detail?.variations || []
+      ),
+
+    variationsInitialized: true
+  };
+}
+
 async function notifyRestock(
   product,
   detail
@@ -609,6 +1228,23 @@ async function notifyRestock(
       product.productId
     );
 
+  const availableVariations =
+    (detail?.variations || [])
+      .filter(
+        variation =>
+          variation.available
+      );
+
+  const variationSection =
+    availableVariations.length > 0
+      ? (
+`\n### 現在購入可能なカラー・サイズ\n\n` +
+        `${createVariationText(
+          availableVariations
+        )}\n`
+      )
+      : '';
+
   const title =
     `🛒 Life 在庫復活！ ${displayName}`;
 
@@ -620,10 +1256,54 @@ async function notifyRestock(
 **商品：${displayName}**
 
 **変化：SOLD OUT → 購入可能**
+${variationSection}
+### 商品ページ
+
+${productUrl}
+
+確認時刻：${getJapanTime()}（日本時間）`;
+
+  await createGitHubIssue(
+    title,
+    body
+  );
+}
+
+async function notifyVariationRestock(
+  product,
+  detail,
+  restockedVariations
+) {
+  const displayName =
+    detail?.productName ||
+    product.productName;
+
+  const productUrl =
+    buildProductUrl(
+      product.productId
+    );
+
+  const title =
+    `🎨 Life カラー・サイズ在庫復活！ ${displayName}`;
+
+  const body =
+`@${GITHUB_USERNAME}
+
+## 🎨 Life商品のカラー・サイズ在庫が復活しました
+
+**商品：${displayName}**
+
+### 復活した選択肢
+
+${createVariationText(
+  restockedVariations
+)}
 
 ### 商品ページ
 
 ${productUrl}
+
+購入画面で、上記選択肢が **購入不可から購入可能に変わったこと** を検知しました。
 
 確認時刻：${getJapanTime()}（日本時間）`;
 
@@ -701,6 +1381,40 @@ ${productUrl}
   const previousProducts =
     state.products || {};
 
+  /*
+   * 同じ実行中に同じ商品詳細を
+   * 複数回開かないためのキャッシュ
+   */
+  const detailCache =
+    new Map();
+
+  async function getCachedDetail(
+    product
+  ) {
+    if (
+      detailCache.has(
+        product.productId
+      )
+    ) {
+      return detailCache.get(
+        product.productId
+      );
+    }
+
+    const detail =
+      await getProductDetail(
+        detailPage,
+        product
+      );
+
+    detailCache.set(
+      product.productId,
+      detail
+    );
+
+    return detail;
+  }
+
   try {
     console.log(
       '=============================='
@@ -755,7 +1469,12 @@ ${productUrl}
           isSoldOut:
             product.isSoldOut,
 
-          advanceAnnouncement: ''
+          advanceAnnouncement: '',
+
+          variations: {},
+
+          variationsInitialized:
+            false
         };
       }
 
@@ -794,8 +1513,16 @@ ${productUrl}
         }
       );
 
+    const overallRestockedIds =
+      new Set(
+        restockedProducts.map(
+          product =>
+            product.productId
+        )
+      );
+
     console.log(
-      `Life在庫復活: ${restockedProducts.length}件`
+      `Life商品全体の在庫復活: ${restockedProducts.length}件`
     );
 
     for (
@@ -806,8 +1533,7 @@ ${productUrl}
 
       try {
         detail =
-          await getProductDetail(
-            detailPage,
+          await getCachedDetail(
             product
           );
       } catch (error) {
@@ -823,13 +1549,35 @@ ${productUrl}
         detail
       );
 
+      if (detail) {
+        const previous =
+          previousProducts[
+            product.productId
+          ] || {};
+
+        const announcement =
+          getAdvanceAnnouncement(
+            detail.announcements
+          );
+
+        previousProducts[
+          product.productId
+        ] = updateProductFromDetail(
+          previous,
+          product,
+          detail,
+          announcement
+        );
+      }
+
       await sleep(
         WAIT_BETWEEN_DETAIL_PAGES_MS
       );
     }
 
     /*
-     * 再入荷予定を10商品ずつ確認
+     * 再入荷予定とカラー・サイズ在庫を
+     * 10商品ずつ確認
      */
     const sortedProducts =
       [...products].sort(
@@ -855,8 +1603,7 @@ ${productUrl}
 
     for (
       let index = 0;
-      index <
-      Math.min(
+      index < Math.min(
         DETAIL_BATCH_SIZE,
         sortedProducts.length
       );
@@ -877,7 +1624,7 @@ ${productUrl}
     }
 
     console.log(
-      `Life再入荷案内確認: ${detailBatch.length}商品`
+      `Life詳細確認: ${detailBatch.length}商品`
     );
 
     for (
@@ -886,8 +1633,7 @@ ${productUrl}
     ) {
       try {
         const detail =
-          await getProductDetail(
-            detailPage,
+          await getCachedDetail(
             product
           );
 
@@ -899,7 +1645,23 @@ ${productUrl}
         const previous =
           previousProducts[
             product.productId
-          ] || {};
+          ] || {
+            productId:
+              product.productId,
+
+            productName:
+              product.productName,
+
+            isSoldOut:
+              product.isSoldOut,
+
+            advanceAnnouncement: '',
+
+            variations: {},
+
+            variationsInitialized:
+              false
+          };
 
         const previousAnnouncement =
           previous
@@ -918,23 +1680,63 @@ ${productUrl}
           );
         }
 
+        /*
+         * カラー・サイズ単位の
+         * 購入不可 → 購入可能を確認
+         */
+        const restockedVariations =
+          findRestockedVariations(
+            previous,
+            detail.variations
+          );
+
+        /*
+         * 商品全体の復活通知を送った商品は、
+         * 同じ実行でバリエーション復活通知を
+         * 重複して送らない。
+         */
+        if (
+          restockedVariations.length > 0 &&
+          !overallRestockedIds.has(
+            product.productId
+          )
+        ) {
+          console.log(
+            `Lifeカラー・サイズ在庫復活: ` +
+            `${product.productId} ` +
+            `${restockedVariations
+              .map(
+                variation =>
+                  variation.label
+              )
+              .join(', ')}`
+          );
+
+          await notifyVariationRestock(
+            product,
+            detail,
+            restockedVariations
+          );
+        } else if (
+          !previous
+            .variationsInitialized
+        ) {
+          console.log(
+            `Lifeカラー・サイズ初期状態を登録: ` +
+            `${product.productId} ` +
+            `${detail.productName || product.productName} ` +
+            `(${detail.variations.length}件)`
+          );
+        }
+
         previousProducts[
           product.productId
-        ] = {
-          productId:
-            product.productId,
-
-          productName:
-            detail.productName ||
-            product.productName,
-
-          isSoldOut:
-            product.isSoldOut,
-
-          advanceAnnouncement:
-            announcement
-        };
-
+        ] = updateProductFromDetail(
+          previous,
+          product,
+          detail,
+          announcement
+        );
       } catch (error) {
         console.log(
           `Life詳細確認エラー: ` +
@@ -949,7 +1751,9 @@ ${productUrl}
     }
 
     /*
-     * 一覧の最新状態を保存
+     * 一覧の最新状態を保存。
+     * 詳細確認していない商品の
+     * バリエーション情報は残す。
      */
     for (
       const product
@@ -967,6 +1771,7 @@ ${productUrl}
           product.productId,
 
         productName:
+          previous.productName ||
           product.productName,
 
         isSoldOut:
@@ -975,7 +1780,18 @@ ${productUrl}
         advanceAnnouncement:
           previous
             .advanceAnnouncement ||
-          ''
+          '',
+
+        variations:
+          sanitizeVariations(
+            previous.variations
+          ),
+
+        variationsInitialized:
+          Boolean(
+            previous
+              .variationsInitialized
+          )
       };
     }
 
@@ -1000,14 +1816,12 @@ ${productUrl}
     console.log(
       'Life Monitor終了'
     );
-
   } catch (error) {
     console.error(
       `Life監視エラー: ${error.stack}`
     );
 
     process.exitCode = 1;
-
   } finally {
     await browser.close();
   }
