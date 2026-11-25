@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 90,
+  "detailCursor": 0,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -168,8 +168,145 @@
       "productName": "トレイ",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "bird beige s l / s": {
+          "label": "bird beige S L / S",
+          "available": true
+        },
+        "bird beige s l / l": {
+          "label": "bird beige S L / L",
+          "available": true
+        },
+        "tambourine yellow s l / s": {
+          "label": "tambourine yellow S L / S",
+          "available": false
+        },
+        "tambourine yellow s l / l": {
+          "label": "tambourine yellow S L / L",
+          "available": true
+        },
+        "tambourine beige s l / s": {
+          "label": "tambourine beige S L / S",
+          "available": false
+        },
+        "tambourine beige s l / l": {
+          "label": "tambourine beige S L / L",
+          "available": true
+        },
+        "tambourine light blue s l / s": {
+          "label": "tambourine light blue S L / S",
+          "available": true
+        },
+        "tambourine light blue s l / l": {
+          "label": "tambourine light blue S L / L",
+          "available": true
+        },
+        "tambourine navy s l / s": {
+          "label": "tambourine navy S L / S",
+          "available": true
+        },
+        "tambourine navy s l / l": {
+          "label": "tambourine navy S L / L",
+          "available": true
+        },
+        "imagine blue s l / s": {
+          "label": "imagine blue S L / S",
+          "available": false
+        },
+        "imagine blue s l / l": {
+          "label": "imagine blue S L / L",
+          "available": true
+        },
+        "one day light beige s / s": {
+          "label": "one day light beige S / S",
+          "available": true
+        },
+        "foliage pink mix s l / s": {
+          "label": "foliage pink mix S L / S",
+          "available": true
+        },
+        "foliage pink mix s l / l": {
+          "label": "foliage pink mix S L / L",
+          "available": true
+        },
+        "biscuits pink l / l": {
+          "label": "biscuits pink L / L",
+          "available": true
+        },
+        "light berry red s l / s": {
+          "label": "light berry red S L / S",
+          "available": true
+        },
+        "light berry red s l / l": {
+          "label": "light berry red S L / L",
+          "available": true
+        },
+        "light berry yellow s l / s": {
+          "label": "light berry yellow S L / S",
+          "available": true
+        },
+        "light berry yellow s l / l": {
+          "label": "light berry yellow S L / L",
+          "available": true
+        },
+        "following day blue s l / s": {
+          "label": "following day blue S L / S",
+          "available": true
+        },
+        "following day blue s l / l": {
+          "label": "following day blue S L / L",
+          "available": true
+        },
+        "sea birds blue s l / s": {
+          "label": "sea birds blue S L / S",
+          "available": false
+        },
+        "sea birds blue s l / l": {
+          "label": "sea birds blue S L / L",
+          "available": true
+        },
+        "forest parade dark brown s l / s": {
+          "label": "forest parade dark brown S L / S",
+          "available": true
+        },
+        "forest parade dark brown s l / l": {
+          "label": "forest parade dark brown S L / L",
+          "available": true
+        },
+        "cache-cache black s l / s": {
+          "label": "cache-cache black S L / S",
+          "available": true
+        },
+        "cache-cache black s l / l": {
+          "label": "cache-cache black S L / L",
+          "available": true
+        },
+        "lumiukko white s l / s": {
+          "label": "lumiukko white S L / S",
+          "available": true
+        },
+        "lumiukko white s l / l": {
+          "label": "lumiukko white S L / L",
+          "available": true
+        },
+        "musica pink beige s l / s": {
+          "label": "musica pink beige S L / S",
+          "available": true
+        },
+        "musica pink beige s l / l": {
+          "label": "musica pink beige S L / L",
+          "available": true
+        },
+        "選択肢34": {
+          "label": "選択肢34",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "MG0011": {
       "productId": "MG0011",
@@ -201,8 +338,37 @@
       "productName": "トレイ Round type",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "choucho navy s / s": {
+          "label": "choucho navy S / S",
+          "available": false
+        },
+        "tambourine dark navy l / l": {
+          "label": "tambourine dark navy L / L",
+          "available": true
+        },
+        "surplus pink s / s": {
+          "label": "surplus pink S / S",
+          "available": true
+        },
+        "nap blue s / s": {
+          "label": "nap blue S / S",
+          "available": true
+        },
+        "ilo navy s / s": {
+          "label": "ilo navy S / S",
+          "available": false
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "MG0047_50": {
       "productId": "MG0047_50",
@@ -246,16 +412,138 @@
       "productName": "トレイ Thin type",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "run run run blue l / l": {
+          "label": "run run run blue L / L",
+          "available": true
+        },
+        "bird mix l / l": {
+          "label": "bird mix L / L",
+          "available": false
+        },
+        "rosy pink l / l": {
+          "label": "rosy pink L / L",
+          "available": true
+        },
+        "papurikko black l / l": {
+          "label": "papurikko black L / L",
+          "available": true
+        },
+        "floraleaf navy l / l": {
+          "label": "floraleaf navy L / L",
+          "available": false
+        },
+        "carnival dark navy l / l": {
+          "label": "carnival dark navy L / L",
+          "available": false
+        },
+        "troll black l / l": {
+          "label": "troll black L / L",
+          "available": true
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "TR0133ML": {
       "productId": "TR0133ML",
       "productName": "トレイ",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "run run run black s l / s": {
+          "label": "run run run black S L / S",
+          "available": false
+        },
+        "run run run black s l / l": {
+          "label": "run run run black S L / L",
+          "available": true
+        },
+        "run run run navy s l / s": {
+          "label": "run run run navy S L / S",
+          "available": false
+        },
+        "run run run navy s l / l": {
+          "label": "run run run navy S L / L",
+          "available": true
+        },
+        "tambourine navy s l / s": {
+          "label": "tambourine navy S L / S",
+          "available": false
+        },
+        "tambourine navy s l / l": {
+          "label": "tambourine navy S L / L",
+          "available": true
+        },
+        "life puzzle navy s l / s": {
+          "label": "life puzzle navy S L / S",
+          "available": false
+        },
+        "life puzzle navy s l / l": {
+          "label": "life puzzle navy S L / L",
+          "available": true
+        },
+        "anone-anone light blue s l / s": {
+          "label": "anone-anone light blue S L / S",
+          "available": false
+        },
+        "anone-anone light blue s l / l": {
+          "label": "anone-anone light blue S L / L",
+          "available": true
+        },
+        "選択肢21": {
+          "label": "選択肢21",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "PI0854_09": {
       "productId": "PI0854_09",
@@ -886,16 +1174,134 @@
       "productName": "sewing needle set",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "other free / free": {
+          "label": "other FREE / FREE",
+          "available": true
+        },
+        "選択肢12": {
+          "label": "選択肢12",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "TW0156A": {
       "productId": "TW0156A",
       "productName": "go!プレート",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "white s l / s": {
+          "label": "white S L / S",
+          "available": true
+        },
+        "white s l / l": {
+          "label": "white S L / L",
+          "available": true
+        },
+        "light green s l / s": {
+          "label": "light green S L / S",
+          "available": true
+        },
+        "light green s l / l": {
+          "label": "light green S L / L",
+          "available": true
+        },
+        "light gray s l / s": {
+          "label": "light gray S L / S",
+          "available": true
+        },
+        "light gray s l / l": {
+          "label": "light gray S L / L",
+          "available": false
+        },
+        "選択肢17": {
+          "label": "選択肢17",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "KMN0029": {
       "productId": "KMN0029",
@@ -935,8 +1341,57 @@
       "productName": "swing camelliaプレート",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "white s l / s": {
+          "label": "white S L / S",
+          "available": true
+        },
+        "white s l / l": {
+          "label": "white S L / L",
+          "available": true
+        },
+        "light green s l / s": {
+          "label": "light green S L / S",
+          "available": true
+        },
+        "light green s l / l": {
+          "label": "light green S L / L",
+          "available": true
+        },
+        "light brown s l / s": {
+          "label": "light brown S L / S",
+          "available": true
+        },
+        "light brown s l / l": {
+          "label": "light brown S L / L",
+          "available": true
+        },
+        "選択肢12": {
+          "label": "選択肢12",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES8002WS": {
       "productId": "AES8002WS",
@@ -1025,8 +1480,65 @@
       "productName": "run run runプレート",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "white s l / s": {
+          "label": "white S L / S",
+          "available": false
+        },
+        "white s l / l": {
+          "label": "white S L / L",
+          "available": false
+        },
+        "light green s l / s": {
+          "label": "light green S L / S",
+          "available": false
+        },
+        "light green s l / l": {
+          "label": "light green S L / L",
+          "available": false
+        },
+        "pink s l / s": {
+          "label": "pink S L / S",
+          "available": false
+        },
+        "pink s l / l": {
+          "label": "pink S L / L",
+          "available": true
+        },
+        "brown s l / s": {
+          "label": "brown S L / S",
+          "available": false
+        },
+        "brown s l / l": {
+          "label": "brown S L / L",
+          "available": true
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES8001WS": {
       "productId": "AES8001WS",
@@ -1337,8 +1849,73 @@
       "productName": "nollaマグカップ",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "white free / free": {
+          "label": "white FREE / FREE",
+          "available": true
+        },
+        "yellow free / free": {
+          "label": "yellow FREE / FREE",
+          "available": true
+        },
+        "green free / free": {
+          "label": "green FREE / FREE",
+          "available": true
+        },
+        "light blue free / free": {
+          "label": "light blue FREE / FREE",
+          "available": true
+        },
+        "brown free / free": {
+          "label": "brown FREE / FREE",
+          "available": true
+        },
+        "light gray free / free": {
+          "label": "light gray FREE / FREE",
+          "available": true
+        },
+        "charcoal free / free": {
+          "label": "charcoal FREE / FREE",
+          "available": true
+        },
+        "選択肢16": {
+          "label": "選択肢16",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "MG0035_58": {
       "productId": "MG0035_58",
@@ -2157,8 +2734,33 @@
       "productName": "run run runタオル",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "light blue s m / s": {
+          "label": "light blue S M / S",
+          "available": false
+        },
+        "light blue s m / m": {
+          "label": "light blue S M / M",
+          "available": false
+        },
+        "pink s m / s": {
+          "label": "pink S M / S",
+          "available": false
+        },
+        "pink s m / m": {
+          "label": "pink S M / M",
+          "available": false
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV1597": {
       "productId": "EV1597",
