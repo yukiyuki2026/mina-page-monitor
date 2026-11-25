@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 70,
+  "detailCursor": 80,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -3115,27 +3115,150 @@
     },
     "AES7339P": {
       "productId": "AES7339P",
-      "productName": "hana haneブランケット",
+      "productName": "hana haneブランケット2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "30 / 2 / blue": {
+          "label": "30 / 2 / blue",
+          "available": true
+        },
+        "30 / 3 / blue": {
+          "label": "30 / 3 / blue",
+          "available": true
+        },
+        "30 / 4 / blue": {
+          "label": "30 / 4 / blue",
+          "available": true
+        },
+        "41 / 2 / pink": {
+          "label": "41 / 2 / pink",
+          "available": true
+        },
+        "41 / 3 / pink": {
+          "label": "41 / 3 / pink",
+          "available": true
+        },
+        "41 / 4 / pink": {
+          "label": "41 / 4 / pink",
+          "available": true
+        },
+        "gray / s / m": {
+          "label": "gray / S / M",
+          "available": false
+        },
+        "60 / 4 / gray": {
+          "label": "60 / 4 / gray",
+          "available": true
+        },
+        "選択肢20": {
+          "label": "選択肢20",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7336P": {
       "productId": "AES7336P",
-      "productName": "light mistおくるみ",
+      "productName": "light mistおくるみ2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "30 / 0 / blue": {
+          "label": "30 / 0 / blue",
+          "available": true
+        },
+        "47 / 0 / light pink": {
+          "label": "47 / 0 / light pink",
+          "available": true
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7322P": {
       "productId": "AES7322P",
-      "productName": "candy flowercherish bag",
+      "productName": "candy flowercherish bag2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "beige / m / l": {
+          "label": "beige / M / L",
+          "available": false
+        },
+        "65 / 3 / charcoal": {
+          "label": "65 / 3 / charcoal",
+          "available": true
+        },
+        "charcoal / m / l": {
+          "label": "charcoal / M / L",
+          "available": false
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES8535P": {
       "productId": "AES8535P",
@@ -3180,19 +3303,81 @@
     },
     "AES7325P": {
       "productId": "AES7325P",
-      "productName": "forest paradegem pochette",
+      "productName": "forest paradegem pochette2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "31 / 0 / light blue": {
+          "label": "31 / 0 / light blue",
+          "available": true
+        },
+        "navy / free": {
+          "label": "navy / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7328P": {
       "productId": "AES7328P",
-      "productName": "minä perhonencopains bag",
+      "productName": "minä perhonencopains bag2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "16 / 0 / orange mix": {
+          "label": "16 / 0 / orange mix",
+          "available": true
+        },
+        "23 / 0 / green mix": {
+          "label": "23 / 0 / green mix",
+          "available": true
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES8521PB": {
       "productId": "AES8521PB",
@@ -3269,11 +3454,52 @@
     },
     "AES7329P": {
       "productId": "AES7329P",
-      "productName": "minä perhonenfamille tote",
+      "productName": "minä perhonenfamille tote2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "16 / 0 / orange mix": {
+          "label": "16 / 0 / orange mix",
+          "available": true
+        },
+        "23 / 0 / green mix": {
+          "label": "23 / 0 / green mix",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7395PS": {
       "productId": "AES7395PS",
@@ -3285,11 +3511,72 @@
     },
     "AES7326P": {
       "productId": "AES7326P",
-      "productName": "minä perhonenkanssa tote",
+      "productName": "minä perhonenkanssa tote2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "16 / 3 / orange mix": {
+          "label": "16 / 3 / orange mix",
+          "available": true
+        },
+        "16 / 4 / orange mix": {
+          "label": "16 / 4 / orange mix",
+          "available": true
+        },
+        "23 / 3 / green mix": {
+          "label": "23 / 3 / green mix",
+          "available": true
+        },
+        "23 / 4 / green mix": {
+          "label": "23 / 4 / green mix",
+          "available": true
+        },
+        "選択肢15": {
+          "label": "選択肢15",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES2079PB": {
       "productId": "AES2079PB",
@@ -3451,11 +3738,32 @@
     },
     "AES7320P": {
       "productId": "AES7320P",
-      "productName": "trollstroll bag",
+      "productName": "trollstroll bag2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "7 / 0 / ivory": {
+          "label": "7 / 0 / ivory",
+          "available": true
+        },
+        "green / free": {
+          "label": "green / FREE",
+          "available": false
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "選択肢5": {
+          "label": "選択肢5",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7379PS": {
       "productId": "AES7379PS",
@@ -3781,11 +4089,44 @@
     },
     "AES7324P": {
       "productId": "AES7324P",
-      "productName": "reflection帽子",
+      "productName": "reflection帽子2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "33 / 2 / blue mix": {
+          "label": "33 / 2 / blue mix",
+          "available": true
+        },
+        "33 / 3 / blue mix": {
+          "label": "33 / 3 / blue mix",
+          "available": true
+        },
+        "70 / 2 / mix": {
+          "label": "70 / 2 / mix",
+          "available": true
+        },
+        "70 / 3 / mix": {
+          "label": "70 / 3 / mix",
+          "available": true
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA2075PB": {
       "productId": "ADA2075PB",
@@ -3842,11 +4183,72 @@
     },
     "AES7330P": {
       "productId": "AES7330P",
-      "productName": "trollkanssa tote",
+      "productName": "trollkanssa tote2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "16 / 3 / orange mix": {
+          "label": "16 / 3 / orange mix",
+          "available": true
+        },
+        "16 / 4 / orange mix": {
+          "label": "16 / 4 / orange mix",
+          "available": true
+        },
+        "23 / 3 / green mix": {
+          "label": "23 / 3 / green mix",
+          "available": true
+        },
+        "23 / 4 / green mix": {
+          "label": "23 / 4 / green mix",
+          "available": true
+        },
+        "選択肢15": {
+          "label": "選択肢15",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA7347PS": {
       "productId": "ADA7347PS",
