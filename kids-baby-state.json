@@ -1,606 +1,1292 @@
 {
   "initialized": true,
-  "detailCursor": 90,
+  "detailCursor": 0,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
       "productName": "tambourineunelma bag",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8538PC": {
       "productId": "AEA8538PC",
       "productName": "söpöニットベスト",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7457PS": {
       "productId": "AEA7457PS",
       "productName": "tambourineparents bag",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7459PS": {
       "productId": "AEA7459PS",
       "productName": "ribbon stickサコッシュ",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES7346PS": {
       "productId": "AES7346PS",
       "productName": "trollソックス",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7460PS": {
       "productId": "AEA7460PS",
       "productName": "Pepper + go!サコッシュ",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7458PS": {
       "productId": "AEA7458PS",
       "productName": "forest tileparents bag",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA2081PB": {
       "productId": "AEA2081PB",
       "productName": "wing treeブルゾン",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7462_63PS": {
       "productId": "AEA7462_63PS",
       "productName": "trollサコッシュ",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7461PS": {
       "productId": "AEA7461PS",
       "productName": "tambourineサコッシュ",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7464PS": {
       "productId": "AEA7464PS",
       "productName": "forest tileサコッシュ",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA3450PC": {
       "productId": "AEA3450PC",
       "productName": "iloドレス",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA3453PB": {
       "productId": "AEA3453PB",
       "productName": "star gardenドレス",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA3452PB": {
       "productId": "AEA3452PB",
       "productName": "wing treeドレス",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA1181PB": {
       "productId": "AEA1181PB",
       "productName": "star gardenブラウス",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7409P": {
       "productId": "AEA7409P",
       "productName": "tuhmaストール",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA6084PB": {
       "productId": "AEA6084PB",
       "productName": "iloコート",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8539PB": {
       "productId": "AEA8539PB",
       "productName": "maataニットカーディガン",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA4153PB": {
       "productId": "AEA4153PB",
       "productName": "tambourineパンツ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA1182PB": {
       "productId": "AEA1182PB",
       "productName": "starryブラウス",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8552PB": {
       "productId": "AEA8552PB",
       "productName": "tuhmaニットプルオーバー",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7405P": {
       "productId": "AEA7405P",
       "productName": "wing treeおくるみ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8549P": {
       "productId": "AEA8549P",
       "productName": "wing treeサロペット",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA5103PB": {
       "productId": "AEA5103PB",
       "productName": "starryスカート",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8550PB": {
       "productId": "AEA8550PB",
       "productName": "wing treeベスト",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8548PB": {
       "productId": "AEA8548PB",
       "productName": "starryカットソーワンピース",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8551PB": {
       "productId": "AEA8551PB",
       "productName": "wing treeパンツ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8547PB": {
       "productId": "AEA8547PB",
       "productName": "starryプルオーバー",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7454_56PS": {
       "productId": "AEA7454_56PS",
       "productName": "ナップサック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7386P": {
       "productId": "AEA7386P",
       "productName": "ilomignon pochette",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7410P": {
       "productId": "AEA7410P",
       "productName": "starryぬいぐるみ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7391P": {
       "productId": "AEA7391P",
       "productName": "tambourinecopains bag",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7404P": {
       "productId": "AEA7404P",
       "productName": "starryおくるみ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7388P": {
       "productId": "AEA7388P",
       "productName": "ilofamille tote",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA2080PB": {
       "productId": "AEA2080PB",
       "productName": "chouchoブルゾン",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA4152PB": {
       "productId": "AEA4152PB",
       "productName": "chouchoパンツ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES7419PS_22PS": {
       "productId": "AES7419PS_22PS",
       "productName": "tambourineフリルバッグ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8543P": {
       "productId": "AEA8543P",
       "productName": "chouchoクルーネックロンパース",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7414P": {
       "productId": "AEA7414P",
       "productName": "duoハイソックス",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8545PB": {
       "productId": "AEA8545PB",
       "productName": "chouchoハイネックカットソー",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7387P": {
       "productId": "AEA7387P",
       "productName": "starrygem pochette",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8544P": {
       "productId": "AEA8544P",
       "productName": "choucho丸襟ロンパース",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7392P": {
       "productId": "AEA7392P",
       "productName": "chouchoスタイ",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7413P": {
       "productId": "AEA7413P",
       "productName": "duoソックス",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8540PB": {
       "productId": "AEA8540PB",
       "productName": "wing treeプルオーバー",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7385P": {
       "productId": "AEA7385P",
       "productName": "sceneryブランケット",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8546PB": {
       "productId": "AEA8546PB",
       "productName": "chouchoギャザースリーブカットソー",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7383P": {
       "productId": "AEA7383P",
       "productName": "hana hane手袋",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7384P": {
       "productId": "AEA7384P",
       "productName": "hana hane帽子",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8541P": {
       "productId": "AEA8541P",
       "productName": "please, thank youロンパース",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7406P": {
       "productId": "AEA7406P",
       "productName": "chouchoお食事スタイ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA8542PB": {
       "productId": "AEA8542PB",
       "productName": "please, thank youカットソー",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AEA7407P_A": {
       "productId": "AEA7407P_A",
       "productName": "please, thank youお食事スタイ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES7339P": {
       "productId": "AES7339P",
       "productName": "hana haneブランケット",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES7336P": {
       "productId": "AES7336P",
       "productName": "light mistおくるみ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES7322P": {
       "productId": "AES7322P",
       "productName": "candy flowercherish bag",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES8535P": {
       "productId": "AES8535P",
-      "productName": "light mistロンパース",
+      "productName": "light mistロンパース2026 s/s",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "30 / 7 / blue": {
+          "label": "30 / 7 / blue",
+          "available": true
+        },
+        "blue / 70 / 80": {
+          "label": "blue / 70 / 80",
+          "available": false
+        },
+        "47 / 7 / light pink": {
+          "label": "47 / 7 / light pink",
+          "available": true
+        },
+        "light pink / 70 / 80": {
+          "label": "light pink / 70 / 80",
+          "available": false
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7377PS": {
       "productId": "AES7377PS",
       "productName": "sea birdsブランケット",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES7325P": {
       "productId": "AES7325P",
       "productName": "forest paradegem pochette",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES7328P": {
       "productId": "AES7328P",
       "productName": "minä perhonencopains bag",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES8521PB": {
       "productId": "AES8521PB",
-      "productName": "shadowカーディガン",
+      "productName": "shadowカーディガン2026 s/s",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "yellow / 90 / 100": {
+          "label": "yellow / 90 / 100",
+          "available": false
+        },
+        "10 / yellow / 90": {
+          "label": "10 / yellow / 90",
+          "available": true
+        },
+        "10 / 11 / yellow": {
+          "label": "10 / 11 / yellow",
+          "available": true
+        },
+        "10 / 12 / yellow": {
+          "label": "10 / 12 / yellow",
+          "available": true
+        },
+        "10 / 13 / yellow": {
+          "label": "10 / 13 / yellow",
+          "available": true
+        },
+        "10 / 16 / yellow": {
+          "label": "10 / 16 / yellow",
+          "available": true
+        },
+        "10 / 17 / yellow": {
+          "label": "10 / 17 / yellow",
+          "available": true
+        },
+        "41 / 9 / pink": {
+          "label": "41 / 9 / pink",
+          "available": true
+        },
+        "41 / 10 / pink": {
+          "label": "41 / 10 / pink",
+          "available": true
+        },
+        "pink / 90 / 100": {
+          "label": "pink / 90 / 100",
+          "available": false
+        },
+        "41 / 12 / pink": {
+          "label": "41 / 12 / pink",
+          "available": true
+        },
+        "41 / 13 / pink": {
+          "label": "41 / 13 / pink",
+          "available": true
+        },
+        "41 / 16 / pink": {
+          "label": "41 / 16 / pink",
+          "available": true
+        },
+        "41 / 17 / pink": {
+          "label": "41 / 17 / pink",
+          "available": true
+        },
+        "選択肢16": {
+          "label": "選択肢16",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7329P": {
       "productId": "AES7329P",
       "productName": "minä perhonenfamille tote",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES7395PS": {
       "productId": "AES7395PS",
       "productName": "paradisポシェット",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES7326P": {
       "productId": "AES7326P",
       "productName": "minä perhonenkanssa tote",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES2079PB": {
       "productId": "AES2079PB",
       "productName": "chouchoブルゾン",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES8531PB": {
       "productId": "AES8531PB",
-      "productName": "chouchoカーディガン",
+      "productName": "chouchoカーディガン2026 s/s",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "31 / 9 / light blue": {
+          "label": "31 / 9 / light blue",
+          "available": true
+        },
+        "31 / 10 / light blue": {
+          "label": "31 / 10 / light blue",
+          "available": true
+        },
+        "31 / 11 / light blue": {
+          "label": "31 / 11 / light blue",
+          "available": true
+        },
+        "31 / 12 / light blue": {
+          "label": "31 / 12 / light blue",
+          "available": true
+        },
+        "31 / 13 / light blue": {
+          "label": "31 / 13 / light blue",
+          "available": true
+        },
+        "31 / 16 / light blue": {
+          "label": "31 / 16 / light blue",
+          "available": true
+        },
+        "31 / 17 / light blue": {
+          "label": "31 / 17 / light blue",
+          "available": true
+        },
+        "light blue / 90 / 100": {
+          "label": "light blue / 90 / 100",
+          "available": false
+        },
+        "navy / 90 / 100": {
+          "label": "navy / 90 / 100",
+          "available": false
+        },
+        "32 / 10 / navy": {
+          "label": "32 / 10 / navy",
+          "available": true
+        },
+        "32 / 11 / navy": {
+          "label": "32 / 11 / navy",
+          "available": true
+        },
+        "32 / 13 / navy": {
+          "label": "32 / 13 / navy",
+          "available": true
+        },
+        "32 / 16 / navy": {
+          "label": "32 / 16 / navy",
+          "available": true
+        },
+        "light pink / 90 / 100": {
+          "label": "light pink / 90 / 100",
+          "available": false
+        },
+        "47 / 11 / light pink": {
+          "label": "47 / 11 / light pink",
+          "available": true
+        },
+        "47 / 12 / light pink": {
+          "label": "47 / 12 / light pink",
+          "available": true
+        },
+        "47 / 16 / light pink": {
+          "label": "47 / 16 / light pink",
+          "available": true
+        },
+        "47 / 17 / light pink": {
+          "label": "47 / 17 / light pink",
+          "available": true
+        },
+        "選択肢28": {
+          "label": "選択肢28",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7363PS": {
       "productId": "AES7363PS",
       "productName": "jellyお食事スタイ",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES7320P": {
       "productId": "AES7320P",
       "productName": "trollstroll bag",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES7379PS": {
       "productId": "AES7379PS",
       "productName": "tambourineブランケット",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES7364PS": {
       "productId": "AES7364PS",
       "productName": "letter of flowerお食事スタイ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES7344P": {
       "productId": "AES7344P",
       "productName": "light mistカチューシャ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES4149PB": {
       "productId": "AES4149PB",
       "productName": "trollパンツ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES8527P": {
       "productId": "AES8527P",
-      "productName": "trollロンパース",
+      "productName": "trollロンパース2026 s/s",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "yellow / 70 / 80": {
+          "label": "yellow / 70 / 80",
+          "available": false
+        },
+        "10 / 8 / yellow": {
+          "label": "10 / 8 / yellow",
+          "available": true
+        },
+        "41 / 7 / pink": {
+          "label": "41 / 7 / pink",
+          "available": true
+        },
+        "41 / 8 / pink": {
+          "label": "41 / 8 / pink",
+          "available": true
+        },
+        "60 / 7 / gray": {
+          "label": "60 / 7 / gray",
+          "available": true
+        },
+        "gray / 70 / 80": {
+          "label": "gray / 70 / 80",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES8532P": {
       "productId": "AES8532P",
-      "productName": "chouchoロンパース",
+      "productName": "chouchoロンパース2026 s/s",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "light blue / 70 / 80": {
+          "label": "light blue / 70 / 80",
+          "available": false
+        },
+        "navy / 70 / 80": {
+          "label": "navy / 70 / 80",
+          "available": false
+        },
+        "light pink / 70 / 80": {
+          "label": "light pink / 70 / 80",
+          "available": false
+        },
+        "47 / 8 / light pink": {
+          "label": "47 / 8 / light pink",
+          "available": true
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES3449PC": {
       "productId": "AES3449PC",
       "productName": "forest paradeドレス",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES8517PBS": {
       "productId": "AES8517PBS",
       "productName": "symphonyブルゾン",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "BP7112P": {
       "productId": "BP7112P",
       "productName": "chouchoボウル",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "0 / white / free": {
+          "label": "0 / white / FREE",
+          "available": true
+        },
+        "6 / 0 / beige": {
+          "label": "6 / 0 / beige",
+          "available": true
+        },
+        "10 / 0 / yellow": {
+          "label": "10 / 0 / yellow",
+          "available": true
+        },
+        "27 / 0 / mint": {
+          "label": "27 / 0 / mint",
+          "available": true
+        },
+        "41 / 0 / pink": {
+          "label": "41 / 0 / pink",
+          "available": true
+        },
+        "選択肢16": {
+          "label": "選択肢16",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES8519PS": {
       "productId": "AES8519PS",
       "productName": "symphonyロンパース",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "33 / 7 / blue mix": {
+          "label": "33 / 7 / blue mix",
+          "available": true
+        },
+        "33 / 8 / blue mix": {
+          "label": "33 / 8 / blue mix",
+          "available": true
+        },
+        "43 / 7 / pink mix": {
+          "label": "43 / 7 / pink mix",
+          "available": true
+        },
+        "43 / 8 / pink mix": {
+          "label": "43 / 8 / pink mix",
+          "available": true
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7324P": {
       "productId": "AES7324P",
       "productName": "reflection帽子",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "ADA2075PB": {
       "productId": "ADA2075PB",
       "productName": "chouchoブルゾン",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES7330P": {
       "productId": "AES7330P",
       "productName": "trollkanssa tote",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "ADA7347PS": {
       "productId": "ADA7347PS",
       "productName": "slow danceparent bag",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES8518PBS": {
       "productId": "AES8518PBS",
       "productName": "symphonyプルオーバー",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "ADA2077PBS": {
       "productId": "ADA2077PBS",
       "productName": "wolf & flowerブルゾン",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "AES2078PB": {
       "productId": "AES2078PB",
       "productName": "trollブルゾン",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "ADA8494PB": {
       "productId": "ADA8494PB",
       "productName": "winter friendプルオーバー -くま-",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "BC2004PC": {
       "productId": "BC2004PC",
-      "productName": "tambourineジャケット",
+      "productName": "tambourineジャケット2025-26 a/w",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "32 / 11 / navy": {
+          "label": "32 / 11 / navy",
+          "available": true
+        },
+        "32 / 12 / navy": {
+          "label": "32 / 12 / navy",
+          "available": true
+        },
+        "32 / 13 / navy": {
+          "label": "32 / 13 / navy",
+          "available": true
+        },
+        "32 / 16 / navy": {
+          "label": "32 / 16 / navy",
+          "available": true
+        },
+        "60 / 11 / gray": {
+          "label": "60 / 11 / gray",
+          "available": true
+        },
+        "60 / 12 / gray": {
+          "label": "60 / 12 / gray",
+          "available": true
+        },
+        "60 / 13 / gray": {
+          "label": "60 / 13 / gray",
+          "available": true
+        },
+        "60 / 16 / gray": {
+          "label": "60 / 16 / gray",
+          "available": true
+        },
+        "選択肢12": {
+          "label": "選択肢12",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "BC3003PC": {
       "productId": "BC3003PC",
-      "productName": "tambourineドレス",
+      "productName": "tambourineドレス2025-26 a/w",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "32 / 11 / navy": {
+          "label": "32 / 11 / navy",
+          "available": true
+        },
+        "32 / 12 / navy": {
+          "label": "32 / 12 / navy",
+          "available": true
+        },
+        "32 / 13 / navy": {
+          "label": "32 / 13 / navy",
+          "available": true
+        },
+        "32 / 16 / navy": {
+          "label": "32 / 16 / navy",
+          "available": true
+        },
+        "navy / 110 / 120": {
+          "label": "navy / 110 / 120",
+          "available": false
+        },
+        "60 / 11 / gray": {
+          "label": "60 / 11 / gray",
+          "available": true
+        },
+        "60 / 12 / gray": {
+          "label": "60 / 12 / gray",
+          "available": true
+        },
+        "gray / 110 / 120": {
+          "label": "gray / 110 / 120",
+          "available": false
+        },
+        "60 / 16 / gray": {
+          "label": "60 / 16 / gray",
+          "available": true
+        },
+        "60 / 17 / gray": {
+          "label": "60 / 17 / gray",
+          "available": true
+        },
+        "選択肢15": {
+          "label": "選択肢15",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "BC2005PC": {
       "productId": "BC2005PC",
-      "productName": "tambourineボレロ",
+      "productName": "tambourineボレロ2025-26 a/w",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "32 / 11 / navy": {
+          "label": "32 / 11 / navy",
+          "available": true
+        },
+        "32 / 12 / navy": {
+          "label": "32 / 12 / navy",
+          "available": true
+        },
+        "32 / 13 / navy": {
+          "label": "32 / 13 / navy",
+          "available": true
+        },
+        "32 / 16 / navy": {
+          "label": "32 / 16 / navy",
+          "available": true
+        },
+        "32 / 17 / navy": {
+          "label": "32 / 17 / navy",
+          "available": true
+        },
+        "60 / 11 / gray": {
+          "label": "60 / 11 / gray",
+          "available": true
+        },
+        "gray / 110 / 120": {
+          "label": "gray / 110 / 120",
+          "available": false
+        },
+        "60 / 16 / gray": {
+          "label": "60 / 16 / gray",
+          "available": true
+        },
+        "60 / 17 / gray": {
+          "label": "60 / 17 / gray",
+          "available": true
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA8495P": {
       "productId": "ADA8495P",
       "productName": "winter friendロンパース -うさぎ-",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "ADA8497PC": {
       "productId": "ADA8497PC",
       "productName": "chouchoカットソーワンピース",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "ADA8496PB": {
       "productId": "ADA8496PB",
       "productName": "winter friendプルオーバー -うさぎ-",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "ADA8507PB": {
       "productId": "ADA8507PB",
       "productName": "chouchoカーディガン",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "ADA8493P": {
       "productId": "ADA8493P",
       "productName": "winter friendロンパース -くま-",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "ADA3444PBS": {
       "productId": "ADA3444PBS",
       "productName": "one dayドレス",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "ADA8516PBS": {
       "productId": "ADA8516PBS",
       "productName": "one dayカットソー",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "ADA2076PB": {
       "productId": "ADA2076PB",
       "productName": "kiviシャツブルゾン",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "ADA5101PC": {
       "productId": "ADA5101PC",
       "productName": "tambourineショートパンツ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "ADA4148PB": {
       "productId": "ADA4148PB",
       "productName": "tambourineパンツ",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     },
     "ADA8501PB": {
       "productId": "ADA8501PB",
       "productName": "happy bloomカットソーワンピース",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     }
   }
 }
