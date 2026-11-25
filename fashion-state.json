@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 70,
+  "detailCursor": 80,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -564,11 +564,28 @@
     },
     "AEA9501": {
       "productId": "AEA9501",
-      "productName": "knollretki",
+      "productName": "knollretki2026-27 a/w",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "green / free": {
+          "label": "green / FREE",
+          "available": false
+        },
+        "navy / free": {
+          "label": "navy / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA2469S": {
       "productId": "AEA2469S",
@@ -895,11 +912,32 @@
     },
     "AEA9523": {
       "productId": "AEA9523",
-      "productName": "tambourinepocket bag",
+      "productName": "tambourinepocket bag2026-27 a/w",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "pink beige / free": {
+          "label": "pink beige / FREE",
+          "available": false
+        },
+        "navy / free": {
+          "label": "navy / FREE",
+          "available": false
+        },
+        "blue green / free": {
+          "label": "blue green / FREE",
+          "available": false
+        },
+        "選択肢5": {
+          "label": "選択肢5",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA1472": {
       "productId": "AEA1472",
@@ -1034,11 +1072,64 @@
     },
     "AEA9517": {
       "productId": "AEA9517",
-      "productName": "ilomuffin bag",
+      "productName": "ilomuffin bag2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "32 / 2 / navy": {
+          "label": "32 / 2 / navy",
+          "available": true
+        },
+        "blue gray / s": {
+          "label": "blue gray / S",
+          "available": false
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9532": {
       "productId": "AEA9532",
@@ -1116,11 +1207,40 @@
     },
     "AEA9500": {
       "productId": "AEA9500",
-      "productName": "please, thank youバッグ",
+      "productName": "please, thank youバッグ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "0 / white / free": {
+          "label": "0 / white / FREE",
+          "available": true
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA2468S": {
       "productId": "AEA2468S",
@@ -1320,11 +1440,44 @@
     },
     "AEA8124": {
       "productId": "AEA8124",
-      "productName": "wind landニットプルオーバー",
+      "productName": "wind landニットプルオーバー2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "0 / 83 / white": {
+          "label": "0 / 83 / white",
+          "available": true
+        },
+        "0 / 8a / white": {
+          "label": "0 / 8A / white",
+          "available": true
+        },
+        "1 / 83 / light beige": {
+          "label": "1 / 83 / light beige",
+          "available": true
+        },
+        "1 / 8a / light beige": {
+          "label": "1 / 8A / light beige",
+          "available": true
+        },
+        "98 / 83 / black": {
+          "label": "98 / 83 / black",
+          "available": true
+        },
+        "black / 36-38 / 40-42": {
+          "label": "black / 36-38 / 40-42",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA6838": {
       "productId": "AEA6838",
@@ -1667,11 +1820,104 @@
     },
     "AEA9512": {
       "productId": "AEA9512",
-      "productName": "loopバッグ",
+      "productName": "loopバッグ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "32 / 2 / navy": {
+          "label": "32 / 2 / navy",
+          "available": true
+        },
+        "32 / 3 / navy": {
+          "label": "32 / 3 / navy",
+          "available": true
+        },
+        "32 / 4 / navy": {
+          "label": "32 / 4 / navy",
+          "available": true
+        },
+        "47 / 2 / light pink": {
+          "label": "47 / 2 / light pink",
+          "available": true
+        },
+        "47 / 3 / light pink": {
+          "label": "47 / 3 / light pink",
+          "available": true
+        },
+        "47 / 4 / light pink": {
+          "label": "47 / 4 / light pink",
+          "available": true
+        },
+        "50 / 2 / brown": {
+          "label": "50 / 2 / brown",
+          "available": true
+        },
+        "brown / s / m": {
+          "label": "brown / S / M",
+          "available": false
+        },
+        "50 / 4 / brown": {
+          "label": "50 / 4 / brown",
+          "available": true
+        },
+        "59 / 2 / green gray": {
+          "label": "59 / 2 / green gray",
+          "available": true
+        },
+        "59 / 3 / green gray": {
+          "label": "59 / 3 / green gray",
+          "available": true
+        },
+        "59 / 4 / green gray": {
+          "label": "59 / 4 / green gray",
+          "available": true
+        },
+        "選択肢23": {
+          "label": "選択肢23",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA4671": {
       "productId": "AEA4671",
@@ -2859,11 +3105,72 @@
     },
     "AEA9515": {
       "productId": "AEA9515",
-      "productName": "kidemuffin bag",
+      "productName": "kidemuffin bag2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "10 / 2 / yellow": {
+          "label": "10 / 2 / yellow",
+          "available": true
+        },
+        "green / s": {
+          "label": "green / S",
+          "available": false
+        },
+        "32 / 2 / navy": {
+          "label": "32 / 2 / navy",
+          "available": true
+        },
+        "black / s": {
+          "label": "black / S",
+          "available": false
+        },
+        "選択肢15": {
+          "label": "選択肢15",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA1467": {
       "productId": "AEA1467",
@@ -2957,11 +3264,24 @@
     },
     "AEA9494": {
       "productId": "AEA9494",
-      "productName": "tori bag",
+      "productName": "tori bag2026-27 a/w",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "black / free": {
+          "label": "black / FREE",
+          "available": false
+        },
+        "選択肢3": {
+          "label": "選択肢3",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA5455": {
       "productId": "AEA5455",
@@ -3153,11 +3473,64 @@
     },
     "AEA9524": {
       "productId": "AEA9524",
-      "productName": "kideショルダーバッグ",
+      "productName": "kideショルダーバッグ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "yellow / s / l": {
+          "label": "yellow / S / L",
+          "available": false
+        },
+        "green / s / l": {
+          "label": "green / S / L",
+          "available": false
+        },
+        "navy / s / l": {
+          "label": "navy / S / L",
+          "available": false
+        },
+        "32 / 4 / navy": {
+          "label": "32 / 4 / navy",
+          "available": true
+        },
+        "black / s / l": {
+          "label": "black / S / L",
+          "available": false
+        },
+        "選択肢16": {
+          "label": "選択肢16",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA4679S": {
       "productId": "AEA4679S",
@@ -3508,11 +3881,56 @@
     },
     "AEA9521": {
       "productId": "AEA9521",
-      "productName": "kidepocket bag",
+      "productName": "kidepocket bag2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "10 / 0 / yellow": {
+          "label": "10 / 0 / yellow",
+          "available": true
+        },
+        "20 / 0 / green": {
+          "label": "20 / 0 / green",
+          "available": true
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "98 / 0 / black": {
+          "label": "98 / 0 / black",
+          "available": true
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA1482S": {
       "productId": "AEA1482S",
