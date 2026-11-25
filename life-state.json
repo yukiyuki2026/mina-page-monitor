@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 80,
+  "detailCursor": 90,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -343,8 +343,33 @@
       "productName": "surplusbolo 時計",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "blue mix free / free": {
+          "label": "blue mix FREE / FREE",
+          "available": true
+        },
+        "pink mix free / free": {
+          "label": "pink mix FREE / FREE",
+          "available": true
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV2170": {
       "productId": "EV2170",
@@ -726,16 +751,74 @@
       "productName": "soda waterタオル",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "white s m / s": {
+          "label": "white S M / S",
+          "available": true
+        },
+        "white s m / m": {
+          "label": "white S M / M",
+          "available": false
+        },
+        "gray s m / s": {
+          "label": "gray S M / S",
+          "available": false
+        },
+        "gray s m / m": {
+          "label": "gray S M / M",
+          "available": false
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "TL1009_10": {
       "productId": "TL1009_10",
       "productName": "hana haneタオル",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "light blue s m / s": {
+          "label": "light blue S M / S",
+          "available": false
+        },
+        "light blue s m / m": {
+          "label": "light blue S M / M",
+          "available": false
+        },
+        "brown s m / s": {
+          "label": "brown S M / S",
+          "available": true
+        },
+        "brown s m / m": {
+          "label": "brown S M / M",
+          "available": false
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7905": {
       "productId": "AEA7905",
@@ -1409,8 +1492,65 @@
       "productName": "ポストカードセット「日曜に想う」挿画",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "c set / set": {
+          "label": "C SET / SET",
+          "available": true
+        },
+        "d set / set": {
+          "label": "D SET / SET",
+          "available": true
+        },
+        "e set / set": {
+          "label": "E SET / SET",
+          "available": true
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "BK0108": {
       "productId": "BK0108",
@@ -1490,8 +1630,21 @@
       "productName": "imagineポスター",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "other free / free": {
+          "label": "other FREE / FREE",
+          "available": false
+        },
+        "選択肢3": {
+          "label": "選択肢3",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV2030_31": {
       "productId": "EV2030_31",
@@ -1612,24 +1765,211 @@
       "productName": "手拭",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "rain chukka blue free / free": {
+          "label": "rain chukka blue FREE / FREE",
+          "available": false
+        },
+        "rain chukka pink free / free": {
+          "label": "rain chukka pink FREE / FREE",
+          "available": false
+        },
+        "hana hane yellow free / free": {
+          "label": "hana hane yellow FREE / FREE",
+          "available": false
+        },
+        "hana hane light pink free / free": {
+          "label": "hana hane light pink FREE / FREE",
+          "available": false
+        },
+        "hana hane navy free / free": {
+          "label": "hana hane navy FREE / FREE",
+          "available": false
+        },
+        "hana hane light blue free / free": {
+          "label": "hana hane light blue FREE / FREE",
+          "available": false
+        },
+        "hana hane green free / free": {
+          "label": "hana hane green FREE / FREE",
+          "available": false
+        },
+        "look blue free / free": {
+          "label": "look blue FREE / FREE",
+          "available": false
+        },
+        "sora check white free / free": {
+          "label": "sora check white FREE / FREE",
+          "available": false
+        },
+        "sora check mustard free / free": {
+          "label": "sora check mustard FREE / FREE",
+          "available": false
+        },
+        "sora check green free / free": {
+          "label": "sora check green FREE / FREE",
+          "available": false
+        },
+        "sora check light blue free / free": {
+          "label": "sora check light blue FREE / FREE",
+          "available": false
+        },
+        "sora check light pink free / free": {
+          "label": "sora check light pink FREE / FREE",
+          "available": false
+        },
+        "anone-anone white free / free": {
+          "label": "anone-anone white FREE / FREE",
+          "available": false
+        },
+        "anone-anone light blue free / free": {
+          "label": "anone-anone light blue FREE / FREE",
+          "available": false
+        },
+        "選択肢17": {
+          "label": "選択肢17",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "TE0719_B": {
       "productId": "TE0719_B",
       "productName": "手拭",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "run run run blue free / free": {
+          "label": "run run run blue FREE / FREE",
+          "available": false
+        },
+        "run run run yellow free / free": {
+          "label": "run run run yellow FREE / FREE",
+          "available": false
+        },
+        "run run run mint free / free": {
+          "label": "run run run mint FREE / FREE",
+          "available": false
+        },
+        "run run run light pink free / free": {
+          "label": "run run run light pink FREE / FREE",
+          "available": false
+        },
+        "run run run ivory free / free": {
+          "label": "run run run ivory FREE / FREE",
+          "available": false
+        },
+        "pomme yellow mix free / free": {
+          "label": "pomme yellow mix FREE / FREE",
+          "available": false
+        },
+        "umi navy free / free": {
+          "label": "umi navy FREE / FREE",
+          "available": true
+        },
+        "umi gray free / free": {
+          "label": "umi gray FREE / FREE",
+          "available": true
+        },
+        "one day white free / free": {
+          "label": "one day white FREE / FREE",
+          "available": false
+        },
+        "one day light gray free / free": {
+          "label": "one day light gray FREE / FREE",
+          "available": false
+        },
+        "hütte green free / free": {
+          "label": "hütte green FREE / FREE",
+          "available": false
+        },
+        "hütte blue free / free": {
+          "label": "hütte blue FREE / FREE",
+          "available": false
+        },
+        "hütte gray free / free": {
+          "label": "hütte gray FREE / FREE",
+          "available": false
+        },
+        "hütte black free / free": {
+          "label": "hütte black FREE / FREE",
+          "available": true
+        },
+        "選択肢25": {
+          "label": "選択肢25",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "TE0017_A": {
       "productId": "TE0017_A",
       "productName": "jellybeans手拭",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "jellybeans mix 小 大 / 小": {
+          "label": "jellybeans mix 小 大 / 小",
+          "available": false
+        },
+        "jellybeans mix 小 大 / 大": {
+          "label": "jellybeans mix 小 大 / 大",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "RG0019": {
       "productId": "RG0019",
@@ -1686,8 +2026,65 @@
       "productName": "tambourine143mm タイル",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "white 1 piece 10 pieces / 1 piece": {
+          "label": "white 1 PIECE 10 PIECES / 1 PIECE",
+          "available": true
+        },
+        "white 1 piece 10 pieces / 10 pieces": {
+          "label": "white 1 PIECE 10 PIECES / 10 PIECES",
+          "available": false
+        },
+        "pink beige 1 piece 10 pieces / 1 piece": {
+          "label": "pink beige 1 PIECE 10 PIECES / 1 PIECE",
+          "available": true
+        },
+        "pink beige 1 piece 10 pieces / 10 pieces": {
+          "label": "pink beige 1 PIECE 10 PIECES / 10 PIECES",
+          "available": true
+        },
+        "moss green 1 piece 10 pieces / 1 piece": {
+          "label": "moss green 1 PIECE 10 PIECES / 1 PIECE",
+          "available": true
+        },
+        "moss green 1 piece 10 pieces / 10 pieces": {
+          "label": "moss green 1 PIECE 10 PIECES / 10 PIECES",
+          "available": true
+        },
+        "camel 1 piece 10 pieces / 1 piece": {
+          "label": "camel 1 PIECE 10 PIECES / 1 PIECE",
+          "available": true
+        },
+        "camel 1 piece 10 pieces / 10 pieces": {
+          "label": "camel 1 PIECE 10 PIECES / 10 PIECES",
+          "available": true
+        },
+        "dark gray 1 piece 10 pieces / 1 piece": {
+          "label": "dark gray 1 PIECE 10 PIECES / 1 PIECE",
+          "available": true
+        },
+        "dark gray 1 piece 10 pieces / 10 pieces": {
+          "label": "dark gray 1 PIECE 10 PIECES / 10 PIECES",
+          "available": false
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA7743": {
       "productId": "ADA7743",
@@ -1710,8 +2107,25 @@
       "productName": "light berrybolo 時計",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "ecru free / free": {
+          "label": "ecru FREE / FREE",
+          "available": false
+        },
+        "smoky green free / free": {
+          "label": "smoky green FREE / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "SC0152": {
       "productId": "SC0152",
