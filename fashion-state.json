@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 30,
+  "detailCursor": 40,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -403,8 +403,25 @@
       "productName": "tambourineパンツ",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "green / 36 / 38": {
+          "label": "green / 36 / 38",
+          "available": false
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9501": {
       "productId": "AEA9501",
@@ -461,11 +478,52 @@
     },
     "AEA5460": {
       "productId": "AEA5460",
-      "productName": "star gardenタックスカート",
+      "productName": "star gardenタックスカート2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "0 / 36 / white": {
+          "label": "0 / 36 / white",
+          "available": true
+        },
+        "0 / 38 / white": {
+          "label": "0 / 38 / white",
+          "available": true
+        },
+        "0 / 40 / white": {
+          "label": "0 / 40 / white",
+          "available": true
+        },
+        "27 / 36 / mint": {
+          "label": "27 / 36 / mint",
+          "available": true
+        },
+        "27 / 38 / mint": {
+          "label": "27 / 38 / mint",
+          "available": true
+        },
+        "27 / 40 / mint": {
+          "label": "27 / 40 / mint",
+          "available": true
+        },
+        "charcoal / 36 / 38": {
+          "label": "charcoal / 36 / 38",
+          "available": false
+        },
+        "選択肢12": {
+          "label": "選択肢12",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA2460": {
       "productId": "AEA2460",
@@ -676,8 +734,33 @@
       "productName": "rosyスカート",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "green / 36 / 38": {
+          "label": "green / 36 / 38",
+          "available": false
+        },
+        "navy / 36 / 38": {
+          "label": "navy / 36 / 38",
+          "available": false
+        },
+        "brown / 36 / 38": {
+          "label": "brown / 36 / 38",
+          "available": false
+        },
+        "50 / 38 / brown": {
+          "label": "50 / 38 / brown",
+          "available": true
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA3301S": {
       "productId": "AEA3301S",
@@ -1096,11 +1179,64 @@
     },
     "AEA5458": {
       "productId": "AEA5458",
-      "productName": "starryスカート",
+      "productName": "starryスカート2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "ivory / 36 / 38": {
+          "label": "ivory / 36 / 38",
+          "available": false
+        },
+        "7 / 40 / ivory": {
+          "label": "7 / 40 / ivory",
+          "available": true
+        },
+        "20 / 36 / green": {
+          "label": "20 / 36 / green",
+          "available": true
+        },
+        "20 / 38 / green": {
+          "label": "20 / 38 / green",
+          "available": true
+        },
+        "20 / 40 / green": {
+          "label": "20 / 40 / green",
+          "available": true
+        },
+        "60 / 36 / gray": {
+          "label": "60 / 36 / gray",
+          "available": true
+        },
+        "60 / 38 / gray": {
+          "label": "60 / 38 / gray",
+          "available": true
+        },
+        "60 / 40 / gray": {
+          "label": "60 / 40 / gray",
+          "available": true
+        },
+        "98 / 36 / black": {
+          "label": "98 / 36 / black",
+          "available": true
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "選択肢15": {
+          "label": "選択肢15",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7897": {
       "productId": "AEA7897",
@@ -1112,11 +1248,48 @@
     },
     "AEA5461": {
       "productId": "AEA5461",
-      "productName": "deep waveスカート",
+      "productName": "deep waveスカート2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "65 / 36 / charcoal": {
+          "label": "65 / 36 / charcoal",
+          "available": true
+        },
+        "65 / 38 / charcoal": {
+          "label": "65 / 38 / charcoal",
+          "available": true
+        },
+        "65 / 40 / charcoal": {
+          "label": "65 / 40 / charcoal",
+          "available": true
+        },
+        "98 / 36 / black": {
+          "label": "98 / 36 / black",
+          "available": true
+        },
+        "98 / 38 / black": {
+          "label": "98 / 38 / black",
+          "available": true
+        },
+        "98 / 40 / black": {
+          "label": "98 / 40 / black",
+          "available": true
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8098": {
       "productId": "AEA8098",
@@ -1224,8 +1397,89 @@
       "productName": "harborクロップドパンツ",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "0 / 2 / white": {
+          "label": "0 / 2 / white",
+          "available": true
+        },
+        "0 / 3 / white": {
+          "label": "0 / 3 / white",
+          "available": true
+        },
+        "0 / 4 / white": {
+          "label": "0 / 4 / white",
+          "available": true
+        },
+        "6 / 2 / beige": {
+          "label": "6 / 2 / beige",
+          "available": true
+        },
+        "6 / 3 / beige": {
+          "label": "6 / 3 / beige",
+          "available": true
+        },
+        "6 / 4 / beige": {
+          "label": "6 / 4 / beige",
+          "available": true
+        },
+        "22 / 2 / moss green": {
+          "label": "22 / 2 / moss green",
+          "available": true
+        },
+        "22 / 3 / moss green": {
+          "label": "22 / 3 / moss green",
+          "available": true
+        },
+        "22 / 4 / moss green": {
+          "label": "22 / 4 / moss green",
+          "available": true
+        },
+        "khaki / s / m": {
+          "label": "khaki / S / M",
+          "available": false
+        },
+        "32 / 2 / navy": {
+          "label": "32 / 2 / navy",
+          "available": true
+        },
+        "32 / 3 / navy": {
+          "label": "32 / 3 / navy",
+          "available": true
+        },
+        "32 / 4 / navy": {
+          "label": "32 / 4 / navy",
+          "available": true
+        },
+        "98 / 2 / black": {
+          "label": "98 / 2 / black",
+          "available": true
+        },
+        "98 / 3 / black": {
+          "label": "98 / 3 / black",
+          "available": true
+        },
+        "98 / 4 / black": {
+          "label": "98 / 4 / black",
+          "available": true
+        },
+        "選択肢22": {
+          "label": "選択肢22",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA2452": {
       "productId": "AEA2452",
@@ -1413,7 +1667,7 @@
     "AEA7902": {
       "productId": "AEA7902",
       "productName": "kääriäストール",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "variations": {},
       "variationsInitialized": false
@@ -1423,8 +1677,109 @@
       "productName": "harborテーパードパンツ",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "0 / 2 / white": {
+          "label": "0 / 2 / white",
+          "available": true
+        },
+        "0 / 3 / white": {
+          "label": "0 / 3 / white",
+          "available": true
+        },
+        "0 / 4 / white": {
+          "label": "0 / 4 / white",
+          "available": true
+        },
+        "0 / 5 / white": {
+          "label": "0 / 5 / white",
+          "available": true
+        },
+        "6 / 2 / beige": {
+          "label": "6 / 2 / beige",
+          "available": true
+        },
+        "6 / 3 / beige": {
+          "label": "6 / 3 / beige",
+          "available": true
+        },
+        "6 / 4 / beige": {
+          "label": "6 / 4 / beige",
+          "available": true
+        },
+        "6 / 5 / beige": {
+          "label": "6 / 5 / beige",
+          "available": true
+        },
+        "22 / 2 / moss green": {
+          "label": "22 / 2 / moss green",
+          "available": true
+        },
+        "22 / 3 / moss green": {
+          "label": "22 / 3 / moss green",
+          "available": true
+        },
+        "22 / 4 / moss green": {
+          "label": "22 / 4 / moss green",
+          "available": true
+        },
+        "22 / 5 / moss green": {
+          "label": "22 / 5 / moss green",
+          "available": true
+        },
+        "khaki / s / m": {
+          "label": "khaki / S / M",
+          "available": false
+        },
+        "25 / 3 / khaki": {
+          "label": "25 / 3 / khaki",
+          "available": true
+        },
+        "25 / 5 / khaki": {
+          "label": "25 / 5 / khaki",
+          "available": true
+        },
+        "32 / 2 / navy": {
+          "label": "32 / 2 / navy",
+          "available": true
+        },
+        "navy / s / m": {
+          "label": "navy / S / M",
+          "available": false
+        },
+        "98 / 2 / black": {
+          "label": "98 / 2 / black",
+          "available": true
+        },
+        "98 / 3 / black": {
+          "label": "98 / 3 / black",
+          "available": true
+        },
+        "98 / 4 / black": {
+          "label": "98 / 4 / black",
+          "available": true
+        },
+        "98 / 5 / black": {
+          "label": "98 / 5 / black",
+          "available": true
+        },
+        "選択肢28": {
+          "label": "選択肢28",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9515": {
       "productId": "AEA9515",
@@ -1517,11 +1872,52 @@
     },
     "AEA5455": {
       "productId": "AEA5455",
-      "productName": "floretスカート",
+      "productName": "floretスカート2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "28 / 36 / dark green": {
+          "label": "28 / 36 / dark green",
+          "available": true
+        },
+        "28 / 38 / dark green": {
+          "label": "28 / 38 / dark green",
+          "available": true
+        },
+        "28 / 40 / dark green": {
+          "label": "28 / 40 / dark green",
+          "available": true
+        },
+        "98 / 36 / black": {
+          "label": "98 / 36 / black",
+          "available": true
+        },
+        "98 / 38 / black": {
+          "label": "98 / 38 / black",
+          "available": true
+        },
+        "98 / 40 / black": {
+          "label": "98 / 40 / black",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA2457": {
       "productId": "AEA2457",
@@ -2079,8 +2475,57 @@
       "productName": "glanzコンビネゾン",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "22 / 36 / moss green": {
+          "label": "22 / 36 / moss green",
+          "available": true
+        },
+        "22 / 38 / moss green": {
+          "label": "22 / 38 / moss green",
+          "available": true
+        },
+        "22 / 40 / moss green": {
+          "label": "22 / 40 / moss green",
+          "available": true
+        },
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "61 / 36 / light gray": {
+          "label": "61 / 36 / light gray",
+          "available": true
+        },
+        "61 / 38 / light gray": {
+          "label": "61 / 38 / light gray",
+          "available": true
+        },
+        "61 / 40 / light gray": {
+          "label": "61 / 40 / light gray",
+          "available": true
+        },
+        "選択肢12": {
+          "label": "選択肢12",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA1484S": {
       "productId": "AEA1484S",
@@ -2296,11 +2741,52 @@
     },
     "AEA6835": {
       "productId": "AEA6835",
-      "productName": "aubeコート",
+      "productName": "aubeコート2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "30 / 36 / blue": {
+          "label": "30 / 36 / blue",
+          "available": true
+        },
+        "blue / 36 / 38": {
+          "label": "blue / 36 / 38",
+          "available": false
+        },
+        "30 / 40 / blue": {
+          "label": "30 / 40 / blue",
+          "available": true
+        },
+        "gray / 36 / 38": {
+          "label": "gray / 36 / 38",
+          "available": false
+        },
+        "60 / 38 / gray": {
+          "label": "60 / 38 / gray",
+          "available": true
+        },
+        "60 / 40 / gray": {
+          "label": "60 / 40 / gray",
+          "available": true
+        },
+        "98 / 36 / black": {
+          "label": "98 / 36 / black",
+          "available": true
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9528": {
       "productId": "AEA9528",
