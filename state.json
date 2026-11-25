@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 70,
+  "detailCursor": 80,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -103,8 +103,49 @@
       "productName": "tambourineファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "clear white|155": {
+          "color": "clear white",
+          "width": "155",
+          "available": true
+        },
+        "natural white|155": {
+          "color": "natural white",
+          "width": "155",
+          "available": false
+        },
+        "light beige|155": {
+          "color": "light beige",
+          "width": "155",
+          "available": false
+        },
+        "ecru|155": {
+          "color": "ecru",
+          "width": "155",
+          "available": false
+        },
+        "light yellow|155": {
+          "color": "light yellow",
+          "width": "155",
+          "available": true
+        },
+        "mint|155": {
+          "color": "mint",
+          "width": "155",
+          "available": true
+        },
+        "light gray|155": {
+          "color": "light gray",
+          "width": "155",
+          "available": true
+        },
+        "sand beige|155": {
+          "color": "sand beige",
+          "width": "155",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0595BPGL": {
       "productId": "FC0595BPGL",
@@ -151,8 +192,24 @@
       "productName": "anone-anoneファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "light blue|152": {
+          "color": "light blue",
+          "width": "152",
+          "available": true
+        },
+        "light pink|152": {
+          "color": "light pink",
+          "width": "152",
+          "available": true
+        },
+        "black|152": {
+          "color": "black",
+          "width": "152",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0597LGB": {
       "productId": "FC0597LGB",
@@ -167,56 +224,163 @@
       "productName": "thoroughbredファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "light beige|147": {
+          "color": "light beige",
+          "width": "147",
+          "available": false
+        },
+        "mustard|147": {
+          "color": "mustard",
+          "width": "147",
+          "available": true
+        },
+        "navy|147": {
+          "color": "navy",
+          "width": "147",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0590WMNC": {
       "productId": "FC0590WMNC",
       "productName": "feather danceファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|154": {
+          "color": "white",
+          "width": "154",
+          "available": true
+        },
+        "mint|154": {
+          "color": "mint",
+          "width": "154",
+          "available": true
+        },
+        "charcoal|154": {
+          "color": "charcoal",
+          "width": "154",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0579EMBN": {
       "productId": "FC0579EMBN",
       "productName": "symphonyファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "ecru|143": {
+          "color": "ecru",
+          "width": "143",
+          "available": false
+        },
+        "mustard|143": {
+          "color": "mustard",
+          "width": "143",
+          "available": false
+        },
+        "light blue|143": {
+          "color": "light blue",
+          "width": "143",
+          "available": true
+        },
+        "navy|143": {
+          "color": "navy",
+          "width": "143",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0589": {
       "productId": "FC0589",
       "productName": "sora check ファブリック 柄 large",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "green|151": {
+          "color": "green",
+          "width": "151",
+          "available": true
+        },
+        "navy|151": {
+          "color": "navy",
+          "width": "151",
+          "available": true
+        },
+        "black|151": {
+          "color": "black",
+          "width": "151",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0582TWGM": {
       "productId": "FC0582TWGM",
       "productName": "tambourineファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|147": {
+          "color": "white",
+          "width": "147",
+          "available": false
+        },
+        "gray|147": {
+          "color": "gray",
+          "width": "147",
+          "available": false
+        },
+        "mix|147": {
+          "color": "mix",
+          "width": "147",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0588BBNW": {
       "productId": "FC0588BBNW",
       "productName": "rosyファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "navy|150": {
+          "color": "navy",
+          "width": "150",
+          "available": false
+        },
+        "brown|150": {
+          "color": "brown",
+          "width": "150",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0580": {
       "productId": "FC0580",
       "productName": "one dayファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "beige|153": {
+          "color": "beige",
+          "width": "153",
+          "available": true
+        },
+        "light green|153": {
+          "color": "light green",
+          "width": "153",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0593YGB": {
       "productId": "FC0593YGB",
@@ -239,8 +403,29 @@
       "productName": "following dayファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|142": {
+          "color": "white",
+          "width": "142",
+          "available": true
+        },
+        "light blue|142": {
+          "color": "light blue",
+          "width": "142",
+          "available": true
+        },
+        "navy|142": {
+          "color": "navy",
+          "width": "142",
+          "available": false
+        },
+        "gray|142": {
+          "color": "gray",
+          "width": "142",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0578BBDN": {
       "productId": "FC0578BBDN",
