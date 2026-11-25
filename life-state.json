@@ -1,14 +1,27 @@
 {
   "initialized": true,
-  "detailCursor": 70,
+  "detailCursor": 80,
   "products": {
     "MG0065": {
       "productId": "MG0065",
       "productName": "LANTERN BOTTLEthermo mug",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "life puzzle navy free / free": {
+          "label": "life puzzle navy FREE / FREE",
+          "available": true
+        },
+        "選択肢3": {
+          "label": "選択肢3",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV1975A": {
       "productId": "EV1975A",
@@ -77,8 +90,25 @@
       "productName": "MINI TANKthermo mug",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "run run run blue free / free": {
+          "label": "run run run blue FREE / FREE",
+          "available": false
+        },
+        "symphony white free / free": {
+          "label": "symphony white FREE / FREE",
+          "available": true
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "MG0052_54": {
       "productId": "MG0052_54",
@@ -232,8 +262,65 @@
       "productName": "planetオーナメント",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "fogland yellow free / free": {
+          "label": "fogland yellow FREE / FREE",
+          "available": false
+        },
+        "flower fog yellow free / free": {
+          "label": "flower fog yellow FREE / FREE",
+          "available": false
+        },
+        "cheerful mustard free / free": {
+          "label": "cheerful mustard FREE / FREE",
+          "available": false
+        },
+        "cheerful light beige free / free": {
+          "label": "cheerful light beige FREE / FREE",
+          "available": false
+        },
+        "metsä green free / free": {
+          "label": "metsä green FREE / FREE",
+          "available": false
+        },
+        "minä perhonen tartan blue free / free": {
+          "label": "minä perhonen tartan blue FREE / FREE",
+          "available": false
+        },
+        "jardin red free / free": {
+          "label": "jardin red FREE / FREE",
+          "available": false
+        },
+        "tambourine bordeaux free / free": {
+          "label": "tambourine bordeaux FREE / FREE",
+          "available": false
+        },
+        "moss tile red free / free": {
+          "label": "moss tile red FREE / FREE",
+          "available": false
+        },
+        "sing leaf green free / free": {
+          "label": "sing leaf green FREE / FREE",
+          "available": false
+        },
+        "voix green gray free / free": {
+          "label": "voix green gray FREE / FREE",
+          "available": false
+        },
+        "happy bloom dark green free / free": {
+          "label": "happy bloom dark green FREE / FREE",
+          "available": false
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7914": {
       "productId": "AEA7914",
@@ -494,19 +581,121 @@
     },
     "MP0034": {
       "productId": "MP0034",
-      "productName": "tambourinesewing machine",
+      "productName": "tambourinesewing machinepreorder",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "dark green free / free": {
+          "label": "dark green FREE / FREE",
+          "available": true
+        },
+        "選択肢12": {
+          "label": "選択肢12",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "MP0035": {
       "productId": "MP0035",
-      "productName": "SWING BIN",
+      "productName": "SWING BIN＜MOHEIM＞",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "green s m / s": {
+          "label": "green S M / S",
+          "available": true
+        },
+        "green s m / m": {
+          "label": "green S M / M",
+          "available": true
+        },
+        "gray s m / s": {
+          "label": "gray S M / S",
+          "available": true
+        },
+        "gray s m / m": {
+          "label": "gray S M / M",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8006WB": {
       "productId": "AEA8006WB",
@@ -972,11 +1161,68 @@
     },
     "PAS0002": {
       "productId": "PAS0002",
-      "productName": "STUGRUTAキッチンタオル",
+      "productName": "STUGRUTAキッチンタオル＜Åsa Pärson Textile Studio＞",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "green free / free": {
+          "label": "green FREE / FREE",
+          "available": true
+        },
+        "blue free / free": {
+          "label": "blue FREE / FREE",
+          "available": true
+        },
+        "pink free / free": {
+          "label": "pink FREE / FREE",
+          "available": true
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV1647": {
       "productId": "EV1647",
@@ -1095,11 +1341,68 @@
     },
     "PAS0001": {
       "productId": "PAS0001",
-      "productName": "TORPRUTAナプキン",
+      "productName": "TORPRUTAナプキン＜Åsa Pärson Textile Studio＞",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "green free / free": {
+          "label": "green FREE / FREE",
+          "available": true
+        },
+        "blue free / free": {
+          "label": "blue FREE / FREE",
+          "available": true
+        },
+        "pink free / free": {
+          "label": "pink FREE / FREE",
+          "available": true
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "SP0310_12": {
       "productId": "SP0310_12",
@@ -1333,8 +1636,21 @@
       "productName": "zephyrラグ",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "ivory free / free": {
+          "label": "ivory FREE / FREE",
+          "available": false
+        },
+        "選択肢3": {
+          "label": "選択肢3",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA7747": {
       "productId": "ADA7747",
@@ -1349,8 +1665,21 @@
       "productName": "courageラグ",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "pink beige free / free": {
+          "label": "pink beige FREE / FREE",
+          "available": true
+        },
+        "選択肢3": {
+          "label": "選択肢3",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "TI0039": {
       "productId": "TI0039",
@@ -1389,8 +1718,25 @@
       "productName": "choucho × light berrybolo 時計",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "green mix free / free": {
+          "label": "green mix FREE / FREE",
+          "available": false
+        },
+        "mix free / free": {
+          "label": "mix FREE / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "TL7756A_7A": {
       "productId": "TL7756A_7A",
