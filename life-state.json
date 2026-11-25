@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -53,11 +53,24 @@
     },
     "HN0064_A": {
       "productId": "HN0064_A",
-      "productName": "darning kit",
+      "productName": "darning kit＜hikaru noguchi＞",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "other free / free": {
+          "label": "other FREE / FREE",
+          "available": false
+        },
+        "選択肢3": {
+          "label": "選択肢3",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "MG0067_71": {
       "productId": "MG0067_71",
@@ -72,8 +85,53 @@
       "productName": "thermo mugALLDAY",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "hana hane navy free / free": {
+          "label": "hana hane navy FREE / FREE",
+          "available": false
+        },
+        "swing yellow free / free": {
+          "label": "swing yellow FREE / FREE",
+          "available": false
+        },
+        "imagine blue free / free": {
+          "label": "imagine blue FREE / FREE",
+          "available": false
+        },
+        "surplus pink free / free": {
+          "label": "surplus pink FREE / FREE",
+          "available": true
+        },
+        "rosy pink free / free": {
+          "label": "rosy pink FREE / FREE",
+          "available": false
+        },
+        "one day white free / free": {
+          "label": "one day white FREE / FREE",
+          "available": false
+        },
+        "carnival dark navy free / free": {
+          "label": "carnival dark navy FREE / FREE",
+          "available": false
+        },
+        "troll black free / free": {
+          "label": "troll black FREE / FREE",
+          "available": true
+        },
+        "ilo navy free / free": {
+          "label": "ilo navy FREE / FREE",
+          "available": true
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "TR0141L": {
       "productId": "TR0141L",
@@ -88,8 +146,25 @@
       "productName": "thermo mugUmbrella Bottle",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "symphony white free / free": {
+          "label": "symphony white FREE / FREE",
+          "available": false
+        },
+        "symphony charcoal free / free": {
+          "label": "symphony charcoal FREE / FREE",
+          "available": true
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "TR1041_43": {
       "productId": "TR1041_43",
@@ -104,8 +179,37 @@
       "productName": "thermo mugUmbrella Bottle",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "run run run blue free / free": {
+          "label": "run run run blue FREE / FREE",
+          "available": true
+        },
+        "musica pink beige free / free": {
+          "label": "musica pink beige FREE / FREE",
+          "available": true
+        },
+        "papurikko black free / free": {
+          "label": "papurikko black FREE / FREE",
+          "available": true
+        },
+        "floraleaf navy free / free": {
+          "label": "floraleaf navy FREE / FREE",
+          "available": true
+        },
+        "nap blue free / free": {
+          "label": "nap blue FREE / FREE",
+          "available": true
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "TR1033_39": {
       "productId": "TR1033_39",
@@ -457,8 +561,37 @@
       "productName": "following daythermo mug",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "following day light blue umbrella bottle / umbrella bottle": {
+          "label": "following day light blue UMBRELLA BOTTLE / UMBRELLA BOTTLE",
+          "available": true
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7910": {
       "productId": "AEA7910",
@@ -497,8 +630,33 @@
       "productName": "cafcaComuro Nonoka",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "other free / free": {
+          "label": "other FREE / FREE",
+          "available": true
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "TW0158A": {
       "productId": "TW0158A",
@@ -858,16 +1016,82 @@
       "productName": "thermo mugUmbrella Bottle",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "choucho navy free / free": {
+          "label": "choucho navy FREE / FREE",
+          "available": true
+        },
+        "choucho white free / free": {
+          "label": "choucho white FREE / FREE",
+          "available": true
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "MG0034_59": {
       "productId": "MG0034_59",
       "productName": "thermo mugUmbrella Bottle",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "tambourine white free / free": {
+          "label": "tambourine white FREE / FREE",
+          "available": true
+        },
+        "tambourine navy free / free": {
+          "label": "tambourine navy FREE / FREE",
+          "available": true
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "PAS0001": {
       "productId": "PAS0001",
@@ -1032,8 +1256,45 @@
       "productName": "thermo mugUmbrella Bottle",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "bird mix free / free": {
+          "label": "bird mix FREE / FREE",
+          "available": true
+        },
+        "anone-anone light blue free / free": {
+          "label": "anone-anone light blue FREE / FREE",
+          "available": false
+        },
+        "sea birds blue free / free": {
+          "label": "sea birds blue FREE / FREE",
+          "available": false
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA7744": {
       "productId": "ADA7744",
@@ -1217,8 +1478,41 @@
       "productName": "thermo mugUmbrella Bottle",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "forest parade free / free": {
+          "label": "forest parade FREE / FREE",
+          "available": false
+        },
+        "cache-cache free / free": {
+          "label": "cache-cache FREE / FREE",
+          "available": true
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     }
   }
 }
