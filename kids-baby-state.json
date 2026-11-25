@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 0,
+  "detailCursor": 10,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -967,11 +967,56 @@
     },
     "ADA2075PB": {
       "productId": "ADA2075PB",
-      "productName": "chouchoブルゾン",
+      "productName": "chouchoブルゾン2025-26 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "32 / 9 / navy": {
+          "label": "32 / 9 / navy",
+          "available": true
+        },
+        "navy / 90 / 100": {
+          "label": "navy / 90 / 100",
+          "available": false
+        },
+        "32 / 11 / navy": {
+          "label": "32 / 11 / navy",
+          "available": true
+        },
+        "32 / 12 / navy": {
+          "label": "32 / 12 / navy",
+          "available": true
+        },
+        "32 / 13 / navy": {
+          "label": "32 / 13 / navy",
+          "available": true
+        },
+        "50 / 9 / brown": {
+          "label": "50 / 9 / brown",
+          "available": true
+        },
+        "brown / 90 / 100": {
+          "label": "brown / 90 / 100",
+          "available": false
+        },
+        "50 / 11 / brown": {
+          "label": "50 / 11 / brown",
+          "available": true
+        },
+        "50 / 12 / brown": {
+          "label": "50 / 12 / brown",
+          "available": true
+        },
+        "選択肢18": {
+          "label": "選択肢18",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7330P": {
       "productId": "AES7330P",
@@ -986,8 +1031,25 @@
       "productName": "slow danceparent bag",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "light green / free": {
+          "label": "light green / FREE",
+          "available": false
+        },
+        "light pink / free": {
+          "label": "light pink / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES8518PBS": {
       "productId": "AES8518PBS",
@@ -1002,8 +1064,33 @@
       "productName": "wolf & flowerブルゾン",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "32 / 10 / navy": {
+          "label": "32 / 10 / navy",
+          "available": true
+        },
+        "32 / 12 / navy": {
+          "label": "32 / 12 / navy",
+          "available": true
+        },
+        "32 / 16 / navy": {
+          "label": "32 / 16 / navy",
+          "available": true
+        },
+        "brown / 100 / 120": {
+          "label": "brown / 100 / 120",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES2078PB": {
       "productId": "AES2078PB",
@@ -1015,11 +1102,76 @@
     },
     "ADA8494PB": {
       "productId": "ADA8494PB",
-      "productName": "winter friendプルオーバー -くま-",
+      "productName": "winter friendプルオーバー -くま- 2025-26 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "blue / 90 / 100": {
+          "label": "blue / 90 / 100",
+          "available": false
+        },
+        "30 / 13 / blue": {
+          "label": "30 / 13 / blue",
+          "available": true
+        },
+        "30 / 16 / blue": {
+          "label": "30 / 16 / blue",
+          "available": true
+        },
+        "navy / 90 / 100": {
+          "label": "navy / 90 / 100",
+          "available": false
+        },
+        "32 / 12 / navy": {
+          "label": "32 / 12 / navy",
+          "available": true
+        },
+        "32 / 13 / navy": {
+          "label": "32 / 13 / navy",
+          "available": true
+        },
+        "32 / 16 / navy": {
+          "label": "32 / 16 / navy",
+          "available": true
+        },
+        "41 / 9 / pink": {
+          "label": "41 / 9 / pink",
+          "available": true
+        },
+        "41 / 10 / pink": {
+          "label": "41 / 10 / pink",
+          "available": true
+        },
+        "pink / 90 / 100": {
+          "label": "pink / 90 / 100",
+          "available": false
+        },
+        "41 / 12 / pink": {
+          "label": "41 / 12 / pink",
+          "available": true
+        },
+        "41 / 13 / pink": {
+          "label": "41 / 13 / pink",
+          "available": true
+        },
+        "41 / 16 / pink": {
+          "label": "41 / 16 / pink",
+          "available": true
+        },
+        "選択肢21": {
+          "label": "選択肢21",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "BC2004PC": {
       "productId": "BC2004PC",
@@ -1202,11 +1354,36 @@
     },
     "ADA8495P": {
       "productId": "ADA8495P",
-      "productName": "winter friendロンパース -うさぎ-",
+      "productName": "winter friendロンパース -うさぎ-2025-26 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "blue / 70 / 80": {
+          "label": "blue / 70 / 80",
+          "available": false
+        },
+        "32 / 7 / navy": {
+          "label": "32 / 7 / navy",
+          "available": true
+        },
+        "navy / 70 / 80": {
+          "label": "navy / 70 / 80",
+          "available": false
+        },
+        "pink / 70 / 80": {
+          "label": "pink / 70 / 80",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA8497PC": {
       "productId": "ADA8497PC",
@@ -1234,19 +1411,81 @@
     },
     "ADA8493P": {
       "productId": "ADA8493P",
-      "productName": "winter friendロンパース -くま-",
+      "productName": "winter friendロンパース -くま-2025-26 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "blue / 70 / 80": {
+          "label": "blue / 70 / 80",
+          "available": false
+        },
+        "32 / 7 / navy": {
+          "label": "32 / 7 / navy",
+          "available": true
+        },
+        "navy / 70 / 80": {
+          "label": "navy / 70 / 80",
+          "available": false
+        },
+        "pink / 70 / 80": {
+          "label": "pink / 70 / 80",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA3444PBS": {
       "productId": "ADA3444PBS",
       "productName": "one dayドレス",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "6 / 10 / beige": {
+          "label": "6 / 10 / beige",
+          "available": true
+        },
+        "6 / 12 / beige": {
+          "label": "6 / 12 / beige",
+          "available": true
+        },
+        "6 / 16 / beige": {
+          "label": "6 / 16 / beige",
+          "available": true
+        },
+        "60 / 10 / gray": {
+          "label": "60 / 10 / gray",
+          "available": true
+        },
+        "60 / 12 / gray": {
+          "label": "60 / 12 / gray",
+          "available": true
+        },
+        "gray / 100 / 120": {
+          "label": "gray / 100 / 120",
+          "available": false
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA8516PBS": {
       "productId": "ADA8516PBS",
@@ -1258,27 +1497,154 @@
     },
     "ADA2076PB": {
       "productId": "ADA2076PB",
-      "productName": "kiviシャツブルゾン",
+      "productName": "kiviシャツブルゾン2025-26 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "32 / 10 / navy": {
+          "label": "32 / 10 / navy",
+          "available": true
+        },
+        "32 / 12 / navy": {
+          "label": "32 / 12 / navy",
+          "available": true
+        },
+        "32 / 16 / navy": {
+          "label": "32 / 16 / navy",
+          "available": true
+        },
+        "navy / 100 / 120": {
+          "label": "navy / 100 / 120",
+          "available": false
+        },
+        "50 / 10 / brown": {
+          "label": "50 / 10 / brown",
+          "available": true
+        },
+        "50 / 12 / brown": {
+          "label": "50 / 12 / brown",
+          "available": true
+        },
+        "50 / 16 / brown": {
+          "label": "50 / 16 / brown",
+          "available": true
+        },
+        "brown / 100 / 120": {
+          "label": "brown / 100 / 120",
+          "available": false
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA5101PC": {
       "productId": "ADA5101PC",
-      "productName": "tambourineショートパンツ",
+      "productName": "tambourineショートパンツ2025-26 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "12 / mustard / 120": {
+          "label": "12 / mustard / 120",
+          "available": true
+        },
+        "12 / 17 / mustard": {
+          "label": "12 / 17 / mustard",
+          "available": true
+        },
+        "32 / 12 / navy": {
+          "label": "32 / 12 / navy",
+          "available": true
+        },
+        "navy / 120 / 150": {
+          "label": "navy / 120 / 150",
+          "available": false
+        },
+        "60 / 12 / gray": {
+          "label": "60 / 12 / gray",
+          "available": true
+        },
+        "60 / 17 / gray": {
+          "label": "60 / 17 / gray",
+          "available": true
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA4148PB": {
       "productId": "ADA4148PB",
-      "productName": "tambourineパンツ",
+      "productName": "tambourineパンツ2025-26 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "12 / 10 / mustard": {
+          "label": "12 / 10 / mustard",
+          "available": true
+        },
+        "12 / mustard / 100": {
+          "label": "12 / mustard / 100",
+          "available": true
+        },
+        "12 / 13 / mustard": {
+          "label": "12 / 13 / mustard",
+          "available": true
+        },
+        "12 / 17 / mustard": {
+          "label": "12 / 17 / mustard",
+          "available": true
+        },
+        "12 / 160 / mustard": {
+          "label": "12 / 160 / mustard",
+          "available": true
+        },
+        "32 / 10 / navy": {
+          "label": "32 / 10 / navy",
+          "available": true
+        },
+        "navy / 100 / 120": {
+          "label": "navy / 100 / 120",
+          "available": false
+        },
+        "32 / 13 / navy": {
+          "label": "32 / 13 / navy",
+          "available": true
+        },
+        "60 / 10 / gray": {
+          "label": "60 / 10 / gray",
+          "available": true
+        },
+        "60 / 12 / gray": {
+          "label": "60 / 12 / gray",
+          "available": true
+        },
+        "gray / 100 / 120": {
+          "label": "gray / 100 / 120",
+          "available": false
+        },
+        "選択肢17": {
+          "label": "選択肢17",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA8501PB": {
       "productId": "ADA8501PB",
