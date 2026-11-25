@@ -1,606 +1,936 @@
 {
   "initialized": true,
-  "detailCursor": 30,
+  "detailCursor": 40,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
       "productName": "feliceファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0609GYRS": {
       "productId": "FC0609GYRS",
       "productName": "sleeping rose ＋ tambourine キルト有りファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0608YWST": {
       "productId": "FC0608YWST",
       "productName": "sleeping rose ＋ tambourine キルトなしファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0607RBPW": {
       "productId": "FC0607RBPW",
       "productName": "Pepper + run run runファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0605NYYB": {
       "productId": "FC0605NYYB",
       "productName": "tambourineファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0606ENEY": {
       "productId": "FC0606ENEY",
       "productName": "following dayファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0604BRWT": {
       "productId": "FC0604BRWT",
       "productName": "celebrateファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0603BCTI": {
       "productId": "FC0603BCTI",
       "productName": "jungle reliefファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0602YKMF": {
       "productId": "FC0602YKMF",
       "productName": "tambourineファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0601SGBY": {
       "productId": "FC0601SGBY",
       "productName": "swingファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0596WLDN": {
       "productId": "FC0596WLDN",
       "productName": "tambourineファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0598ELDT": {
       "productId": "FC0598ELDT",
       "productName": "tambourineファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0586YHF": {
       "productId": "FC0586YHF",
       "productName": "tambourineファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0595BPGL": {
       "productId": "FC0595BPGL",
       "productName": "DROPPDRÄLL + chouchoファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": "10月25日（日）正午頃、Online Storeへの再入荷を予定しております。"
+      "advanceAnnouncement": "10月25日（日）正午頃、Online Storeへの再入荷を予定しております。",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0600YKPD": {
       "productId": "FC0600YKPD",
       "productName": "tambourineファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0599EUMD": {
       "productId": "FC0599EUMD",
       "productName": "rosyファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0594PGB": {
       "productId": "FC0594PGB",
       "productName": "twinsファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0591YGMG": {
       "productId": "FC0591YGMG",
       "productName": "jungle reliefファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0584": {
       "productId": "FC0584",
       "productName": "anone-anoneファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0597LGB": {
       "productId": "FC0597LGB",
       "productName": "loloファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0585TBMN": {
       "productId": "FC0585TBMN",
       "productName": "thoroughbredファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0590WMNC": {
       "productId": "FC0590WMNC",
       "productName": "feather danceファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0579EMBN": {
       "productId": "FC0579EMBN",
       "productName": "symphonyファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0589": {
       "productId": "FC0589",
       "productName": "sora check ファブリック 柄 large",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0582TWGM": {
       "productId": "FC0582TWGM",
       "productName": "tambourineファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0588BBNW": {
       "productId": "FC0588BBNW",
       "productName": "rosyファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0580": {
       "productId": "FC0580",
       "productName": "one dayファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0593YGB": {
       "productId": "FC0593YGB",
       "productName": "lintuファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0592TMYB": {
       "productId": "FC0592TMYB",
       "productName": "tambourineファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0587GLNW": {
       "productId": "FC0587GLNW",
       "productName": "following dayファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0578BBDN": {
       "productId": "FC0578BBDN",
       "productName": "tambourineファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0574BBLC": {
       "productId": "FC0574BBLC",
       "productName": "tambourineファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0573WPBC": {
       "productId": "FC0573WPBC",
       "productName": "smile flowerファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0572": {
       "productId": "FC0572",
       "productName": "carnivalファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0571GBBX": {
       "productId": "FC0571GBBX",
       "productName": "tambourineファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0569NBGW": {
       "productId": "FC0569NBGW",
       "productName": "forest tileファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0577BWMN": {
       "productId": "FC0577BWMN",
       "productName": "mermaidファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0570PBPB": {
       "productId": "FC0570PBPB",
       "productName": "pomppiaファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0568": {
       "productId": "FC0568",
       "productName": "hello swallowファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0566FWAM": {
       "productId": "FC0566FWAM",
       "productName": "forest wave + anemoneファブリック ボーラーなし",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0567FWAM": {
       "productId": "FC0567FWAM",
       "productName": "forest wave + anemoneファブリック ボーラーあり",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0565": {
       "productId": "FC0565",
       "productName": "tambourineファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0564": {
       "productId": "FC0564",
       "productName": "anone-anoneファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0557TLLB": {
       "productId": "FC0557TLLB",
       "productName": "tambourineファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0563": {
       "productId": "FC0563",
       "productName": "memoriaファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0495": {
       "productId": "FC0495",
       "productName": "run run runファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0561CMBD": {
       "productId": "FC0561CMBD",
       "productName": "carnivalファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0553GGPA": {
       "productId": "FC0553GGPA",
       "productName": "anemoneファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0560WMNB": {
       "productId": "FC0560WMNB",
       "productName": "tambourineファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0559": {
       "productId": "FC0559",
       "productName": "perhonen puzzleファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0558": {
       "productId": "FC0558",
       "productName": "sora check ファブリック 柄 small",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0556": {
       "productId": "FC0556",
       "productName": "forest wingファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0555": {
       "productId": "FC0555",
       "productName": "aliveファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0549": {
       "productId": "FC0549",
       "productName": "flowerscopeファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0548": {
       "productId": "FC0548",
       "productName": "hütteファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0331": {
       "productId": "FC0331",
       "productName": "chouchoファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0545VTK": {
       "productId": "FC0545VTK",
       "productName": "lookファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0544": {
       "productId": "FC0544",
       "productName": "ribbon frameファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0541": {
       "productId": "FC0541",
       "productName": "yamanamiファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0537": {
       "productId": "FC0537",
       "productName": "sky flowerファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0538": {
       "productId": "FC0538",
       "productName": "garden patchworkファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0533": {
       "productId": "FC0533",
       "productName": "after rainファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {
+        "light blue|149": {
+          "color": "light blue",
+          "width": "149",
+          "available": false
+        },
+        "light pink|149": {
+          "color": "light pink",
+          "width": "149",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0534ANMN": {
       "productId": "FC0534ANMN",
       "productName": "anemoneファブリック ボーラーあり",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0528DMGW": {
       "productId": "FC0528DMGW",
       "productName": "life puzzleファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {
+        "blue|151": {
+          "color": "blue",
+          "width": "151",
+          "available": true
+        },
+        "black|151": {
+          "color": "black",
+          "width": "151",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0525": {
       "productId": "FC0525",
       "productName": "faint shadowファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {
+        "white|115": {
+          "color": "white",
+          "width": "115",
+          "available": true
+        },
+        "pink beige|115": {
+          "color": "pink beige",
+          "width": "115",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0524": {
       "productId": "FC0524",
       "productName": "paradisファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {
+        "white|152": {
+          "color": "white",
+          "width": "152",
+          "available": true
+        },
+        "beige|152": {
+          "color": "beige",
+          "width": "152",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0510": {
       "productId": "FC0510",
       "productName": "pepper + light berryファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0521": {
       "productId": "FC0521",
       "productName": "sea laceファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {
+        "green|150": {
+          "color": "green",
+          "width": "150",
+          "available": true
+        },
+        "charcoal|150": {
+          "color": "charcoal",
+          "width": "150",
+          "available": true
+        },
+        "black|150": {
+          "color": "black",
+          "width": "150",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0520": {
       "productId": "FC0520",
       "productName": "soffioneファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {
+        "light green|151": {
+          "color": "light green",
+          "width": "151",
+          "available": true
+        },
+        "black|151": {
+          "color": "black",
+          "width": "151",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0518": {
       "productId": "FC0518",
       "productName": "odysseyファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {
+        "light green|146": {
+          "color": "light green",
+          "width": "146",
+          "available": true
+        },
+        "light pink|146": {
+          "color": "light pink",
+          "width": "146",
+          "available": false
+        },
+        "brown|146": {
+          "color": "brown",
+          "width": "146",
+          "available": true
+        },
+        "dark navy|146": {
+          "color": "dark navy",
+          "width": "146",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0515": {
       "productId": "FC0515",
       "productName": "flower danceファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {
+        "green mix|140": {
+          "color": "green mix",
+          "width": "140",
+          "available": true
+        },
+        "blue mix|140": {
+          "color": "blue mix",
+          "width": "140",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0513": {
       "productId": "FC0513",
       "productName": "one dayファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {
+        "beige|152": {
+          "color": "beige",
+          "width": "152",
+          "available": false
+        },
+        "blue gray|152": {
+          "color": "blue gray",
+          "width": "152",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0516": {
       "productId": "FC0516",
       "productName": "chouchoファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {
+        "yellow|145": {
+          "color": "yellow",
+          "width": "145",
+          "available": false
+        },
+        "green|145": {
+          "color": "green",
+          "width": "145",
+          "available": false
+        },
+        "charcoal|145": {
+          "color": "charcoal",
+          "width": "145",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0500": {
       "productId": "FC0500",
       "productName": "surplusファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0498": {
       "productId": "FC0498",
       "productName": "slow danceファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0470": {
       "productId": "FC0470",
       "productName": "run run runファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0479": {
       "productId": "FC0479",
       "productName": "light berryファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0481": {
       "productId": "FC0481",
       "productName": "rain chukkaファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0442": {
       "productId": "FC0442",
       "productName": "aaltoファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0436": {
       "productId": "FC0436",
       "productName": "pacificファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0416": {
       "productId": "FC0416",
       "productName": "lake birdファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0485": {
       "productId": "FC0485",
       "productName": "life puzzleファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0472": {
       "productId": "FC0472",
       "productName": "tanpopoファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0464": {
       "productId": "FC0464",
       "productName": "chouchoファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0458": {
       "productId": "FC0458",
       "productName": "home circleファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0456": {
       "productId": "FC0456",
       "productName": "bonheurファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0477": {
       "productId": "FC0477",
       "productName": "aliveファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0461": {
       "productId": "FC0461",
       "productName": "giraffeファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0493": {
       "productId": "FC0493",
       "productName": "singing merrilyファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0463": {
       "productId": "FC0463",
       "productName": "choucho ＋ nopparaファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0417": {
       "productId": "FC0417",
       "productName": "sometimes luckyファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0435": {
       "productId": "FC0435",
       "productName": "tourファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0427": {
       "productId": "FC0427",
       "productName": "ohayoファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0446": {
       "productId": "FC0446",
       "productName": "margueriteファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0447": {
       "productId": "FC0447",
       "productName": "merciファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0459": {
       "productId": "FC0459",
       "productName": "Fujisansファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0421": {
       "productId": "FC0421",
       "productName": "garden patchworkファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0438": {
       "productId": "FC0438",
       "productName": "donguriファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0453": {
       "productId": "FC0453",
       "productName": "flower nestファブリック",
       "isSoldOut": false,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     },
     "FC0425": {
       "productId": "FC0425",
       "productName": "land theaterファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": ""
+      "advanceAnnouncement": "",
+      "colors": {},
+      "colorsInitialized": false
     }
   },
   "pendingNotifications": []
