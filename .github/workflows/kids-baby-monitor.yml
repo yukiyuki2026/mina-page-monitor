@@ -11,7 +11,7 @@ permissions:
   issues: write
 
 concurrency:
-  group: repository-state-writer
+  group: kids-baby-monitor
   cancel-in-progress: false
 
 jobs:
