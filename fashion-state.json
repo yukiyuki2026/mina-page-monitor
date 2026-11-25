@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 10,
+  "detailCursor": 20,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -611,6 +611,18 @@
     "AEA9548": {
       "productId": "AEA9548",
       "productName": "star gardenpocket bag",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7889": {
+      "productId": "AEA7889",
+      "productName": "tambourinecone pouch",
+      "isSoldOut": false,
+      "advanceAnnouncement": ""
+    },
+    "AEA7886": {
+      "productId": "AEA7886",
+      "productName": "tambourinecrystal pouch",
       "isSoldOut": false,
       "advanceAnnouncement": ""
     }
