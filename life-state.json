@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 10,
+  "detailCursor": 20,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -1808,16 +1808,90 @@
       "productName": "enkeliブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "gray s l / s": {
+          "label": "gray S L / S",
+          "available": true
+        },
+        "gray s l / l": {
+          "label": "gray S L / L",
+          "available": true
+        },
+        "black s l / s": {
+          "label": "black S L / S",
+          "available": false
+        },
+        "black s l / l": {
+          "label": "black S L / L",
+          "available": true
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA7734": {
       "productId": "ADA7734",
       "productName": "siksakブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "beige xs s l / xs": {
+          "label": "beige XS S L / XS",
+          "available": true
+        },
+        "beige xs s l / s": {
+          "label": "beige XS S L / S",
+          "available": true
+        },
+        "beige xs s l / l": {
+          "label": "beige XS S L / L",
+          "available": true
+        },
+        "gray xs s l / xs": {
+          "label": "gray XS S L / XS",
+          "available": true
+        },
+        "gray xs s l / s": {
+          "label": "gray XS S L / S",
+          "available": true
+        },
+        "gray xs s l / l": {
+          "label": "gray XS S L / L",
+          "available": true
+        },
+        "black xs s l / xs": {
+          "label": "black XS S L / XS",
+          "available": true
+        },
+        "black xs s l / s": {
+          "label": "black XS S L / S",
+          "available": true
+        },
+        "black xs s l / l": {
+          "label": "black XS S L / L",
+          "available": true
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ACA7500": {
       "productId": "ACA7500",
@@ -1885,16 +1959,86 @@
       "productName": "one cat and rabbitsブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "navy xs s l / xs": {
+          "label": "navy XS S L / XS",
+          "available": true
+        },
+        "navy xs s l / s": {
+          "label": "navy XS S L / S",
+          "available": true
+        },
+        "navy xs s l / l": {
+          "label": "navy XS S L / L",
+          "available": true
+        },
+        "blue gray xs s l / xs": {
+          "label": "blue gray XS S L / XS",
+          "available": true
+        },
+        "blue gray xs s l / s": {
+          "label": "blue gray XS S L / S",
+          "available": false
+        },
+        "blue gray xs s l / l": {
+          "label": "blue gray XS S L / L",
+          "available": true
+        },
+        "x9 / scarlet xs s l / xs": {
+          "label": "X9 / scarlet XS S L / XS",
+          "available": true
+        },
+        "scarlet xs s l / s": {
+          "label": "scarlet XS S L / S",
+          "available": false
+        },
+        "x9 / scarlet xs s l / l": {
+          "label": "X9 / scarlet XS S L / L",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA7686": {
       "productId": "ADA7686",
       "productName": "life puzzleブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "navy xs / xs": {
+          "label": "navy XS / XS",
+          "available": true
+        },
+        "gray xs / xs": {
+          "label": "gray XS / XS",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ABA7432": {
       "productId": "ABA7432",
@@ -1960,11 +2104,40 @@
     },
     "ACS7373": {
       "productId": "ACS7373",
-      "productName": "flower crownハンカチ",
+      "productName": "flower crownハンカチ2024 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "white free / free": {
+          "label": "white FREE / FREE",
+          "available": false
+        },
+        "light blue free / free": {
+          "label": "light blue FREE / FREE",
+          "available": false
+        },
+        "navy free / free": {
+          "label": "navy FREE / FREE",
+          "available": true
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AAS7749": {
       "productId": "AAS7749",
@@ -2537,8 +2710,33 @@
       "productName": "chessブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "light beige xs s l / xs": {
+          "label": "light beige XS S L / XS",
+          "available": false
+        },
+        "light beige xs s l / s": {
+          "label": "light beige XS S L / S",
+          "available": true
+        },
+        "light beige xs s l / l": {
+          "label": "light beige XS S L / L",
+          "available": true
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7804": {
       "productId": "AES7804",
@@ -2677,11 +2875,68 @@
     },
     "ADA7744": {
       "productId": "ADA7744",
-      "productName": "kimallusマルチクロス",
+      "productName": "kimallusマルチクロス2025-26 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "green free / free": {
+          "label": "green FREE / FREE",
+          "available": true
+        },
+        "light blue free / free": {
+          "label": "light blue FREE / FREE",
+          "available": true
+        },
+        "navy free / free": {
+          "label": "navy FREE / FREE",
+          "available": true
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "TE0719_A": {
       "productId": "TE0719_A",
@@ -2917,11 +3172,36 @@
     },
     "ADA7747": {
       "productId": "ADA7747",
-      "productName": "sea skygnocchi cushion",
+      "productName": "sea skygnocchi cushion2025-26 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "yellow mix s l / s": {
+          "label": "yellow mix S L / S",
+          "available": true
+        },
+        "yellow mix s l / l": {
+          "label": "yellow mix S L / L",
+          "available": true
+        },
+        "blue mix s l / s": {
+          "label": "blue mix S L / S",
+          "available": true
+        },
+        "blue mix s l / l": {
+          "label": "blue mix S L / L",
+          "available": true
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "RG0021": {
       "productId": "RG0021",
@@ -3011,19 +3291,89 @@
     },
     "ADA7743": {
       "productId": "ADA7743",
-      "productName": "kiviマルチクロス",
+      "productName": "kiviマルチクロス2025-26 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "light beige free / free": {
+          "label": "light beige FREE / FREE",
+          "available": false
+        },
+        "dark green free / free": {
+          "label": "dark green FREE / FREE",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ACS7371": {
       "productId": "ACS7371",
-      "productName": "twin flowerマルチクロス",
+      "productName": "twin flowerマルチクロス2024 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "white free / free": {
+          "label": "white FREE / FREE",
+          "available": false
+        },
+        "light blue free / free": {
+          "label": "light blue FREE / FREE",
+          "available": true
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "SC0153": {
       "productId": "SC0153",
