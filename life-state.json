@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 40,
+  "detailCursor": 50,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -612,19 +612,113 @@
     },
     "AEA7914": {
       "productId": "AEA7914",
-      "productName": "tambourinegnocchi cushion",
+      "productName": "tambourinegnocchi cushion2026-27 a/w",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "mustard s l / s": {
+          "label": "mustard S L / S",
+          "available": false
+        },
+        "mustard s l / l": {
+          "label": "mustard S L / L",
+          "available": false
+        },
+        "navy s l / s": {
+          "label": "navy S L / S",
+          "available": false
+        },
+        "navy s l / l": {
+          "label": "navy S L / L",
+          "available": false
+        },
+        "blue green s l / s": {
+          "label": "blue green S L / S",
+          "available": false
+        },
+        "blue green s l / l": {
+          "label": "blue green S L / L",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7937": {
       "productId": "AEA7937",
-      "productName": "faintブランケット",
+      "productName": "faintブランケット2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "mustard s l / s": {
+          "label": "mustard S L / S",
+          "available": true
+        },
+        "mustard s l / l": {
+          "label": "mustard S L / L",
+          "available": true
+        },
+        "navy s l / s": {
+          "label": "navy S L / S",
+          "available": true
+        },
+        "navy s l / l": {
+          "label": "navy S L / L",
+          "available": true
+        },
+        "pink mix s l / s": {
+          "label": "pink mix S L / S",
+          "available": true
+        },
+        "pink mix s l / l": {
+          "label": "pink mix S L / L",
+          "available": true
+        },
+        "light pink s l / s": {
+          "label": "light pink S L / S",
+          "available": true
+        },
+        "light pink s l / l": {
+          "label": "light pink S L / L",
+          "available": true
+        },
+        "gray mix s l / s": {
+          "label": "gray mix S L / S",
+          "available": true
+        },
+        "gray mix s l / l": {
+          "label": "gray mix S L / L",
+          "available": true
+        },
+        "選択肢15": {
+          "label": "選択肢15",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "SC0154": {
       "productId": "SC0154",
@@ -2090,11 +2184,60 @@
     },
     "AEA8006WB": {
       "productId": "AEA8006WB",
-      "productName": "wing treedog wear",
+      "productName": "wing treedog wear2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "0x / green xxs xs s m / xxs": {
+          "label": "0X / green XXS XS S M / XXS",
+          "available": true
+        },
+        "green xxs xs s m / xs": {
+          "label": "green XXS XS S M / XS",
+          "available": true
+        },
+        "green xxs xs s m / s": {
+          "label": "green XXS XS S M / S",
+          "available": true
+        },
+        "green xxs xs s m / m": {
+          "label": "green XXS XS S M / M",
+          "available": true
+        },
+        "0x / light blue xxs xs s m / xxs": {
+          "label": "0X / light blue XXS XS S M / XXS",
+          "available": true
+        },
+        "light blue xxs xs s m / xs": {
+          "label": "light blue XXS XS S M / XS",
+          "available": true
+        },
+        "light blue xxs xs s m / s": {
+          "label": "light blue XXS XS S M / S",
+          "available": true
+        },
+        "light blue xxs xs s m / m": {
+          "label": "light blue XXS XS S M / M",
+          "available": true
+        },
+        "選択肢12": {
+          "label": "選択肢12",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7001WB": {
       "productId": "AEA7001WB",
@@ -2159,11 +2302,104 @@
     },
     "AEA8004WB": {
       "productId": "AEA8004WB",
-      "productName": "chouchodog wear",
+      "productName": "chouchodog wear2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "0x / beige xxs xs s m / xxs": {
+          "label": "0X / beige XXS XS S M / XXS",
+          "available": true
+        },
+        "beige xxs xs s m / xs": {
+          "label": "beige XXS XS S M / XS",
+          "available": true
+        },
+        "beige xxs xs s m / s": {
+          "label": "beige XXS XS S M / S",
+          "available": false
+        },
+        "beige xxs xs s m / m": {
+          "label": "beige XXS XS S M / M",
+          "available": true
+        },
+        "light green xxs xs s m / xxs": {
+          "label": "light green XXS XS S M / XXS",
+          "available": false
+        },
+        "light green xxs xs s m / xs": {
+          "label": "light green XXS XS S M / XS",
+          "available": true
+        },
+        "light green xxs xs s m / s": {
+          "label": "light green XXS XS S M / S",
+          "available": false
+        },
+        "light green xxs xs s m / m": {
+          "label": "light green XXS XS S M / M",
+          "available": true
+        },
+        "0x / navy xxs xs s m / xxs": {
+          "label": "0X / navy XXS XS S M / XXS",
+          "available": true
+        },
+        "navy xxs xs s m / xs": {
+          "label": "navy XXS XS S M / XS",
+          "available": true
+        },
+        "navy xxs xs s m / s": {
+          "label": "navy XXS XS S M / S",
+          "available": true
+        },
+        "navy xxs xs s m / m": {
+          "label": "navy XXS XS S M / M",
+          "available": true
+        },
+        "0x / pink xxs xs s m / xxs": {
+          "label": "0X / pink XXS XS S M / XXS",
+          "available": true
+        },
+        "pink xxs xs s m / xs": {
+          "label": "pink XXS XS S M / XS",
+          "available": true
+        },
+        "pink xxs xs s m / s": {
+          "label": "pink XXS XS S M / S",
+          "available": true
+        },
+        "pink xxs xs s m / m": {
+          "label": "pink XXS XS S M / M",
+          "available": true
+        },
+        "0x / gray xxs xs s m / xxs": {
+          "label": "0X / gray XXS XS S M / XXS",
+          "available": true
+        },
+        "gray xxs xs s m / xs": {
+          "label": "gray XXS XS S M / XS",
+          "available": true
+        },
+        "gray xxs xs s m / s": {
+          "label": "gray XXS XS S M / S",
+          "available": true
+        },
+        "gray xxs xs s m / m": {
+          "label": "gray XXS XS S M / M",
+          "available": true
+        },
+        "選択肢23": {
+          "label": "選択肢23",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "TL1007_08": {
       "productId": "TL1007_08",
@@ -2376,11 +2612,40 @@
     },
     "AES7798": {
       "productId": "AES7798",
-      "productName": "light mistマルチクロス",
+      "productName": "light mistマルチクロス2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "blue free / free": {
+          "label": "blue FREE / FREE",
+          "available": true
+        },
+        "light pink free / free": {
+          "label": "light pink FREE / FREE",
+          "available": false
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ZR0040": {
       "productId": "ZR0040",
@@ -2611,8 +2876,73 @@
       "productName": "chouchodog wear",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "0x / navy xxs xs s / xxs": {
+          "label": "0X / navy XXS XS S / XXS",
+          "available": true
+        },
+        "navy xxs xs s / xs": {
+          "label": "navy XXS XS S / XS",
+          "available": false
+        },
+        "navy xxs xs s / s": {
+          "label": "navy XXS XS S / S",
+          "available": false
+        },
+        "0x / pink xxs xs s / xxs": {
+          "label": "0X / pink XXS XS S / XXS",
+          "available": true
+        },
+        "pink xxs xs s / xs": {
+          "label": "pink XXS XS S / XS",
+          "available": true
+        },
+        "pink xxs xs s / s": {
+          "label": "pink XXS XS S / S",
+          "available": false
+        },
+        "0x / gray xxs xs s / xxs": {
+          "label": "0X / gray XXS XS S / XXS",
+          "available": true
+        },
+        "gray xxs xs s / xs": {
+          "label": "gray XXS XS S / XS",
+          "available": false
+        },
+        "gray xxs xs s / s": {
+          "label": "gray XXS XS S / S",
+          "available": false
+        },
+        "選択肢16": {
+          "label": "選択肢16",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "BK0111": {
       "productId": "BK0111",
@@ -2652,8 +2982,57 @@
       "productName": "tambourinedog wear",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "0x / mustard xxs xs s / xxs": {
+          "label": "0X / mustard XXS XS S / XXS",
+          "available": true
+        },
+        "mustard xxs xs s / xs": {
+          "label": "mustard XXS XS S / XS",
+          "available": false
+        },
+        "mustard xxs xs s / s": {
+          "label": "mustard XXS XS S / S",
+          "available": false
+        },
+        "0x / navy xxs xs s / xxs": {
+          "label": "0X / navy XXS XS S / XXS",
+          "available": true
+        },
+        "navy xxs xs s / xs": {
+          "label": "navy XXS XS S / XS",
+          "available": true
+        },
+        "navy xxs xs s / s": {
+          "label": "navy XXS XS S / S",
+          "available": false
+        },
+        "0x / gray xxs xs s / xxs": {
+          "label": "0X / gray XXS XS S / XXS",
+          "available": true
+        },
+        "gray xxs xs s / xs": {
+          "label": "gray XXS XS S / XS",
+          "available": true
+        },
+        "gray xxs xs s / s": {
+          "label": "gray XXS XS S / S",
+          "available": false
+        },
+        "選択肢12": {
+          "label": "選択肢12",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV1596A": {
       "productId": "EV1596A",
@@ -2758,8 +3137,77 @@
       "productName": "symphonydog wear",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "0x / blue mix xxs xs s / xxs": {
+          "label": "0X / blue mix XXS XS S / XXS",
+          "available": true
+        },
+        "blue mix xxs xs s / xs": {
+          "label": "blue mix XXS XS S / XS",
+          "available": true
+        },
+        "blue mix xxs xs s / s": {
+          "label": "blue mix XXS XS S / S",
+          "available": true
+        },
+        "0x / pink mix xxs xs s / xxs": {
+          "label": "0X / pink mix XXS XS S / XXS",
+          "available": true
+        },
+        "pink mix xxs xs s / xs": {
+          "label": "pink mix XXS XS S / XS",
+          "available": true
+        },
+        "pink mix xxs xs s / s": {
+          "label": "pink mix XXS XS S / S",
+          "available": true
+        },
+        "選択肢17": {
+          "label": "選択肢17",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES8003WS": {
       "productId": "AES8003WS",
@@ -3221,11 +3669,44 @@
     },
     "AES7806": {
       "productId": "AES7806",
-      "productName": "sitoagnocchi cushion",
+      "productName": "sitoagnocchi cushion2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "white s l / s": {
+          "label": "white S L / S",
+          "available": true
+        },
+        "white s l / l": {
+          "label": "white S L / L",
+          "available": true
+        },
+        "gray s l / s": {
+          "label": "gray S L / S",
+          "available": false
+        },
+        "gray s l / l": {
+          "label": "gray S L / L",
+          "available": true
+        },
+        "x3 / dark navy s l / s": {
+          "label": "X3 / dark navy S L / S",
+          "available": true
+        },
+        "x3 / dark navy s l / l": {
+          "label": "X3 / dark navy S L / L",
+          "available": true
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV1599A": {
       "productId": "EV1599A",
@@ -3759,11 +4240,36 @@
     },
     "AES7804": {
       "productId": "AES7804",
-      "productName": "wind flaggnocchi cushion",
+      "productName": "wind flaggnocchi cushion2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "blue s l / s": {
+          "label": "blue S L / S",
+          "available": false
+        },
+        "blue s l / l": {
+          "label": "blue S L / L",
+          "available": true
+        },
+        "brown s l / s": {
+          "label": "brown S L / S",
+          "available": false
+        },
+        "brown s l / l": {
+          "label": "brown S L / L",
+          "available": false
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "SP0075": {
       "productId": "SP0075",
