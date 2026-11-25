@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 80,
+  "detailCursor": 90,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -531,11 +531,36 @@
     },
     "AEA9542": {
       "productId": "AEA9542",
-      "productName": "tambourineuzura bag",
+      "productName": "tambourineuzura bag2026-27 a/w",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "green / free": {
+          "label": "green / FREE",
+          "available": false
+        },
+        "navy / free": {
+          "label": "navy / FREE",
+          "available": false
+        },
+        "gray / free": {
+          "label": "gray / FREE",
+          "available": false
+        },
+        "black / free": {
+          "label": "black / FREE",
+          "available": false
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA4693": {
       "productId": "AEA4693",
@@ -802,11 +827,68 @@
     },
     "AEA9538": {
       "productId": "AEA9538",
-      "productName": "tambourineエッグバッグ",
+      "productName": "tambourineエッグバッグ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "5 / 0 / pink beige": {
+          "label": "5 / 0 / pink beige",
+          "available": true
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "blue green / free": {
+          "label": "blue green / FREE",
+          "available": false
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7875": {
       "productId": "AEA7875",
@@ -879,11 +961,64 @@
     },
     "AEA9544": {
       "productId": "AEA9544",
-      "productName": "ilouzura bag",
+      "productName": "ilouzura bag2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "66 / 0 / blue gray": {
+          "label": "66 / 0 / blue gray",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA3252": {
       "productId": "AEA3252",
@@ -1133,11 +1268,76 @@
     },
     "AEA9532": {
       "productId": "AEA9532",
-      "productName": "tambourineショルダーバッグ",
+      "productName": "tambourineショルダーバッグ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "pink beige / s / l": {
+          "label": "pink beige / S / L",
+          "available": false
+        },
+        "5 / 4 / pink beige": {
+          "label": "5 / 4 / pink beige",
+          "available": true
+        },
+        "navy / s / l": {
+          "label": "navy / S / L",
+          "available": false
+        },
+        "32 / 4 / navy": {
+          "label": "32 / 4 / navy",
+          "available": true
+        },
+        "blue green / s / l": {
+          "label": "blue green / S / L",
+          "available": false
+        },
+        "選択肢17": {
+          "label": "選択肢17",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA5481S": {
       "productId": "AEA5481S",
@@ -2443,19 +2643,97 @@
     },
     "AEA9539": {
       "productId": "AEA9539",
-      "productName": "kideuzura bag",
+      "productName": "kideuzura bag2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "10 / 0 / yellow": {
+          "label": "10 / 0 / yellow",
+          "available": true
+        },
+        "20 / 0 / green": {
+          "label": "20 / 0 / green",
+          "available": true
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "98 / 0 / black": {
+          "label": "98 / 0 / black",
+          "available": true
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9541": {
       "productId": "AEA9541",
-      "productName": "starryuzura bag",
+      "productName": "starryuzura bag2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "25 / 0 / khaki": {
+          "label": "25 / 0 / khaki",
+          "available": true
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "98 / 0 / black": {
+          "label": "98 / 0 / black",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8123": {
       "productId": "AEA8123",
@@ -2528,11 +2806,68 @@
     },
     "AEA9545": {
       "productId": "AEA9545",
-      "productName": "starrytoast bag",
+      "productName": "starrytoast bag2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "khaki / free": {
+          "label": "khaki / FREE",
+          "available": false
+        },
+        "navy / free": {
+          "label": "navy / FREE",
+          "available": false
+        },
+        "98 / 0 / black": {
+          "label": "98 / 0 / black",
+          "available": true
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA4681_63S": {
       "productId": "AEA4681_63S",
@@ -3795,8 +4130,49 @@
       "productName": "confettiタックギャザードレス",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "6 / 36 / beige": {
+          "label": "6 / 36 / beige",
+          "available": true
+        },
+        "6 / 38 / beige": {
+          "label": "6 / 38 / beige",
+          "available": true
+        },
+        "6 / 40 / beige": {
+          "label": "6 / 40 / beige",
+          "available": true
+        },
+        "66 / 36 / blue gray": {
+          "label": "66 / 36 / blue gray",
+          "available": true
+        },
+        "66 / 38 / blue gray": {
+          "label": "66 / 38 / blue gray",
+          "available": true
+        },
+        "66 / 40 / blue gray": {
+          "label": "66 / 40 / blue gray",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV2113": {
       "productId": "EV2113",
@@ -3868,16 +4244,106 @@
       "productName": "confettiスタンドカラードレス",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "6 / 36 / beige": {
+          "label": "6 / 36 / beige",
+          "available": true
+        },
+        "6 / 38 / beige": {
+          "label": "6 / 38 / beige",
+          "available": true
+        },
+        "6 / 40 / beige": {
+          "label": "6 / 40 / beige",
+          "available": true
+        },
+        "66 / 36 / blue gray": {
+          "label": "66 / 36 / blue gray",
+          "available": true
+        },
+        "66 / 38 / blue gray": {
+          "label": "66 / 38 / blue gray",
+          "available": true
+        },
+        "blue gray / 36 / 38": {
+          "label": "blue gray / 36 / 38",
+          "available": false
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "DR3236": {
       "productId": "DR3236",
-      "productName": "forest paradeタックドレス",
+      "productName": "forest paradeタックドレスminä perhonen galleria",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "28 / 36 / dark green": {
+          "label": "28 / 36 / dark green",
+          "available": true
+        },
+        "28 / 38 / dark green": {
+          "label": "28 / 38 / dark green",
+          "available": true
+        },
+        "28 / 40 / dark green": {
+          "label": "28 / 40 / dark green",
+          "available": true
+        },
+        "65 / 36 / charcoal": {
+          "label": "65 / 36 / charcoal",
+          "available": true
+        },
+        "charcoal / 36 / 38": {
+          "label": "charcoal / 36 / 38",
+          "available": false
+        },
+        "65 / 40 / charcoal": {
+          "label": "65 / 40 / charcoal",
+          "available": true
+        },
+        "x3 / 36 / dark navy": {
+          "label": "X3 / 36 / dark navy",
+          "available": true
+        },
+        "x3 / 38 / dark navy": {
+          "label": "X3 / 38 / dark navy",
+          "available": true
+        },
+        "dark navy / 36 / 38": {
+          "label": "dark navy / 36 / 38",
+          "available": false
+        },
+        "選択肢12": {
+          "label": "選択肢12",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9521": {
       "productId": "AEA9521",
