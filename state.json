@@ -1,86 +1,246 @@
 {
   "initialized": true,
-  "detailCursor": 90,
+  "detailCursor": 0,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
       "productName": "feliceファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "green|117": {
+          "color": "green",
+          "width": "117",
+          "available": false
+        },
+        "brown|117": {
+          "color": "brown",
+          "width": "117",
+          "available": false
+        },
+        "gray|117": {
+          "color": "gray",
+          "width": "117",
+          "available": false
+        },
+        "black|117": {
+          "color": "black",
+          "width": "117",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0609GYRS": {
       "productId": "FC0609GYRS",
       "productName": "sleeping rose ＋ tambourine キルト有りファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "yellow|110.5": {
+          "color": "yellow",
+          "width": "110.5",
+          "available": false
+        },
+        "gray|110.5": {
+          "color": "gray",
+          "width": "110.5",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0608YWST": {
       "productId": "FC0608YWST",
       "productName": "sleeping rose ＋ tambourine キルトなしファブリック",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "yellow|116": {
+          "color": "yellow",
+          "width": "116",
+          "available": false
+        },
+        "gray|116": {
+          "color": "gray",
+          "width": "116",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0607RBPW": {
       "productId": "FC0607RBPW",
       "productName": "Pepper + run run runファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "blue|115": {
+          "color": "blue",
+          "width": "115",
+          "available": false
+        },
+        "pink|115": {
+          "color": "pink",
+          "width": "115",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0605NYYB": {
       "productId": "FC0605NYYB",
       "productName": "tambourineファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "navy|148": {
+          "color": "navy",
+          "width": "148",
+          "available": false
+        },
+        "brown|148": {
+          "color": "brown",
+          "width": "148",
+          "available": false
+        },
+        "gray|148": {
+          "color": "gray",
+          "width": "148",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0606ENEY": {
       "productId": "FC0606ENEY",
       "productName": "following dayファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "beige|150": {
+          "color": "beige",
+          "width": "150",
+          "available": true
+        },
+        "light green|150": {
+          "color": "light green",
+          "width": "150",
+          "available": true
+        },
+        "blue|150": {
+          "color": "blue",
+          "width": "150",
+          "available": true
+        },
+        "navy|150": {
+          "color": "navy",
+          "width": "150",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0604BRWT": {
       "productId": "FC0604BRWT",
       "productName": "celebrateファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "light blue|153": {
+          "color": "light blue",
+          "width": "153",
+          "available": false
+        },
+        "brown|153": {
+          "color": "brown",
+          "width": "153",
+          "available": false
+        },
+        "gray|153": {
+          "color": "gray",
+          "width": "153",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0603BCTI": {
       "productId": "FC0603BCTI",
       "productName": "jungle reliefファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "light beige|155": {
+          "color": "light beige",
+          "width": "155",
+          "available": true
+        },
+        "khaki|155": {
+          "color": "khaki",
+          "width": "155",
+          "available": true
+        },
+        "blue gray|155": {
+          "color": "blue gray",
+          "width": "155",
+          "available": true
+        },
+        "black|155": {
+          "color": "black",
+          "width": "155",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0602YKMF": {
       "productId": "FC0602YKMF",
       "productName": "tambourineファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "beige|119": {
+          "color": "beige",
+          "width": "119",
+          "available": true
+        },
+        "mustard|119": {
+          "color": "mustard",
+          "width": "119",
+          "available": false
+        },
+        "blue|119": {
+          "color": "blue",
+          "width": "119",
+          "available": false
+        },
+        "dark navy|119": {
+          "color": "dark navy",
+          "width": "119",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0601SGBY": {
       "productId": "FC0601SGBY",
       "productName": "swingファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "yellow|115": {
+          "color": "yellow",
+          "width": "115",
+          "available": false
+        },
+        "blue|115": {
+          "color": "blue",
+          "width": "115",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0596WLDN": {
       "productId": "FC0596WLDN",
