@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 20,
+  "detailCursor": 30,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -214,19 +214,165 @@
     },
     "AEA3453PB": {
       "productId": "AEA3453PB",
-      "productName": "star gardenドレス",
+      "productName": "star gardenドレス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "0 / 10 / white": {
+          "label": "0 / 10 / white",
+          "available": true
+        },
+        "0 / 11 / white": {
+          "label": "0 / 11 / white",
+          "available": true
+        },
+        "white / 100 / 110": {
+          "label": "white / 100 / 110",
+          "available": false
+        },
+        "0 / 16 / white": {
+          "label": "0 / 16 / white",
+          "available": true
+        },
+        "0 / 17 / white": {
+          "label": "0 / 17 / white",
+          "available": true
+        },
+        "0 / 160 / white": {
+          "label": "0 / 160 / white",
+          "available": true
+        },
+        "27 / 10 / mint": {
+          "label": "27 / 10 / mint",
+          "available": true
+        },
+        "mint / 100 / 110": {
+          "label": "mint / 100 / 110",
+          "available": false
+        },
+        "27 / 13 / mint": {
+          "label": "27 / 13 / mint",
+          "available": true
+        },
+        "27 / 16 / mint": {
+          "label": "27 / 16 / mint",
+          "available": true
+        },
+        "27 / 160 / mint": {
+          "label": "27 / 160 / mint",
+          "available": true
+        },
+        "98 / 10 / black": {
+          "label": "98 / 10 / black",
+          "available": true
+        },
+        "98 / 11 / black": {
+          "label": "98 / 11 / black",
+          "available": true
+        },
+        "98 / 12 / black": {
+          "label": "98 / 12 / black",
+          "available": true
+        },
+        "98 / 13 / black": {
+          "label": "98 / 13 / black",
+          "available": true
+        },
+        "98 / 16 / black": {
+          "label": "98 / 16 / black",
+          "available": true
+        },
+        "black / 100 / 110": {
+          "label": "black / 100 / 110",
+          "available": false
+        },
+        "選択肢25": {
+          "label": "選択肢25",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA3452PB": {
       "productId": "AEA3452PB",
-      "productName": "wing treeドレス",
+      "productName": "wing treeドレス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "6 / 10 / beige": {
+          "label": "6 / 10 / beige",
+          "available": true
+        },
+        "6 / 11 / beige": {
+          "label": "6 / 11 / beige",
+          "available": true
+        },
+        "6 / 12 / beige": {
+          "label": "6 / 12 / beige",
+          "available": true
+        },
+        "beige / 100 / 110": {
+          "label": "beige / 100 / 110",
+          "available": false
+        },
+        "6 / 16 / beige": {
+          "label": "6 / 16 / beige",
+          "available": true
+        },
+        "32 / 10 / navy": {
+          "label": "32 / 10 / navy",
+          "available": true
+        },
+        "32 / 11 / navy": {
+          "label": "32 / 11 / navy",
+          "available": true
+        },
+        "32 / 12 / navy": {
+          "label": "32 / 12 / navy",
+          "available": true
+        },
+        "32 / 13 / navy": {
+          "label": "32 / 13 / navy",
+          "available": true
+        },
+        "32 / 16 / navy": {
+          "label": "32 / 16 / navy",
+          "available": true
+        },
+        "32 / 17 / navy": {
+          "label": "32 / 17 / navy",
+          "available": true
+        },
+        "navy / 100 / 110": {
+          "label": "navy / 100 / 110",
+          "available": false
+        },
+        "選択肢17": {
+          "label": "選択肢17",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA1181PB": {
       "productId": "AEA1181PB",
@@ -339,11 +485,64 @@
     },
     "AEA6084PB": {
       "productId": "AEA6084PB",
-      "productName": "iloコート",
+      "productName": "iloコート2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "61 / 10 / light gray": {
+          "label": "61 / 10 / light gray",
+          "available": true
+        },
+        "61 / 11 / light gray": {
+          "label": "61 / 11 / light gray",
+          "available": true
+        },
+        "61 / 12 / light gray": {
+          "label": "61 / 12 / light gray",
+          "available": true
+        },
+        "61 / 13 / light gray": {
+          "label": "61 / 13 / light gray",
+          "available": true
+        },
+        "61 / 16 / light gray": {
+          "label": "61 / 16 / light gray",
+          "available": true
+        },
+        "light gray / 100 / 110": {
+          "label": "light gray / 100 / 110",
+          "available": false
+        },
+        "98 / 10 / black": {
+          "label": "98 / 10 / black",
+          "available": true
+        },
+        "98 / 11 / black": {
+          "label": "98 / 11 / black",
+          "available": true
+        },
+        "98 / 12 / black": {
+          "label": "98 / 12 / black",
+          "available": true
+        },
+        "98 / 13 / black": {
+          "label": "98 / 13 / black",
+          "available": true
+        },
+        "black / 100 / 110": {
+          "label": "black / 100 / 110",
+          "available": false
+        },
+        "選択肢16": {
+          "label": "選択肢16",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8539PB": {
       "productId": "AEA8539PB",
@@ -355,11 +554,80 @@
     },
     "AEA4153PB": {
       "productId": "AEA4153PB",
-      "productName": "tambourineパンツ",
+      "productName": "tambourineパンツ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "32 / 9 / navy": {
+          "label": "32 / 9 / navy",
+          "available": true
+        },
+        "32 / 10 / navy": {
+          "label": "32 / 10 / navy",
+          "available": true
+        },
+        "32 / 11 / navy": {
+          "label": "32 / 11 / navy",
+          "available": true
+        },
+        "32 / 12 / navy": {
+          "label": "32 / 12 / navy",
+          "available": true
+        },
+        "32 / 13 / navy": {
+          "label": "32 / 13 / navy",
+          "available": true
+        },
+        "32 / 16 / navy": {
+          "label": "32 / 16 / navy",
+          "available": true
+        },
+        "navy / 90 / 100": {
+          "label": "navy / 90 / 100",
+          "available": false
+        },
+        "51 / 9 / light brown": {
+          "label": "51 / 9 / light brown",
+          "available": true
+        },
+        "51 / 10 / light brown": {
+          "label": "51 / 10 / light brown",
+          "available": true
+        },
+        "51 / 11 / light brown": {
+          "label": "51 / 11 / light brown",
+          "available": true
+        },
+        "light brown / 90 / 100": {
+          "label": "light brown / 90 / 100",
+          "available": false
+        },
+        "51 / 13 / light brown": {
+          "label": "51 / 13 / light brown",
+          "available": true
+        },
+        "51 / 16 / light brown": {
+          "label": "51 / 16 / light brown",
+          "available": true
+        },
+        "51 / 17 / light brown": {
+          "label": "51 / 17 / light brown",
+          "available": true
+        },
+        "選択肢19": {
+          "label": "選択肢19",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA1182PB": {
       "productId": "AEA1182PB",
@@ -460,11 +728,52 @@
     },
     "AEA5103PB": {
       "productId": "AEA5103PB",
-      "productName": "starryスカート",
+      "productName": "starryスカート2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "31 / 10 / light blue": {
+          "label": "31 / 10 / light blue",
+          "available": true
+        },
+        "31 / 12 / light blue": {
+          "label": "31 / 12 / light blue",
+          "available": true
+        },
+        "31 / 16 / light blue": {
+          "label": "31 / 16 / light blue",
+          "available": true
+        },
+        "32 / 10 / navy": {
+          "label": "32 / 10 / navy",
+          "available": true
+        },
+        "32 / 12 / navy": {
+          "label": "32 / 12 / navy",
+          "available": true
+        },
+        "32 / 16 / navy": {
+          "label": "32 / 16 / navy",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8550PB": {
       "productId": "AEA8550PB",
@@ -508,11 +817,36 @@
     },
     "AEA7386P": {
       "productId": "AEA7386P",
-      "productName": "ilomignon pochette",
+      "productName": "ilomignon pochette2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "61 / 0 / light gray": {
+          "label": "61 / 0 / light gray",
+          "available": true
+        },
+        "98 / 0 / black": {
+          "label": "98 / 0 / black",
+          "available": true
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7410P": {
       "productId": "AEA7410P",
@@ -641,11 +975,96 @@
     },
     "AEA4152PB": {
       "productId": "AEA4152PB",
-      "productName": "chouchoパンツ",
+      "productName": "chouchoパンツ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "20 / 9 / green": {
+          "label": "20 / 9 / green",
+          "available": true
+        },
+        "20 / 10 / green": {
+          "label": "20 / 10 / green",
+          "available": true
+        },
+        "20 / 11 / green": {
+          "label": "20 / 11 / green",
+          "available": true
+        },
+        "green / 90 / 100": {
+          "label": "green / 90 / 100",
+          "available": false
+        },
+        "20 / 13 / green": {
+          "label": "20 / 13 / green",
+          "available": true
+        },
+        "20 / 16 / green": {
+          "label": "20 / 16 / green",
+          "available": true
+        },
+        "32 / 9 / navy": {
+          "label": "32 / 9 / navy",
+          "available": true
+        },
+        "32 / 10 / navy": {
+          "label": "32 / 10 / navy",
+          "available": true
+        },
+        "32 / 11 / navy": {
+          "label": "32 / 11 / navy",
+          "available": true
+        },
+        "32 / 12 / navy": {
+          "label": "32 / 12 / navy",
+          "available": true
+        },
+        "navy / 90 / 100": {
+          "label": "navy / 90 / 100",
+          "available": false
+        },
+        "32 / 16 / navy": {
+          "label": "32 / 16 / navy",
+          "available": true
+        },
+        "32 / 17 / navy": {
+          "label": "32 / 17 / navy",
+          "available": true
+        },
+        "60 / 9 / gray": {
+          "label": "60 / 9 / gray",
+          "available": true
+        },
+        "60 / 10 / gray": {
+          "label": "60 / 10 / gray",
+          "available": true
+        },
+        "60 / 11 / gray": {
+          "label": "60 / 11 / gray",
+          "available": true
+        },
+        "60 / 12 / gray": {
+          "label": "60 / 12 / gray",
+          "available": true
+        },
+        "60 / 13 / gray": {
+          "label": "60 / 13 / gray",
+          "available": true
+        },
+        "gray / 90 / 100": {
+          "label": "gray / 90 / 100",
+          "available": false
+        },
+        "選択肢26": {
+          "label": "選択肢26",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7419PS_22PS": {
       "productId": "AES7419PS_22PS",
@@ -721,11 +1140,40 @@
     },
     "AEA7385P": {
       "productId": "AEA7385P",
-      "productName": "sceneryブランケット",
+      "productName": "sceneryブランケット2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "6 / 0 / beige": {
+          "label": "6 / 0 / beige",
+          "available": true
+        },
+        "27 / 0 / mint": {
+          "label": "27 / 0 / mint",
+          "available": true
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8546PB": {
       "productId": "AEA8546PB",
@@ -737,19 +1185,117 @@
     },
     "AEA7383P": {
       "productId": "AEA7383P",
-      "productName": "hana hane手袋",
+      "productName": "hana hane手袋2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "6 / beige / 60": {
+          "label": "6 / beige / 60",
+          "available": true
+        },
+        "8 / 6 / ecru": {
+          "label": "8 / 6 / ecru",
+          "available": true
+        },
+        "10 / 6 / yellow": {
+          "label": "10 / 6 / yellow",
+          "available": true
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7384P": {
       "productId": "AEA7384P",
-      "productName": "hana hane帽子",
+      "productName": "hana hane帽子2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "6 / beige / 60": {
+          "label": "6 / beige / 60",
+          "available": true
+        },
+        "8 / 6 / ecru": {
+          "label": "8 / 6 / ecru",
+          "available": true
+        },
+        "10 / 6 / yellow": {
+          "label": "10 / 6 / yellow",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8541P": {
       "productId": "AEA8541P",
