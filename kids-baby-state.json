@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -919,11 +919,52 @@
     },
     "AEA8552PB": {
       "productId": "AEA8552PB",
-      "productName": "tuhmaニットプルオーバー",
+      "productName": "tuhmaニットプルオーバー2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "mix / 100 / 120": {
+          "label": "mix / 100 / 120",
+          "available": false
+        },
+        "70 / 12 / mix": {
+          "label": "70 / 12 / mix",
+          "available": true
+        },
+        "70 / 16 / mix": {
+          "label": "70 / 16 / mix",
+          "available": true
+        },
+        "73 / 10 / dark mix": {
+          "label": "73 / 10 / dark mix",
+          "available": true
+        },
+        "73 / 12 / dark mix": {
+          "label": "73 / 12 / dark mix",
+          "available": true
+        },
+        "73 / 16 / dark mix": {
+          "label": "73 / 16 / dark mix",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7405P": {
       "productId": "AEA7405P",
@@ -984,11 +1025,52 @@
     },
     "AEA8549P": {
       "productId": "AEA8549P",
-      "productName": "wing treeサロペット",
+      "productName": "wing treeサロペット2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "20 / 7 / green": {
+          "label": "20 / 7 / green",
+          "available": true
+        },
+        "20 / 8 / green": {
+          "label": "20 / 8 / green",
+          "available": true
+        },
+        "20 / 9 / green": {
+          "label": "20 / 9 / green",
+          "available": true
+        },
+        "31 / 7 / light blue": {
+          "label": "31 / 7 / light blue",
+          "available": true
+        },
+        "31 / 8 / light blue": {
+          "label": "31 / 8 / light blue",
+          "available": true
+        },
+        "31 / 9 / light blue": {
+          "label": "31 / 9 / light blue",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA5103PB": {
       "productId": "AEA5103PB",
@@ -1041,35 +1123,307 @@
     },
     "AEA8550PB": {
       "productId": "AEA8550PB",
-      "productName": "wing treeベスト",
+      "productName": "wing treeベスト2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "20 / 9 / green": {
+          "label": "20 / 9 / green",
+          "available": true
+        },
+        "20 / 10 / green": {
+          "label": "20 / 10 / green",
+          "available": true
+        },
+        "20 / 11 / green": {
+          "label": "20 / 11 / green",
+          "available": true
+        },
+        "20 / 12 / green": {
+          "label": "20 / 12 / green",
+          "available": true
+        },
+        "20 / 13 / green": {
+          "label": "20 / 13 / green",
+          "available": true
+        },
+        "20 / 16 / green": {
+          "label": "20 / 16 / green",
+          "available": true
+        },
+        "20 / 17 / green": {
+          "label": "20 / 17 / green",
+          "available": true
+        },
+        "31 / 9 / light blue": {
+          "label": "31 / 9 / light blue",
+          "available": true
+        },
+        "31 / 10 / light blue": {
+          "label": "31 / 10 / light blue",
+          "available": true
+        },
+        "light blue / 90 / 100": {
+          "label": "light blue / 90 / 100",
+          "available": false
+        },
+        "31 / 12 / light blue": {
+          "label": "31 / 12 / light blue",
+          "available": true
+        },
+        "31 / 13 / light blue": {
+          "label": "31 / 13 / light blue",
+          "available": true
+        },
+        "31 / 16 / light blue": {
+          "label": "31 / 16 / light blue",
+          "available": true
+        },
+        "31 / 17 / light blue": {
+          "label": "31 / 17 / light blue",
+          "available": true
+        },
+        "選択肢18": {
+          "label": "選択肢18",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8548PB": {
       "productId": "AEA8548PB",
-      "productName": "starryカットソーワンピース",
+      "productName": "starryカットソーワンピース2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "30 / 9 / blue": {
+          "label": "30 / 9 / blue",
+          "available": true
+        },
+        "30 / 10 / blue": {
+          "label": "30 / 10 / blue",
+          "available": true
+        },
+        "30 / 11 / blue": {
+          "label": "30 / 11 / blue",
+          "available": true
+        },
+        "30 / 12 / blue": {
+          "label": "30 / 12 / blue",
+          "available": true
+        },
+        "30 / 13 / blue": {
+          "label": "30 / 13 / blue",
+          "available": true
+        },
+        "30 / 16 / blue": {
+          "label": "30 / 16 / blue",
+          "available": true
+        },
+        "30 / 17 / blue": {
+          "label": "30 / 17 / blue",
+          "available": true
+        },
+        "blue / 90 / 100": {
+          "label": "blue / 90 / 100",
+          "available": false
+        },
+        "pink / 90 / 100": {
+          "label": "pink / 90 / 100",
+          "available": false
+        },
+        "41 / 10 / pink": {
+          "label": "41 / 10 / pink",
+          "available": true
+        },
+        "41 / 11 / pink": {
+          "label": "41 / 11 / pink",
+          "available": true
+        },
+        "41 / 12 / pink": {
+          "label": "41 / 12 / pink",
+          "available": true
+        },
+        "41 / 13 / pink": {
+          "label": "41 / 13 / pink",
+          "available": true
+        },
+        "41 / 17 / pink": {
+          "label": "41 / 17 / pink",
+          "available": true
+        },
+        "41 / 160 / pink": {
+          "label": "41 / 160 / pink",
+          "available": true
+        },
+        "選択肢19": {
+          "label": "選択肢19",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8551PB": {
       "productId": "AEA8551PB",
-      "productName": "wing treeパンツ",
+      "productName": "wing treeパンツ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "green / 90 / 100": {
+          "label": "green / 90 / 100",
+          "available": false
+        },
+        "20 / 10 / green": {
+          "label": "20 / 10 / green",
+          "available": true
+        },
+        "20 / 11 / green": {
+          "label": "20 / 11 / green",
+          "available": true
+        },
+        "20 / 12 / green": {
+          "label": "20 / 12 / green",
+          "available": true
+        },
+        "20 / 13 / green": {
+          "label": "20 / 13 / green",
+          "available": true
+        },
+        "20 / 16 / green": {
+          "label": "20 / 16 / green",
+          "available": true
+        },
+        "20 / 17 / green": {
+          "label": "20 / 17 / green",
+          "available": true
+        },
+        "light blue / 90 / 100": {
+          "label": "light blue / 90 / 100",
+          "available": false
+        },
+        "31 / 11 / light blue": {
+          "label": "31 / 11 / light blue",
+          "available": true
+        },
+        "31 / 12 / light blue": {
+          "label": "31 / 12 / light blue",
+          "available": true
+        },
+        "31 / 13 / light blue": {
+          "label": "31 / 13 / light blue",
+          "available": true
+        },
+        "31 / 16 / light blue": {
+          "label": "31 / 16 / light blue",
+          "available": true
+        },
+        "31 / 17 / light blue": {
+          "label": "31 / 17 / light blue",
+          "available": true
+        },
+        "選択肢17": {
+          "label": "選択肢17",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8547PB": {
       "productId": "AEA8547PB",
-      "productName": "starryプルオーバー",
+      "productName": "starryプルオーバー2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "blue / 90 / 100": {
+          "label": "blue / 90 / 100",
+          "available": false
+        },
+        "30 / 12 / blue": {
+          "label": "30 / 12 / blue",
+          "available": true
+        },
+        "30 / 13 / blue": {
+          "label": "30 / 13 / blue",
+          "available": true
+        },
+        "30 / 16 / blue": {
+          "label": "30 / 16 / blue",
+          "available": true
+        },
+        "30 / 17 / blue": {
+          "label": "30 / 17 / blue",
+          "available": true
+        },
+        "pink / 90 / 100": {
+          "label": "pink / 90 / 100",
+          "available": false
+        },
+        "41 / 10 / pink": {
+          "label": "41 / 10 / pink",
+          "available": true
+        },
+        "41 / 11 / pink": {
+          "label": "41 / 11 / pink",
+          "available": true
+        },
+        "41 / 12 / pink": {
+          "label": "41 / 12 / pink",
+          "available": true
+        },
+        "41 / 16 / pink": {
+          "label": "41 / 16 / pink",
+          "available": true
+        },
+        "41 / 17 / pink": {
+          "label": "41 / 17 / pink",
+          "available": true
+        },
+        "選択肢20": {
+          "label": "選択肢20",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7454_56PS": {
       "productId": "AEA7454_56PS",
@@ -2939,11 +3293,56 @@
     },
     "AES2079PB": {
       "productId": "AES2079PB",
-      "productName": "chouchoブルゾン",
+      "productName": "chouchoブルゾン2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "16 / 10 / orange mix": {
+          "label": "16 / 10 / orange mix",
+          "available": true
+        },
+        "16 / 11 / orange mix": {
+          "label": "16 / 11 / orange mix",
+          "available": true
+        },
+        "16 / 12 / orange mix": {
+          "label": "16 / 12 / orange mix",
+          "available": true
+        },
+        "16 / 13 / orange mix": {
+          "label": "16 / 13 / orange mix",
+          "available": true
+        },
+        "23 / 10 / green mix": {
+          "label": "23 / 10 / green mix",
+          "available": true
+        },
+        "green mix / 100 / 110": {
+          "label": "green mix / 100 / 110",
+          "available": false
+        },
+        "23 / 12 / green mix": {
+          "label": "23 / 12 / green mix",
+          "available": true
+        },
+        "23 / 13 / green mix": {
+          "label": "23 / 13 / green mix",
+          "available": true
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES8531PB": {
       "productId": "AES8531PB",
@@ -3084,11 +3483,52 @@
     },
     "AES4149PB": {
       "productId": "AES4149PB",
-      "productName": "trollパンツ",
+      "productName": "trollパンツ2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "7 / 10 / ivory": {
+          "label": "7 / 10 / ivory",
+          "available": true
+        },
+        "ivory / 100 / 110": {
+          "label": "ivory / 100 / 110",
+          "available": false
+        },
+        "20 / 10 / green": {
+          "label": "20 / 10 / green",
+          "available": true
+        },
+        "green / 100 / 110": {
+          "label": "green / 100 / 110",
+          "available": false
+        },
+        "20 / 13 / green": {
+          "label": "20 / 13 / green",
+          "available": true
+        },
+        "32 / 10 / navy": {
+          "label": "32 / 10 / navy",
+          "available": true
+        },
+        "32 / 11 / navy": {
+          "label": "32 / 11 / navy",
+          "available": true
+        },
+        "navy / 100 / 110": {
+          "label": "navy / 100 / 110",
+          "available": false
+        },
+        "選択肢23": {
+          "label": "選択肢23",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES8527P": {
       "productId": "AES8527P",
@@ -3166,11 +3606,60 @@
     },
     "AES3449PC": {
       "productId": "AES3449PC",
-      "productName": "forest paradeドレス",
+      "productName": "forest paradeドレス2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "31 / 11 / light blue": {
+          "label": "31 / 11 / light blue",
+          "available": true
+        },
+        "31 / 12 / light blue": {
+          "label": "31 / 12 / light blue",
+          "available": true
+        },
+        "light blue / 110 / 120": {
+          "label": "light blue / 110 / 120",
+          "available": false
+        },
+        "31 / 17 / light blue": {
+          "label": "31 / 17 / light blue",
+          "available": true
+        },
+        "32 / 11 / navy": {
+          "label": "32 / 11 / navy",
+          "available": true
+        },
+        "32 / 12 / navy": {
+          "label": "32 / 12 / navy",
+          "available": true
+        },
+        "32 / 13 / navy": {
+          "label": "32 / 13 / navy",
+          "available": true
+        },
+        "32 / 16 / navy": {
+          "label": "32 / 16 / navy",
+          "available": true
+        },
+        "navy / 110 / 120": {
+          "label": "navy / 110 / 120",
+          "available": false
+        },
+        "選択肢15": {
+          "label": "選択肢15",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES8517PBS": {
       "productId": "AES8517PBS",
@@ -3427,11 +3916,92 @@
     },
     "AES2078PB": {
       "productId": "AES2078PB",
-      "productName": "trollブルゾン",
+      "productName": "trollブルゾン2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "7 / 10 / ivory": {
+          "label": "7 / 10 / ivory",
+          "available": true
+        },
+        "ivory / 100 / 110": {
+          "label": "ivory / 100 / 110",
+          "available": false
+        },
+        "7 / 12 / ivory": {
+          "label": "7 / 12 / ivory",
+          "available": true
+        },
+        "7 / 13 / ivory": {
+          "label": "7 / 13 / ivory",
+          "available": true
+        },
+        "7 / 16 / ivory": {
+          "label": "7 / 16 / ivory",
+          "available": true
+        },
+        "20 / 10 / green": {
+          "label": "20 / 10 / green",
+          "available": true
+        },
+        "20 / 11 / green": {
+          "label": "20 / 11 / green",
+          "available": true
+        },
+        "20 / 12 / green": {
+          "label": "20 / 12 / green",
+          "available": true
+        },
+        "20 / 13 / green": {
+          "label": "20 / 13 / green",
+          "available": true
+        },
+        "green / 100 / 110": {
+          "label": "green / 100 / 110",
+          "available": false
+        },
+        "32 / 10 / navy": {
+          "label": "32 / 10 / navy",
+          "available": true
+        },
+        "32 / 11 / navy": {
+          "label": "32 / 11 / navy",
+          "available": true
+        },
+        "32 / 12 / navy": {
+          "label": "32 / 12 / navy",
+          "available": true
+        },
+        "32 / 13 / navy": {
+          "label": "32 / 13 / navy",
+          "available": true
+        },
+        "32 / 16 / navy": {
+          "label": "32 / 16 / navy",
+          "available": true
+        },
+        "32 / 17 / navy": {
+          "label": "32 / 17 / navy",
+          "available": true
+        },
+        "navy / 100 / 110": {
+          "label": "navy / 100 / 110",
+          "available": false
+        },
+        "選択肢24": {
+          "label": "選択肢24",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA8494PB": {
       "productId": "ADA8494PB",
