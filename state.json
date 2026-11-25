@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 0,
+  "detailCursor": 10,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -1431,8 +1431,19 @@
       "productName": "chouchoファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "blue mix|154": {
+          "color": "blue mix",
+          "width": "154",
+          "available": false
+        },
+        "navy mix|154": {
+          "color": "navy mix",
+          "width": "154",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0545VTK": {
       "productId": "FC0545VTK",
@@ -1846,24 +1857,72 @@
       "productName": "aaltoファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "green|150": {
+          "color": "green",
+          "width": "150",
+          "available": true
+        },
+        "light blue|150": {
+          "color": "light blue",
+          "width": "150",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0436": {
       "productId": "FC0436",
       "productName": "pacificファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "light green|153": {
+          "color": "light green",
+          "width": "153",
+          "available": true
+        },
+        "dark green|153": {
+          "color": "dark green",
+          "width": "153",
+          "available": true
+        },
+        "blue|153": {
+          "color": "blue",
+          "width": "153",
+          "available": true
+        },
+        "light gray|153": {
+          "color": "light gray",
+          "width": "153",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0416": {
       "productId": "FC0416",
       "productName": "lake birdファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|146": {
+          "color": "white",
+          "width": "146",
+          "available": true
+        },
+        "blue|146": {
+          "color": "blue",
+          "width": "146",
+          "available": true
+        },
+        "light pink|146": {
+          "color": "light pink",
+          "width": "146",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0485": {
       "productId": "FC0485",
@@ -1942,24 +2001,72 @@
       "productName": "sometimes luckyファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "light green|155": {
+          "color": "light green",
+          "width": "155",
+          "available": true
+        },
+        "khaki|155": {
+          "color": "khaki",
+          "width": "155",
+          "available": true
+        },
+        "blue green|155": {
+          "color": "blue green",
+          "width": "155",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0435": {
       "productId": "FC0435",
       "productName": "tourファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "light beige|149": {
+          "color": "light beige",
+          "width": "149",
+          "available": true
+        },
+        "navy|149": {
+          "color": "navy",
+          "width": "149",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0427": {
       "productId": "FC0427",
       "productName": "ohayoファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "beige|159": {
+          "color": "beige",
+          "width": "159",
+          "available": true
+        },
+        "green|159": {
+          "color": "green",
+          "width": "159",
+          "available": true
+        },
+        "light blue|159": {
+          "color": "light blue",
+          "width": "159",
+          "available": true
+        },
+        "gray|159": {
+          "color": "gray",
+          "width": "159",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0446": {
       "productId": "FC0446",
@@ -1990,16 +2097,48 @@
       "productName": "garden patchworkファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "light beige|153": {
+          "color": "light beige",
+          "width": "153",
+          "available": true
+        },
+        "navy|153": {
+          "color": "navy",
+          "width": "153",
+          "available": false
+        },
+        "gray|153": {
+          "color": "gray",
+          "width": "153",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0438": {
       "productId": "FC0438",
       "productName": "donguriファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "yellow|154": {
+          "color": "yellow",
+          "width": "154",
+          "available": true
+        },
+        "green|154": {
+          "color": "green",
+          "width": "154",
+          "available": false
+        },
+        "brown|154": {
+          "color": "brown",
+          "width": "154",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0453": {
       "productId": "FC0453",
@@ -2014,8 +2153,24 @@
       "productName": "land theaterファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "yellow|143": {
+          "color": "yellow",
+          "width": "143",
+          "available": false
+        },
+        "navy|143": {
+          "color": "navy",
+          "width": "143",
+          "available": false
+        },
+        "camel|143": {
+          "color": "camel",
+          "width": "143",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     }
   },
   "pendingNotifications": []
