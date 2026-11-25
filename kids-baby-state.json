@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 80,
+  "detailCursor": 90,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -111,8 +111,69 @@
       "productName": "trollソックス",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "10 / 18 / yellow": {
+          "label": "10 / 18 / yellow",
+          "available": true
+        },
+        "10 / 19 / yellow": {
+          "label": "10 / 19 / yellow",
+          "available": true
+        },
+        "yellow / 13-15 / 16-18": {
+          "label": "yellow / 13-15 / 16-18",
+          "available": false
+        },
+        "47 / 18 / light pink": {
+          "label": "47 / 18 / light pink",
+          "available": true
+        },
+        "47 / 19 / light pink": {
+          "label": "47 / 19 / light pink",
+          "available": true
+        },
+        "light pink / 13-15 / 16-18": {
+          "label": "light pink / 13-15 / 16-18",
+          "available": false
+        },
+        "61 / 18 / light gray": {
+          "label": "61 / 18 / light gray",
+          "available": true
+        },
+        "61 / 19 / light gray": {
+          "label": "61 / 19 / light gray",
+          "available": true
+        },
+        "light gray / 13-15 / 16-18": {
+          "label": "light gray / 13-15 / 16-18",
+          "available": false
+        },
+        "選択肢15": {
+          "label": "選択肢15",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7460PS": {
       "productId": "AEA7460PS",
@@ -1906,8 +1967,41 @@
       "productName": "tambourineフリルバッグ",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "white / free": {
+          "label": "white / FREE",
+          "available": false
+        },
+        "yellow / free": {
+          "label": "yellow / FREE",
+          "available": false
+        },
+        "mint / free": {
+          "label": "mint / FREE",
+          "available": false
+        },
+        "41 / 0 / pink": {
+          "label": "41 / 0 / pink",
+          "available": true
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8543P": {
       "productId": "AEA8543P",
@@ -3298,8 +3392,37 @@
       "productName": "sea birdsブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "28 / 3 / dark green": {
+          "label": "28 / 3 / dark green",
+          "available": true
+        },
+        "28 / 4 / dark green": {
+          "label": "28 / 4 / dark green",
+          "available": true
+        },
+        "30 / 3 / blue": {
+          "label": "30 / 3 / blue",
+          "available": true
+        },
+        "30 / 4 / blue": {
+          "label": "30 / 4 / blue",
+          "available": true
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7325P": {
       "productId": "AES7325P",
@@ -3506,8 +3629,25 @@
       "productName": "paradisポシェット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "0 / white / free": {
+          "label": "0 / white / FREE",
+          "available": true
+        },
+        "beige / free": {
+          "label": "beige / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7326P": {
       "productId": "AES7326P",
@@ -3733,8 +3873,21 @@
       "productName": "jellyお食事スタイ",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "yellow / free": {
+          "label": "yellow / FREE",
+          "available": false
+        },
+        "選択肢3": {
+          "label": "選択肢3",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7320P": {
       "productId": "AES7320P",
@@ -3770,24 +3923,119 @@
       "productName": "tambourineブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "dark green / m / l": {
+          "label": "dark green / M / L",
+          "available": false
+        },
+        "28 / 4 / dark green": {
+          "label": "28 / 4 / dark green",
+          "available": true
+        },
+        "32 / 3 / navy": {
+          "label": "32 / 3 / navy",
+          "available": true
+        },
+        "32 / 4 / navy": {
+          "label": "32 / 4 / navy",
+          "available": true
+        },
+        "gray / m / l": {
+          "label": "gray / M / L",
+          "available": false
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7364PS": {
       "productId": "AES7364PS",
       "productName": "letter of flowerお食事スタイ",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "6 / 0 / beige": {
+          "label": "6 / 0 / beige",
+          "available": true
+        },
+        "30 / 0 / blue": {
+          "label": "30 / 0 / blue",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7344P": {
       "productId": "AES7344P",
-      "productName": "light mistカチューシャ",
+      "productName": "light mistカチューシャ2026 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "30 / 0 / blue": {
+          "label": "30 / 0 / blue",
+          "available": true
+        },
+        "47 / 0 / light pink": {
+          "label": "47 / 0 / light pink",
+          "available": true
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES4149PB": {
       "productId": "AES4149PB",
@@ -3974,8 +4222,41 @@
       "productName": "symphonyブルゾン",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "33 / 10 / blue mix": {
+          "label": "33 / 10 / blue mix",
+          "available": true
+        },
+        "33 / 12 / blue mix": {
+          "label": "33 / 12 / blue mix",
+          "available": true
+        },
+        "33 / 16 / blue mix": {
+          "label": "33 / 16 / blue mix",
+          "available": true
+        },
+        "pink mix / 100 / 120": {
+          "label": "pink mix / 100 / 120",
+          "available": false
+        },
+        "43 / 12 / pink mix": {
+          "label": "43 / 12 / pink mix",
+          "available": true
+        },
+        "43 / 16 / pink mix": {
+          "label": "43 / 16 / pink mix",
+          "available": true
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "BP7112P": {
       "productId": "BP7112P",
@@ -4280,8 +4561,45 @@
       "productName": "symphonyプルオーバー",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "33 / 10 / blue mix": {
+          "label": "33 / 10 / blue mix",
+          "available": true
+        },
+        "33 / 12 / blue mix": {
+          "label": "33 / 12 / blue mix",
+          "available": true
+        },
+        "33 / 16 / blue mix": {
+          "label": "33 / 16 / blue mix",
+          "available": true
+        },
+        "43 / 10 / pink mix": {
+          "label": "43 / 10 / pink mix",
+          "available": true
+        },
+        "43 / 12 / pink mix": {
+          "label": "43 / 12 / pink mix",
+          "available": true
+        },
+        "43 / 16 / pink mix": {
+          "label": "43 / 16 / pink mix",
+          "available": true
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA2077PBS": {
       "productId": "ADA2077PBS",
