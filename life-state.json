@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 20,
+  "detailCursor": 30,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -721,32 +721,232 @@
       "productName": "chouchodog用カフェマット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "beige s m l / s": {
+          "label": "beige S M L / S",
+          "available": true
+        },
+        "beige s m l / m": {
+          "label": "beige S M L / M",
+          "available": true
+        },
+        "beige s m l / l": {
+          "label": "beige S M L / L",
+          "available": true
+        },
+        "green s m l / s": {
+          "label": "green S M L / S",
+          "available": true
+        },
+        "green s m l / m": {
+          "label": "green S M L / M",
+          "available": true
+        },
+        "green s m l / l": {
+          "label": "green S M L / L",
+          "available": true
+        },
+        "navy s m l / s": {
+          "label": "navy S M L / S",
+          "available": false
+        },
+        "navy s m l / m": {
+          "label": "navy S M L / M",
+          "available": true
+        },
+        "navy s m l / l": {
+          "label": "navy S M L / L",
+          "available": true
+        },
+        "選択肢17": {
+          "label": "選択肢17",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7017WS": {
       "productId": "AEA7017WS",
       "productName": "chouchoami cushion",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "green free / free": {
+          "label": "green FREE / FREE",
+          "available": true
+        },
+        "pink free / free": {
+          "label": "pink FREE / FREE",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7006W": {
       "productId": "AEA7006W",
-      "productName": "dog collier",
+      "productName": "dog collier2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "mustard s m / s": {
+          "label": "mustard S M / S",
+          "available": true
+        },
+        "mustard s m / m": {
+          "label": "mustard S M / M",
+          "available": true
+        },
+        "black s m / s": {
+          "label": "black S M / S",
+          "available": true
+        },
+        "black s m / m": {
+          "label": "black S M / M",
+          "available": true
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA6004WB": {
       "productId": "AEA6004WB",
-      "productName": "tambourinedog wear",
+      "productName": "tambourinedog wear2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "0x / navy xxs xs s m / xxs": {
+          "label": "0X / navy XXS XS S M / XXS",
+          "available": true
+        },
+        "navy xxs xs s m / xs": {
+          "label": "navy XXS XS S M / XS",
+          "available": true
+        },
+        "navy xxs xs s m / s": {
+          "label": "navy XXS XS S M / S",
+          "available": true
+        },
+        "navy xxs xs s m / m": {
+          "label": "navy XXS XS S M / M",
+          "available": true
+        },
+        "light brown xxs xs s m / xxs": {
+          "label": "light brown XXS XS S M / XXS",
+          "available": false
+        },
+        "light brown xxs xs s m / xs": {
+          "label": "light brown XXS XS S M / XS",
+          "available": true
+        },
+        "light brown xxs xs s m / s": {
+          "label": "light brown XXS XS S M / S",
+          "available": true
+        },
+        "light brown xxs xs s m / m": {
+          "label": "light brown XXS XS S M / M",
+          "available": true
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7912": {
       "productId": "AEA7912",
@@ -758,35 +958,335 @@
     },
     "AEA6003WB": {
       "productId": "AEA6003WB",
-      "productName": "chouchoレインコート",
+      "productName": "chouchoレインコート2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "0x / light blue xxs xs s m l / xxs": {
+          "label": "0X / light blue XXS XS S M L / XXS",
+          "available": true
+        },
+        "light blue xxs xs s m l / xs": {
+          "label": "light blue XXS XS S M L / XS",
+          "available": true
+        },
+        "light blue xxs xs s m l / s": {
+          "label": "light blue XXS XS S M L / S",
+          "available": true
+        },
+        "light blue xxs xs s m l / m": {
+          "label": "light blue XXS XS S M L / M",
+          "available": true
+        },
+        "light blue xxs xs s m l / l": {
+          "label": "light blue XXS XS S M L / L",
+          "available": true
+        },
+        "0x / light gray xxs xs s m l / xxs": {
+          "label": "0X / light gray XXS XS S M L / XXS",
+          "available": true
+        },
+        "light gray xxs xs s m l / xs": {
+          "label": "light gray XXS XS S M L / XS",
+          "available": true
+        },
+        "light gray xxs xs s m l / s": {
+          "label": "light gray XXS XS S M L / S",
+          "available": true
+        },
+        "light gray xxs xs s m l / m": {
+          "label": "light gray XXS XS S M L / M",
+          "available": true
+        },
+        "light gray xxs xs s m l / l": {
+          "label": "light gray XXS XS S M L / L",
+          "available": true
+        },
+        "0x / charcoal xxs xs s m l / xxs": {
+          "label": "0X / charcoal XXS XS S M L / XXS",
+          "available": true
+        },
+        "charcoal xxs xs s m l / xs": {
+          "label": "charcoal XXS XS S M L / XS",
+          "available": true
+        },
+        "charcoal xxs xs s m l / s": {
+          "label": "charcoal XXS XS S M L / S",
+          "available": true
+        },
+        "charcoal xxs xs s m l / m": {
+          "label": "charcoal XXS XS S M L / M",
+          "available": true
+        },
+        "charcoal xxs xs s m l / l": {
+          "label": "charcoal XXS XS S M L / L",
+          "available": true
+        },
+        "選択肢19": {
+          "label": "選択肢19",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7002WB": {
       "productId": "AEA7002WB",
-      "productName": "chouchoレインフード",
+      "productName": "chouchoレインフード2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "light blue xxs xs s m l / xxs": {
+          "label": "light blue XXS XS S M L / XXS",
+          "available": false
+        },
+        "light blue xxs xs s m l / xs": {
+          "label": "light blue XXS XS S M L / XS",
+          "available": false
+        },
+        "light blue xxs xs s m l / s": {
+          "label": "light blue XXS XS S M L / S",
+          "available": true
+        },
+        "light blue xxs xs s m l / m": {
+          "label": "light blue XXS XS S M L / M",
+          "available": true
+        },
+        "light blue xxs xs s m l / l": {
+          "label": "light blue XXS XS S M L / L",
+          "available": true
+        },
+        "light gray xxs xs s m l / xxs": {
+          "label": "light gray XXS XS S M L / XXS",
+          "available": false
+        },
+        "light gray xxs xs s m l / xs": {
+          "label": "light gray XXS XS S M L / XS",
+          "available": true
+        },
+        "light gray xxs xs s m l / s": {
+          "label": "light gray XXS XS S M L / S",
+          "available": true
+        },
+        "light gray xxs xs s m l / m": {
+          "label": "light gray XXS XS S M L / M",
+          "available": true
+        },
+        "light gray xxs xs s m l / l": {
+          "label": "light gray XXS XS S M L / L",
+          "available": true
+        },
+        "0x / charcoal xxs xs s m l / xxs": {
+          "label": "0X / charcoal XXS XS S M L / XXS",
+          "available": true
+        },
+        "charcoal xxs xs s m l / xs": {
+          "label": "charcoal XXS XS S M L / XS",
+          "available": true
+        },
+        "charcoal xxs xs s m l / s": {
+          "label": "charcoal XXS XS S M L / S",
+          "available": true
+        },
+        "charcoal xxs xs s m l / m": {
+          "label": "charcoal XXS XS S M L / M",
+          "available": true
+        },
+        "charcoal xxs xs s m l / l": {
+          "label": "charcoal XXS XS S M L / L",
+          "available": true
+        },
+        "選択肢18": {
+          "label": "選択肢18",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA6002WB": {
       "productId": "AEA6002WB",
-      "productName": "chouchoノースリーブレインコート",
+      "productName": "chouchoノースリーブレインコート2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "light blue xxs xs s m l / xxs": {
+          "label": "light blue XXS XS S M L / XXS",
+          "available": false
+        },
+        "light blue xxs xs s m l / xs": {
+          "label": "light blue XXS XS S M L / XS",
+          "available": true
+        },
+        "light blue xxs xs s m l / s": {
+          "label": "light blue XXS XS S M L / S",
+          "available": true
+        },
+        "light blue xxs xs s m l / m": {
+          "label": "light blue XXS XS S M L / M",
+          "available": true
+        },
+        "light blue xxs xs s m l / l": {
+          "label": "light blue XXS XS S M L / L",
+          "available": true
+        },
+        "0x / light gray xxs xs s m l / xxs": {
+          "label": "0X / light gray XXS XS S M L / XXS",
+          "available": true
+        },
+        "light gray xxs xs s m l / xs": {
+          "label": "light gray XXS XS S M L / XS",
+          "available": true
+        },
+        "light gray xxs xs s m l / s": {
+          "label": "light gray XXS XS S M L / S",
+          "available": true
+        },
+        "light gray xxs xs s m l / m": {
+          "label": "light gray XXS XS S M L / M",
+          "available": true
+        },
+        "light gray xxs xs s m l / l": {
+          "label": "light gray XXS XS S M L / L",
+          "available": true
+        },
+        "0x / charcoal xxs xs s m l / xxs": {
+          "label": "0X / charcoal XXS XS S M L / XXS",
+          "available": true
+        },
+        "charcoal xxs xs s m l / xs": {
+          "label": "charcoal XXS XS S M L / XS",
+          "available": false
+        },
+        "charcoal xxs xs s m l / s": {
+          "label": "charcoal XXS XS S M L / S",
+          "available": true
+        },
+        "charcoal xxs xs s m l / m": {
+          "label": "charcoal XXS XS S M L / M",
+          "available": true
+        },
+        "charcoal xxs xs s m l / l": {
+          "label": "charcoal XXS XS S M L / L",
+          "available": true
+        },
+        "選択肢19": {
+          "label": "選択肢19",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7003WB": {
       "productId": "AEA7003WB",
-      "productName": "chouchoレインフード 耳出し穴あり",
+      "productName": "chouchoレインフード 耳出し穴あり2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "0x / light blue xxs xs s m l / xxs": {
+          "label": "0X / light blue XXS XS S M L / XXS",
+          "available": true
+        },
+        "light blue xxs xs s m l / xs": {
+          "label": "light blue XXS XS S M L / XS",
+          "available": false
+        },
+        "light blue xxs xs s m l / s": {
+          "label": "light blue XXS XS S M L / S",
+          "available": true
+        },
+        "light blue xxs xs s m l / m": {
+          "label": "light blue XXS XS S M L / M",
+          "available": true
+        },
+        "light blue xxs xs s m l / l": {
+          "label": "light blue XXS XS S M L / L",
+          "available": true
+        },
+        "0x / light gray xxs xs s m l / xxs": {
+          "label": "0X / light gray XXS XS S M L / XXS",
+          "available": true
+        },
+        "light gray xxs xs s m l / xs": {
+          "label": "light gray XXS XS S M L / XS",
+          "available": false
+        },
+        "light gray xxs xs s m l / s": {
+          "label": "light gray XXS XS S M L / S",
+          "available": true
+        },
+        "light gray xxs xs s m l / m": {
+          "label": "light gray XXS XS S M L / M",
+          "available": true
+        },
+        "light gray xxs xs s m l / l": {
+          "label": "light gray XXS XS S M L / L",
+          "available": true
+        },
+        "0x / charcoal xxs xs s m l / xxs": {
+          "label": "0X / charcoal XXS XS S M L / XXS",
+          "available": true
+        },
+        "charcoal xxs xs s m l / xs": {
+          "label": "charcoal XXS XS S M L / XS",
+          "available": false
+        },
+        "charcoal xxs xs s m l / s": {
+          "label": "charcoal XXS XS S M L / S",
+          "available": true
+        },
+        "charcoal xxs xs s m l / m": {
+          "label": "charcoal XXS XS S M L / M",
+          "available": true
+        },
+        "charcoal xxs xs s m l / l": {
+          "label": "charcoal XXS XS S M L / L",
+          "available": true
+        },
+        "選択肢18": {
+          "label": "選択肢18",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7907": {
       "productId": "AEA7907",
@@ -1214,11 +1714,64 @@
     },
     "AEA7001WB": {
       "productId": "AEA7001WB",
-      "productName": "wing treedog用カフェマット",
+      "productName": "wing treedog用カフェマット2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "green s m l / s": {
+          "label": "green S M L / S",
+          "available": true
+        },
+        "green s m l / m": {
+          "label": "green S M L / M",
+          "available": true
+        },
+        "green s m l / l": {
+          "label": "green S M L / L",
+          "available": true
+        },
+        "light blue s m l / s": {
+          "label": "light blue S M L / S",
+          "available": true
+        },
+        "light blue s m l / m": {
+          "label": "light blue S M L / M",
+          "available": true
+        },
+        "light blue s m l / l": {
+          "label": "light blue S M L / L",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8004WB": {
       "productId": "AEA8004WB",
@@ -3525,11 +4078,68 @@
     },
     "ADS7640": {
       "productId": "ADS7640",
-      "productName": "rocherマルチクロス",
+      "productName": "rocherマルチクロス2025 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "orange mix free / free": {
+          "label": "orange mix FREE / FREE",
+          "available": true
+        },
+        "green mix free / free": {
+          "label": "green mix FREE / FREE",
+          "available": true
+        },
+        "pink mix free / free": {
+          "label": "pink mix FREE / FREE",
+          "available": true
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "MG0045_46": {
       "productId": "MG0045_46",
