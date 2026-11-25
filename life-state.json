@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 30,
+  "detailCursor": 40,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -950,11 +950,40 @@
     },
     "AEA7912": {
       "productId": "AEA7912",
-      "productName": "ilognocchi cushion",
+      "productName": "ilognocchi cushion2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "navy s l / s": {
+          "label": "navy S L / S",
+          "available": true
+        },
+        "navy s l / l": {
+          "label": "navy S L / L",
+          "available": false
+        },
+        "blue gray s l / s": {
+          "label": "blue gray S L / S",
+          "available": true
+        },
+        "blue gray s l / l": {
+          "label": "blue gray S L / L",
+          "available": true
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA6003WB": {
       "productId": "AEA6003WB",
@@ -1290,51 +1319,361 @@
     },
     "AEA7907": {
       "productId": "AEA7907",
-      "productName": "tambourineハンカチ",
+      "productName": "tambourineハンカチ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "white free / free": {
+          "label": "white FREE / FREE",
+          "available": true
+        },
+        "mint free / free": {
+          "label": "mint FREE / FREE",
+          "available": true
+        },
+        "navy free / free": {
+          "label": "navy FREE / FREE",
+          "available": true
+        },
+        "light pink free / free": {
+          "label": "light pink FREE / FREE",
+          "available": true
+        },
+        "選択肢15": {
+          "label": "選択肢15",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7872_39": {
       "productId": "AEA7872_39",
       "productName": "tambourine borderブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "yellow mix xs s l / xs": {
+          "label": "yellow mix XS S L / XS",
+          "available": true
+        },
+        "yellow mix xs s l / s": {
+          "label": "yellow mix XS S L / S",
+          "available": true
+        },
+        "yellow mix xs s l / l": {
+          "label": "yellow mix XS S L / L",
+          "available": true
+        },
+        "green mix s l / s": {
+          "label": "green mix S L / S",
+          "available": true
+        },
+        "green mix s l / l": {
+          "label": "green mix S L / L",
+          "available": true
+        },
+        "pink mix xs s l / xs": {
+          "label": "pink mix XS S L / XS",
+          "available": false
+        },
+        "pink mix xs s l / s": {
+          "label": "pink mix XS S L / S",
+          "available": false
+        },
+        "pink mix xs s l / l": {
+          "label": "pink mix XS S L / L",
+          "available": false
+        },
+        "選択肢12": {
+          "label": "選択肢12",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7867": {
       "productId": "AEA7867",
       "productName": "metsäブランケット",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "navy s l / s": {
+          "label": "navy S L / S",
+          "available": false
+        },
+        "navy s l / l": {
+          "label": "navy S L / L",
+          "available": false
+        },
+        "gray s l / s": {
+          "label": "gray S L / S",
+          "available": false
+        },
+        "gray s l / l": {
+          "label": "gray S L / L",
+          "available": false
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7029": {
       "productId": "AEA7029",
       "productName": "adelieルームスリッパ",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "beige m l / m": {
+          "label": "beige M L / M",
+          "available": false
+        },
+        "beige m l / l": {
+          "label": "beige M L / L",
+          "available": false
+        },
+        "mustard m l / m": {
+          "label": "mustard M L / M",
+          "available": false
+        },
+        "mustard m l / l": {
+          "label": "mustard M L / L",
+          "available": false
+        },
+        "dark green m l / m": {
+          "label": "dark green M L / M",
+          "available": false
+        },
+        "dark green m l / l": {
+          "label": "dark green M L / L",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7869_69A": {
       "productId": "AEA7869_69A",
       "productName": "anemoneブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "orange s l / s": {
+          "label": "orange S L / S",
+          "available": true
+        },
+        "orange s l / l": {
+          "label": "orange S L / L",
+          "available": true
+        },
+        "green s l / s": {
+          "label": "green S L / S",
+          "available": false
+        },
+        "green s l / l": {
+          "label": "green S L / L",
+          "available": true
+        },
+        "navy s l / s": {
+          "label": "navy S L / S",
+          "available": true
+        },
+        "navy s l / l": {
+          "label": "navy S L / L",
+          "available": true
+        },
+        "red s l / s": {
+          "label": "red S L / S",
+          "available": true
+        },
+        "red s l / l": {
+          "label": "red S L / L",
+          "available": true
+        },
+        "gray s l / s": {
+          "label": "gray S L / S",
+          "available": true
+        },
+        "gray s l / l": {
+          "label": "gray S L / L",
+          "available": true
+        },
+        "black s l / s": {
+          "label": "black S L / S",
+          "available": true
+        },
+        "black s l / l": {
+          "label": "black S L / L",
+          "available": true
+        },
+        "blue green s l / s": {
+          "label": "blue green S L / S",
+          "available": false
+        },
+        "blue green s l / l": {
+          "label": "blue green S L / L",
+          "available": false
+        },
+        "選択肢17": {
+          "label": "選択肢17",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7864_98": {
       "productId": "AEA7864_98",
       "productName": "tambourineブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "navy xs s l / xs": {
+          "label": "navy XS S L / XS",
+          "available": false
+        },
+        "navy xs s l / s": {
+          "label": "navy XS S L / S",
+          "available": false
+        },
+        "navy xs s l / l": {
+          "label": "navy XS S L / L",
+          "available": false
+        },
+        "gray xs s l / xs": {
+          "label": "gray XS S L / XS",
+          "available": false
+        },
+        "gray xs s l / s": {
+          "label": "gray XS S L / S",
+          "available": false
+        },
+        "gray xs s l / l": {
+          "label": "gray XS S L / L",
+          "available": false
+        },
+        "black xs s l / xs": {
+          "label": "black XS S L / XS",
+          "available": true
+        },
+        "black xs s l / s": {
+          "label": "black XS S L / S",
+          "available": false
+        },
+        "black xs s l / l": {
+          "label": "black XS S L / L",
+          "available": false
+        },
+        "blue green xs s l / xs": {
+          "label": "blue green XS S L / XS",
+          "available": false
+        },
+        "blue green xs s l / s": {
+          "label": "blue green XS S L / S",
+          "available": false
+        },
+        "blue green xs s l / l": {
+          "label": "blue green XS S L / L",
+          "available": false
+        },
+        "scarlet xs s l / xs": {
+          "label": "scarlet XS S L / XS",
+          "available": false
+        },
+        "scarlet xs s l / s": {
+          "label": "scarlet XS S L / S",
+          "available": false
+        },
+        "scarlet xs s l / l": {
+          "label": "scarlet XS S L / L",
+          "available": false
+        },
+        "選択肢18": {
+          "label": "選択肢18",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ACA7595": {
       "productId": "ACA7595",
@@ -1580,11 +1919,56 @@
     },
     "AEA7908": {
       "productId": "AEA7908",
-      "productName": "kidegnocchi cushion",
+      "productName": "kidegnocchi cushion2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "yellow s l / s": {
+          "label": "yellow S L / S",
+          "available": true
+        },
+        "yellow s l / l": {
+          "label": "yellow S L / L",
+          "available": true
+        },
+        "green s l / s": {
+          "label": "green S L / S",
+          "available": true
+        },
+        "green s l / l": {
+          "label": "green S L / L",
+          "available": true
+        },
+        "navy s l / s": {
+          "label": "navy S L / S",
+          "available": true
+        },
+        "navy s l / l": {
+          "label": "navy S L / L",
+          "available": true
+        },
+        "black s l / s": {
+          "label": "black S L / S",
+          "available": true
+        },
+        "black s l / l": {
+          "label": "black S L / L",
+          "available": true
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "MP0034": {
       "productId": "MP0034",
@@ -1857,11 +2241,64 @@
     },
     "AEA7905": {
       "productId": "AEA7905",
-      "productName": "wing treeマルチクロス",
+      "productName": "wing treeマルチクロス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "white free / free": {
+          "label": "white FREE / FREE",
+          "available": true
+        },
+        "mint free / free": {
+          "label": "mint FREE / FREE",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "MG0026": {
       "productId": "MG0026",
@@ -1902,11 +2339,40 @@
     },
     "AEA7910": {
       "productId": "AEA7910",
-      "productName": "loingnocchi cushion",
+      "productName": "loingnocchi cushion2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "beige s l / s": {
+          "label": "beige S L / S",
+          "available": true
+        },
+        "beige s l / l": {
+          "label": "beige S L / L",
+          "available": true
+        },
+        "black s l / s": {
+          "label": "black S L / S",
+          "available": true
+        },
+        "black s l / l": {
+          "label": "black S L / L",
+          "available": true
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7798": {
       "productId": "AES7798",
