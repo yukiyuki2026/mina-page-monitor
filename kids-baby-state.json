@@ -1,14 +1,31 @@
 {
   "initialized": true,
-  "detailCursor": 30,
+  "detailCursor": 40,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
-      "productName": "tambourineunelma bag",
+      "productName": "tambourineunelma bag2026-27 a/w",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "navy / free": {
+          "label": "navy / FREE",
+          "available": false
+        },
+        "light brown / free": {
+          "label": "light brown / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8538PC": {
       "productId": "AEA8538PC",
@@ -477,11 +494,28 @@
     },
     "AEA7409P": {
       "productId": "AEA7409P",
-      "productName": "tuhmaストール",
+      "productName": "tuhmaストール2026-27 a/w",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "mix / free": {
+          "label": "mix / FREE",
+          "available": false
+        },
+        "dark mix / free": {
+          "label": "dark mix / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA6084PB": {
       "productId": "AEA6084PB",
@@ -712,11 +746,60 @@
     },
     "AEA7405P": {
       "productId": "AEA7405P",
-      "productName": "wing treeおくるみ",
+      "productName": "wing treeおくるみ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "20 / 0 / green": {
+          "label": "20 / 0 / green",
+          "available": true
+        },
+        "31 / 0 / light blue": {
+          "label": "31 / 0 / light blue",
+          "available": true
+        },
+        "選択肢12": {
+          "label": "選択肢12",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8549P": {
       "productId": "AEA8549P",
@@ -858,27 +941,142 @@
     },
     "AEA7391P": {
       "productId": "AEA7391P",
-      "productName": "tambourinecopains bag",
+      "productName": "tambourinecopains bag2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "20 / 0 / green": {
+          "label": "20 / 0 / green",
+          "available": true
+        },
+        "gray / free": {
+          "label": "gray / FREE",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7404P": {
       "productId": "AEA7404P",
-      "productName": "starryおくるみ",
+      "productName": "starryおくるみ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "30 / 0 / blue": {
+          "label": "30 / 0 / blue",
+          "available": true
+        },
+        "41 / 0 / pink": {
+          "label": "41 / 0 / pink",
+          "available": true
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7388P": {
       "productId": "AEA7388P",
-      "productName": "ilofamille tote",
+      "productName": "ilofamille tote2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "6 / 0 / beige": {
+          "label": "6 / 0 / beige",
+          "available": true
+        },
+        "green / free": {
+          "label": "green / FREE",
+          "available": false
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA2080PB": {
       "productId": "AEA2080PB",
@@ -1100,11 +1298,64 @@
     },
     "AEA7387P": {
       "productId": "AEA7387P",
-      "productName": "starrygem pochette",
+      "productName": "starrygem pochette2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "31 / 0 / light blue": {
+          "label": "31 / 0 / light blue",
+          "available": true
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8544P": {
       "productId": "AEA8544P",
@@ -1116,11 +1367,36 @@
     },
     "AEA7392P": {
       "productId": "AEA7392P",
-      "productName": "chouchoスタイ",
+      "productName": "chouchoスタイ2026-27 a/w",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "ecru / free": {
+          "label": "ecru / FREE",
+          "available": false
+        },
+        "yellow / free": {
+          "label": "yellow / FREE",
+          "available": false
+        },
+        "navy / free": {
+          "label": "navy / FREE",
+          "available": false
+        },
+        "light gray / free": {
+          "label": "light gray / FREE",
+          "available": false
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7413P": {
       "productId": "AEA7413P",
@@ -1307,11 +1583,56 @@
     },
     "AEA7406P": {
       "productId": "AEA7406P",
-      "productName": "chouchoお食事スタイ",
+      "productName": "chouchoお食事スタイ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "12 / 0 / mustard": {
+          "label": "12 / 0 / mustard",
+          "available": true
+        },
+        "30 / 0 / blue": {
+          "label": "30 / 0 / blue",
+          "available": true
+        },
+        "navy / free": {
+          "label": "navy / FREE",
+          "available": false
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8542PB": {
       "productId": "AEA8542PB",
@@ -1323,11 +1644,76 @@
     },
     "AEA7407P_A": {
       "productId": "AEA7407P_A",
-      "productName": "please, thank youお食事スタイ",
+      "productName": "please, thank youお食事スタイ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "12 / 1163 / mustard": {
+          "label": "12 / 1163 / mustard",
+          "available": true
+        },
+        "mustard / please / thank you": {
+          "label": "mustard / PLEASE / THANK YOU",
+          "available": false
+        },
+        "30 / 1163 / blue": {
+          "label": "30 / 1163 / blue",
+          "available": true
+        },
+        "30 / 1164 / blue": {
+          "label": "30 / 1164 / blue",
+          "available": true
+        },
+        "32 / 1163 / navy": {
+          "label": "32 / 1163 / navy",
+          "available": true
+        },
+        "32 / 1164 / navy": {
+          "label": "32 / 1164 / navy",
+          "available": true
+        },
+        "選択肢16": {
+          "label": "選択肢16",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7339P": {
       "productId": "AES7339P",
