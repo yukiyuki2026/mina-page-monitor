@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 20,
+  "detailCursor": 30,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -338,8 +338,41 @@
       "productName": "tambourineドレス",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "20 / 36 / green": {
+          "label": "20 / 36 / green",
+          "available": true
+        },
+        "20 / 38 / green": {
+          "label": "20 / 38 / green",
+          "available": true
+        },
+        "green / 36 / 38": {
+          "label": "green / 36 / 38",
+          "available": false
+        },
+        "98 / 36 / black": {
+          "label": "98 / 36 / black",
+          "available": true
+        },
+        "98 / 38 / black": {
+          "label": "98 / 38 / black",
+          "available": true
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7917": {
       "productId": "AEA7917",
@@ -510,7 +543,7 @@
     "AEA3252": {
       "productId": "AEA3252",
       "productName": "paraabeliドレス2026-27 a/w",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
@@ -651,8 +684,33 @@
       "productName": "tambourineドレス",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "beige / 36 / 38": {
+          "label": "beige / 36 / 38",
+          "available": false
+        },
+        "navy / 36 / 38": {
+          "label": "navy / 36 / 38",
+          "available": false
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9500": {
       "productId": "AEA9500",
@@ -672,11 +730,68 @@
     },
     "AEA3265": {
       "productId": "AEA3265",
-      "productName": "tambourineドレス",
+      "productName": "tambourineドレス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "0 / 36 / white": {
+          "label": "0 / 36 / white",
+          "available": true
+        },
+        "0 / 38 / white": {
+          "label": "0 / 38 / white",
+          "available": true
+        },
+        "0 / 40 / white": {
+          "label": "0 / 40 / white",
+          "available": true
+        },
+        "47 / 36 / light pink": {
+          "label": "47 / 36 / light pink",
+          "available": true
+        },
+        "47 / 38 / light pink": {
+          "label": "47 / 38 / light pink",
+          "available": true
+        },
+        "47 / 40 / light pink": {
+          "label": "47 / 40 / light pink",
+          "available": true
+        },
+        "60 / 36 / gray": {
+          "label": "60 / 36 / gray",
+          "available": true
+        },
+        "60 / 38 / gray": {
+          "label": "60 / 38 / gray",
+          "available": true
+        },
+        "gray / 36 / 38": {
+          "label": "gray / 36 / 38",
+          "available": false
+        },
+        "98 / 36 / black": {
+          "label": "98 / 36 / black",
+          "available": true
+        },
+        "98 / 38 / black": {
+          "label": "98 / 38 / black",
+          "available": true
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA3254": {
       "productId": "AEA3254",
@@ -729,11 +844,48 @@
     },
     "AEA4672": {
       "productId": "AEA4672",
-      "productName": "multaテーパードパンツ",
+      "productName": "multaテーパードパンツ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "navy / 36 / 38": {
+          "label": "navy / 36 / 38",
+          "available": false
+        },
+        "50 / 36 / brown": {
+          "label": "50 / 36 / brown",
+          "available": true
+        },
+        "50 / 38 / brown": {
+          "label": "50 / 38 / brown",
+          "available": true
+        },
+        "brown / 36 / 38": {
+          "label": "brown / 36 / 38",
+          "available": false
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8124": {
       "productId": "AEA8124",
@@ -891,11 +1043,48 @@
     },
     "AEA4671": {
       "productId": "AEA4671",
-      "productName": "flower marblesストレートパンツ",
+      "productName": "flower marblesストレートパンツ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "navy / 36 / 38": {
+          "label": "navy / 36 / 38",
+          "available": false
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "50 / 36 / brown": {
+          "label": "50 / 36 / brown",
+          "available": true
+        },
+        "50 / 38 / brown": {
+          "label": "50 / 38 / brown",
+          "available": true
+        },
+        "50 / 40 / brown": {
+          "label": "50 / 40 / brown",
+          "available": true
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8117": {
       "productId": "AEA8117",
@@ -1174,11 +1363,52 @@
     },
     "AEA4676": {
       "productId": "AEA4676",
-      "productName": "virtaテーパードパンツ",
+      "productName": "virtaテーパードパンツ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "25 / 36 / khaki": {
+          "label": "25 / 36 / khaki",
+          "available": true
+        },
+        "25 / 38 / khaki": {
+          "label": "25 / 38 / khaki",
+          "available": true
+        },
+        "25 / 40 / khaki": {
+          "label": "25 / 40 / khaki",
+          "available": true
+        },
+        "60 / 36 / gray": {
+          "label": "60 / 36 / gray",
+          "available": true
+        },
+        "60 / 38 / gray": {
+          "label": "60 / 38 / gray",
+          "available": true
+        },
+        "60 / 40 / gray": {
+          "label": "60 / 40 / gray",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7902": {
       "productId": "AEA7902",
@@ -1385,11 +1615,52 @@
     },
     "AEA4677": {
       "productId": "AEA4677",
-      "productName": "virtaクロップドパンツ",
+      "productName": "virtaクロップドパンツ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "25 / 36 / khaki": {
+          "label": "25 / 36 / khaki",
+          "available": true
+        },
+        "25 / 38 / khaki": {
+          "label": "25 / 38 / khaki",
+          "available": true
+        },
+        "25 / 40 / khaki": {
+          "label": "25 / 40 / khaki",
+          "available": true
+        },
+        "60 / 36 / gray": {
+          "label": "60 / 36 / gray",
+          "available": true
+        },
+        "60 / 38 / gray": {
+          "label": "60 / 38 / gray",
+          "available": true
+        },
+        "gray / 36 / 38": {
+          "label": "gray / 36 / 38",
+          "available": false
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9524": {
       "productId": "AEA9524",
@@ -1404,8 +1675,61 @@
       "productName": "glanzパンツ",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "22 / 36 / moss green": {
+          "label": "22 / 36 / moss green",
+          "available": true
+        },
+        "22 / 38 / moss green": {
+          "label": "22 / 38 / moss green",
+          "available": true
+        },
+        "22 / 40 / moss green": {
+          "label": "22 / 40 / moss green",
+          "available": true
+        },
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "61 / 36 / light gray": {
+          "label": "61 / 36 / light gray",
+          "available": true
+        },
+        "61 / 38 / light gray": {
+          "label": "61 / 38 / light gray",
+          "available": true
+        },
+        "61 / 40 / light gray": {
+          "label": "61 / 40 / light gray",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV2112": {
       "productId": "EV2112",
@@ -1824,8 +2148,49 @@
       "productName": "glass flowerドレス",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "23 / 36 / green mix": {
+          "label": "23 / 36 / green mix",
+          "available": true
+        },
+        "23 / 38 / green mix": {
+          "label": "23 / 38 / green mix",
+          "available": true
+        },
+        "23 / 40 / green mix": {
+          "label": "23 / 40 / green mix",
+          "available": true
+        },
+        "63 / 36 / gray mix": {
+          "label": "63 / 36 / gray mix",
+          "available": true
+        },
+        "63 / 38 / gray mix": {
+          "label": "63 / 38 / gray mix",
+          "available": true
+        },
+        "63 / 40 / gray mix": {
+          "label": "63 / 40 / gray mix",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA1483S": {
       "productId": "AEA1483S",
@@ -1858,11 +2223,52 @@
     },
     "AEA4674": {
       "productId": "AEA4674",
-      "productName": "crystal sugarパンツ",
+      "productName": "crystal sugarパンツ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "navy / 36 / 38": {
+          "label": "navy / 36 / 38",
+          "available": false
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "brown / 36 / 38": {
+          "label": "brown / 36 / 38",
+          "available": false
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8097": {
       "productId": "AEA8097",
