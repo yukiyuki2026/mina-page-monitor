@@ -29,12 +29,78 @@ function createEmptyState() {
   };
 }
 
+function createColorKey(color, width) {
+  return `${color || ''}|${width || ''}`;
+}
+
+function sanitizeStoredColors(colors) {
+  if (!colors) {
+    return {};
+  }
+
+  const sanitizedColors = {};
+
+  if (Array.isArray(colors)) {
+    for (const item of colors) {
+      if (!item || !item.color) {
+        continue;
+      }
+
+      const color = String(item.color).trim();
+      const width = String(item.width || '').trim();
+      const key = createColorKey(color, width);
+
+      sanitizedColors[key] = {
+        color,
+        width,
+        available: Boolean(item.available)
+      };
+    }
+
+    return sanitizedColors;
+  }
+
+  if (typeof colors === 'object') {
+    for (const [storedKey, item] of Object.entries(colors)) {
+      if (!item || typeof item !== 'object') {
+        continue;
+      }
+
+      const color = String(item.color || '').trim();
+      const width = String(item.width || '').trim();
+
+      if (!color) {
+        continue;
+      }
+
+      const key =
+        storedKey || createColorKey(color, width);
+
+      sanitizedColors[key] = {
+        color,
+        width,
+        available: Boolean(item.available)
+      };
+    }
+  }
+
+  return sanitizedColors;
+}
+
 function sanitizeStoredProduct(product = {}) {
+  const colors =
+    sanitizeStoredColors(product.colors);
+
   return {
     productId: product.productId || '',
     productName: product.productName || '',
     isSoldOut: Boolean(product.isSoldOut),
-    advanceAnnouncement: product.advanceAnnouncement || ''
+    advanceAnnouncement:
+      product.advanceAnnouncement || '',
+    colors,
+    colorsInitialized:
+      Boolean(product.colorsInitialized) ||
+      Object.keys(colors).length > 0
   };
 }
 
@@ -70,7 +136,8 @@ function loadState() {
           statusText: notification.statusText || '',
           colorsText: notification.colorsText || '',
           announcement: notification.announcement || '',
-          detectedAt: notification.detectedAt || ''
+          detectedAt: notification.detectedAt || '',
+          title: notification.title || ''
         }))
       : [];
 
@@ -135,7 +202,9 @@ function getJapanTimeParts() {
     hourCycle: 'h23'
   });
 
-  const parts = formatter.formatToParts(new Date());
+  const parts =
+    formatter.formatToParts(new Date());
+
   const values = {};
 
   for (const part of parts) {
@@ -177,7 +246,7 @@ function isQuietTime() {
     japanTime.hour * 60 + japanTime.minute;
 
   const quietStart = 11 * 60 + 55;
-  const quietEnd = 12 * 60 + 10;
+  const quietEnd = 12 * 60 + 5;
 
   return (
     totalMinutes >= quietStart &&
@@ -230,7 +299,8 @@ async function createGitHubIssue(title, body) {
   );
 
   if (!response.ok) {
-    const responseText = await response.text();
+    const responseText =
+      await response.text();
 
     console.log(
       `GitHub通知作成エラー: ` +
@@ -255,9 +325,10 @@ function createNotificationBody(notification) {
   );
 
   if (notification.type === 'new-product') {
-    const colorsSection = notification.colorsText
-      ? `\n### カラー・生地巾\n\n${notification.colorsText}\n`
-      : '';
+    const colorsSection =
+      notification.colorsText
+        ? `\n### カラー・生地巾\n\n${notification.colorsText}\n`
+        : '';
 
     return (
 `@${GITHUB_USERNAME}
@@ -291,6 +362,26 @@ ${notification.colorsText}
 ${productUrl}
 
 一覧ページで **SOLD OUTから購入可能への変化** を検知しました。`
+    );
+  }
+
+  if (notification.type === 'color-restock') {
+    return (
+`@${GITHUB_USERNAME}
+
+## 🎨 カラー在庫復活
+
+**商品：${notification.productName}**
+
+### 復活したカラー
+
+${notification.colorsText}
+
+### 商品ページ
+
+${productUrl}
+
+購入画面で、上記カラーの購入ボタンが **無効から有効に変わったこと** を検知しました。`
     );
   }
 
@@ -346,7 +437,7 @@ function addPendingNotification(
   });
 
   console.log(
-    `通知を12:10以降まで保留しました: ${notification.title}`
+    `通知を12:05終了後まで保留しました: ${notification.title}`
   );
 }
 
@@ -375,7 +466,7 @@ async function sendOrQueueNotification(
 async function sendPendingNotifications(state) {
   if (isQuietTime()) {
     console.log(
-      '11:55～12:10のため、保留通知は送信しません'
+      '11:55～12:05のため、保留通知は送信しません'
     );
 
     return;
@@ -393,13 +484,17 @@ async function sendPendingNotifications(state) {
 
   const unsentNotifications = [];
 
-  for (const notification of state.pendingNotifications) {
+  for (
+    const notification
+    of state.pendingNotifications
+  ) {
     const body =
 `${createNotificationBody(notification)}
 
 ---
 
 検知時刻：${notification.detectedAt}（日本時間）
+
 通知抑制時間中に検知したため、現在通知しています。`;
 
     const sent = await createGitHubIssue(
@@ -419,7 +514,9 @@ async function sendPendingNotifications(state) {
 }
 
 async function getListProducts(page) {
-  console.log('監視対象の一覧ページを開きます');
+  console.log(
+    '監視対象の一覧ページを開きます'
+  );
 
   await page.goto(LIST_URL, {
     waitUntil: 'domcontentloaded',
@@ -430,69 +527,79 @@ async function getListProducts(page) {
     WAIT_AFTER_LIST_LOAD_MS
   );
 
-  const products = await page.evaluate(() => {
-    const cards = Array.from(
-      document.querySelectorAll(
-        'div[id^="item-FC"]'
-      )
-    );
-
-    const productMap = new Map();
-
-    for (const card of cards) {
-      const productId = card.id
-        .replace('item-', '')
-        .trim();
-
-      if (!productId.startsWith('FC')) {
-        continue;
-      }
-
-      const link = card.querySelector(
-        `a[href*="/online_store/${productId}"]`
+  const products =
+    await page.evaluate(() => {
+      const cards = Array.from(
+        document.querySelectorAll(
+          'div[id^="item-FC"]'
+        )
       );
 
-      if (!link) {
-        continue;
+      const productMap = new Map();
+
+      for (const card of cards) {
+        const productId = card.id
+          .replace('item-', '')
+          .trim();
+
+        if (!productId.startsWith('FC')) {
+          continue;
+        }
+
+        const link = card.querySelector(
+          `a[href*="/online_store/${productId}"]`
+        );
+
+        if (!link) {
+          continue;
+        }
+
+        const image =
+          card.querySelector('img');
+
+        const productName =
+          image
+            ?.getAttribute('alt')
+            ?.trim() ||
+          productId;
+
+        const soldOutElement =
+          card.querySelector(
+            '[class*="soldout"]'
+          );
+
+        let isSoldOut = false;
+
+        if (soldOutElement) {
+          const style =
+            window.getComputedStyle(
+              soldOutElement
+            );
+
+          const rect =
+            soldOutElement
+              .getBoundingClientRect();
+
+          isSoldOut =
+            style.display !== 'none' &&
+            style.visibility !== 'hidden' &&
+            Number(style.opacity) !== 0 &&
+            rect.width > 0 &&
+            rect.height > 0;
+        }
+
+        productMap.set(productId, {
+          productId,
+          productName,
+          url: link.href,
+          isSoldOut
+        });
       }
 
-      const image =
-        card.querySelector('img');
-
-      const productName =
-        image?.getAttribute('alt')?.trim() ||
-        productId;
-
-      const soldOutElement =
-        card.querySelector('[class*="soldout"]');
-
-      let isSoldOut = false;
-
-      if (soldOutElement) {
-        const style =
-          window.getComputedStyle(soldOutElement);
-
-        const rect =
-          soldOutElement.getBoundingClientRect();
-
-        isSoldOut =
-          style.display !== 'none' &&
-          style.visibility !== 'hidden' &&
-          Number(style.opacity) !== 0 &&
-          rect.width > 0 &&
-          rect.height > 0;
-      }
-
-      productMap.set(productId, {
-        productId,
-        productName,
-        url: link.href,
-        isSoldOut
-      });
-    }
-
-    return Array.from(productMap.values());
-  });
+      return Array.from(
+        productMap.values()
+      );
+    });
 
   console.log(
     `一覧から${products.length}商品を取得しました`
@@ -502,7 +609,7 @@ async function getListProducts(page) {
 }
 
 function normalizeAnnouncement(text) {
-  return text
+  return String(text || '')
     .replace(/\s+/g, ' ')
     .replace(/^[・\-–—\s]+/, '')
     .trim();
@@ -597,7 +704,10 @@ async function getProductDetail(
           .map(text =>
             text
               .replace(/\s+/g, ' ')
-              .replace(/^[・\-–—\s]+/, '')
+              .replace(
+                /^[・\-–—\s]+/,
+                ''
+              )
               .trim()
           )
       )
@@ -614,7 +724,8 @@ async function getProductDetail(
     for (const button of buttons) {
       const container =
         button.closest('li') ||
-        button.parentElement?.parentElement ||
+        button.parentElement
+          ?.parentElement ||
         button.parentElement;
 
       if (!container) {
@@ -629,14 +740,15 @@ async function getProductDetail(
         .map(text => text.trim())
         .filter(Boolean);
 
-      const colorName = texts.find(text =>
-        text !== width &&
-        text !== 'カラー' &&
-        text !== '生地巾(cm)' &&
-        text !== 'かごへ入れる' &&
-        !/^\d+$/.test(text) &&
-        !/^\d+CM$/i.test(text)
-      );
+      const colorName =
+        texts.find(text =>
+          text !== width &&
+          text !== 'カラー' &&
+          text !== '生地巾(cm)' &&
+          text !== 'かごへ入れる' &&
+          !/^\d+$/.test(text) &&
+          !/^\d+CM$/i.test(text)
+        );
 
       if (!colorName) {
         continue;
@@ -657,7 +769,9 @@ async function getProductDetail(
     return {
       productName,
       announcements,
-      colors: Array.from(colorMap.values())
+      colors: Array.from(
+        colorMap.values()
+      )
     };
   });
 }
@@ -667,30 +781,47 @@ function getLatestAdvanceAnnouncement(
 ) {
   const candidates = announcements
     .map(normalizeAnnouncement)
-    .filter(isAdvanceRestockAnnouncement);
+    .filter(
+      isAdvanceRestockAnnouncement
+    );
 
   return candidates.length > 0
     ? candidates.join('\n')
     : '';
 }
 
-function createAvailableColorsText(colors) {
-  const availableColors =
-    colors.filter(item => item.available);
-
-  if (availableColors.length === 0) {
-    return '購入可能カラーを取得できませんでした';
+function createColorsText(colors) {
+  if (!colors || colors.length === 0) {
+    return '';
   }
 
-  return availableColors
+  return colors
     .map(item => {
       const widthText = item.width
         ? ` / 生地巾 ${item.width}cm`
         : '';
 
-      return `- **${item.color}**${widthText}`;
+      return (
+        `- **${item.color}**` +
+        `${widthText}`
+      );
     })
     .join('\n');
+}
+
+function createAvailableColorsText(colors) {
+  const availableColors =
+    (colors || []).filter(
+      item => item.available
+    );
+
+  if (availableColors.length === 0) {
+    return '購入可能カラーを取得できませんでした';
+  }
+
+  return createColorsText(
+    availableColors
+  );
 }
 
 function createAllColorsText(colors) {
@@ -704,13 +835,112 @@ function createAllColorsText(colors) {
         ? '購入可能'
         : '購入不可';
 
+      const widthText = item.width
+        ? ` / 生地巾 ${item.width}cm`
+        : '';
+
       return (
         `- **${item.color}**` +
-        ` / 生地巾 ${item.width}cm` +
+        `${widthText}` +
         ` / ${status}`
       );
     })
     .join('\n');
+}
+
+function convertColorsToState(colors) {
+  const colorState = {};
+
+  for (const item of colors || []) {
+    if (!item || !item.color) {
+      continue;
+    }
+
+    const color =
+      String(item.color).trim();
+
+    const width =
+      String(item.width || '').trim();
+
+    const key =
+      createColorKey(color, width);
+
+    colorState[key] = {
+      color,
+      width,
+      available: Boolean(item.available)
+    };
+  }
+
+  return colorState;
+}
+
+function findRestockedColors(
+  previousProduct,
+  currentColors
+) {
+  if (!previousProduct?.colorsInitialized) {
+    return [];
+  }
+
+  const previousColors =
+    sanitizeStoredColors(
+      previousProduct.colors
+    );
+
+  const restockedColors = [];
+
+  for (
+    const currentColor
+    of currentColors || []
+  ) {
+    const key = createColorKey(
+      currentColor.color,
+      currentColor.width
+    );
+
+    const previousColor =
+      previousColors[key];
+
+    if (
+      previousColor &&
+      previousColor.available === false &&
+      currentColor.available === true
+    ) {
+      restockedColors.push(
+        currentColor
+      );
+    }
+  }
+
+  return restockedColors;
+}
+
+function updateStoredProductFromDetail(
+  previousProduct,
+  product,
+  detail,
+  announcement
+) {
+  return {
+    ...previousProduct,
+    productId: product.productId,
+    productName:
+      detail?.productName ||
+      product.productName,
+    isSoldOut: product.isSoldOut,
+    advanceAnnouncement:
+      announcement !== undefined
+        ? announcement
+        : (
+            previousProduct
+              ?.advanceAnnouncement || ''
+          ),
+    colors: convertColorsToState(
+      detail?.colors || []
+    ),
+    colorsInitialized: true
+  };
 }
 
 async function notifyNewProduct(
@@ -728,7 +958,8 @@ async function notifyNewProduct(
       : '購入可能';
 
   const notification = {
-    key: `new-product:${product.productId}`,
+    key:
+      `new-product:${product.productId}`,
     type: 'new-product',
     productId: product.productId,
     productName: displayName,
@@ -764,12 +995,66 @@ async function notifyRestock(
     productId: product.productId,
     productName: displayName,
     statusText: '購入可能',
-    colorsText: createAvailableColorsText(
-      detail.colors
-    ),
+    colorsText:
+      createAvailableColorsText(
+        detail.colors
+      ),
     announcement: '',
     title:
       `🛒 在庫復活！ ${displayName}`
+  };
+
+  await sendOrQueueNotification(
+    state,
+    notification
+  );
+}
+
+async function notifyColorRestock(
+  state,
+  product,
+  detail,
+  restockedColors
+) {
+  if (
+    !restockedColors ||
+    restockedColors.length === 0
+  ) {
+    return;
+  }
+
+  const displayName =
+    detail.productName ||
+    product.productName;
+
+  const colorKeys = restockedColors
+    .map(item =>
+      createColorKey(
+        item.color,
+        item.width
+      )
+    )
+    .sort()
+    .join(',');
+
+  const notification = {
+    key:
+      `color-restock:` +
+      `${product.productId}:` +
+      Buffer.from(colorKeys)
+        .toString('base64')
+        .slice(0, 80),
+    type: 'color-restock',
+    productId: product.productId,
+    productName: displayName,
+    statusText: '購入可能',
+    colorsText:
+      createColorsText(
+        restockedColors
+      ),
+    announcement: '',
+    title:
+      `🎨 カラー在庫復活！ ${displayName}`
   };
 
   await sendOrQueueNotification(
@@ -790,7 +1075,8 @@ async function notifyAdvanceAnnouncement(
 
   const notification = {
     key:
-      `announcement:${product.productId}:` +
+      `announcement:` +
+      `${product.productId}:` +
       Buffer.from(announcement)
         .toString('base64')
         .slice(0, 40),
@@ -830,8 +1116,36 @@ async function notifyAdvanceAnnouncement(
   });
 
   const state = loadState();
+
   const previousProducts =
     state.products || {};
+
+  const detailCache = new Map();
+
+  async function getCachedProductDetail(
+    product
+  ) {
+    if (
+      detailCache.has(product.productId)
+    ) {
+      return detailCache.get(
+        product.productId
+      );
+    }
+
+    const detail =
+      await getProductDetail(
+        detailPage,
+        product
+      );
+
+    detailCache.set(
+      product.productId,
+      detail
+    );
+
+    return detail;
+  }
 
   try {
     console.log(
@@ -844,7 +1158,9 @@ async function notifyAdvanceAnnouncement(
       }`
     );
 
-    await sendPendingNotifications(state);
+    await sendPendingNotifications(
+      state
+    );
 
     const products =
       await getListProducts(listPage);
@@ -857,17 +1173,25 @@ async function notifyAdvanceAnnouncement(
 
     if (!state.initialized) {
       for (const product of products) {
-        previousProducts[product.productId] = {
-          productId: product.productId,
-          productName: product.productName,
-          isSoldOut: product.isSoldOut,
-          advanceAnnouncement: ''
+        previousProducts[
+          product.productId
+        ] = {
+          productId:
+            product.productId,
+          productName:
+            product.productName,
+          isSoldOut:
+            product.isSoldOut,
+          advanceAnnouncement: '',
+          colors: {},
+          colorsInitialized: false
         };
       }
 
       state.initialized = true;
       state.detailCursor = 0;
-      state.products = previousProducts;
+      state.products =
+        previousProducts;
 
       saveState(state);
 
@@ -878,9 +1202,18 @@ async function notifyAdvanceAnnouncement(
       return;
     }
 
-    const newProducts = products.filter(
-      product =>
-        !previousProducts[product.productId]
+    const newProducts =
+      products.filter(
+        product =>
+          !previousProducts[
+            product.productId
+          ]
+      );
+
+    const newProductIds = new Set(
+      newProducts.map(
+        product => product.productId
+      )
     );
 
     console.log(
@@ -891,14 +1224,15 @@ async function notifyAdvanceAnnouncement(
       let detail = null;
 
       try {
-        detail = await getProductDetail(
-          detailPage,
-          product
-        );
+        detail =
+          await getCachedProductDetail(
+            product
+          );
       } catch (error) {
         console.log(
           `新商品の詳細取得エラー: ` +
-          `${product.productId} ${error.message}`
+          `${product.productId} ` +
+          `${error.message}`
         );
       }
 
@@ -908,6 +1242,31 @@ async function notifyAdvanceAnnouncement(
         detail
       );
 
+      const announcement = detail
+        ? getLatestAdvanceAnnouncement(
+            detail.announcements
+          )
+        : '';
+
+      previousProducts[
+        product.productId
+      ] = {
+        productId:
+          product.productId,
+        productName:
+          detail?.productName ||
+          product.productName,
+        isSoldOut:
+          product.isSoldOut,
+        advanceAnnouncement:
+          announcement,
+        colors: convertColorsToState(
+          detail?.colors || []
+        ),
+        colorsInitialized:
+          Boolean(detail)
+      };
+
       await sleep(
         WAIT_BETWEEN_DETAIL_PAGES_MS
       );
@@ -916,38 +1275,55 @@ async function notifyAdvanceAnnouncement(
     const restockedProducts =
       products.filter(product => {
         const previous =
-          previousProducts[product.productId];
+          previousProducts[
+            product.productId
+          ];
 
         return (
+          !newProductIds.has(
+            product.productId
+          ) &&
           previous &&
           previous.isSoldOut === true &&
           product.isSoldOut === false
         );
       });
 
+    const overallRestockedProductIds =
+      new Set(
+        restockedProducts.map(
+          product => product.productId
+        )
+      );
+
     console.log(
-      `在庫復活を検知した件数: ` +
+      `商品全体の在庫復活を検知した件数: ` +
       `${restockedProducts.length}`
     );
 
-    for (const product of restockedProducts) {
+    for (
+      const product
+      of restockedProducts
+    ) {
       let detail;
 
       try {
-        detail = await getProductDetail(
-          detailPage,
-          product
-        );
+        detail =
+          await getCachedProductDetail(
+            product
+          );
       } catch (error) {
         detail = {
-          productName: product.productName,
+          productName:
+            product.productName,
           announcements: [],
           colors: []
         };
 
         console.log(
           `復活商品の詳細取得エラー: ` +
-          `${product.productId} ${error.message}`
+          `${product.productId} ` +
+          `${error.message}`
         );
       }
 
@@ -957,20 +1333,43 @@ async function notifyAdvanceAnnouncement(
         detail
       );
 
+      const previous =
+        previousProducts[
+          product.productId
+        ] || {};
+
+      const announcement =
+        getLatestAdvanceAnnouncement(
+          detail.announcements || []
+        );
+
+      previousProducts[
+        product.productId
+      ] = updateStoredProductFromDetail(
+        previous,
+        product,
+        detail,
+        announcement
+      );
+
       await sleep(
         WAIT_BETWEEN_DETAIL_PAGES_MS
       );
     }
 
-    const sortedProducts = [...products].sort(
-      (a, b) =>
-        a.productId.localeCompare(b.productId)
-    );
+    const sortedProducts =
+      [...products].sort((a, b) =>
+        a.productId.localeCompare(
+          b.productId
+        )
+      );
 
     let cursor =
       Number(state.detailCursor || 0);
 
-    if (cursor >= sortedProducts.length) {
+    if (
+      cursor >= sortedProducts.length
+    ) {
       cursor = 0;
     }
 
@@ -978,8 +1377,7 @@ async function notifyAdvanceAnnouncement(
 
     for (
       let index = 0;
-      index <
-      Math.min(
+      index < Math.min(
         DETAIL_BATCH_SIZE,
         sortedProducts.length
       );
@@ -995,14 +1393,16 @@ async function notifyAdvanceAnnouncement(
     }
 
     console.log(
-      `再入荷予告確認: ${detailBatch.length}商品`
+      `詳細確認対象: ${detailBatch.length}商品`
     );
 
-    for (const product of detailBatch) {
+    for (
+      const product
+      of detailBatch
+    ) {
       try {
         const detail =
-          await getProductDetail(
-            detailPage,
+          await getCachedProductDetail(
             product
           );
 
@@ -1016,15 +1416,31 @@ async function notifyAdvanceAnnouncement(
           );
 
         const previous =
-          previousProducts[product.productId] ||
-          {};
+          previousProducts[
+            product.productId
+          ] || {
+            productId:
+              product.productId,
+            productName:
+              product.productName,
+            isSoldOut:
+              product.isSoldOut,
+            advanceAnnouncement: '',
+            colors: {},
+            colorsInitialized: false
+          };
 
         const previousAnnouncement =
-          previous.advanceAnnouncement || '';
+          previous
+            .advanceAnnouncement || '';
 
         if (
           announcement &&
-          announcement !== previousAnnouncement
+          announcement !==
+            previousAnnouncement &&
+          !newProductIds.has(
+            product.productId
+          )
         ) {
           await notifyAdvanceAnnouncement(
             state,
@@ -1034,17 +1450,61 @@ async function notifyAdvanceAnnouncement(
           );
         }
 
-        previousProducts[product.productId] = {
-          ...previous,
-          productId: product.productId,
-          productName: displayName,
-          isSoldOut: product.isSoldOut,
-          advanceAnnouncement: announcement
-        };
+        const restockedColors =
+          findRestockedColors(
+            previous,
+            detail.colors
+          );
+
+        if (
+          restockedColors.length > 0 &&
+          !newProductIds.has(
+            product.productId
+          ) &&
+          !overallRestockedProductIds.has(
+            product.productId
+          )
+        ) {
+          console.log(
+            `カラー在庫復活: ` +
+            `${product.productId} ` +
+            `${restockedColors
+              .map(item =>
+                `${item.color}/` +
+                `${item.width}cm`
+              )
+              .join(', ')}`
+          );
+
+          await notifyColorRestock(
+            state,
+            product,
+            detail,
+            restockedColors
+          );
+        } else if (
+          !previous.colorsInitialized
+        ) {
+          console.log(
+            `カラー初期状態を登録: ` +
+            `${product.productId} ` +
+            `${displayName}`
+          );
+        }
+
+        previousProducts[
+          product.productId
+        ] = updateStoredProductFromDetail(
+          previous,
+          product,
+          detail,
+          announcement
+        );
       } catch (error) {
         console.log(
-          `予告確認エラー: ` +
-          `${product.productId} ${error.message}`
+          `詳細確認エラー: ` +
+          `${product.productId} ` +
+          `${error.message}`
         );
       }
 
@@ -1055,15 +1515,30 @@ async function notifyAdvanceAnnouncement(
 
     for (const product of products) {
       const previous =
-        previousProducts[product.productId] ||
-        {};
+        previousProducts[
+          product.productId
+        ] || {};
 
-      previousProducts[product.productId] = {
-        productId: product.productId,
-        productName: product.productName,
-        isSoldOut: product.isSoldOut,
+      previousProducts[
+        product.productId
+      ] = {
+        productId:
+          product.productId,
+        productName:
+          previous.productName ||
+          product.productName,
+        isSoldOut:
+          product.isSoldOut,
         advanceAnnouncement:
-          previous.advanceAnnouncement || ''
+          previous
+            .advanceAnnouncement || '',
+        colors: sanitizeStoredColors(
+          previous.colors
+        ),
+        colorsInitialized:
+          Boolean(
+            previous.colorsInitialized
+          )
       };
     }
 
@@ -1075,7 +1550,8 @@ async function notifyAdvanceAnnouncement(
             detailBatch.length
           ) % sortedProducts.length;
 
-    state.products = previousProducts;
+    state.products =
+      previousProducts;
 
     saveState(state);
 
