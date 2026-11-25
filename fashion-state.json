@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 0,
+  "detailCursor": 10,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -463,11 +463,52 @@
     },
     "AEA1472": {
       "productId": "AEA1472",
-      "productName": "floretブラウス",
+      "productName": "floretブラウス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "28 / 36 / dark green": {
+          "label": "28 / 36 / dark green",
+          "available": true
+        },
+        "28 / 38 / dark green": {
+          "label": "28 / 38 / dark green",
+          "available": true
+        },
+        "dark green / 36 / 38": {
+          "label": "dark green / 36 / 38",
+          "available": false
+        },
+        "98 / 36 / black": {
+          "label": "98 / 36 / black",
+          "available": true
+        },
+        "98 / 38 / black": {
+          "label": "98 / 38 / black",
+          "available": true
+        },
+        "98 / 40 / black": {
+          "label": "98 / 40 / black",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA3256": {
       "productId": "AEA3256",
@@ -607,11 +648,52 @@
     },
     "AEA1468": {
       "productId": "AEA1468",
-      "productName": "floretブラウス",
+      "productName": "floretブラウス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "28 / 36 / dark green": {
+          "label": "28 / 36 / dark green",
+          "available": true
+        },
+        "28 / 38 / dark green": {
+          "label": "28 / 38 / dark green",
+          "available": true
+        },
+        "28 / 40 / dark green": {
+          "label": "28 / 40 / dark green",
+          "available": true
+        },
+        "98 / 36 / black": {
+          "label": "98 / 36 / black",
+          "available": true
+        },
+        "98 / 38 / black": {
+          "label": "98 / 38 / black",
+          "available": true
+        },
+        "98 / 40 / black": {
+          "label": "98 / 40 / black",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7890": {
       "productId": "AEA7890",
@@ -687,11 +769,40 @@
     },
     "AEA1475": {
       "productId": "AEA1475",
-      "productName": "tambourineブラウス",
+      "productName": "tambourineブラウス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "white / 36 / 38": {
+          "label": "white / 36 / 38",
+          "available": false
+        },
+        "0 / 38 / white": {
+          "label": "0 / 38 / white",
+          "available": true
+        },
+        "light pink / 36 / 38": {
+          "label": "light pink / 36 / 38",
+          "available": false
+        },
+        "gray / 36 / 38": {
+          "label": "gray / 36 / 38",
+          "available": false
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8118": {
       "productId": "AEA8118",
@@ -831,11 +942,68 @@
     },
     "AEA1467": {
       "productId": "AEA1467",
-      "productName": "starryブラウス",
+      "productName": "starryブラウス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "25 / 36 / khaki": {
+          "label": "25 / 36 / khaki",
+          "available": true
+        },
+        "25 / 38 / khaki": {
+          "label": "25 / 38 / khaki",
+          "available": true
+        },
+        "25 / 40 / khaki": {
+          "label": "25 / 40 / khaki",
+          "available": true
+        },
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "navy / 36 / 38": {
+          "label": "navy / 36 / 38",
+          "available": false
+        },
+        "98 / 36 / black": {
+          "label": "98 / 36 / black",
+          "available": true
+        },
+        "98 / 38 / black": {
+          "label": "98 / 38 / black",
+          "available": true
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA6839": {
       "productId": "AEA6839",
@@ -931,24 +1099,111 @@
       "productName": "multicheckコート",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "70 / 36 / mix": {
+          "label": "70 / 36 / mix",
+          "available": true
+        },
+        "70 / 38 / mix": {
+          "label": "70 / 38 / mix",
+          "available": true
+        },
+        "70 / 40 / mix": {
+          "label": "70 / 40 / mix",
+          "available": true
+        },
+        "73 / 36 / dark mix": {
+          "label": "73 / 36 / dark mix",
+          "available": true
+        },
+        "73 / 38 / dark mix": {
+          "label": "73 / 38 / dark mix",
+          "available": true
+        },
+        "73 / 40 / dark mix": {
+          "label": "73 / 40 / dark mix",
+          "available": true
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ACA8005": {
       "productId": "ACA8005",
       "productName": "very berry\tカットソードレス",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "28 / 36 / dark green": {
+          "label": "28 / 36 / dark green",
+          "available": true
+        },
+        "28 / 38 / dark green": {
+          "label": "28 / 38 / dark green",
+          "available": true
+        },
+        "28 / 40 / dark green": {
+          "label": "28 / 40 / dark green",
+          "available": true
+        },
+        "選択肢5": {
+          "label": "選択肢5",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ACA1383": {
       "productId": "ACA1383",
       "productName": "forest ringブラウス",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "53 / 36 / brown mix": {
+          "label": "53 / 36 / brown mix",
+          "available": true
+        },
+        "53 / 38 / brown mix": {
+          "label": "53 / 38 / brown mix",
+          "available": true
+        },
+        "brown mix / 36 / 38": {
+          "label": "brown mix / 36 / 38",
+          "available": false
+        },
+        "63 / 36 / gray mix": {
+          "label": "63 / 36 / gray mix",
+          "available": true
+        },
+        "gray mix / 36 / 38": {
+          "label": "gray mix / 36 / 38",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV2114": {
       "productId": "EV2114",
@@ -1113,8 +1368,49 @@
       "productName": "glass flowerブラウス",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "23 / 36 / green mix": {
+          "label": "23 / 36 / green mix",
+          "available": true
+        },
+        "23 / 38 / green mix": {
+          "label": "23 / 38 / green mix",
+          "available": true
+        },
+        "23 / 40 / green mix": {
+          "label": "23 / 40 / green mix",
+          "available": true
+        },
+        "63 / 36 / gray mix": {
+          "label": "63 / 36 / gray mix",
+          "available": true
+        },
+        "63 / 38 / gray mix": {
+          "label": "63 / 38 / gray mix",
+          "available": true
+        },
+        "63 / 40 / gray mix": {
+          "label": "63 / 40 / gray mix",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA4680S": {
       "productId": "AEA4680S",
@@ -1129,8 +1425,61 @@
       "productName": "chouchoプルオーバーブラウス",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "0 / 36 / white": {
+          "label": "0 / 36 / white",
+          "available": true
+        },
+        "0 / 38 / white": {
+          "label": "0 / 38 / white",
+          "available": true
+        },
+        "white / 36 / 38": {
+          "label": "white / 36 / 38",
+          "available": false
+        },
+        "22 / 36 / moss green": {
+          "label": "22 / 36 / moss green",
+          "available": true
+        },
+        "22 / 38 / moss green": {
+          "label": "22 / 38 / moss green",
+          "available": true
+        },
+        "22 / 40 / moss green": {
+          "label": "22 / 40 / moss green",
+          "available": true
+        },
+        "61 / 36 / light gray": {
+          "label": "61 / 36 / light gray",
+          "available": true
+        },
+        "61 / 38 / light gray": {
+          "label": "61 / 38 / light gray",
+          "available": true
+        },
+        "61 / 40 / light gray": {
+          "label": "61 / 40 / light gray",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA3272S": {
       "productId": "AEA3272S",
@@ -1145,8 +1494,29 @@
       "productName": "chouchoブラウス",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "white / 36 / 38": {
+          "label": "white / 36 / 38",
+          "available": false
+        },
+        "moss green / 36 / 38": {
+          "label": "moss green / 36 / 38",
+          "available": false
+        },
+        "light gray / 36 / 38": {
+          "label": "light gray / 36 / 38",
+          "available": false
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA4674": {
       "productId": "AEA4674",
