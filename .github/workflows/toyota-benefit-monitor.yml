@@ -13,7 +13,7 @@ permissions:
   issues: write
 
 concurrency:
-  group: repository-state-writer
+  group: toyota-benefit-monitor
   cancel-in-progress: false
 
 jobs:
