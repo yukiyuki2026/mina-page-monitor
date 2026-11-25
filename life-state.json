@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 0,
+  "detailCursor": 10,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -841,48 +841,242 @@
       "productName": "metsäブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "gray xs / xs": {
+          "label": "gray XS / XS",
+          "available": false
+        },
+        "black xs / xs": {
+          "label": "black XS / XS",
+          "available": true
+        },
+        "blue green xs / xs": {
+          "label": "blue green XS / XS",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ACA7502": {
       "productId": "ACA7502",
       "productName": "symphonyブランケット",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "navy xs l / xs": {
+          "label": "navy XS L / XS",
+          "available": false
+        },
+        "navy xs l / l": {
+          "label": "navy XS L / L",
+          "available": false
+        },
+        "black xs l / xs": {
+          "label": "black XS L / XS",
+          "available": false
+        },
+        "black xs l / l": {
+          "label": "black XS L / L",
+          "available": false
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ACA7596_DAEA": {
       "productId": "ACA7596_DAEA",
       "productName": "run run runブランケット",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "green xs / xs": {
+          "label": "green XS / XS",
+          "available": false
+        },
+        "navy xs / xs": {
+          "label": "navy XS / XS",
+          "available": false
+        },
+        "gray xs / xs": {
+          "label": "gray XS / XS",
+          "available": false
+        },
+        "black xs / xs": {
+          "label": "black XS / XS",
+          "available": false
+        },
+        "scarlet xs / xs": {
+          "label": "scarlet XS / XS",
+          "available": false
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AAA7803A": {
       "productId": "AAA7803A",
       "productName": "Tamaブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "mint l / l": {
+          "label": "mint L / L",
+          "available": true
+        },
+        "navy s l / s": {
+          "label": "navy S L / S",
+          "available": true
+        },
+        "navy s l / l": {
+          "label": "navy S L / L",
+          "available": true
+        },
+        "gray s l / s": {
+          "label": "gray S L / S",
+          "available": true
+        },
+        "gray s l / l": {
+          "label": "gray S L / L",
+          "available": true
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ABA7165A": {
       "productId": "ABA7165A",
       "productName": "foglandブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "yellow l / l": {
+          "label": "yellow L / L",
+          "available": true
+        },
+        "blue s l / s": {
+          "label": "blue S L / S",
+          "available": false
+        },
+        "blue s l / l": {
+          "label": "blue S L / L",
+          "available": true
+        },
+        "navy s l / s": {
+          "label": "navy S L / S",
+          "available": true
+        },
+        "navy s l / l": {
+          "label": "navy S L / L",
+          "available": true
+        },
+        "brown s l / s": {
+          "label": "brown S L / S",
+          "available": true
+        },
+        "brown s l / l": {
+          "label": "brown S L / L",
+          "available": false
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ABA7167A": {
       "productId": "ABA7167A",
       "productName": "carnivalブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "orange s l / s": {
+          "label": "orange S L / S",
+          "available": true
+        },
+        "orange s l / l": {
+          "label": "orange S L / L",
+          "available": true
+        },
+        "green s l / s": {
+          "label": "green S L / S",
+          "available": true
+        },
+        "green s l / l": {
+          "label": "green S L / L",
+          "available": true
+        },
+        "navy s l / s": {
+          "label": "navy S L / S",
+          "available": true
+        },
+        "navy s l / l": {
+          "label": "navy S L / L",
+          "available": true
+        },
+        "gray s l / s": {
+          "label": "gray S L / S",
+          "available": true
+        },
+        "gray s l / l": {
+          "label": "gray S L / L",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7908": {
       "productId": "AEA7908",
@@ -1630,8 +1824,61 @@
       "productName": "sea laceブランケット",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "navy s l / s": {
+          "label": "navy S L / S",
+          "available": true
+        },
+        "navy s l / l": {
+          "label": "navy S L / L",
+          "available": true
+        },
+        "red s l / s": {
+          "label": "red S L / S",
+          "available": false
+        },
+        "red s l / l": {
+          "label": "red S L / L",
+          "available": true
+        },
+        "gray s l / s": {
+          "label": "gray S L / S",
+          "available": true
+        },
+        "gray s l / l": {
+          "label": "gray S L / L",
+          "available": true
+        },
+        "black s l / s": {
+          "label": "black S L / S",
+          "available": true
+        },
+        "black s l / l": {
+          "label": "black S L / L",
+          "available": true
+        },
+        "blue green s l / s": {
+          "label": "blue green S L / S",
+          "available": false
+        },
+        "blue green s l / l": {
+          "label": "blue green S L / L",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ADA7687": {
       "productId": "ADA7687",
@@ -1654,16 +1901,62 @@
       "productName": "Riverブランケット",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "black free / free": {
+          "label": "black FREE / FREE",
+          "available": false
+        },
+        "選択肢3": {
+          "label": "選択肢3",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ACS7367": {
       "productId": "ACS7367",
-      "productName": "tambourineマルチクロス",
+      "productName": "tambourineマルチクロス2024 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "white free / free": {
+          "label": "white FREE / FREE",
+          "available": true
+        },
+        "yellow free / free": {
+          "label": "yellow FREE / FREE",
+          "available": true
+        },
+        "dark green free / free": {
+          "label": "dark green FREE / FREE",
+          "available": true
+        },
+        "light pink free / free": {
+          "label": "light pink FREE / FREE",
+          "available": true
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "ACS7373": {
       "productId": "ACS7373",
@@ -1675,11 +1968,64 @@
     },
     "AAS7749": {
       "productId": "AAS7749",
-      "productName": "light berryハンカチ",
+      "productName": "light berryハンカチ2022 s/s",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "white free / free": {
+          "label": "white FREE / FREE",
+          "available": false
+        },
+        "pink beige free / free": {
+          "label": "pink beige FREE / FREE",
+          "available": true
+        },
+        "mint free / free": {
+          "label": "mint FREE / FREE",
+          "available": true
+        },
+        "light gray free / free": {
+          "label": "light gray FREE / FREE",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7806": {
       "productId": "AES7806",
