@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 70,
+  "detailCursor": 80,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -89,7 +89,7 @@
     "AEA2469S": {
       "productId": "AEA2469S",
       "productName": "rosyベスト",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": ""
     },
     "AEA7885": {
