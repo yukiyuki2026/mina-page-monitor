@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -421,11 +421,80 @@
     },
     "AEA7917": {
       "productId": "AEA7917",
-      "productName": "tossuサンダル",
+      "productName": "tossuサンダル2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "mustard / 34 / 35": {
+          "label": "mustard / 34 / 35",
+          "available": false
+        },
+        "12 / 35 / mustard": {
+          "label": "12 / 35 / mustard",
+          "available": true
+        },
+        "12 / 36 / mustard": {
+          "label": "12 / 36 / mustard",
+          "available": true
+        },
+        "12 / 37 / mustard": {
+          "label": "12 / 37 / mustard",
+          "available": true
+        },
+        "12 / 38 / mustard": {
+          "label": "12 / 38 / mustard",
+          "available": true
+        },
+        "navy / 34 / 35": {
+          "label": "navy / 34 / 35",
+          "available": false
+        },
+        "32 / 35 / navy": {
+          "label": "32 / 35 / navy",
+          "available": true
+        },
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
+        },
+        "32 / 37 / navy": {
+          "label": "32 / 37 / navy",
+          "available": true
+        },
+        "blue green / 34 / 35": {
+          "label": "blue green / 34 / 35",
+          "available": false
+        },
+        "68 / 36 / blue green": {
+          "label": "68 / 36 / blue green",
+          "available": true
+        },
+        "68 / 37 / blue green": {
+          "label": "68 / 37 / blue green",
+          "available": true
+        },
+        "68 / 38 / blue green": {
+          "label": "68 / 38 / blue green",
+          "available": true
+        },
+        "68 / 39 / blue green": {
+          "label": "68 / 39 / blue green",
+          "available": true
+        },
+        "選択肢21": {
+          "label": "選択肢21",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA6864S": {
       "productId": "AEA6864S",
@@ -1169,11 +1238,40 @@
     },
     "AEA8090": {
       "productId": "AEA8090",
-      "productName": "coteauニットボレロ",
+      "productName": "coteauニットボレロ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "ecru / 36-38 / 40-42": {
+          "label": "ecru / 36-38 / 40-42",
+          "available": false
+        },
+        "8 / 8a / ecru": {
+          "label": "8 / 8A / ecru",
+          "available": true
+        },
+        "32 / 83 / navy": {
+          "label": "32 / 83 / navy",
+          "available": true
+        },
+        "32 / 8a / navy": {
+          "label": "32 / 8A / navy",
+          "available": true
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA4672": {
       "productId": "AEA4672",
@@ -1357,11 +1455,52 @@
     },
     "AEA8089": {
       "productId": "AEA8089",
-      "productName": "coteauニットベスト",
+      "productName": "coteauニットベスト2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "8 / 36 / ecru": {
+          "label": "8 / 36 / ecru",
+          "available": true
+        },
+        "8 / 38 / ecru": {
+          "label": "8 / 38 / ecru",
+          "available": true
+        },
+        "8 / 40 / ecru": {
+          "label": "8 / 40 / ecru",
+          "available": true
+        },
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA1468": {
       "productId": "AEA1468",
@@ -1581,11 +1720,64 @@
     },
     "AEA8117": {
       "productId": "AEA8117",
-      "productName": "trollポロ襟付きプルオーバー",
+      "productName": "trollポロ襟付きプルオーバー2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "28 / 36 / dark green": {
+          "label": "28 / 36 / dark green",
+          "available": true
+        },
+        "28 / 38 / dark green": {
+          "label": "28 / 38 / dark green",
+          "available": true
+        },
+        "28 / 40 / dark green": {
+          "label": "28 / 40 / dark green",
+          "available": true
+        },
+        "55 / 36 / camel": {
+          "label": "55 / 36 / camel",
+          "available": true
+        },
+        "55 / 38 / camel": {
+          "label": "55 / 38 / camel",
+          "available": true
+        },
+        "55 / 40 / camel": {
+          "label": "55 / 40 / camel",
+          "available": true
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "98 / 38 / black": {
+          "label": "98 / 38 / black",
+          "available": true
+        },
+        "98 / 40 / black": {
+          "label": "98 / 40 / black",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA5458": {
       "productId": "AEA5458",
@@ -1760,11 +1952,40 @@
     },
     "AEA8098": {
       "productId": "AEA8098",
-      "productName": "trollニットプルオーバー",
+      "productName": "trollニットプルオーバー2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "0 / 83 / white": {
+          "label": "0 / 83 / white",
+          "available": true
+        },
+        "0 / 8a / white": {
+          "label": "0 / 8A / white",
+          "available": true
+        },
+        "black / 36-38 / 40-42": {
+          "label": "black / 36-38 / 40-42",
+          "available": false
+        },
+        "98 / 8a / black": {
+          "label": "98 / 8A / black",
+          "available": true
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA1475": {
       "productId": "AEA1475",
@@ -1805,19 +2026,129 @@
     },
     "AEA8118": {
       "productId": "AEA8118",
-      "productName": "trollポロ襟付きドレス",
+      "productName": "trollポロ襟付きドレス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "28 / 36 / dark green": {
+          "label": "28 / 36 / dark green",
+          "available": true
+        },
+        "28 / 38 / dark green": {
+          "label": "28 / 38 / dark green",
+          "available": true
+        },
+        "dark green / 36 / 38": {
+          "label": "dark green / 36 / 38",
+          "available": false
+        },
+        "55 / 36 / camel": {
+          "label": "55 / 36 / camel",
+          "available": true
+        },
+        "55 / 38 / camel": {
+          "label": "55 / 38 / camel",
+          "available": true
+        },
+        "55 / 40 / camel": {
+          "label": "55 / 40 / camel",
+          "available": true
+        },
+        "98 / 36 / black": {
+          "label": "98 / 36 / black",
+          "available": true
+        },
+        "98 / 38 / black": {
+          "label": "98 / 38 / black",
+          "available": true
+        },
+        "98 / 40 / black": {
+          "label": "98 / 40 / black",
+          "available": true
+        },
+        "選択肢12": {
+          "label": "選択肢12",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7916": {
       "productId": "AEA7916",
-      "productName": "tambourineaurinko",
+      "productName": "tambourineaurinko2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "mustard / 34 / 35": {
+          "label": "mustard / 34 / 35",
+          "available": false
+        },
+        "12 / 35 / mustard": {
+          "label": "12 / 35 / mustard",
+          "available": true
+        },
+        "12 / 38 / mustard": {
+          "label": "12 / 38 / mustard",
+          "available": true
+        },
+        "32 / 34 / navy": {
+          "label": "32 / 34 / navy",
+          "available": true
+        },
+        "32 / 35 / navy": {
+          "label": "32 / 35 / navy",
+          "available": true
+        },
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
+        },
+        "32 / 37 / navy": {
+          "label": "32 / 37 / navy",
+          "available": true
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 39 / navy": {
+          "label": "32 / 39 / navy",
+          "available": true
+        },
+        "blue green / 34 / 35": {
+          "label": "blue green / 34 / 35",
+          "available": false
+        },
+        "68 / 38 / blue green": {
+          "label": "68 / 38 / blue green",
+          "available": true
+        },
+        "選択肢22": {
+          "label": "選択肢22",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7904": {
       "productId": "AEA7904",
@@ -1882,11 +2213,72 @@
     },
     "AEA8123": {
       "productId": "AEA8123",
-      "productName": "trollカットソードレス",
+      "productName": "trollカットソードレス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "8 / 36 / ecru": {
+          "label": "8 / 36 / ecru",
+          "available": true
+        },
+        "8 / 38 / ecru": {
+          "label": "8 / 38 / ecru",
+          "available": true
+        },
+        "8 / 40 / ecru": {
+          "label": "8 / 40 / ecru",
+          "available": true
+        },
+        "10 / 36 / yellow": {
+          "label": "10 / 36 / yellow",
+          "available": true
+        },
+        "10 / 38 / yellow": {
+          "label": "10 / 38 / yellow",
+          "available": true
+        },
+        "10 / 40 / yellow": {
+          "label": "10 / 40 / yellow",
+          "available": true
+        },
+        "20 / 36 / green": {
+          "label": "20 / 36 / green",
+          "available": true
+        },
+        "green / 36 / 38": {
+          "label": "green / 36 / 38",
+          "available": false
+        },
+        "20 / 40 / green": {
+          "label": "20 / 40 / green",
+          "available": true
+        },
+        "98 / 36 / black": {
+          "label": "98 / 36 / black",
+          "available": true
+        },
+        "98 / 38 / black": {
+          "label": "98 / 38 / black",
+          "available": true
+        },
+        "98 / 40 / black": {
+          "label": "98 / 40 / black",
+          "available": true
+        },
+        "選択肢15": {
+          "label": "選択肢15",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9545": {
       "productId": "AEA9545",
@@ -3418,11 +3810,52 @@
     },
     "AEA8097": {
       "productId": "AEA8097",
-      "productName": "faintニットプルオーバー",
+      "productName": "faintニットプルオーバー2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "12 / 83 / mustard": {
+          "label": "12 / 83 / mustard",
+          "available": true
+        },
+        "12 / 8a / mustard": {
+          "label": "12 / 8A / mustard",
+          "available": true
+        },
+        "32 / 83 / navy": {
+          "label": "32 / 83 / navy",
+          "available": true
+        },
+        "32 / 8a / navy": {
+          "label": "32 / 8A / navy",
+          "available": true
+        },
+        "47 / 83 / light pink": {
+          "label": "47 / 83 / light pink",
+          "available": true
+        },
+        "47 / 8a / light pink": {
+          "label": "47 / 8A / light pink",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA6846": {
       "productId": "AEA6846",
@@ -3467,11 +3900,44 @@
     },
     "AEA8100": {
       "productId": "AEA8100",
-      "productName": "please,thank youジョガーパンツ",
+      "productName": "please,thank youジョガーパンツ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "0 / 36 / white": {
+          "label": "0 / 36 / white",
+          "available": true
+        },
+        "0 / 38 / white": {
+          "label": "0 / 38 / white",
+          "available": true
+        },
+        "0 / 40 / white": {
+          "label": "0 / 40 / white",
+          "available": true
+        },
+        "navy / 36 / 38": {
+          "label": "navy / 36 / 38",
+          "available": false
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA6835": {
       "productId": "AEA6835",
