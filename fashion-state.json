@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 10,
+  "detailCursor": 20,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -386,8 +386,29 @@
       "productName": "rosyベスト",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "khaki / 36 / 38": {
+          "label": "khaki / 36 / 38",
+          "available": false
+        },
+        "navy / 36 / 38": {
+          "label": "navy / 36 / 38",
+          "available": false
+        },
+        "gray / 36 / 38": {
+          "label": "gray / 36 / 38",
+          "available": false
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7885": {
       "productId": "AEA7885",
@@ -415,11 +436,52 @@
     },
     "AEA2460": {
       "productId": "AEA2460",
-      "productName": "tambourineブルゾン",
+      "productName": "tambourineブルゾン2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "dark green / 36 / 38": {
+          "label": "dark green / 36 / 38",
+          "available": false
+        },
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "gray / 36 / 38": {
+          "label": "gray / 36 / 38",
+          "available": false
+        },
+        "60 / 38 / gray": {
+          "label": "60 / 38 / gray",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9538": {
       "productId": "AEA9538",
@@ -447,11 +509,28 @@
     },
     "AEA3252": {
       "productId": "AEA3252",
-      "productName": "paraabeliドレス",
+      "productName": "paraabeliドレス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "khaki / 36-38 / 40-42": {
+          "label": "khaki / 36-38 / 40-42",
+          "available": false
+        },
+        "black / 36-38 / 40-42": {
+          "label": "black / 36-38 / 40-42",
+          "available": false
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9523": {
       "productId": "AEA9523",
@@ -512,11 +591,28 @@
     },
     "AEA3256": {
       "productId": "AEA3256",
-      "productName": "anemoneドレス",
+      "productName": "anemoneドレス2026-27 a/w",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "beige / 36 / 38": {
+          "label": "beige / 36 / 38",
+          "available": false
+        },
+        "navy / 36 / 38": {
+          "label": "navy / 36 / 38",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA6852": {
       "productId": "AEA6852",
@@ -584,11 +680,44 @@
     },
     "AEA3254": {
       "productId": "AEA3254",
-      "productName": "floretドレス",
+      "productName": "floretドレス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "dark green / 36 / 38": {
+          "label": "dark green / 36 / 38",
+          "available": false
+        },
+        "28 / 38 / dark green": {
+          "label": "28 / 38 / dark green",
+          "available": true
+        },
+        "28 / 40 / dark green": {
+          "label": "28 / 40 / dark green",
+          "available": true
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "98 / 38 / black": {
+          "label": "98 / 38 / black",
+          "available": true
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8090": {
       "productId": "AEA8090",
@@ -624,11 +753,52 @@
     },
     "AEA3255": {
       "productId": "AEA3255",
-      "productName": "flower marblesノースリーブドレス",
+      "productName": "flower marblesノースリーブドレス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "navy / 36 / 38": {
+          "label": "navy / 36 / 38",
+          "available": false
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "50 / 36 / brown": {
+          "label": "50 / 36 / brown",
+          "available": true
+        },
+        "brown / 36 / 38": {
+          "label": "brown / 36 / 38",
+          "available": false
+        },
+        "50 / 40 / brown": {
+          "label": "50 / 40 / brown",
+          "available": true
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA6843": {
       "productId": "AEA6843",
@@ -870,11 +1040,40 @@
     },
     "AEA2452": {
       "productId": "AEA2452",
-      "productName": "iloブルゾン",
+      "productName": "iloブルゾン2026-27 a/w HERITAGE",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "blue gray / 36 / 38": {
+          "label": "blue gray / 36 / 38",
+          "available": false
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7877": {
       "productId": "AEA7877",
@@ -894,11 +1093,76 @@
     },
     "AEA3247": {
       "productId": "AEA3247",
-      "productName": "flower marblesドレス",
+      "productName": "flower marblesドレス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "12 / 36 / mustard": {
+          "label": "12 / 36 / mustard",
+          "available": true
+        },
+        "mustard / 36 / 38": {
+          "label": "mustard / 36 / 38",
+          "available": false
+        },
+        "12 / 40 / mustard": {
+          "label": "12 / 40 / mustard",
+          "available": true
+        },
+        "20 / 36 / green": {
+          "label": "20 / 36 / green",
+          "available": true
+        },
+        "20 / 38 / green": {
+          "label": "20 / 38 / green",
+          "available": true
+        },
+        "green / 36 / 38": {
+          "label": "green / 36 / 38",
+          "available": false
+        },
+        "61 / 36 / light gray": {
+          "label": "61 / 36 / light gray",
+          "available": true
+        },
+        "61 / 38 / light gray": {
+          "label": "61 / 38 / light gray",
+          "available": true
+        },
+        "61 / 40 / light gray": {
+          "label": "61 / 40 / light gray",
+          "available": true
+        },
+        "98 / 36 / black": {
+          "label": "98 / 36 / black",
+          "available": true
+        },
+        "98 / 38 / black": {
+          "label": "98 / 38 / black",
+          "available": true
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "選択肢16": {
+          "label": "選択肢16",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7876": {
       "productId": "AEA7876",
@@ -1031,19 +1295,93 @@
     },
     "AEA2457": {
       "productId": "AEA2457",
-      "productName": "tambourineベスト",
+      "productName": "tambourineベスト2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "7 / 36 / ivory": {
+          "label": "7 / 36 / ivory",
+          "available": true
+        },
+        "7 / 38 / ivory": {
+          "label": "7 / 38 / ivory",
+          "available": true
+        },
+        "ivory / 36 / 38": {
+          "label": "ivory / 36 / 38",
+          "available": false
+        },
+        "20 / 36 / green": {
+          "label": "20 / 36 / green",
+          "available": true
+        },
+        "20 / 38 / green": {
+          "label": "20 / 38 / green",
+          "available": true
+        },
+        "green / 36 / 38": {
+          "label": "green / 36 / 38",
+          "available": false
+        },
+        "60 / 36 / gray": {
+          "label": "60 / 36 / gray",
+          "available": true
+        },
+        "60 / 38 / gray": {
+          "label": "60 / 38 / gray",
+          "available": true
+        },
+        "60 / 40 / gray": {
+          "label": "60 / 40 / gray",
+          "available": true
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "選択肢15": {
+          "label": "選択肢15",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA3246": {
       "productId": "AEA3246",
-      "productName": "iloパフスリーブドレス",
+      "productName": "iloパフスリーブドレス2026-27 a/w HERITAGE",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "light gray / 36 / 38": {
+          "label": "light gray / 36 / 38",
+          "available": false
+        },
+        "61 / 40 / light gray": {
+          "label": "61 / 40 / light gray",
+          "available": true
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA4677": {
       "productId": "AEA4677",
