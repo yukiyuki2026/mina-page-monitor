@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 50,
+  "detailCursor": 60,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -532,11 +532,68 @@
     },
     "AEA7885": {
       "productId": "AEA7885",
-      "productName": "ilocone pouch",
+      "productName": "ilocone pouch2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "25 / 0 / khaki": {
+          "label": "25 / 0 / khaki",
+          "available": true
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "98 / 0 / black": {
+          "label": "98 / 0 / black",
+          "available": true
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA6865": {
       "productId": "AEA6865",
@@ -1357,19 +1414,117 @@
     },
     "AEA7890": {
       "productId": "AEA7890",
-      "productName": "supouch",
+      "productName": "supouch2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "32 / 2 / navy": {
+          "label": "32 / 2 / navy",
+          "available": true
+        },
+        "navy / s / m": {
+          "label": "navy / S / M",
+          "available": false
+        },
+        "47 / 2 / light pink": {
+          "label": "47 / 2 / light pink",
+          "available": true
+        },
+        "light pink / s / m": {
+          "label": "light pink / S / M",
+          "available": false
+        },
+        "47 / 4 / light pink": {
+          "label": "47 / 4 / light pink",
+          "available": true
+        },
+        "brown / s / m": {
+          "label": "brown / S / M",
+          "available": false
+        },
+        "59 / 2 / green gray": {
+          "label": "59 / 2 / green gray",
+          "available": true
+        },
+        "green gray / s / m": {
+          "label": "green gray / S / M",
+          "available": false
+        },
+        "59 / 4 / green gray": {
+          "label": "59 / 4 / green gray",
+          "available": true
+        },
+        "選択肢23": {
+          "label": "選択肢23",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7903": {
       "productId": "AEA7903",
-      "productName": "kääriäストール",
+      "productName": "kääriäストール2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "0 / white / free": {
+          "label": "0 / white / FREE",
+          "available": true
+        },
+        "6 / 0 / beige": {
+          "label": "6 / 0 / beige",
+          "available": true
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9512": {
       "productId": "AEA9512",
@@ -1495,11 +1650,68 @@
     },
     "AEA7897": {
       "productId": "AEA7897",
-      "productName": "iloコサージュ",
+      "productName": "iloコサージュ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "1 / 0 / light beige": {
+          "label": "1 / 0 / light beige",
+          "available": true
+        },
+        "65 / 0 / charcoal": {
+          "label": "65 / 0 / charcoal",
+          "available": true
+        },
+        "98 / 0 / black": {
+          "label": "98 / 0 / black",
+          "available": true
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA5461": {
       "productId": "AEA5461",
@@ -1609,11 +1821,48 @@
     },
     "AEA7904": {
       "productId": "AEA7904",
-      "productName": "balleブローチ",
+      "productName": "balleブローチ2026-27 a/w",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "white / free": {
+          "label": "white / FREE",
+          "available": false
+        },
+        "yellow / free": {
+          "label": "yellow / FREE",
+          "available": false
+        },
+        "yellow mix / free": {
+          "label": "yellow mix / FREE",
+          "available": false
+        },
+        "dark green / free": {
+          "label": "dark green / FREE",
+          "available": false
+        },
+        "navy / free": {
+          "label": "navy / FREE",
+          "available": false
+        },
+        "black mix / free": {
+          "label": "black mix / FREE",
+          "available": false
+        },
+        "black / free": {
+          "label": "black / FREE",
+          "available": false
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9539": {
       "productId": "AEA9539",
@@ -1775,19 +2024,121 @@
     },
     "AEA7877": {
       "productId": "AEA7877",
-      "productName": "shoulder strap",
+      "productName": "shoulder strap2026-27 a/w",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "white / free": {
+          "label": "white / FREE",
+          "available": false
+        },
+        "brown / free": {
+          "label": "brown / FREE",
+          "available": false
+        },
+        "black / free": {
+          "label": "black / FREE",
+          "available": false
+        },
+        "選択肢5": {
+          "label": "選択肢5",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7882": {
       "productId": "AEA7882",
-      "productName": "ilocrystal pouch",
+      "productName": "ilocrystal pouch2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "25 / 2 / khaki": {
+          "label": "25 / 2 / khaki",
+          "available": true
+        },
+        "25 / 3 / khaki": {
+          "label": "25 / 3 / khaki",
+          "available": true
+        },
+        "25 / 4 / khaki": {
+          "label": "25 / 4 / khaki",
+          "available": true
+        },
+        "32 / 2 / navy": {
+          "label": "32 / 2 / navy",
+          "available": true
+        },
+        "32 / 3 / navy": {
+          "label": "32 / 3 / navy",
+          "available": true
+        },
+        "32 / 4 / navy": {
+          "label": "32 / 4 / navy",
+          "available": true
+        },
+        "98 / 2 / black": {
+          "label": "98 / 2 / black",
+          "available": true
+        },
+        "98 / 3 / black": {
+          "label": "98 / 3 / black",
+          "available": true
+        },
+        "98 / 4 / black": {
+          "label": "98 / 4 / black",
+          "available": true
+        },
+        "選択肢20": {
+          "label": "選択肢20",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA3247": {
       "productId": "AEA3247",
@@ -1982,11 +2333,28 @@
     },
     "AEA7902": {
       "productId": "AEA7902",
-      "productName": "kääriäストール",
+      "productName": "kääriäストール2026-27 a/w",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "white / free": {
+          "label": "white / FREE",
+          "available": false
+        },
+        "beige / free": {
+          "label": "beige / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA4682_64S": {
       "productId": "AEA4682_64S",
@@ -3180,19 +3548,157 @@
     },
     "AEA7889": {
       "productId": "AEA7889",
-      "productName": "tambourinecone pouch",
+      "productName": "tambourinecone pouch2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "5 / 0 / pink beige": {
+          "label": "5 / 0 / pink beige",
+          "available": true
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "68 / 0 / blue green": {
+          "label": "68 / 0 / blue green",
+          "available": true
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7886": {
       "productId": "AEA7886",
-      "productName": "tambourinecrystal pouch",
+      "productName": "tambourinecrystal pouch2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "5 / 2 / pink beige": {
+          "label": "5 / 2 / pink beige",
+          "available": true
+        },
+        "5 / 3 / pink beige": {
+          "label": "5 / 3 / pink beige",
+          "available": true
+        },
+        "5 / 4 / pink beige": {
+          "label": "5 / 4 / pink beige",
+          "available": true
+        },
+        "32 / 2 / navy": {
+          "label": "32 / 2 / navy",
+          "available": true
+        },
+        "32 / 3 / navy": {
+          "label": "32 / 3 / navy",
+          "available": true
+        },
+        "32 / 4 / navy": {
+          "label": "32 / 4 / navy",
+          "available": true
+        },
+        "68 / 2 / blue green": {
+          "label": "68 / 2 / blue green",
+          "available": true
+        },
+        "68 / 3 / blue green": {
+          "label": "68 / 3 / blue green",
+          "available": true
+        },
+        "68 / 4 / blue green": {
+          "label": "68 / 4 / blue green",
+          "available": true
+        },
+        "選択肢20": {
+          "label": "選択肢20",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     }
   }
 }
