@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 40,
+  "detailCursor": 50,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -330,8 +330,53 @@
       "productName": "rosyスタンドカラーコート",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "25 / 36 / khaki": {
+          "label": "25 / 36 / khaki",
+          "available": true
+        },
+        "25 / 38 / khaki": {
+          "label": "25 / 38 / khaki",
+          "available": true
+        },
+        "khaki / 36 / 38": {
+          "label": "khaki / 36 / 38",
+          "available": false
+        },
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "navy / 36 / 38": {
+          "label": "navy / 36 / 38",
+          "available": false
+        },
+        "60 / 36 / gray": {
+          "label": "60 / 36 / gray",
+          "available": true
+        },
+        "60 / 38 / gray": {
+          "label": "60 / 38 / gray",
+          "available": true
+        },
+        "gray / 36 / 38": {
+          "label": "gray / 36 / 38",
+          "available": false
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA3307": {
       "productId": "AEA3307",
@@ -387,8 +432,33 @@
       "productName": "tambourineコート",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "6 / 36 / beige": {
+          "label": "6 / 36 / beige",
+          "available": true
+        },
+        "beige / 36 / 38": {
+          "label": "beige / 36 / 38",
+          "available": false
+        },
+        "6 / 40 / beige": {
+          "label": "6 / 40 / beige",
+          "available": true
+        },
+        "navy / 36 / 38": {
+          "label": "navy / 36 / 38",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9542": {
       "productId": "AEA9542",
@@ -473,8 +543,21 @@
       "productName": "tambourineコート",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "選択肢5": {
+          "label": "選択肢5",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA5460": {
       "productId": "AEA5460",
@@ -584,11 +667,72 @@
     },
     "AEA7875": {
       "productId": "AEA7875",
-      "productName": "kidequartz pouch",
+      "productName": "kidequartz pouch2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "10 / 0 / yellow": {
+          "label": "10 / 0 / yellow",
+          "available": true
+        },
+        "20 / 0 / green": {
+          "label": "20 / 0 / green",
+          "available": true
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "98 / 0 / black": {
+          "label": "98 / 0 / black",
+          "available": true
+        },
+        "選択肢15": {
+          "label": "選択肢15",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9544": {
       "productId": "AEA9544",
@@ -707,11 +851,60 @@
     },
     "AEA6852": {
       "productId": "AEA6852",
-      "productName": "tambourineコート",
+      "productName": "tambourineコート2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "dark green / 36 / 38": {
+          "label": "dark green / 36 / 38",
+          "available": false
+        },
+        "28 / 38 / dark green": {
+          "label": "28 / 38 / dark green",
+          "available": true
+        },
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "60 / 36 / gray": {
+          "label": "60 / 36 / gray",
+          "available": true
+        },
+        "60 / 38 / gray": {
+          "label": "60 / 38 / gray",
+          "available": true
+        },
+        "gray / 36 / 38": {
+          "label": "gray / 36 / 38",
+          "available": false
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9517": {
       "productId": "AEA9517",
@@ -980,11 +1173,44 @@
     },
     "AEA6838": {
       "productId": "AEA6838",
-      "productName": "iloコート",
+      "productName": "iloコート2026-27 a/w HERITAGE",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "navy / 36 / 38": {
+          "label": "navy / 36 / 38",
+          "available": false
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "blue gray / 36 / 38": {
+          "label": "blue gray / 36 / 38",
+          "available": false
+        },
+        "選択肢10": {
+          "label": "選択肢10",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA3255": {
       "productId": "AEA3255",
@@ -1037,11 +1263,40 @@
     },
     "AEA6843": {
       "productId": "AEA6843",
-      "productName": "virtaコート",
+      "productName": "virtaコート2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "khaki / 36 / 38": {
+          "label": "khaki / 36 / 38",
+          "available": false
+        },
+        "25 / 38 / khaki": {
+          "label": "25 / 38 / khaki",
+          "available": true
+        },
+        "25 / 40 / khaki": {
+          "label": "25 / 40 / khaki",
+          "available": true
+        },
+        "gray / 36 / 38": {
+          "label": "gray / 36 / 38",
+          "available": false
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8089": {
       "productId": "AEA8089",
@@ -1609,11 +1864,72 @@
     },
     "AEA7876": {
       "productId": "AEA7876",
-      "productName": "tambourinequartz pouch",
+      "productName": "tambourinequartz pouch2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "20 / 0 / green": {
+          "label": "20 / 0 / green",
+          "available": true
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "60 / 0 / gray": {
+          "label": "60 / 0 / gray",
+          "available": true
+        },
+        "98 / 0 / black": {
+          "label": "98 / 0 / black",
+          "available": true
+        },
+        "選択肢15": {
+          "label": "選択肢15",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA4676": {
       "productId": "AEA4676",
@@ -1856,11 +2172,28 @@
     },
     "AEA6839": {
       "productId": "AEA6839",
-      "productName": "anemoneショートコート",
+      "productName": "anemoneショートコート2026-27 a/w",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "beige / 36 / 38": {
+          "label": "beige / 36 / 38",
+          "available": false
+        },
+        "navy / 36 / 38": {
+          "label": "navy / 36 / 38",
+          "available": false
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA9494": {
       "productId": "AEA9494",
@@ -2725,11 +3058,44 @@
     },
     "AEA6846": {
       "productId": "AEA6846",
-      "productName": "knollコート",
+      "productName": "knollコート2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "20 / 36 / green": {
+          "label": "20 / 36 / green",
+          "available": true
+        },
+        "20 / 38 / green": {
+          "label": "20 / 38 / green",
+          "available": true
+        },
+        "20 / 40 / green": {
+          "label": "20 / 40 / green",
+          "available": true
+        },
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "選択肢8": {
+          "label": "選択肢8",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8100": {
       "productId": "AEA8100",
