@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 40,
+  "detailCursor": 50,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -40,16 +40,46 @@
       "productName": "tambourineparents bag",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "yellow / free": {
+          "label": "yellow / FREE",
+          "available": false
+        },
+        "moss green / free": {
+          "label": "moss green / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7459PS": {
       "productId": "AEA7459PS",
       "productName": "ribbon stickサコッシュ",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "red / free": {
+          "label": "red / FREE",
+          "available": false
+        },
+        "選択肢3": {
+          "label": "選択肢3",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AES7346PS": {
       "productId": "AES7346PS",
@@ -64,16 +94,50 @@
       "productName": "Pepper + go!サコッシュ",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "blue / free": {
+          "label": "blue / FREE",
+          "available": false
+        },
+        "pink / free": {
+          "label": "pink / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7458PS": {
       "productId": "AEA7458PS",
       "productName": "forest tileparents bag",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "gray / free": {
+          "label": "gray / FREE",
+          "available": false
+        },
+        "black / free": {
+          "label": "black / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA2081PB": {
       "productId": "AEA2081PB",
@@ -149,16 +213,50 @@
       "productName": "trollサコッシュ",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "green / free": {
+          "label": "green / FREE",
+          "available": false
+        },
+        "navy / free": {
+          "label": "navy / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7461PS": {
       "productId": "AEA7461PS",
       "productName": "tambourineサコッシュ",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "mustard / free": {
+          "label": "mustard / FREE",
+          "available": false
+        },
+        "brown / free": {
+          "label": "brown / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7464PS": {
       "productId": "AEA7464PS",
@@ -895,8 +993,73 @@
       "productName": "ナップサック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "1559 / 0 / happa light blue": {
+          "label": "1559 / 0 / happa light blue",
+          "available": true
+        },
+        "1560 / 0 / happa brown": {
+          "label": "1560 / 0 / happa brown",
+          "available": true
+        },
+        "tambourine green / free": {
+          "label": "tambourine green / FREE",
+          "available": false
+        },
+        "1561 / 0 / odyssey light gray": {
+          "label": "1561 / 0 / odyssey light gray",
+          "available": true
+        },
+        "1562 / 0 / odyssey dark gray": {
+          "label": "1562 / 0 / odyssey dark gray",
+          "available": true
+        },
+        "選択肢16": {
+          "label": "選択肢16",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7386P": {
       "productId": "AEA7386P",
@@ -933,11 +1096,48 @@
     },
     "AEA7410P": {
       "productId": "AEA7410P",
-      "productName": "starryぬいぐるみ",
+      "productName": "starryぬいぐるみ2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "30 / 1003 / blue": {
+          "label": "30 / 1003 / blue",
+          "available": true
+        },
+        "30 / 1004 / blue": {
+          "label": "30 / 1004 / blue",
+          "available": true
+        },
+        "41 / 1003 / pink": {
+          "label": "41 / 1003 / pink",
+          "available": true
+        },
+        "41 / 1004 / pink": {
+          "label": "41 / 1004 / pink",
+          "available": true
+        },
+        "選択肢9": {
+          "label": "選択肢9",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7391P": {
       "productId": "AEA7391P",
@@ -1282,11 +1482,88 @@
     },
     "AEA7414P": {
       "productId": "AEA7414P",
-      "productName": "duoハイソックス",
+      "productName": "duoハイソックス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "10 / 82 / yellow": {
+          "label": "10 / 82 / yellow",
+          "available": true
+        },
+        "10 / 18 / yellow": {
+          "label": "10 / 18 / yellow",
+          "available": true
+        },
+        "20 / 82 / green": {
+          "label": "20 / 82 / green",
+          "available": true
+        },
+        "20 / 18 / green": {
+          "label": "20 / 18 / green",
+          "available": true
+        },
+        "27 / 82 / mint": {
+          "label": "27 / 82 / mint",
+          "available": true
+        },
+        "27 / 18 / mint": {
+          "label": "27 / 18 / mint",
+          "available": true
+        },
+        "32 / 82 / navy": {
+          "label": "32 / 82 / navy",
+          "available": true
+        },
+        "32 / 18 / navy": {
+          "label": "32 / 18 / navy",
+          "available": true
+        },
+        "選択肢19": {
+          "label": "選択肢19",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8545PB": {
       "productId": "AEA8545PB",
@@ -1400,11 +1677,88 @@
     },
     "AEA7413P": {
       "productId": "AEA7413P",
-      "productName": "duoソックス",
+      "productName": "duoソックス2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "10 / 82 / yellow": {
+          "label": "10 / 82 / yellow",
+          "available": true
+        },
+        "10 / 18 / yellow": {
+          "label": "10 / 18 / yellow",
+          "available": true
+        },
+        "20 / 82 / green": {
+          "label": "20 / 82 / green",
+          "available": true
+        },
+        "20 / 18 / green": {
+          "label": "20 / 18 / green",
+          "available": true
+        },
+        "27 / 82 / mint": {
+          "label": "27 / 82 / mint",
+          "available": true
+        },
+        "27 / 18 / mint": {
+          "label": "27 / 18 / mint",
+          "available": true
+        },
+        "32 / 82 / navy": {
+          "label": "32 / 82 / navy",
+          "available": true
+        },
+        "32 / 18 / navy": {
+          "label": "32 / 18 / navy",
+          "available": true
+        },
+        "選択肢19": {
+          "label": "選択肢19",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA8540PB": {
       "productId": "AEA8540PB",
