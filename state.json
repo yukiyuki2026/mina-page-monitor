@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 20,
+  "detailCursor": 30,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -1217,8 +1217,29 @@
       "productName": "run run runファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|150": {
+          "color": "white",
+          "width": "150",
+          "available": false
+        },
+        "beige|150": {
+          "color": "beige",
+          "width": "150",
+          "available": false
+        },
+        "light blue|150": {
+          "color": "light blue",
+          "width": "150",
+          "available": false
+        },
+        "light pink|150": {
+          "color": "light pink",
+          "width": "150",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0561CMBD": {
       "productId": "FC0561CMBD",
@@ -1675,8 +1696,19 @@
       "productName": "pepper + light berryファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "blue|112": {
+          "color": "blue",
+          "width": "112",
+          "available": false
+        },
+        "pink|112": {
+          "color": "pink",
+          "width": "112",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0521": {
       "productId": "FC0521",
@@ -1817,16 +1849,43 @@
       "productName": "surplusファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "blue mix|147": {
+          "color": "blue mix",
+          "width": "147",
+          "available": true
+        },
+        "pink mix|147": {
+          "color": "pink mix",
+          "width": "147",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0498": {
       "productId": "FC0498",
       "productName": "slow danceファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "light blue|139": {
+          "color": "light blue",
+          "width": "139",
+          "available": false
+        },
+        "light pink|139": {
+          "color": "light pink",
+          "width": "139",
+          "available": true
+        },
+        "charcoal|139": {
+          "color": "charcoal",
+          "width": "139",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0470": {
       "productId": "FC0470",
@@ -1862,16 +1921,48 @@
       "productName": "light berryファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|147": {
+          "color": "white",
+          "width": "147",
+          "available": false
+        },
+        "light beige|147": {
+          "color": "light beige",
+          "width": "147",
+          "available": false
+        },
+        "navy|147": {
+          "color": "navy",
+          "width": "147",
+          "available": false
+        },
+        "green gray|147": {
+          "color": "green gray",
+          "width": "147",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0481": {
       "productId": "FC0481",
       "productName": "rain chukkaファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "blue|149": {
+          "color": "blue",
+          "width": "149",
+          "available": false
+        },
+        "gray|149": {
+          "color": "gray",
+          "width": "149",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0442": {
       "productId": "FC0442",
@@ -1950,16 +2041,48 @@
       "productName": "life puzzleファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "dark green|148": {
+          "color": "dark green",
+          "width": "148",
+          "available": false
+        },
+        "navy|148": {
+          "color": "navy",
+          "width": "148",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0472": {
       "productId": "FC0472",
       "productName": "tanpopoファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "pink beige|155": {
+          "color": "pink beige",
+          "width": "155",
+          "available": false
+        },
+        "blue|155": {
+          "color": "blue",
+          "width": "155",
+          "available": true
+        },
+        "green + pink|155": {
+          "color": "green + pink",
+          "width": "155",
+          "available": true
+        },
+        "green + white|155": {
+          "color": "green + white",
+          "width": "155",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0464": {
       "productId": "FC0464",
@@ -2053,8 +2176,19 @@
       "productName": "aliveファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "mustard|150": {
+          "color": "mustard",
+          "width": "150",
+          "available": false
+        },
+        "navy|150": {
+          "color": "navy",
+          "width": "150",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0461": {
       "productId": "FC0461",
@@ -2080,8 +2214,19 @@
       "productName": "singing merrilyファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "yellow mix|144": {
+          "color": "yellow mix",
+          "width": "144",
+          "available": true
+        },
+        "green mix|144": {
+          "color": "green mix",
+          "width": "144",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0463": {
       "productId": "FC0463",
