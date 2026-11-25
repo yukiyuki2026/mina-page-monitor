@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 10,
+  "detailCursor": 20,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -1833,8 +1833,29 @@
       "productName": "run run runファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|152": {
+          "color": "white",
+          "width": "152",
+          "available": false
+        },
+        "beige|152": {
+          "color": "beige",
+          "width": "152",
+          "available": false
+        },
+        "light blue|152": {
+          "color": "light blue",
+          "width": "152",
+          "available": false
+        },
+        "light pink|152": {
+          "color": "light pink",
+          "width": "152",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0479": {
       "productId": "FC0479",
@@ -1945,24 +1966,87 @@
       "productName": "chouchoファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "mint|157": {
+          "color": "mint",
+          "width": "157",
+          "available": false
+        },
+        "dark green|157": {
+          "color": "dark green",
+          "width": "157",
+          "available": false
+        },
+        "light blue|157": {
+          "color": "light blue",
+          "width": "157",
+          "available": false
+        },
+        "lavender|157": {
+          "color": "lavender",
+          "width": "157",
+          "available": false
+        },
+        "dark navy|157": {
+          "color": "dark navy",
+          "width": "157",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0458": {
       "productId": "FC0458",
       "productName": "home circleファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "navy|150": {
+          "color": "navy",
+          "width": "150",
+          "available": false
+        },
+        "brown|150": {
+          "color": "brown",
+          "width": "150",
+          "available": false
+        },
+        "gray|150": {
+          "color": "gray",
+          "width": "150",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0456": {
       "productId": "FC0456",
       "productName": "bonheurファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|154": {
+          "color": "white",
+          "width": "154",
+          "available": true
+        },
+        "blue|154": {
+          "color": "blue",
+          "width": "154",
+          "available": true
+        },
+        "brown|154": {
+          "color": "brown",
+          "width": "154",
+          "available": false
+        },
+        "charcoal|154": {
+          "color": "charcoal",
+          "width": "154",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0477": {
       "productId": "FC0477",
@@ -1977,8 +2061,19 @@
       "productName": "giraffeファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "green|151": {
+          "color": "green",
+          "width": "151",
+          "available": true
+        },
+        "navy|151": {
+          "color": "navy",
+          "width": "151",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0493": {
       "productId": "FC0493",
@@ -1993,8 +2088,29 @@
       "productName": "choucho ＋ nopparaファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "green|149": {
+          "color": "green",
+          "width": "149",
+          "available": false
+        },
+        "brown|149": {
+          "color": "brown",
+          "width": "149",
+          "available": true
+        },
+        "gray|149": {
+          "color": "gray",
+          "width": "149",
+          "available": false
+        },
+        "black|149": {
+          "color": "black",
+          "width": "149",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0417": {
       "productId": "FC0417",
@@ -2073,24 +2189,57 @@
       "productName": "margueriteファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "beige|144": {
+          "color": "beige",
+          "width": "144",
+          "available": true
+        },
+        "navy|144": {
+          "color": "navy",
+          "width": "144",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0447": {
       "productId": "FC0447",
       "productName": "merciファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "ecru|149": {
+          "color": "ecru",
+          "width": "149",
+          "available": false
+        },
+        "mint|149": {
+          "color": "mint",
+          "width": "149",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0459": {
       "productId": "FC0459",
       "productName": "Fujisansファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "blue|119": {
+          "color": "blue",
+          "width": "119",
+          "available": false
+        },
+        "gray|119": {
+          "color": "gray",
+          "width": "119",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0421": {
       "productId": "FC0421",
@@ -2145,8 +2294,24 @@
       "productName": "flower nestファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "khaki|141": {
+          "color": "khaki",
+          "width": "141",
+          "available": false
+        },
+        "black|141": {
+          "color": "black",
+          "width": "141",
+          "available": true
+        },
+        "dark navy|141": {
+          "color": "dark navy",
+          "width": "141",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0425": {
       "productId": "FC0425",
