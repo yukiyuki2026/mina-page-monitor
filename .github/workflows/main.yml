@@ -10,10 +10,6 @@ on:
   schedule:
     - cron: '2,17,32,47 * * * *'
 
-concurrency:
-  group: repository-state-writer
-  cancel-in-progress: false
-
 jobs:
   monitor:
     runs-on: ubuntu-latest
