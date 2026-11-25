@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 40,
+  "detailCursor": 50,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -383,8 +383,24 @@
       "productName": "anemoneファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "green|151": {
+          "color": "green",
+          "width": "151",
+          "available": true
+        },
+        "pink|151": {
+          "color": "pink",
+          "width": "151",
+          "available": false
+        },
+        "gray|151": {
+          "color": "gray",
+          "width": "151",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0560WMNB": {
       "productId": "FC0560WMNB",
@@ -423,24 +439,57 @@
       "productName": "aliveファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "green|150": {
+          "color": "green",
+          "width": "150",
+          "available": true
+        },
+        "navy|150": {
+          "color": "navy",
+          "width": "150",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0549": {
       "productId": "FC0549",
       "productName": "flowerscopeファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "beige|117": {
+          "color": "beige",
+          "width": "117",
+          "available": true
+        },
+        "pink|117": {
+          "color": "pink",
+          "width": "117",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0548": {
       "productId": "FC0548",
       "productName": "hütteファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "light blue|114": {
+          "color": "light blue",
+          "width": "114",
+          "available": true
+        },
+        "light pink|114": {
+          "color": "light pink",
+          "width": "114",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0331": {
       "productId": "FC0331",
@@ -455,40 +504,120 @@
       "productName": "lookファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|118": {
+          "color": "white",
+          "width": "118",
+          "available": true
+        },
+        "beige|118": {
+          "color": "beige",
+          "width": "118",
+          "available": true
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0544": {
       "productId": "FC0544",
       "productName": "ribbon frameファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "yellow|150": {
+          "color": "yellow",
+          "width": "150",
+          "available": true
+        },
+        "light blue|150": {
+          "color": "light blue",
+          "width": "150",
+          "available": false
+        },
+        "light pink|150": {
+          "color": "light pink",
+          "width": "150",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0541": {
       "productId": "FC0541",
       "productName": "yamanamiファブリック",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "green|152": {
+          "color": "green",
+          "width": "152",
+          "available": false
+        },
+        "navy|152": {
+          "color": "navy",
+          "width": "152",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0537": {
       "productId": "FC0537",
       "productName": "sky flowerファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|145": {
+          "color": "white",
+          "width": "145",
+          "available": false
+        },
+        "pink beige|145": {
+          "color": "pink beige",
+          "width": "145",
+          "available": false
+        },
+        "light green|145": {
+          "color": "light green",
+          "width": "145",
+          "available": true
+        },
+        "blue green|145": {
+          "color": "blue green",
+          "width": "145",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0538": {
       "productId": "FC0538",
       "productName": "garden patchworkファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "white|154": {
+          "color": "white",
+          "width": "154",
+          "available": true
+        },
+        "light beige|154": {
+          "color": "light beige",
+          "width": "154",
+          "available": true
+        },
+        "yellow|154": {
+          "color": "yellow",
+          "width": "154",
+          "available": false
+        },
+        "dark navy|154": {
+          "color": "dark navy",
+          "width": "154",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0533": {
       "productId": "FC0533",
@@ -514,8 +643,29 @@
       "productName": "anemoneファブリック ボーラーあり",
       "isSoldOut": true,
       "advanceAnnouncement": "",
-      "colors": {},
-      "colorsInitialized": false
+      "colors": {
+        "pink beige|153": {
+          "color": "pink beige",
+          "width": "153",
+          "available": false
+        },
+        "dark green|153": {
+          "color": "dark green",
+          "width": "153",
+          "available": false
+        },
+        "light blue|153": {
+          "color": "light blue",
+          "width": "153",
+          "available": false
+        },
+        "navy|153": {
+          "color": "navy",
+          "width": "153",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     },
     "FC0528DMGW": {
       "productId": "FC0528DMGW",
