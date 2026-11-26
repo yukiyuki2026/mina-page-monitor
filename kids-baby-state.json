@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 10,
+  "detailCursor": 20,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -259,9 +259,9 @@
           "label": "6 / 10 / beige",
           "available": true
         },
-        "beige / 100 / 110": {
-          "label": "beige / 100 / 110",
-          "available": false
+        "6 / 11 / beige": {
+          "label": "6 / 11 / beige",
+          "available": true
         },
         "6 / 12 / beige": {
           "label": "6 / 12 / beige",
@@ -278,6 +278,10 @@
         "6 / 17 / beige": {
           "label": "6 / 17 / beige",
           "available": true
+        },
+        "beige / 100 / 110": {
+          "label": "beige / 100 / 110",
+          "available": false
         },
         "32 / 10 / navy": {
           "label": "32 / 10 / navy",
@@ -644,6 +648,10 @@
         },
         "0 / 17 / white": {
           "label": "0 / 17 / white",
+          "available": true
+        },
+        "0 / 160 / white": {
+          "label": "0 / 160 / white",
           "available": true
         },
         "27 / 10 / mint": {
