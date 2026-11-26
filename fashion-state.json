@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -2500,6 +2500,10 @@
           "label": "12 / 35 / mustard",
           "available": true
         },
+        "12 / 37 / mustard": {
+          "label": "12 / 37 / mustard",
+          "available": true
+        },
         "12 / 38 / mustard": {
           "label": "12 / 38 / mustard",
           "available": true
@@ -2531,6 +2535,10 @@
         "blue green / 34 / 35": {
           "label": "blue green / 34 / 35",
           "available": false
+        },
+        "68 / 37 / blue green": {
+          "label": "68 / 37 / blue green",
+          "available": true
         },
         "68 / 38 / blue green": {
           "label": "68 / 38 / blue green",
