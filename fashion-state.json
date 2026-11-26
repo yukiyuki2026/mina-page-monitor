@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -2413,10 +2413,6 @@
         "black / 36-38 / 40-42": {
           "label": "black / 36-38 / 40-42",
           "available": false
-        },
-        "98 / 8a / black": {
-          "label": "98 / 8A / black",
-          "available": true
         },
         "選択肢7": {
           "label": "選択肢7",
