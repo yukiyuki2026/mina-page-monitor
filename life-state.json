@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 90,
+  "detailCursor": 0,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -3111,7 +3111,7 @@
         },
         "pink s l / l": {
           "label": "pink S L / L",
-          "available": true
+          "available": false
         },
         "brown s l / s": {
           "label": "brown S L / S",
