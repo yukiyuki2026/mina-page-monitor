@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 40,
+  "detailCursor": 50,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -500,10 +500,6 @@
       "variations": {
         "1": {
           "label": "1",
-          "available": true
-        },
-        "6 / 36 / beige": {
-          "label": "6 / 36 / beige",
           "available": true
         },
         "beige / 36 / 38": {
