@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 90,
+  "detailCursor": 0,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -4333,39 +4333,10 @@
     },
     "AES8519PS": {
       "productId": "AES8519PS",
-      "productName": "symphonyロンパース",
+      "productName": "こちらの商品は掲載を終了いたしました。",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {
-        "1": {
-          "label": "1",
-          "available": true
-        },
-        "2": {
-          "label": "2",
-          "available": true
-        },
-        "33 / 7 / blue mix": {
-          "label": "33 / 7 / blue mix",
-          "available": true
-        },
-        "33 / 8 / blue mix": {
-          "label": "33 / 8 / blue mix",
-          "available": true
-        },
-        "43 / 7 / pink mix": {
-          "label": "43 / 7 / pink mix",
-          "available": true
-        },
-        "43 / 8 / pink mix": {
-          "label": "43 / 8 / pink mix",
-          "available": true
-        },
-        "選択肢7": {
-          "label": "選択肢7",
-          "available": false
-        }
-      },
+      "variations": {},
       "variationsInitialized": true
     },
     "AES7324P": {
