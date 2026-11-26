@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 30,
+  "detailCursor": 40,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -1356,10 +1356,6 @@
         "brown / 36 / 38": {
           "label": "brown / 36 / 38",
           "available": false
-        },
-        "50 / 38 / brown": {
-          "label": "50 / 38 / brown",
-          "available": true
         },
         "選択肢11": {
           "label": "選択肢11",
