@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 20,
+  "detailCursor": 30,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -1338,7 +1338,7 @@
     "AEA5481S": {
       "productId": "AEA5481S",
       "productName": "rosyスカート",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
