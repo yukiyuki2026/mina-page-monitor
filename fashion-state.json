@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 90,
+  "detailCursor": 0,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -69,10 +69,6 @@
           "label": "7",
           "available": true
         },
-        "8": {
-          "label": "8",
-          "available": true
-        },
         "ivory / free": {
           "label": "ivory / FREE",
           "available": false
@@ -85,8 +81,8 @@
           "label": "blue / FREE",
           "available": false
         },
-        "選択肢12": {
-          "label": "選択肢12",
+        "選択肢11": {
+          "label": "選択肢11",
           "available": false
         }
       },
