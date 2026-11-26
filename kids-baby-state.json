@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 0,
+  "detailCursor": 10,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -63,23 +63,39 @@
     "AEA7457PS": {
       "productId": "AEA7457PS",
       "productName": "tambourineparents bag",
-      "isSoldOut": true,
+      "isSoldOut": false,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
           "label": "1",
           "available": true
         },
-        "yellow / free": {
-          "label": "yellow / FREE",
-          "available": false
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "10 / 0 / yellow": {
+          "label": "10 / 0 / yellow",
+          "available": true
         },
         "moss green / free": {
           "label": "moss green / FREE",
           "available": false
         },
-        "選択肢4": {
-          "label": "選択肢4",
+        "選択肢8": {
+          "label": "選択肢8",
           "available": false
         }
       },
@@ -5548,6 +5564,112 @@
         }
       },
       "variationsInitialized": true
+    },
+    "ADA3437PB": {
+      "productId": "ADA3437PB",
+      "productName": "chouchoドレス2025-26 a/w",
+      "isSoldOut": true,
+      "advanceAnnouncement": "",
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "navy / 90 / 100": {
+          "label": "navy / 90 / 100",
+          "available": false
+        },
+        "brown / 90 / 100": {
+          "label": "brown / 90 / 100",
+          "available": false
+        },
+        "選択肢16": {
+          "label": "選択肢16",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
+    },
+    "ADA5100PB": {
+      "productId": "ADA5100PB",
+      "productName": "chouchoジャンパースカート2025-26 a/w",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "32 / 9 / navy": {
+          "label": "32 / 9 / navy",
+          "available": true
+        },
+        "navy / 90 / 100": {
+          "label": "navy / 90 / 100",
+          "available": false
+        },
+        "32 / 11 / navy": {
+          "label": "32 / 11 / navy",
+          "available": true
+        },
+        "50 / 9 / brown": {
+          "label": "50 / 9 / brown",
+          "available": true
+        },
+        "50 / 10 / brown": {
+          "label": "50 / 10 / brown",
+          "available": true
+        },
+        "50 / 11 / brown": {
+          "label": "50 / 11 / brown",
+          "available": true
+        },
+        "50 / 12 / brown": {
+          "label": "50 / 12 / brown",
+          "available": true
+        },
+        "brown / 90 / 100": {
+          "label": "brown / 90 / 100",
+          "available": false
+        },
+        "50 / 16 / brown": {
+          "label": "50 / 16 / brown",
+          "available": true
+        },
+        "選択肢15": {
+          "label": "選択肢15",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
+    },
+    "AES7343P": {
+      "productId": "AES7343P",
+      "productName": "duoソックス",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "BC1004PC": {
+      "productId": "BC1004PC",
+      "productName": "chouchoブラウス",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "BC4002PC": {
+      "productId": "BC4002PC",
+      "productName": "hareパンツ",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     }
   }
 }
