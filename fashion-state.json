@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 0,
+  "detailCursor": 10,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -2431,13 +2431,17 @@
           "label": "1",
           "available": true
         },
-        "white / 36 / 38": {
-          "label": "white / 36 / 38",
-          "available": false
+        "0 / 36 / white": {
+          "label": "0 / 36 / white",
+          "available": true
         },
         "0 / 38 / white": {
           "label": "0 / 38 / white",
           "available": true
+        },
+        "white / 36 / 38": {
+          "label": "white / 36 / 38",
+          "available": false
         },
         "light pink / 36 / 38": {
           "label": "light pink / 36 / 38",
