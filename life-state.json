@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 30,
+  "detailCursor": 40,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -1512,7 +1512,7 @@
         },
         "green mix s l / l": {
           "label": "green mix S L / L",
-          "available": true
+          "available": false
         },
         "pink mix xs s l / xs": {
           "label": "pink mix XS S L / XS",
