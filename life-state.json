@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 0,
+  "detailCursor": 10,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -3481,7 +3481,7 @@
     "ADA7686": {
       "productId": "ADA7686",
       "productName": "life puzzleブランケット",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
