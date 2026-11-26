@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 10,
+  "detailCursor": 20,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -3490,7 +3490,7 @@
         },
         "navy xs / xs": {
           "label": "navy XS / XS",
-          "available": true
+          "available": false
         },
         "gray xs / xs": {
           "label": "gray XS / XS",
