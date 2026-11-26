@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 30,
+  "detailCursor": 40,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -1496,7 +1496,7 @@
         },
         "yellow mix xs s l / xs": {
           "label": "yellow mix XS S L / XS",
-          "available": true
+          "available": false
         },
         "yellow mix xs s l / s": {
           "label": "yellow mix XS S L / S",
