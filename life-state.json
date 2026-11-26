@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 30,
+  "detailCursor": 40,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -1490,10 +1490,6 @@
           "label": "2",
           "available": true
         },
-        "3": {
-          "label": "3",
-          "available": true
-        },
         "yellow mix xs s l / xs": {
           "label": "yellow mix XS S L / XS",
           "available": false
@@ -1526,8 +1522,8 @@
           "label": "pink mix XS S L / L",
           "available": false
         },
-        "選択肢12": {
-          "label": "選択肢12",
+        "選択肢11": {
+          "label": "選択肢11",
           "available": false
         }
       },
