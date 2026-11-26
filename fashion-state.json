@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 20,
+  "detailCursor": 30,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -3795,9 +3795,9 @@
           "label": "60 / 38 / gray",
           "available": true
         },
-        "gray / 36 / 38": {
-          "label": "gray / 36 / 38",
-          "available": false
+        "60 / 40 / gray": {
+          "label": "60 / 40 / gray",
+          "available": true
         },
         "選択肢10": {
           "label": "選択肢10",
@@ -4665,9 +4665,9 @@
           "label": "4",
           "available": true
         },
-        "navy / 36 / 38": {
-          "label": "navy / 36 / 38",
-          "available": false
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
         },
         "32 / 38 / navy": {
           "label": "32 / 38 / navy",
