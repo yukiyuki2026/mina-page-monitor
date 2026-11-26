@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 90,
+  "detailCursor": 0,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -5722,19 +5722,113 @@
     },
     "BC1004PC": {
       "productId": "BC1004PC",
-      "productName": "chouchoブラウス",
+      "productName": "chouchoブラウス2025-26 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "0 / 11 / white": {
+          "label": "0 / 11 / white",
+          "available": true
+        },
+        "0 / 12 / white": {
+          "label": "0 / 12 / white",
+          "available": true
+        },
+        "0 / 13 / white": {
+          "label": "0 / 13 / white",
+          "available": true
+        },
+        "0 / 16 / white": {
+          "label": "0 / 16 / white",
+          "available": true
+        },
+        "white / 110 / 120": {
+          "label": "white / 110 / 120",
+          "available": false
+        },
+        "41 / 11 / pink": {
+          "label": "41 / 11 / pink",
+          "available": true
+        },
+        "41 / 12 / pink": {
+          "label": "41 / 12 / pink",
+          "available": true
+        },
+        "41 / 13 / pink": {
+          "label": "41 / 13 / pink",
+          "available": true
+        },
+        "41 / 16 / pink": {
+          "label": "41 / 16 / pink",
+          "available": true
+        },
+        "41 / 17 / pink": {
+          "label": "41 / 17 / pink",
+          "available": true
+        },
+        "選択肢12": {
+          "label": "選択肢12",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "BC4002PC": {
       "productId": "BC4002PC",
-      "productName": "hareパンツ",
+      "productName": "hareパンツ2025-26 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "32 / 11 / navy": {
+          "label": "32 / 11 / navy",
+          "available": true
+        },
+        "navy / 110 / 120": {
+          "label": "navy / 110 / 120",
+          "available": false
+        },
+        "32 / 13 / navy": {
+          "label": "32 / 13 / navy",
+          "available": true
+        },
+        "32 / 16 / navy": {
+          "label": "32 / 16 / navy",
+          "available": true
+        },
+        "60 / 11 / gray": {
+          "label": "60 / 11 / gray",
+          "available": true
+        },
+        "60 / 12 / gray": {
+          "label": "60 / 12 / gray",
+          "available": true
+        },
+        "60 / 13 / gray": {
+          "label": "60 / 13 / gray",
+          "available": true
+        },
+        "60 / 16 / gray": {
+          "label": "60 / 16 / gray",
+          "available": true
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     }
   }
 }
