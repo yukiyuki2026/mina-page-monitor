@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 70,
+  "detailCursor": 80,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -84,7 +84,7 @@
     "MG0067_71": {
       "productId": "MG0067_71",
       "productName": "MINI TANKthermo mug",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
@@ -97,7 +97,7 @@
         },
         "symphony white free / free": {
           "label": "symphony white FREE / FREE",
-          "available": true
+          "available": false
         },
         "選択肢4": {
           "label": "選択肢4",
