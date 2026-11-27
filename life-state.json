@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -3971,36 +3971,8 @@
       "isSoldOut": false,
       "advanceAnnouncement": "",
       "variations": {
-        "1": {
-          "label": "1",
-          "available": true
-        },
-        "2": {
-          "label": "2",
-          "available": true
-        },
-        "3": {
-          "label": "3",
-          "available": true
-        },
-        "4": {
-          "label": "4",
-          "available": true
-        },
-        "5": {
-          "label": "5",
-          "available": true
-        },
-        "tambourine white free / free": {
-          "label": "tambourine white FREE / FREE",
-          "available": true
-        },
-        "tambourine navy free / free": {
-          "label": "tambourine navy FREE / FREE",
-          "available": true
-        },
-        "選択肢8": {
-          "label": "選択肢8",
+        "選択肢1": {
+          "label": "選択肢1",
           "available": false
         }
       },
@@ -4347,40 +4319,8 @@
       "isSoldOut": false,
       "advanceAnnouncement": "",
       "variations": {
-        "1": {
-          "label": "1",
-          "available": true
-        },
-        "2": {
-          "label": "2",
-          "available": true
-        },
-        "3": {
-          "label": "3",
-          "available": true
-        },
-        "4": {
-          "label": "4",
-          "available": true
-        },
-        "5": {
-          "label": "5",
-          "available": true
-        },
-        "bird mix free / free": {
-          "label": "bird mix FREE / FREE",
-          "available": true
-        },
-        "anone-anone light blue free / free": {
-          "label": "anone-anone light blue FREE / FREE",
-          "available": false
-        },
-        "sea birds blue free / free": {
-          "label": "sea birds blue FREE / FREE",
-          "available": false
-        },
-        "選択肢9": {
-          "label": "選択肢9",
+        "選択肢1": {
+          "label": "選択肢1",
           "available": false
         }
       },
