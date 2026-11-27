@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 0,
+  "detailCursor": 10,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -2485,7 +2485,7 @@
     "FC0612MBNU": {
       "productId": "FC0612MBNU",
       "productName": "blumenファブリック",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "colors": {
         "white|153.5": {
