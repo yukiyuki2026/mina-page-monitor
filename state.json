@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -2481,7 +2481,43 @@
         }
       },
       "colorsInitialized": true
+    },
+    "FC0612MBNU": {
+      "productId": "FC0612MBNU",
+      "productName": "blumenファブリック",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "colors": {
+        "white|153.5": {
+          "color": "white",
+          "width": "153.5",
+          "available": true
+        },
+        "mint|153.5": {
+          "color": "mint",
+          "width": "153.5",
+          "available": true
+        },
+        "charcoal|153.5": {
+          "color": "charcoal",
+          "width": "153.5",
+          "available": false
+        }
+      },
+      "colorsInitialized": true
     }
   },
-  "pendingNotifications": []
+  "pendingNotifications": [
+    {
+      "key": "new-product:FC0612MBNU",
+      "type": "new-product",
+      "productId": "FC0612MBNU",
+      "productName": "blumenファブリック",
+      "statusText": "購入可能",
+      "colorsText": "- **white** / 生地巾 153.5cm / 購入可能\n- **mint** / 生地巾 153.5cm / 購入可能\n- **charcoal** / 生地巾 153.5cm / 購入不可",
+      "announcement": "",
+      "title": "🆕 新しいファブリック！ blumenファブリック",
+      "detectedAt": "2026-11-27 12:01:32"
+    }
+  ]
 }
