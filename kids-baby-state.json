@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 30,
+  "detailCursor": 40,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -3002,10 +3002,6 @@
           "label": "6",
           "available": true
         },
-        "7": {
-          "label": "7",
-          "available": true
-        },
         "12 / 0 / mustard": {
           "label": "12 / 0 / mustard",
           "available": true
@@ -3018,8 +3014,8 @@
           "label": "navy / FREE",
           "available": false
         },
-        "選択肢11": {
-          "label": "選択肢11",
+        "選択肢10": {
+          "label": "選択肢10",
           "available": false
         }
       },
