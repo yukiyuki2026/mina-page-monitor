@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 80,
+  "detailCursor": 90,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -132,10 +132,6 @@
           "label": "4",
           "available": true
         },
-        "5": {
-          "label": "5",
-          "available": true
-        },
         "10 / 18 / yellow": {
           "label": "10 / 18 / yellow",
           "available": true
@@ -172,8 +168,8 @@
           "label": "light gray / 13-15 / 16-18",
           "available": false
         },
-        "選択肢15": {
-          "label": "選択肢15",
+        "選択肢14": {
+          "label": "選択肢14",
           "available": false
         }
       },
