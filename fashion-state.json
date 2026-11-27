@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -2166,9 +2166,9 @@
           "label": "3",
           "available": true
         },
-        "28 / 36 / dark green": {
-          "label": "28 / 36 / dark green",
-          "available": true
+        "dark green / 36 / 38": {
+          "label": "dark green / 36 / 38",
+          "available": false
         },
         "28 / 38 / dark green": {
           "label": "28 / 38 / dark green",
