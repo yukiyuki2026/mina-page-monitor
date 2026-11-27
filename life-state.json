@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 80,
+  "detailCursor": 90,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -2403,10 +2403,6 @@
           "label": "1",
           "available": true
         },
-        "2": {
-          "label": "2",
-          "available": true
-        },
         "white s m / s": {
           "label": "white S M / S",
           "available": true
@@ -2423,8 +2419,8 @@
           "label": "gray S M / M",
           "available": false
         },
-        "選択肢7": {
-          "label": "選択肢7",
+        "選択肢6": {
+          "label": "選択肢6",
           "available": false
         }
       },
