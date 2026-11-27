@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 70,
+  "detailCursor": 80,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -2516,8 +2516,8 @@
       "statusText": "購入可能",
       "colorsText": "- **white** / 生地巾 153.5cm / 購入可能\n- **mint** / 生地巾 153.5cm / 購入可能\n- **charcoal** / 生地巾 153.5cm / 購入不可",
       "announcement": "",
-      "title": "🆕 新しいファブリック！ blumenファブリック",
-      "detectedAt": "2026-11-27 12:01:32"
+      "detectedAt": "2026-11-27 12:01:32",
+      "title": "🆕 新しいファブリック！ blumenファブリック"
     }
   ]
 }
