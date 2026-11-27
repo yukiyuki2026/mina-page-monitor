@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 50,
+  "detailCursor": 60,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -495,7 +495,7 @@
     "AEA6864S": {
       "productId": "AEA6864S",
       "productName": "tambourineコート",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
