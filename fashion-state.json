@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 90,
+  "detailCursor": 0,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -229,9 +229,9 @@
           "label": "B (mix) / FREE",
           "available": false
         },
-        "1565 / 0 / c (mix)": {
-          "label": "1565 / 0 / C (mix)",
-          "available": true
+        "c (mix) / free": {
+          "label": "C (mix) / FREE",
+          "available": false
         },
         "d (mix) / free": {
           "label": "D (mix) / FREE",
