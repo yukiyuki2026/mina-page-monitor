@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 80,
+  "detailCursor": 90,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -353,7 +353,7 @@
       "productId": "FC0595BPGL",
       "productName": "DROPPDRÄLL + chouchoファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": "10月25日（日）正午頃、Online Storeへの再入荷を予定しております。",
+      "advanceAnnouncement": "",
       "colors": {
         "light beige|142": {
           "color": "light beige",
@@ -421,7 +421,7 @@
       "productId": "FC0599EUMD",
       "productName": "rosyファブリック",
       "isSoldOut": true,
-      "advanceAnnouncement": "",
+      "advanceAnnouncement": "11月29日（日）正午頃、Online Storeへの再入荷を予定しております。",
       "colors": {
         "white|147": {
           "color": "white",
