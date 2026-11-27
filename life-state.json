@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -3983,10 +3983,6 @@
           "label": "4",
           "available": true
         },
-        "5": {
-          "label": "5",
-          "available": true
-        },
         "tambourine white free / free": {
           "label": "tambourine white FREE / FREE",
           "available": true
@@ -3995,8 +3991,8 @@
           "label": "tambourine navy FREE / FREE",
           "available": true
         },
-        "選択肢8": {
-          "label": "選択肢8",
+        "選択肢7": {
+          "label": "選択肢7",
           "available": false
         }
       },
