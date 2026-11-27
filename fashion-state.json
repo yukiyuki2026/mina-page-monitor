@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 40,
+  "detailCursor": 50,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -505,10 +505,6 @@
         "beige / 36 / 38": {
           "label": "beige / 36 / 38",
           "available": false
-        },
-        "6 / 40 / beige": {
-          "label": "6 / 40 / beige",
-          "available": true
         },
         "navy / 36 / 38": {
           "label": "navy / 36 / 38",
@@ -1162,8 +1158,8 @@
           "label": "dark green / 36 / 38",
           "available": false
         },
-        "28 / 38 / dark green": {
-          "label": "28 / 38 / dark green",
+        "28 / 40 / dark green": {
+          "label": "28 / 40 / dark green",
           "available": true
         },
         "32 / 36 / navy": {
