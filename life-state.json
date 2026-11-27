@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 50,
+  "detailCursor": 60,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -3050,7 +3050,7 @@
         },
         "blue s / s": {
           "label": "blue S / S",
-          "available": true
+          "available": false
         },
         "選択肢6": {
           "label": "選択肢6",
