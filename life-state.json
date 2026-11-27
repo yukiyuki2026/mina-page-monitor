@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 0,
+  "detailCursor": 10,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -3029,7 +3029,7 @@
     "EV1596A": {
       "productId": "EV1596A",
       "productName": "KESÄKUKKAマルチクロス＜LAPUAN KANKURIT＞",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
