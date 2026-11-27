@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 10,
+  "detailCursor": 20,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -5096,10 +5096,6 @@
         },
         "30 / 9 / blue": {
           "label": "30 / 9 / blue",
-          "available": true
-        },
-        "30 / 10 / blue": {
-          "label": "30 / 10 / blue",
           "available": true
         },
         "blue / 90 / 100": {
