@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 80,
+  "detailCursor": 90,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -1967,7 +1967,7 @@
     "FC0442": {
       "productId": "FC0442",
       "productName": "aaltoファブリック",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "colors": {
         "green|150": {
