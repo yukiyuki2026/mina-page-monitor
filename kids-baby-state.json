@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 90,
+  "detailCursor": 0,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -4882,9 +4882,9 @@
           "label": "60 / 12 / gray",
           "available": true
         },
-        "gray / 110 / 120": {
-          "label": "gray / 110 / 120",
-          "available": false
+        "60 / 13 / gray": {
+          "label": "60 / 13 / gray",
+          "available": true
         },
         "60 / 16 / gray": {
           "label": "60 / 16 / gray",
@@ -4893,6 +4893,10 @@
         "60 / 17 / gray": {
           "label": "60 / 17 / gray",
           "available": true
+        },
+        "gray / 110 / 120": {
+          "label": "gray / 110 / 120",
+          "available": false
         },
         "選択肢15": {
           "label": "選択肢15",
@@ -4943,9 +4947,13 @@
           "label": "60 / 11 / gray",
           "available": true
         },
-        "gray / 110 / 120": {
-          "label": "gray / 110 / 120",
-          "available": false
+        "60 / 12 / gray": {
+          "label": "60 / 12 / gray",
+          "available": true
+        },
+        "60 / 13 / gray": {
+          "label": "60 / 13 / gray",
+          "available": true
         },
         "60 / 16 / gray": {
           "label": "60 / 16 / gray",
