@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 10,
+  "detailCursor": 20,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -920,10 +920,6 @@
         },
         "51 / 16 / light brown": {
           "label": "51 / 16 / light brown",
-          "available": true
-        },
-        "51 / 17 / light brown": {
-          "label": "51 / 17 / light brown",
           "available": true
         },
         "選択肢19": {
