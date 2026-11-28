@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 70,
+  "detailCursor": 80,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -482,10 +482,31 @@
     },
     "FC0591YGMG": {
       "productId": "FC0591YGMG",
-      "productName": "jungle relief ファブリック",
+      "productName": "jungle reliefファブリック",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "colors": {},
+      "colors": {
+        "yellow|155": {
+          "color": "yellow",
+          "width": "155",
+          "available": true
+        },
+        "green|155": {
+          "color": "green",
+          "width": "155",
+          "available": true
+        },
+        "mint|155": {
+          "color": "mint",
+          "width": "155",
+          "available": true
+        },
+        "gray|155": {
+          "color": "gray",
+          "width": "155",
+          "available": true
+        }
+      },
       "colorsInitialized": true
     },
     "FC0584": {
