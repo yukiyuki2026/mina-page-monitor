@@ -1,27 +1,43 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
       "productName": "tambourineunelma bag2026-27 a/w",
-      "isSoldOut": true,
+      "isSoldOut": false,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
           "label": "1",
           "available": true
         },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
         "navy / free": {
           "label": "navy / FREE",
           "available": false
         },
-        "light brown / free": {
-          "label": "light brown / FREE",
-          "available": false
+        "51 / 0 / light brown": {
+          "label": "51 / 0 / light brown",
+          "available": true
         },
-        "選択肢4": {
-          "label": "選択肢4",
+        "選択肢8": {
+          "label": "選択肢8",
           "available": false
         }
       },
@@ -5789,6 +5805,94 @@
         }
       },
       "variationsInitialized": true
+    },
+    "AEA7468PS": {
+      "productId": "AEA7468PS",
+      "productName": "mouニットマフラー -ボックス付き-",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "AEA7466PS": {
+      "productId": "AEA7466PS",
+      "productName": "star gardenヘアアクセサリー",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "AEA7470PS": {
+      "productId": "AEA7470PS",
+      "productName": "multicheckネクタイ",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "EV2142": {
+      "productId": "EV2142",
+      "productName": "kukkaぬいぐるみ -ecru-",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "EV2143": {
+      "productId": "EV2143",
+      "productName": "kukkaぬいぐるみ -pink beige-",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "EV2144": {
+      "productId": "EV2144",
+      "productName": "kukkaぬいぐるみ -dark gray-",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "EV2145": {
+      "productId": "EV2145",
+      "productName": "runoぬいぐるみ -light gray-",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "EV2146": {
+      "productId": "EV2146",
+      "productName": "runoぬいぐるみ -dark green-",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "AEA7467PS": {
+      "productId": "AEA7467PS",
+      "productName": "starryヘアアクセサリー",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "AEA7469PS": {
+      "productId": "AEA7469PS",
+      "productName": "blow bloomネクタイ",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "BC7003P": {
+      "productId": "BC7003P",
+      "productName": "tambourinememento bag",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     }
   }
 }
