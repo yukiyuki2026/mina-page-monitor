@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 90,
+  "detailCursor": 0,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -4187,9 +4187,9 @@
           "label": "10",
           "available": true
         },
-        "silver / 22-24cm": {
-          "label": "silver / 22-24CM",
-          "available": false
+        "95 / 70 / silver": {
+          "label": "95 / 70 / silver",
+          "available": true
         },
         "96 / 70 / gold": {
           "label": "96 / 70 / gold",
