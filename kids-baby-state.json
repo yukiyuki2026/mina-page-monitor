@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 0,
+  "detailCursor": 10,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -5833,7 +5833,7 @@
     "EV2142": {
       "productId": "EV2142",
       "productName": "kukkaぬいぐるみ -ecru-",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
@@ -5862,7 +5862,7 @@
     "EV2143": {
       "productId": "EV2143",
       "productName": "kukkaぬいぐるみ -pink beige-",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
@@ -5883,7 +5883,7 @@
     "EV2144": {
       "productId": "EV2144",
       "productName": "kukkaぬいぐるみ -dark gray-",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
@@ -5916,7 +5916,7 @@
     "EV2145": {
       "productId": "EV2145",
       "productName": "runoぬいぐるみ -light gray-",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
@@ -5953,7 +5953,7 @@
     "EV2146": {
       "productId": "EV2146",
       "productName": "runoぬいぐるみ -dark green-",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
