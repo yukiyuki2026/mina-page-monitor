@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 40,
+  "detailCursor": 50,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -5820,9 +5820,9 @@
           "label": "1",
           "available": true
         },
-        "6 / 0 / beige": {
-          "label": "6 / 0 / beige",
-          "available": true
+        "beige / free": {
+          "label": "beige / FREE",
+          "available": false
         },
         "60 / 0 / gray": {
           "label": "60 / 0 / gray",
