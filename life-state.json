@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 80,
+  "detailCursor": 90,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -938,10 +938,6 @@
           "label": "2",
           "available": true
         },
-        "3": {
-          "label": "3",
-          "available": true
-        },
         "blue mix free / free": {
           "label": "blue mix FREE / FREE",
           "available": true
@@ -950,8 +946,8 @@
           "label": "pink mix FREE / FREE",
           "available": true
         },
-        "選択肢6": {
-          "label": "選択肢6",
+        "選択肢5": {
+          "label": "選択肢5",
           "available": false
         }
       },
