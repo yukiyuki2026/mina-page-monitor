@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 50,
+  "detailCursor": 60,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -47,7 +47,7 @@
         },
         "brown free / free": {
           "label": "brown FREE / FREE",
-          "available": false
+          "available": true
         },
         "gray free / free": {
           "label": "gray FREE / FREE",
@@ -63,19 +63,55 @@
     "HN0064_A": {
       "productId": "HN0064_A",
       "productName": "darning kit＜hikaru noguchi＞",
-      "isSoldOut": true,
+      "isSoldOut": false,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
           "label": "1",
           "available": true
         },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
         "other free / free": {
           "label": "other FREE / FREE",
-          "available": false
+          "available": true
         },
-        "選択肢3": {
-          "label": "選択肢3",
+        "選択肢12": {
+          "label": "選択肢12",
           "available": false
         }
       },
@@ -3494,7 +3530,7 @@
     "ABA7432": {
       "productId": "ABA7432",
       "productName": "Riverブランケット",
-      "isSoldOut": true,
+      "isSoldOut": false,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
@@ -3503,7 +3539,7 @@
         },
         "black free / free": {
           "label": "black FREE / FREE",
-          "available": false
+          "available": true
         },
         "選択肢3": {
           "label": "選択肢3",
