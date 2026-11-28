@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 90,
+  "detailCursor": 0,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -5835,40 +5835,145 @@
       "productName": "kukkaぬいぐるみ -ecru-",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "ecru / free": {
+          "label": "ecru / FREE",
+          "available": false
+        },
+        "red / free": {
+          "label": "red / FREE",
+          "available": false
+        },
+        "charcoal / free": {
+          "label": "charcoal / FREE",
+          "available": false
+        },
+        "選択肢5": {
+          "label": "選択肢5",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV2143": {
       "productId": "EV2143",
       "productName": "kukkaぬいぐるみ -pink beige-",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "ecru / free": {
+          "label": "ecru / FREE",
+          "available": false
+        },
+        "選択肢3": {
+          "label": "選択肢3",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV2144": {
       "productId": "EV2144",
       "productName": "kukkaぬいぐるみ -dark gray-",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "beige / free": {
+          "label": "beige / FREE",
+          "available": false
+        },
+        "green / free": {
+          "label": "green / FREE",
+          "available": false
+        },
+        "pink / free": {
+          "label": "pink / FREE",
+          "available": false
+        },
+        "charcoal / free": {
+          "label": "charcoal / FREE",
+          "available": false
+        },
+        "選択肢6": {
+          "label": "選択肢6",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV2145": {
       "productId": "EV2145",
       "productName": "runoぬいぐるみ -light gray-",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "yellow / free": {
+          "label": "yellow / FREE",
+          "available": false
+        },
+        "green / free": {
+          "label": "green / FREE",
+          "available": false
+        },
+        "blue / free": {
+          "label": "blue / FREE",
+          "available": false
+        },
+        "light blue / free": {
+          "label": "light blue / FREE",
+          "available": false
+        },
+        "gray / free": {
+          "label": "gray / FREE",
+          "available": false
+        },
+        "選択肢7": {
+          "label": "選択肢7",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV2146": {
       "productId": "EV2146",
       "productName": "runoぬいぐるみ -dark green-",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "yellow / free": {
+          "label": "yellow / FREE",
+          "available": false
+        },
+        "navy / free": {
+          "label": "navy / FREE",
+          "available": false
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7467PS": {
       "productId": "AEA7467PS",
@@ -5888,11 +5993,64 @@
     },
     "BC7003P": {
       "productId": "BC7003P",
-      "productName": "tambourinememento bag",
+      "productName": "tambourinememento bag2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "60 / 0 / gray": {
+          "label": "60 / 0 / gray",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     }
   }
 }
