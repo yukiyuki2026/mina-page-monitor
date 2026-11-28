@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -5177,9 +5177,9 @@
           "label": "10 / 38 / yellow",
           "available": true
         },
-        "10 / 40 / yellow": {
-          "label": "10 / 40 / yellow",
-          "available": true
+        "yellow / 36 / 38": {
+          "label": "yellow / 36 / 38",
+          "available": false
         },
         "98 / 36 / black": {
           "label": "98 / 36 / black",
