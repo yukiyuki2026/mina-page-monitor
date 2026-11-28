@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 80,
+  "detailCursor": 90,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -5218,17 +5218,9 @@
           "label": "60 / 36 / gray",
           "available": true
         },
-        "60 / 38 / gray": {
-          "label": "60 / 38 / gray",
-          "available": true
-        },
         "black / 34 / 36": {
           "label": "black / 34 / 36",
           "available": false
-        },
-        "98 / 36 / black": {
-          "label": "98 / 36 / black",
-          "available": true
         },
         "98 / 38 / black": {
           "label": "98 / 38 / black",
@@ -5266,10 +5258,6 @@
         "black / 32 / 34": {
           "label": "black / 32 / 34",
           "available": false
-        },
-        "98 / 34 / black": {
-          "label": "98 / 34 / black",
-          "available": true
         },
         "98 / 36 / black": {
           "label": "98 / 36 / black",
