@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 50,
+  "detailCursor": 60,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -194,7 +194,7 @@
     "AEA7460PS": {
       "productId": "AEA7460PS",
       "productName": "Pepper + go!サコッシュ",
-      "isSoldOut": true,
+      "isSoldOut": false,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
