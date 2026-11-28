@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 20,
+  "detailCursor": 30,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -4172,7 +4172,7 @@
     "MG0034_59": {
       "productId": "MG0034_59",
       "productName": "thermo mugUmbrella Bottle",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
