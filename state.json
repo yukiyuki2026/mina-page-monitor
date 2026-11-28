@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -2413,7 +2413,7 @@
     "FC0438": {
       "productId": "FC0438",
       "productName": "donguriファブリック",
-      "isSoldOut": false,
+      "isSoldOut": true,
       "advanceAnnouncement": "",
       "colors": {
         "yellow|154": {
