@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 0,
+  "detailCursor": 10,
   "products": {
     "FC0611RYRK": {
       "productId": "FC0611RYRK",
@@ -2419,7 +2419,7 @@
         "yellow|154": {
           "color": "yellow",
           "width": "154",
-          "available": true
+          "available": false
         },
         "green|154": {
           "color": "green",
