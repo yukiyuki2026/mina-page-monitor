@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 30,
+  "detailCursor": 40,
   "products": {
     "MG0065": {
       "productId": "MG0065",
@@ -1825,6 +1825,10 @@
           "label": "2",
           "available": true
         },
+        "3": {
+          "label": "3",
+          "available": true
+        },
         "orange s l / s": {
           "label": "orange S L / S",
           "available": true
@@ -1879,10 +1883,10 @@
         },
         "blue green s l / l": {
           "label": "blue green S L / L",
-          "available": false
+          "available": true
         },
-        "選択肢17": {
-          "label": "選択肢17",
+        "選択肢18": {
+          "label": "選択肢18",
           "available": false
         }
       },
@@ -1948,7 +1952,7 @@
         },
         "blue green xs s l / l": {
           "label": "blue green XS S L / L",
-          "available": false
+          "available": true
         },
         "scarlet xs s l / xs": {
           "label": "scarlet XS S L / XS",
