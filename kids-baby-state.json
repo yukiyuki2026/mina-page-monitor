@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 40,
+  "detailCursor": 50,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -5815,24 +5815,75 @@
       "productName": "mouニットマフラー -ボックス付き-",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "6 / 0 / beige": {
+          "label": "6 / 0 / beige",
+          "available": true
+        },
+        "60 / 0 / gray": {
+          "label": "60 / 0 / gray",
+          "available": true
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7466PS": {
       "productId": "AEA7466PS",
       "productName": "star gardenヘアアクセサリー",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "0 / white / free": {
+          "label": "0 / white / FREE",
+          "available": true
+        },
+        "27 / 0 / mint": {
+          "label": "27 / 0 / mint",
+          "available": true
+        },
+        "98 / 0 / black": {
+          "label": "98 / 0 / black",
+          "available": true
+        },
+        "選択肢5": {
+          "label": "選択肢5",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7470PS": {
       "productId": "AEA7470PS",
       "productName": "multicheckネクタイ",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "20 / 0 / green": {
+          "label": "20 / 0 / green",
+          "available": true
+        },
+        "選択肢3": {
+          "label": "選択肢3",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "EV2142": {
       "productId": "EV2142",
@@ -5984,16 +6035,46 @@
       "productName": "starryヘアアクセサリー",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "31 / 0 / light blue": {
+          "label": "31 / 0 / light blue",
+          "available": true
+        },
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
+        },
+        "選択肢4": {
+          "label": "選択肢4",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA7469PS": {
       "productId": "AEA7469PS",
       "productName": "blow bloomネクタイ",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "60 / 0 / gray": {
+          "label": "60 / 0 / gray",
+          "available": true
+        },
+        "選択肢3": {
+          "label": "選択肢3",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "BC7003P": {
       "productId": "BC7003P",
