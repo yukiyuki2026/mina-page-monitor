@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -495,7 +495,7 @@
     "AEA6864S": {
       "productId": "AEA6864S",
       "productName": "tambourineコート",
-      "isSoldOut": true,
+      "isSoldOut": false,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
@@ -506,9 +506,21 @@
           "label": "beige / 36 / 38",
           "available": false
         },
+        "6 / 38 / beige": {
+          "label": "6 / 38 / beige",
+          "available": true
+        },
         "navy / 36 / 38": {
           "label": "navy / 36 / 38",
           "available": false
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
         },
         "選択肢8": {
           "label": "選択肢8",
@@ -553,7 +565,7 @@
     "AEA4693": {
       "productId": "AEA4693",
       "productName": "tambourineパンツ",
-      "isSoldOut": true,
+      "isSoldOut": false,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
@@ -563,6 +575,10 @@
         "green / 36 / 38": {
           "label": "green / 36 / 38",
           "available": false
+        },
+        "20 / 38 / green": {
+          "label": "20 / 38 / green",
+          "available": true
         },
         "black / 36 / 38": {
           "label": "black / 36 / 38",
@@ -1417,10 +1433,67 @@
     "AEA2468S": {
       "productId": "AEA2468S",
       "productName": "rosyジャケット",
-      "isSoldOut": true,
+      "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "20 / 36 / green": {
+          "label": "20 / 36 / green",
+          "available": true
+        },
+        "20 / 38 / green": {
+          "label": "20 / 38 / green",
+          "available": true
+        },
+        "20 / 40 / green": {
+          "label": "20 / 40 / green",
+          "available": true
+        },
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "50 / 36 / brown": {
+          "label": "50 / 36 / brown",
+          "available": true
+        },
+        "50 / 38 / brown": {
+          "label": "50 / 38 / brown",
+          "available": true
+        },
+        "50 / 40 / brown": {
+          "label": "50 / 40 / brown",
+          "available": true
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA3265": {
       "productId": "AEA3265",
@@ -3899,23 +3972,59 @@
     "EV2112": {
       "productId": "EV2112",
       "productName": "flower bedソックス",
-      "isSoldOut": true,
+      "isSoldOut": false,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
           "label": "1",
           "available": true
         },
-        "beige / 22-24cm": {
-          "label": "beige / 22-24CM",
-          "available": false
+        "2": {
+          "label": "2",
+          "available": true
         },
-        "navy / 22-24cm": {
-          "label": "navy / 22-24CM",
-          "available": false
+        "3": {
+          "label": "3",
+          "available": true
         },
-        "選択肢4": {
-          "label": "選択肢4",
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "5": {
+          "label": "5",
+          "available": true
+        },
+        "6": {
+          "label": "6",
+          "available": true
+        },
+        "7": {
+          "label": "7",
+          "available": true
+        },
+        "8": {
+          "label": "8",
+          "available": true
+        },
+        "9": {
+          "label": "9",
+          "available": true
+        },
+        "10": {
+          "label": "10",
+          "available": true
+        },
+        "6 / 70 / beige": {
+          "label": "6 / 70 / beige",
+          "available": true
+        },
+        "32 / 70 / navy": {
+          "label": "32 / 70 / navy",
+          "available": true
+        },
+        "選択肢13": {
+          "label": "選択肢13",
           "available": false
         }
       },
@@ -5013,6 +5122,119 @@
         }
       },
       "variationsInitialized": true
+    },
+    "AEA8092": {
+      "productId": "AEA8092",
+      "productName": "trollニットプルオーバー2026-27 a/w",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "0 / 36 / white": {
+          "label": "0 / 36 / white",
+          "available": true
+        },
+        "0 / 38 / white": {
+          "label": "0 / 38 / white",
+          "available": true
+        },
+        "0 / 40 / white": {
+          "label": "0 / 40 / white",
+          "available": true
+        },
+        "10 / 36 / yellow": {
+          "label": "10 / 36 / yellow",
+          "available": true
+        },
+        "10 / 38 / yellow": {
+          "label": "10 / 38 / yellow",
+          "available": true
+        },
+        "10 / 40 / yellow": {
+          "label": "10 / 40 / yellow",
+          "available": true
+        },
+        "98 / 36 / black": {
+          "label": "98 / 36 / black",
+          "available": true
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "98 / 40 / black": {
+          "label": "98 / 40 / black",
+          "available": true
+        },
+        "選択肢14": {
+          "label": "選択肢14",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
+    },
+    "DN4651": {
+      "productId": "DN4651",
+      "productName": "fêteロールアップデニム",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "DN4652": {
+      "productId": "DN4652",
+      "productName": "fêteバルーンワイドデニム",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "AEA2450": {
+      "productId": "AEA2450",
+      "productName": "tambourineブルゾン",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "AEA6836": {
+      "productId": "AEA6836",
+      "productName": "tambourineコート",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "AEA6837": {
+      "productId": "AEA6837",
+      "productName": "iloコート",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
+    },
+    "ADA6811S": {
+      "productId": "ADA6811S",
+      "productName": "tambourineコート",
+      "isSoldOut": false,
+      "advanceAnnouncement": "",
+      "variations": {},
+      "variationsInitialized": false
     }
   }
 }
