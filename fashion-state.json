@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 0,
+  "detailCursor": 10,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -713,19 +713,31 @@
     "AEA6865": {
       "productId": "AEA6865",
       "productName": "tambourineコート",
-      "isSoldOut": true,
+      "isSoldOut": false,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
           "label": "1",
           "available": true
         },
-        "black / 36 / 38": {
-          "label": "black / 36 / 38",
-          "available": false
+        "2": {
+          "label": "2",
+          "available": true
         },
-        "選択肢5": {
-          "label": "選択肢5",
+        "98 / 36 / black": {
+          "label": "98 / 36 / black",
+          "available": true
+        },
+        "98 / 38 / black": {
+          "label": "98 / 38 / black",
+          "available": true
+        },
+        "98 / 40 / black": {
+          "label": "98 / 40 / black",
+          "available": true
+        },
+        "選択肢6": {
+          "label": "選択肢6",
           "available": false
         }
       },
@@ -3606,9 +3618,9 @@
           "label": "98 / 38 / black",
           "available": true
         },
-        "black / 36 / 38": {
-          "label": "black / 36 / 38",
-          "available": false
+        "98 / 40 / black": {
+          "label": "98 / 40 / black",
+          "available": true
         },
         "選択肢14": {
           "label": "選択肢14",
@@ -5296,11 +5308,76 @@
     },
     "AEA2450": {
       "productId": "AEA2450",
-      "productName": "tambourineブルゾン",
+      "productName": "tambourineブルゾン2026-27 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
+        "4": {
+          "label": "4",
+          "available": true
+        },
+        "7 / 36 / ivory": {
+          "label": "7 / 36 / ivory",
+          "available": true
+        },
+        "7 / 38 / ivory": {
+          "label": "7 / 38 / ivory",
+          "available": true
+        },
+        "7 / 40 / ivory": {
+          "label": "7 / 40 / ivory",
+          "available": true
+        },
+        "20 / 36 / green": {
+          "label": "20 / 36 / green",
+          "available": true
+        },
+        "20 / 38 / green": {
+          "label": "20 / 38 / green",
+          "available": true
+        },
+        "20 / 40 / green": {
+          "label": "20 / 40 / green",
+          "available": true
+        },
+        "60 / 36 / gray": {
+          "label": "60 / 36 / gray",
+          "available": true
+        },
+        "60 / 38 / gray": {
+          "label": "60 / 38 / gray",
+          "available": true
+        },
+        "60 / 40 / gray": {
+          "label": "60 / 40 / gray",
+          "available": true
+        },
+        "black / 36 / 38": {
+          "label": "black / 36 / 38",
+          "available": false
+        },
+        "98 / 40 / black": {
+          "label": "98 / 40 / black",
+          "available": true
+        },
+        "選択肢17": {
+          "label": "選択肢17",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     },
     "AEA6836": {
       "productId": "AEA6836",
@@ -5320,11 +5397,56 @@
     },
     "ADA6811S": {
       "productId": "ADA6811S",
-      "productName": "tambourineコート",
+      "productName": "tambourineコート2025-26 a/w",
       "isSoldOut": false,
       "advanceAnnouncement": "",
-      "variations": {},
-      "variationsInitialized": false
+      "variations": {
+        "1": {
+          "label": "1",
+          "available": true
+        },
+        "7 / 36 / ivory": {
+          "label": "7 / 36 / ivory",
+          "available": true
+        },
+        "ivory / 36 / 38": {
+          "label": "ivory / 36 / 38",
+          "available": false
+        },
+        "7 / 40 / ivory": {
+          "label": "7 / 40 / ivory",
+          "available": true
+        },
+        "32 / 36 / navy": {
+          "label": "32 / 36 / navy",
+          "available": true
+        },
+        "32 / 38 / navy": {
+          "label": "32 / 38 / navy",
+          "available": true
+        },
+        "32 / 40 / navy": {
+          "label": "32 / 40 / navy",
+          "available": true
+        },
+        "60 / 36 / gray": {
+          "label": "60 / 36 / gray",
+          "available": true
+        },
+        "60 / 38 / gray": {
+          "label": "60 / 38 / gray",
+          "available": true
+        },
+        "60 / 40 / gray": {
+          "label": "60 / 40 / gray",
+          "available": true
+        },
+        "選択肢11": {
+          "label": "選択肢11",
+          "available": false
+        }
+      },
+      "variationsInitialized": true
     }
   }
 }
