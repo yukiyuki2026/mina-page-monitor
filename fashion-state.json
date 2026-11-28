@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 0,
+  "detailCursor": 10,
   "products": {
     "HN0080": {
       "productId": "HN0080",
@@ -1031,7 +1031,7 @@
     "AEA3252": {
       "productId": "AEA3252",
       "productName": "paraabeliドレス2026-27 a/w",
-      "isSoldOut": true,
+      "isSoldOut": false,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
@@ -1045,6 +1045,10 @@
         "black / 36-38 / 40-42": {
           "label": "black / 36-38 / 40-42",
           "available": false
+        },
+        "98 / 8a / black": {
+          "label": "98 / 8A / black",
+          "available": true
         },
         "選択肢6": {
           "label": "選択肢6",
@@ -5347,10 +5351,6 @@
         "black / 36 / 38": {
           "label": "black / 36 / 38",
           "available": false
-        },
-        "98 / 40 / black": {
-          "label": "98 / 40 / black",
-          "available": true
         },
         "選択肢17": {
           "label": "選択肢17",
