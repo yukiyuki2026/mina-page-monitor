@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 80,
+  "detailCursor": 90,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -4251,9 +4251,9 @@
           "label": "33 / 16 / blue mix",
           "available": true
         },
-        "pink mix / 100 / 120": {
-          "label": "pink mix / 100 / 120",
-          "available": false
+        "43 / 10 / pink mix": {
+          "label": "43 / 10 / pink mix",
+          "available": true
         },
         "43 / 12 / pink mix": {
           "label": "43 / 12 / pink mix",
