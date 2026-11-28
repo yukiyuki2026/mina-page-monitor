@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 60,
+  "detailCursor": 70,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -4689,10 +4689,6 @@
         },
         "32 / 16 / navy": {
           "label": "32 / 16 / navy",
-          "available": true
-        },
-        "32 / 17 / navy": {
-          "label": "32 / 17 / navy",
           "available": true
         },
         "navy / 100 / 110": {
