@@ -1,6 +1,6 @@
 {
   "initialized": true,
-  "detailCursor": 30,
+  "detailCursor": 40,
   "products": {
     "AEA7394P": {
       "productId": "AEA7394P",
@@ -86,9 +86,9 @@
           "label": "1",
           "available": true
         },
-        "10 / 0 / yellow": {
-          "label": "10 / 0 / yellow",
-          "available": true
+        "yellow / free": {
+          "label": "yellow / FREE",
+          "available": false
         },
         "moss green / free": {
           "label": "moss green / FREE",
@@ -313,23 +313,31 @@
     "AEA7462_63PS": {
       "productId": "AEA7462_63PS",
       "productName": "trollサコッシュ",
-      "isSoldOut": true,
+      "isSoldOut": false,
       "advanceAnnouncement": "",
       "variations": {
         "1": {
           "label": "1",
           "available": true
         },
+        "2": {
+          "label": "2",
+          "available": true
+        },
+        "3": {
+          "label": "3",
+          "available": true
+        },
         "green / free": {
           "label": "green / FREE",
           "available": false
         },
-        "navy / free": {
-          "label": "navy / FREE",
-          "available": false
+        "32 / 0 / navy": {
+          "label": "32 / 0 / navy",
+          "available": true
         },
-        "選択肢4": {
-          "label": "選択肢4",
+        "選択肢6": {
+          "label": "選択肢6",
           "available": false
         }
       },
